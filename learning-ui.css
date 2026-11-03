@@ -18,3 +18,20 @@ a.card[class*="card--"]{background:#fff;color:#344953;border:1px solid #c8dcda;b
 a.card[class*="card--"] h2{color:#344f59}
 a.card[class*="card--"] p{color:#647780}
 a.card[class*="card--"] .tag{background:#eff6f5;color:#537778;border:1px solid #d5e5e2}
+.phrase-group summary{display:flex;align-items:center;justify-content:space-between;gap:12px;list-style:none}
+.phrase-group summary::before{content:'＋';flex:none;font-size:1.1rem}
+.phrase-group[open]>summary::before{content:'−'}
+.phrase-group summary small{display:block;font-size:.84rem;font-weight:400;color:var(--muted);line-height:1.5;margin-top:4px}
+.phrase-count{flex:none;border:1px solid #d4e3e1;border-radius:999px;background:#f3f8f7;padding:3px 9px;font-size:.8rem;font-weight:500;white-space:nowrap}
+.phrase-context,.phrase-practice{padding:12px 14px;margin:0 0 14px;background:#f4f8f7;border-radius:12px;color:#536c73;font-size:.92rem}
+.phrase-context p{margin:4px 0}.phrase-provenance{font-size:.8rem;color:#687d81}
+.phrase-pair .phrase-translation{font-size:.9rem;color:#677b82}.phrase-pair .phrase-usage{border-top:1px solid #e4eceb;padding-top:12px;margin-top:14px;font-size:.9rem;color:#536c73}
+.phrase-audio{display:flex;flex-wrap:wrap;gap:8px}.phrase-audio .play{font-size:.84rem}
+.phrase-topic-links{display:flex;flex-wrap:wrap;gap:12px;font-size:.9rem}
+.phrase-tools{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:14px;background:#fff;border:1px solid #d4e3e1;border-radius:18px;padding:20px;margin:24px 0}
+.phrase-tools label{display:block;font-size:.9rem;color:#536c73;margin-bottom:6px}
+.phrase-tools input,.phrase-tools select{width:100%;max-width:100%;min-width:0;border:1px solid #b8cfd2;border-radius:12px;background:#fbfdfd;padding:11px 12px;color:#344f59}
+.phrase-tool-actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+#conversationCount{margin:0;align-self:center;color:#536c73;font-size:.9rem}#phraseVoiceStatus{font-size:.88rem;color:#677b82;overflow-wrap:anywhere}
+.phrase-empty{padding:24px;background:#f3f8f7;border-radius:12px}
+@media(max-width:650px){.phrase-tools{grid-template-columns:1fr;padding:16px}.phrase-group{padding:0 12px}.phrase-group summary{gap:8px}.phrase-group summary small{font-size:.8rem}.phrase-count{font-size:.75rem;padding:3px 7px}}
