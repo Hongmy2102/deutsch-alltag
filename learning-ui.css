@@ -1,0 +1,20 @@
+/* Shared, soft controls and typography for every learning page. */
+:root{--learning-font:"Segoe UI",Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,sans-serif;--control-ink:#416b75;--control-line:#b8cfd2;--control-wash:#f1f7f7}
+body{font-family:var(--learning-font);line-height:1.65}
+button,input,select,textarea{font-family:inherit;font-size:inherit}
+h1,h2,h3,h4{font-family:inherit}
+button,.button,.play,.next,.home,.home-link{border-radius:999px;font-weight:600;letter-spacing:0;line-height:1.5}
+button:not(.folderbtn):not(.folder-card),.button,.button.primary,.play,.next{background:#fbfdfd;color:var(--control-ink);border:1px solid var(--control-line);box-shadow:none;padding:9px 16px}
+button:not(.folderbtn):hover,.button:hover,.play:hover,.next:hover{background:var(--control-wash);border-color:#83aeb5;color:#315b66}
+button[aria-selected="true"],button.active,.button.primary{background:#eaf3f3;border-color:#93b8bd;color:#315b66}
+button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #95bdc5;outline-offset:3px}
+.card .open{display:inline-flex;align-items:center;align-self:flex-start;gap:8px;max-width:100%;padding:9px 16px;border:1px solid var(--control-line);border-radius:999px;background:#fbfdfd;color:var(--control-ink);font-size:.95rem;font-weight:600;line-height:1.5}
+.card[class*="card--"] .open{color:var(--control-ink)}
+a.card:hover .open,a.card:focus-visible .open{background:var(--control-wash);border-color:#83aeb5}
+.home,.home-link{background:#ffffff0d;border-color:#c6dbd366;color:#f3faf7}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
+/* Let the topic accent live in the border and small labels. */
+a.card[class*="card--"]{background:#fff;color:#344953;border:1px solid #c8dcda;border-top:3px solid var(--card-accent,#a2c7c5);box-shadow:0 5px 18px #486d6810}
+a.card[class*="card--"] h2{color:#344f59}
+a.card[class*="card--"] p{color:#647780}
+a.card[class*="card--"] .tag{background:#eff6f5;color:#537778;border:1px solid #d5e5e2}
