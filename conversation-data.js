@@ -1,4 +1,4 @@
-// Unified comparisons inside the existing Leben hub; alternatives reviewed for intent and grammatical accuracy.
+// Unified comparisons in Leben. IPA is a broad standard German transcription; speech uses the full headword or phrase.
 const conversationGroups = [
   {
     "id": 1,
@@ -20,13 +20,17 @@ const conversationGroups = [
             "de": "hoffen",
             "type": "verb",
             "en": "to hope",
-            "vi": "hy vọng"
+            "vi": "hy vọng",
+            "ipa": "ˈhɔfn̩",
+            "say": "hoffen"
           },
           {
             "de": "bald",
             "type": "adverb",
             "en": "soon",
-            "vi": "sớm"
+            "vi": "sớm",
+            "ipa": "balt",
+            "say": "bald"
           }
         ],
         "analysis": {
@@ -49,13 +53,17 @@ const conversationGroups = [
             "de": "sich Sorgen machen",
             "type": "phrase",
             "en": "to worry",
-            "vi": "lo lắng"
+            "vi": "lo lắng",
+            "ipa": "zɪç ˈzɔʁɡən ˈmaxn̩",
+            "say": "sich Sorgen machen"
           },
           {
             "de": "brauchen",
             "type": "verb",
             "en": "to need",
-            "vi": "cần"
+            "vi": "cần",
+            "ipa": "ˈbʁaʊ̯xn̩",
+            "say": "brauchen"
           }
         ],
         "analysis": {
@@ -78,14 +86,18 @@ const conversationGroups = [
             "de": "wünschen",
             "type": "verb",
             "en": "to wish",
-            "vi": "chúc; mong muốn"
+            "vi": "chúc; mong muốn",
+            "ipa": "ˈvʏnʃn̩",
+            "say": "wünschen"
           },
           {
             "de": "die Zeit",
             "type": "noun",
             "en": "time",
             "vi": "thời gian",
-            "plural": "die Zeiten (các thời kỳ hoặc thời điểm)"
+            "plural": "die Zeiten",
+            "ipa": "diː tsaɪ̯t",
+            "say": "die Zeit"
           }
         ],
         "analysis": {
@@ -108,13 +120,17 @@ const conversationGroups = [
             "de": "zuständig",
             "type": "adjective",
             "en": "responsible for; in charge",
-            "vi": "có trách nhiệm; phụ trách"
+            "vi": "có trách nhiệm; phụ trách",
+            "ipa": "ˈtsuːˌʃtɛndɪç",
+            "say": "zuständig"
           },
           {
             "de": "leider",
             "type": "adverb",
             "en": "unfortunately",
-            "vi": "tiếc là"
+            "vi": "tiếc là",
+            "ipa": "ˈlaɪ̯dɐ",
+            "say": "leider"
           }
         ],
         "analysis": {
@@ -138,13 +154,17 @@ const conversationGroups = [
             "type": "noun",
             "en": "preference",
             "vi": "sự ưu tiên; sở thích lựa chọn",
-            "plural": "die Präferenzen"
+            "plural": "die Präferenzen",
+            "ipa": "diː pʁɛfeˈʁɛnts",
+            "say": "die Präferenz"
           },
           {
             "de": "haben",
             "type": "verb",
             "en": "to have",
-            "vi": "có"
+            "vi": "có",
+            "ipa": "ˈhaːbn̩",
+            "say": "haben"
           }
         ],
         "analysis": {
@@ -167,14 +187,18 @@ const conversationGroups = [
             "de": "wünschen",
             "type": "verb",
             "en": "to wish",
-            "vi": "chúc; mong muốn"
+            "vi": "chúc; mong muốn",
+            "ipa": "ˈvʏnʃn̩",
+            "say": "wünschen"
           },
           {
             "de": "der Erfolg",
             "type": "noun",
             "en": "success",
             "vi": "thành công",
-            "plural": "die Erfolge"
+            "plural": "die Erfolge",
+            "ipa": "deːɐ̯ ɛɐ̯ˈfɔlk",
+            "say": "der Erfolg"
           }
         ],
         "analysis": {
@@ -197,14 +221,18 @@ const conversationGroups = [
             "de": "wünschen",
             "type": "verb",
             "en": "to wish",
-            "vi": "chúc; mong muốn"
+            "vi": "chúc; mong muốn",
+            "ipa": "ˈvʏnʃn̩",
+            "say": "wünschen"
           },
           {
             "de": "die Freude",
             "type": "noun",
             "en": "joy",
             "vi": "niềm vui",
-            "plural": "die Freuden"
+            "plural": "die Freuden",
+            "ipa": "diː ˈfʁɔʏ̯də",
+            "say": "die Freude"
           }
         ],
         "analysis": {
@@ -227,14 +255,18 @@ const conversationGroups = [
             "de": "still",
             "type": "adjective",
             "en": "quiet; silent",
-            "vi": "im lặng"
+            "vi": "im lặng",
+            "ipa": "ʃtɪl",
+            "say": "still"
           },
           {
             "de": "der Moment",
             "type": "noun",
             "en": "moment",
             "vi": "khoảnh khắc; một lát",
-            "plural": "die Momente"
+            "plural": "die Momente",
+            "ipa": "deːɐ̯ moˈmɛnt",
+            "say": "der Moment"
           }
         ],
         "analysis": {
@@ -258,14 +290,18 @@ const conversationGroups = [
             "de": "übernehmen",
             "type": "verb",
             "en": "to take over; to cover",
-            "vi": "đảm nhận; chi trả"
+            "vi": "đảm nhận; chi trả",
+            "ipa": "ˌyːbɐˈneːmən",
+            "say": "übernehmen"
           },
           {
             "de": "die Rechnung",
             "type": "noun",
             "en": "bill; invoice",
             "vi": "hóa đơn",
-            "plural": "die Rechnungen"
+            "plural": "die Rechnungen",
+            "ipa": "diː ˈʁɛçnʊŋ",
+            "say": "die Rechnung"
           }
         ],
         "analysis": {
@@ -288,13 +324,17 @@ const conversationGroups = [
             "de": "sich freuen",
             "type": "verb",
             "en": "to be pleased",
-            "vi": "vui mừng"
+            "vi": "vui mừng",
+            "ipa": "zɪç ˈfʁɔʏ̯ən",
+            "say": "sich freuen"
           },
           {
             "de": "wirklich",
             "type": "adverb",
             "en": "really",
-            "vi": "thực sự"
+            "vi": "thực sự",
+            "ipa": "ˈvɪʁklɪç",
+            "say": "wirklich"
           }
         ],
         "analysis": {
@@ -320,14 +360,18 @@ const conversationGroups = [
             "de": "sich freuen",
             "type": "verb",
             "en": "to be pleased",
-            "vi": "vui mừng"
+            "vi": "vui mừng",
+            "ipa": "zɪç ˈfʁɔʏ̯ən",
+            "say": "sich freuen"
           },
           {
             "de": "das Lob",
             "type": "noun",
             "en": "praise",
             "vi": "lời khen",
-            "plural": "thường không dùng số nhiều"
+            "plural": "kein gebräuchlicher Plural in dieser Bedeutung",
+            "ipa": "das loːp",
+            "say": "das Lob"
           }
         ],
         "analysis": {
@@ -351,13 +395,17 @@ const conversationGroups = [
             "type": "noun",
             "en": "luck; happiness",
             "vi": "may mắn; hạnh phúc",
-            "plural": "thường không dùng số nhiều trong nghĩa may mắn"
+            "plural": "kein gebräuchlicher Plural in dieser Bedeutung",
+            "ipa": "das ɡlʏk",
+            "say": "das Glück"
           },
           {
             "de": "tatsächlich",
             "type": "adverb",
             "en": "really; actually",
-            "vi": "thực sự"
+            "vi": "thực sự",
+            "ipa": "ˈtaːtˌzɛçlɪç",
+            "say": "tatsächlich"
           }
         ],
         "analysis": {
@@ -380,14 +428,18 @@ const conversationGroups = [
             "de": "freundlich",
             "type": "adjective",
             "en": "friendly; kind",
-            "vi": "thân thiện; tốt bụng"
+            "vi": "thân thiện; tốt bụng",
+            "ipa": "ˈfʁɔʏ̯ntlɪç",
+            "say": "freundlich"
           },
           {
             "de": "das Kompliment",
             "type": "noun",
             "en": "compliment",
             "vi": "lời khen",
-            "plural": "die Komplimente"
+            "plural": "die Komplimente",
+            "ipa": "das kɔmpliˈmɛnt",
+            "say": "das Kompliment"
           }
         ],
         "analysis": {
@@ -411,14 +463,18 @@ const conversationGroups = [
             "de": "sich freuen",
             "type": "verb",
             "en": "to be pleased",
-            "vi": "vui mừng"
+            "vi": "vui mừng",
+            "ipa": "zɪç ˈfʁɔʏ̯ən",
+            "say": "sich freuen"
           },
           {
             "de": "die Anerkennung",
             "type": "noun",
             "en": "recognition; appreciation",
             "vi": "sự ghi nhận",
-            "plural": "die Anerkennungen"
+            "plural": "die Anerkennungen",
+            "ipa": "diː ˈanʔɛɐ̯ˌkɛnʊŋ",
+            "say": "die Anerkennung"
           }
         ],
         "analysis": {
@@ -442,13 +498,17 @@ const conversationGroups = [
             "type": "noun",
             "en": "result",
             "vi": "kết quả",
-            "plural": "die Ergebnisse"
+            "plural": "die Ergebnisse",
+            "ipa": "das ɛɐ̯ˈɡeːpnɪs",
+            "say": "das Ergebnis"
           },
           {
             "de": "gefallen",
             "type": "verb",
             "en": "to please; to appeal",
-            "vi": "làm hài lòng; được thích"
+            "vi": "làm hài lòng; được thích",
+            "ipa": "ɡəˈfalən",
+            "say": "gefallen"
           }
         ],
         "analysis": {
@@ -471,14 +531,18 @@ const conversationGroups = [
             "de": "sich freuen",
             "type": "verb",
             "en": "to be pleased",
-            "vi": "vui mừng"
+            "vi": "vui mừng",
+            "ipa": "zɪç ˈfʁɔʏ̯ən",
+            "say": "sich freuen"
           },
           {
             "de": "die Rückmeldung",
             "type": "noun",
             "en": "reply; feedback",
             "vi": "phản hồi",
-            "plural": "die Rückmeldungen"
+            "plural": "die Rückmeldungen",
+            "ipa": "diː ˈʁʏkˌmɛldʊŋ",
+            "say": "die Rückmeldung"
           }
         ],
         "analysis": {
@@ -513,14 +577,18 @@ const conversationGroups = [
             "type": "noun",
             "en": "point",
             "vi": "điểm; ý",
-            "plural": "die Punkte"
+            "plural": "die Punkte",
+            "ipa": "deːɐ̯ pʊŋkt",
+            "say": "der Punkt"
           },
           {
             "de": "die Meinung",
             "type": "noun",
             "en": "opinion",
             "vi": "ý kiến; quan điểm",
-            "plural": "die Meinungen"
+            "plural": "die Meinungen",
+            "ipa": "diː ˈmaɪ̯nʊŋ",
+            "say": "die Meinung"
           }
         ],
         "analysis": {
@@ -544,13 +612,17 @@ const conversationGroups = [
             "type": "noun",
             "en": "view; perspective",
             "vi": "góc nhìn",
-            "plural": "die Sichten"
+            "plural": "die Sichten",
+            "ipa": "diː zɪçt",
+            "say": "die Sicht"
           },
           {
             "de": "bedeuten",
             "type": "verb",
             "en": "to mean",
-            "vi": "có nghĩa"
+            "vi": "có nghĩa",
+            "ipa": "bəˈdɔʏ̯tn̩",
+            "say": "bedeuten"
           }
         ],
         "analysis": {
@@ -574,13 +646,17 @@ const conversationGroups = [
             "type": "noun",
             "en": "impression",
             "vi": "ấn tượng; cảm nhận",
-            "plural": "die Eindrücke"
+            "plural": "die Eindrücke",
+            "ipa": "deːɐ̯ ˈaɪ̯nˌdʁʊk",
+            "say": "der Eindruck"
           },
           {
             "de": "ganz",
             "type": "adverb",
             "en": "completely; entirely",
-            "vi": "hoàn toàn"
+            "vi": "hoàn toàn",
+            "ipa": "ɡants",
+            "say": "ganz"
           }
         ],
         "analysis": {
@@ -604,13 +680,17 @@ const conversationGroups = [
             "type": "noun",
             "en": "suggestion",
             "vi": "đề xuất",
-            "plural": "die Vorschläge"
+            "plural": "die Vorschläge",
+            "ipa": "deːɐ̯ ˈfoːɐ̯ˌʃlaːk",
+            "say": "der Vorschlag"
           },
           {
             "de": "in Ordnung",
             "type": "phrase",
             "en": "all right",
-            "vi": "ổn; chấp nhận được"
+            "vi": "ổn; chấp nhận được",
+            "ipa": "ɪn ˈʔɔʁdnʊŋ",
+            "say": "in Ordnung"
           }
         ],
         "analysis": {
@@ -633,13 +713,17 @@ const conversationGroups = [
             "de": "einverstanden",
             "type": "adjective",
             "en": "in agreement",
-            "vi": "đồng ý; nhất trí"
+            "vi": "đồng ý; nhất trí",
+            "ipa": "ˈaɪ̯nfɛɐ̯ˌʃtandn̩",
+            "say": "einverstanden"
           },
           {
             "de": "sein",
             "type": "verb",
             "en": "to be",
-            "vi": "là; ở; thì"
+            "vi": "là; ở; thì",
+            "ipa": "zaɪ̯n",
+            "say": "sein"
           }
         ],
         "analysis": {
@@ -662,13 +746,17 @@ const conversationGroups = [
             "de": "sich darstellen",
             "type": "verb",
             "en": "to appear; to present itself",
-            "vi": "thể hiện; hiện ra"
+            "vi": "thể hiện; hiện ra",
+            "ipa": "zɪç ˈdaːɐ̯ˌʃtɛlən",
+            "say": "sich darstellen"
           },
           {
             "de": "auch",
             "type": "adverb",
             "en": "also; too",
-            "vi": "cũng"
+            "vi": "cũng",
+            "ipa": "aʊ̯x",
+            "say": "auch"
           }
         ],
         "analysis": {
@@ -691,13 +779,17 @@ const conversationGroups = [
             "de": "sagen",
             "type": "verb",
             "en": "to say; to tell",
-            "vi": "nói; cho biết"
+            "vi": "nói; cho biết",
+            "ipa": "ˈzaːɡən",
+            "say": "sagen"
           },
           {
             "de": "leider",
             "type": "adverb",
             "en": "unfortunately",
-            "vi": "tiếc là"
+            "vi": "tiếc là",
+            "ipa": "ˈlaɪ̯dɐ",
+            "say": "leider"
           }
         ],
         "analysis": {
@@ -721,13 +813,17 @@ const conversationGroups = [
             "type": "noun",
             "en": "tip; piece of information",
             "vi": "lời lưu ý; thông tin gợi ý",
-            "plural": "die Hinweise"
+            "plural": "die Hinweise",
+            "ipa": "deːɐ̯ ˈhɪnˌvaɪ̯s",
+            "say": "der Hinweis"
           },
           {
             "de": "wissen",
             "type": "verb",
             "en": "to know",
-            "vi": "biết"
+            "vi": "biết",
+            "ipa": "ˈvɪsn̩",
+            "say": "wissen"
           }
         ],
         "analysis": {
@@ -750,13 +846,17 @@ const conversationGroups = [
             "de": "überraschen",
             "type": "verb",
             "en": "to surprise",
-            "vi": "làm ngạc nhiên"
+            "vi": "làm ngạc nhiên",
+            "ipa": "yːbɐˈʁaʃn̩",
+            "say": "überraschen"
           },
           {
             "de": "wirklich",
             "type": "adverb",
             "en": "really",
-            "vi": "thực sự"
+            "vi": "thực sự",
+            "ipa": "ˈvɪʁklɪç",
+            "say": "wirklich"
           }
         ],
         "analysis": {
@@ -779,13 +879,17 @@ const conversationGroups = [
             "de": "einverstanden",
             "type": "adjective",
             "en": "in agreement",
-            "vi": "đồng ý; nhất trí"
+            "vi": "đồng ý; nhất trí",
+            "ipa": "ˈaɪ̯nfɛɐ̯ˌʃtandn̩",
+            "say": "einverstanden"
           },
           {
             "de": "machen",
             "type": "verb",
             "en": "to do; to make",
-            "vi": "làm"
+            "vi": "làm",
+            "ipa": "ˈmaxn̩",
+            "say": "machen"
           }
         ],
         "analysis": {
@@ -811,13 +915,17 @@ const conversationGroups = [
             "de": "in Ordnung",
             "type": "phrase",
             "en": "all right; in order",
-            "vi": "ổn; đúng quy củ"
+            "vi": "ổn; đúng quy củ",
+            "ipa": "ɪn ˈʔɔʁdnʊŋ",
+            "say": "in Ordnung"
           },
           {
             "de": "sein",
             "type": "verb",
             "en": "to be",
-            "vi": "là; ở; thì"
+            "vi": "là; ở; thì",
+            "ipa": "zaɪ̯n",
+            "say": "sein"
           }
         ],
         "analysis": {
@@ -841,13 +949,17 @@ const conversationGroups = [
             "type": "noun",
             "en": "understanding",
             "vi": "cách hiểu; sự hiểu biết",
-            "plural": "thường không dùng số nhiều"
+            "plural": "kein gebräuchlicher Plural in dieser Bedeutung",
+            "ipa": "das fɛɐ̯ˈʃtɛntnɪs",
+            "say": "das Verständnis"
           },
           {
             "de": "richtig",
             "type": "adjective",
             "en": "correct; right",
-            "vi": "đúng"
+            "vi": "đúng",
+            "ipa": "ˈʁɪçtɪç",
+            "say": "richtig"
           }
         ],
         "analysis": {
@@ -871,14 +983,18 @@ const conversationGroups = [
             "type": "noun",
             "en": "point",
             "vi": "điểm; ý",
-            "plural": "die Punkte"
+            "plural": "die Punkte",
+            "ipa": "deːɐ̯ pʊŋkt",
+            "say": "der Punkt"
           },
           {
             "de": "der Schluss",
             "type": "noun",
             "en": "end; conclusion",
             "vi": "phần kết; kết thúc",
-            "plural": "die Schlüsse"
+            "plural": "die Schlüsse",
+            "ipa": "deːɐ̯ ʃlʊs",
+            "say": "der Schluss"
           }
         ],
         "analysis": {
@@ -902,13 +1018,17 @@ const conversationGroups = [
             "de": "spät",
             "type": "adjective",
             "en": "late",
-            "vi": "muộn"
+            "vi": "muộn",
+            "ipa": "ʃpɛːt",
+            "say": "spät"
           },
           {
             "de": "sagen",
             "type": "verb",
             "en": "to say; to tell",
-            "vi": "nói; cho biết"
+            "vi": "nói; cho biết",
+            "ipa": "ˈzaːɡən",
+            "say": "sagen"
           }
         ],
         "analysis": {
@@ -932,13 +1052,17 @@ const conversationGroups = [
             "type": "noun",
             "en": "point",
             "vi": "điểm; ý",
-            "plural": "die Punkte"
+            "plural": "die Punkte",
+            "ipa": "deːɐ̯ pʊŋkt",
+            "say": "der Punkt"
           },
           {
             "de": "anders",
             "type": "adverb",
             "en": "differently",
-            "vi": "theo cách khác"
+            "vi": "theo cách khác",
+            "ipa": "ˈandɐs",
+            "say": "anders"
           }
         ],
         "analysis": {
@@ -962,13 +1086,17 @@ const conversationGroups = [
             "type": "noun",
             "en": "opinion",
             "vi": "ý kiến; quan điểm",
-            "plural": "die Meinungen"
+            "plural": "die Meinungen",
+            "ipa": "diː ˈmaɪ̯nʊŋ",
+            "say": "die Meinung"
           },
           {
             "de": "ganz",
             "type": "adverb",
             "en": "completely; entirely",
-            "vi": "hoàn toàn"
+            "vi": "hoàn toàn",
+            "ipa": "ɡants",
+            "say": "ganz"
           }
         ],
         "analysis": {
@@ -990,14 +1118,18 @@ const conversationGroups = [
             "de": "auffallen",
             "type": "verb",
             "en": "to notice; to stand out",
-            "vi": "được chú ý; khiến ai nhận thấy"
+            "vi": "được chú ý; khiến ai nhận thấy",
+            "ipa": "ˈaʊ̯fˌfalən",
+            "say": "auffallen"
           },
           {
             "de": "der Fehler",
             "type": "noun",
             "en": "mistake; error",
             "vi": "lỗi",
-            "plural": "die Fehler"
+            "plural": "die Fehler",
+            "ipa": "deːɐ̯ ˈfeːlɐ",
+            "say": "der Fehler"
           }
         ],
         "analysis": {
@@ -1020,13 +1152,17 @@ const conversationGroups = [
             "de": "stören",
             "type": "verb",
             "en": "to disturb; to bother",
-            "vi": "làm phiền"
+            "vi": "làm phiền",
+            "ipa": "ˈʃtøːʁən",
+            "say": "stören"
           },
           {
             "de": "sprechen",
             "type": "verb",
             "en": "to speak",
-            "vi": "nói"
+            "vi": "nói",
+            "ipa": "ˈʃpʁɛçn̩",
+            "say": "sprechen"
           }
         ],
         "analysis": {
@@ -1049,13 +1185,17 @@ const conversationGroups = [
             "de": "vorerst",
             "type": "adverb",
             "en": "for now",
-            "vi": "trước mắt"
+            "vi": "trước mắt",
+            "ipa": "foːɐ̯ˈʔeːɐ̯st",
+            "say": "vorerst"
           },
           {
             "de": "weiterverfolgen",
             "type": "verb",
             "en": "to pursue further",
-            "vi": "tiếp tục theo đuổi"
+            "vi": "tiếp tục theo đuổi",
+            "ipa": "ˈvaɪ̯tɐfɛɐ̯ˌfɔlɡən",
+            "say": "weiterverfolgen"
           }
         ],
         "analysis": {
@@ -1090,13 +1230,17 @@ const conversationGroups = [
             "de": "ärgerlich",
             "type": "adjective",
             "en": "annoying",
-            "vi": "gây bực mình"
+            "vi": "gây bực mình",
+            "ipa": "ˈʔɛʁɡɐlɪç",
+            "say": "ärgerlich"
           },
           {
             "de": "wirklich",
             "type": "adverb",
             "en": "really",
-            "vi": "thực sự"
+            "vi": "thực sự",
+            "ipa": "ˈvɪʁklɪç",
+            "say": "wirklich"
           }
         ],
         "analysis": {
@@ -1119,13 +1263,17 @@ const conversationGroups = [
             "de": "sich freuen",
             "type": "verb",
             "en": "to be pleased",
-            "vi": "vui mừng"
+            "vi": "vui mừng",
+            "ipa": "zɪç ˈfʁɔʏ̯ən",
+            "say": "sich freuen"
           },
           {
             "de": "darüber",
             "type": "adverb",
             "en": "about it; about that",
-            "vi": "về việc đó"
+            "vi": "về việc đó",
+            "ipa": "daˈʁyːbɐ",
+            "say": "darüber"
           }
         ],
         "analysis": {
@@ -1148,13 +1296,17 @@ const conversationGroups = [
             "de": "gelingen",
             "type": "verb",
             "en": "to turn out well; to succeed",
-            "vi": "thành công; có kết quả tốt"
+            "vi": "thành công; có kết quả tốt",
+            "ipa": "ɡəˈlɪŋən",
+            "say": "gelingen"
           },
           {
             "de": "wirklich",
             "type": "adverb",
             "en": "really",
-            "vi": "thực sự"
+            "vi": "thực sự",
+            "ipa": "ˈvɪʁklɪç",
+            "say": "wirklich"
           }
         ],
         "analysis": {
@@ -1177,13 +1329,17 @@ const conversationGroups = [
             "de": "erscheinen",
             "type": "verb",
             "en": "to seem; to appear",
-            "vi": "có vẻ; xuất hiện"
+            "vi": "có vẻ; xuất hiện",
+            "ipa": "ɛɐ̯ˈʃaɪ̯nən",
+            "say": "erscheinen"
           },
           {
             "de": "nachvollziehbar",
             "type": "adjective",
             "en": "understandable; comprehensible",
-            "vi": "có thể hiểu được"
+            "vi": "có thể hiểu được",
+            "ipa": "ˈnaːxfɔlˌtsiːbaːɐ̯",
+            "say": "nachvollziehbar"
           }
         ],
         "analysis": {
@@ -1207,13 +1363,17 @@ const conversationGroups = [
             "type": "noun",
             "en": "development",
             "vi": "diễn biến",
-            "plural": "die Entwicklungen"
+            "plural": "die Entwicklungen",
+            "ipa": "diː ɛntˈvɪklʊŋ",
+            "say": "die Entwicklung"
           },
           {
             "de": "überraschen",
             "type": "verb",
             "en": "to surprise",
-            "vi": "làm ngạc nhiên"
+            "vi": "làm ngạc nhiên",
+            "ipa": "yːbɐˈʁaʃn̩",
+            "say": "überraschen"
           }
         ],
         "analysis": {
@@ -1236,13 +1396,17 @@ const conversationGroups = [
             "de": "sich einig sein",
             "type": "phrase",
             "en": "to be in agreement",
-            "vi": "thống nhất với nhau"
+            "vi": "thống nhất với nhau",
+            "ipa": "zɪç ˈaɪ̯nɪç zaɪ̯n",
+            "say": "sich einig sein"
           },
           {
             "de": "darüber",
             "type": "adverb",
             "en": "about it; about that",
-            "vi": "về việc đó"
+            "vi": "về việc đó",
+            "ipa": "daˈʁyːbɐ",
+            "say": "darüber"
           }
         ],
         "analysis": {
@@ -1265,13 +1429,17 @@ const conversationGroups = [
             "de": "akzeptabel",
             "type": "adjective",
             "en": "acceptable",
-            "vi": "chấp nhận được"
+            "vi": "chấp nhận được",
+            "ipa": "aktsɛpˈtaːbl̩",
+            "say": "akzeptabel"
           },
           {
             "de": "finden",
             "type": "verb",
             "en": "to find; to consider",
-            "vi": "thấy; cho là"
+            "vi": "thấy; cho là",
+            "ipa": "ˈfɪndn̩",
+            "say": "finden"
           }
         ],
         "analysis": {
@@ -1295,13 +1463,17 @@ const conversationGroups = [
             "type": "noun",
             "en": "boundary; limit",
             "vi": "ranh giới; giới hạn",
-            "plural": "die Grenzen"
+            "plural": "die Grenzen",
+            "ipa": "diː ˈɡʁɛntsə",
+            "say": "die Grenze"
           },
           {
             "de": "erreichen",
             "type": "verb",
             "en": "to reach",
-            "vi": "đạt tới"
+            "vi": "đạt tới",
+            "ipa": "ɛɐ̯ˈʁaɪ̯çn̩",
+            "say": "erreichen"
           }
         ],
         "analysis": {
@@ -1324,13 +1496,17 @@ const conversationGroups = [
             "de": "zu viel",
             "type": "phrase",
             "en": "too much",
-            "vi": "quá nhiều; quá mức"
+            "vi": "quá nhiều; quá mức",
+            "ipa": "tsuː fiːl",
+            "say": "zu viel"
           },
           {
             "de": "sein",
             "type": "verb",
             "en": "to be",
-            "vi": "là; ở; thì"
+            "vi": "là; ở; thì",
+            "ipa": "zaɪ̯n",
+            "say": "sein"
           }
         ],
         "analysis": {
@@ -1353,13 +1529,17 @@ const conversationGroups = [
             "de": "meinen",
             "type": "verb",
             "en": "to mean; to think",
-            "vi": "có ý nói; cho rằng"
+            "vi": "có ý nói; cho rằng",
+            "ipa": "ˈmaɪ̯nən",
+            "say": "meinen"
           },
           {
             "de": "tatsächlich",
             "type": "adverb",
             "en": "really; actually",
-            "vi": "thực sự"
+            "vi": "thực sự",
+            "ipa": "ˈtaːtˌzɛçlɪç",
+            "say": "tatsächlich"
           }
         ],
         "analysis": {
@@ -1397,13 +1577,17 @@ const conversationGroups = [
             "de": "teilnehmen",
             "type": "verb",
             "en": "to participate",
-            "vi": "tham gia"
+            "vi": "tham gia",
+            "ipa": "ˈtaɪ̯lˌneːmən",
+            "say": "teilnehmen"
           },
           {
             "de": "daran",
             "type": "adverb",
             "en": "in it; in that",
-            "vi": "vào việc đó"
+            "vi": "vào việc đó",
+            "ipa": "daˈʁan",
+            "say": "daran"
           }
         ],
         "analysis": {
@@ -1426,14 +1610,18 @@ const conversationGroups = [
             "de": "abhängen von",
             "type": "verb",
             "en": "to depend on",
-            "vi": "phụ thuộc vào"
+            "vi": "phụ thuộc vào",
+            "ipa": "ˈapˌhɛŋən fɔn",
+            "say": "abhängen von"
           },
           {
             "de": "der Umstand",
             "type": "noun",
             "en": "circumstance",
             "vi": "hoàn cảnh; điều kiện",
-            "plural": "die Umstände"
+            "plural": "die Umstände",
+            "ipa": "deːɐ̯ ˈʊmʃtant",
+            "say": "der Umstand"
           }
         ],
         "analysis": {
@@ -1457,13 +1645,17 @@ const conversationGroups = [
             "type": "noun",
             "en": "connection; context",
             "vi": "mối liên hệ; ngữ cảnh",
-            "plural": "die Zusammenhänge"
+            "plural": "die Zusammenhänge",
+            "ipa": "deːɐ̯ tsuˈzamənˌhaŋ",
+            "say": "der Zusammenhang"
           },
           {
             "de": "erklären",
             "type": "verb",
             "en": "to explain",
-            "vi": "giải thích"
+            "vi": "giải thích",
+            "ipa": "ɛɐ̯ˈklɛːʁən",
+            "say": "erklären"
           }
         ],
         "analysis": {
@@ -1486,13 +1678,17 @@ const conversationGroups = [
             "de": "stehen lassen",
             "type": "phrase",
             "en": "to leave as it is",
-            "vi": "để nguyên như vậy"
+            "vi": "để nguyên như vậy",
+            "ipa": "ˈʃteːən ˈlasn̩",
+            "say": "stehen lassen"
           },
           {
             "de": "lassen",
             "type": "verb",
             "en": "to let; to leave",
-            "vi": "để; cho phép"
+            "vi": "để; cho phép",
+            "ipa": "ˈlasn̩",
+            "say": "lassen"
           }
         ],
         "analysis": {
@@ -1515,13 +1711,17 @@ const conversationGroups = [
             "de": "sich befassen mit",
             "type": "verb",
             "en": "to deal with",
-            "vi": "xử lý; xem xét"
+            "vi": "xử lý; xem xét",
+            "ipa": "zɪç bəˈfasn̩ mɪt",
+            "say": "sich befassen mit"
           },
           {
             "de": "sofort",
             "type": "adverb",
             "en": "immediately",
-            "vi": "ngay lập tức"
+            "vi": "ngay lập tức",
+            "ipa": "zoˈfɔʁt",
+            "say": "sofort"
           }
         ],
         "analysis": {
@@ -1547,13 +1747,17 @@ const conversationGroups = [
             "de": "gern",
             "type": "adverb",
             "en": "gladly; with pleasure",
-            "vi": "sẵn lòng; thích"
+            "vi": "sẵn lòng; thích",
+            "ipa": "ɡɛʁn",
+            "say": "gern"
           },
           {
             "de": "sehr",
             "type": "adverb",
             "en": "very; very much",
-            "vi": "rất"
+            "vi": "rất",
+            "ipa": "zeːɐ̯",
+            "say": "sehr"
           }
         ],
         "analysis": {
@@ -1573,14 +1777,18 @@ const conversationGroups = [
             "de": "allein",
             "type": "adjective",
             "en": "alone",
-            "vi": "một mình"
+            "vi": "một mình",
+            "ipa": "aˈlaɪ̯n",
+            "say": "allein"
           },
           {
             "de": "der Moment",
             "type": "noun",
             "en": "moment",
             "vi": "khoảnh khắc; một lát",
-            "plural": "die Momente"
+            "plural": "die Momente",
+            "ipa": "deːɐ̯ moˈmɛnt",
+            "say": "der Moment"
           }
         ],
         "analysis": {
@@ -1603,13 +1811,17 @@ const conversationGroups = [
             "de": "an der Reihe sein",
             "type": "phrase",
             "en": "to have one's turn",
-            "vi": "đến lượt"
+            "vi": "đến lượt",
+            "ipa": "an deːɐ̯ ˈʁaɪ̯ə zaɪ̯n",
+            "say": "an der Reihe sein"
           },
           {
             "de": "jetzt",
             "type": "adverb",
             "en": "now",
-            "vi": "bây giờ"
+            "vi": "bây giờ",
+            "ipa": "jɛtst",
+            "say": "jetzt"
           }
         ],
         "analysis": {
@@ -1632,14 +1844,18 @@ const conversationGroups = [
             "de": "verstehen",
             "type": "verb",
             "en": "to understand",
-            "vi": "hiểu"
+            "vi": "hiểu",
+            "ipa": "fɛɐ̯ˈʃteːən",
+            "say": "verstehen"
           },
           {
             "de": "der Dank",
             "type": "noun",
             "en": "thanks; gratitude",
             "vi": "lời cảm ơn",
-            "plural": "thường không dùng số nhiều"
+            "plural": "kein gebräuchlicher Plural in dieser Bedeutung",
+            "ipa": "deːɐ̯ daŋk",
+            "say": "der Dank"
           }
         ],
         "analysis": {
@@ -1663,13 +1879,17 @@ const conversationGroups = [
             "type": "noun",
             "en": "goal",
             "vi": "mục tiêu",
-            "plural": "die Ziele"
+            "plural": "die Ziele",
+            "ipa": "das tsiːl",
+            "say": "das Ziel"
           },
           {
             "de": "sehen",
             "type": "verb",
             "en": "to see",
-            "vi": "nhìn; nhận thấy"
+            "vi": "nhìn; nhận thấy",
+            "ipa": "ˈzeːən",
+            "say": "sehen"
           }
         ],
         "analysis": {
@@ -1695,13 +1915,17 @@ const conversationGroups = [
             "de": "möchten",
             "type": "verb",
             "en": "would like",
-            "vi": "muốn; mong muốn một cách nhẹ nhàng"
+            "vi": "muốn; mong muốn một cách nhẹ nhàng",
+            "ipa": "ˈmœçtn̩",
+            "say": "möchten"
           },
           {
             "de": "aber",
             "type": "conjunction",
             "en": "but",
-            "vi": "nhưng"
+            "vi": "nhưng",
+            "ipa": "ˈaːbɐ",
+            "say": "aber"
           }
         ],
         "analysis": {
@@ -1724,13 +1948,17 @@ const conversationGroups = [
             "de": "aufhören",
             "type": "verb",
             "en": "to stop",
-            "vi": "dừng lại"
+            "vi": "dừng lại",
+            "ipa": "ˈaʊ̯fˌhøːʁən",
+            "say": "aufhören"
           },
           {
             "de": "bitte",
             "type": "adverb",
             "en": "please",
-            "vi": "làm ơn; nhé"
+            "vi": "làm ơn; nhé",
+            "ipa": "ˈbɪtə",
+            "say": "bitte"
           }
         ],
         "analysis": {
@@ -1753,13 +1981,17 @@ const conversationGroups = [
             "de": "möglich",
             "type": "adjective",
             "en": "possible",
-            "vi": "có thể xảy ra"
+            "vi": "có thể xảy ra",
+            "ipa": "ˈmøːklɪç",
+            "say": "möglich"
           },
           {
             "de": "leider",
             "type": "adverb",
             "en": "unfortunately",
-            "vi": "tiếc là"
+            "vi": "tiếc là",
+            "ipa": "ˈlaɪ̯dɐ",
+            "say": "leider"
           }
         ],
         "analysis": {
@@ -1783,13 +2015,17 @@ const conversationGroups = [
             "type": "noun",
             "en": "preference",
             "vi": "sở thích; sự ưu tiên",
-            "plural": "die Vorlieben"
+            "plural": "die Vorlieben",
+            "ipa": "diː ˈfoːɐ̯ˌliːbə",
+            "say": "die Vorliebe"
           },
           {
             "de": "haben",
             "type": "verb",
             "en": "to have",
-            "vi": "có"
+            "vi": "có",
+            "ipa": "ˈhaːbn̩",
+            "say": "haben"
           }
         ],
         "analysis": {
@@ -1812,13 +2048,17 @@ const conversationGroups = [
             "de": "sich freuen",
             "type": "verb",
             "en": "to be pleased",
-            "vi": "vui mừng"
+            "vi": "vui mừng",
+            "ipa": "zɪç ˈfʁɔʏ̯ən",
+            "say": "sich freuen"
           },
           {
             "de": "öfter",
             "type": "adverb",
             "en": "more often",
-            "vi": "thường xuyên hơn"
+            "vi": "thường xuyên hơn",
+            "ipa": "ˈœftɐ",
+            "say": "öfter"
           }
         ],
         "analysis": {
@@ -1841,13 +2081,17 @@ const conversationGroups = [
             "de": "sich ärgern über",
             "type": "verb",
             "en": "to be annoyed about",
-            "vi": "bực mình về"
+            "vi": "bực mình về",
+            "ipa": "zɪç ˈʔɛʁɡɐn ˈyːbɐ",
+            "say": "sich ärgern über"
           },
           {
             "de": "ansprechen",
             "type": "verb",
             "en": "to bring up; to address",
-            "vi": "đề cập; trao đổi về"
+            "vi": "đề cập; trao đổi về",
+            "ipa": "ˈanˌʃpʁɛçn̩",
+            "say": "ansprechen"
           }
         ],
         "analysis": {
@@ -1870,13 +2114,17 @@ const conversationGroups = [
             "de": "passen",
             "type": "verb",
             "en": "to fit; to suit",
-            "vi": "vừa; phù hợp; tiện"
+            "vi": "vừa; phù hợp; tiện",
+            "ipa": "ˈpasn̩",
+            "say": "passen"
           },
           {
             "de": "morgen",
             "type": "adverb",
             "en": "tomorrow",
-            "vi": "ngày mai"
+            "vi": "ngày mai",
+            "ipa": "ˈmɔʁɡən",
+            "say": "morgen"
           }
         ],
         "analysis": {
@@ -1899,13 +2147,17 @@ const conversationGroups = [
             "de": "später",
             "type": "adverb",
             "en": "later",
-            "vi": "muộn hơn; sau đó"
+            "vi": "muộn hơn; sau đó",
+            "ipa": "ˈʃpɛːtɐ",
+            "say": "später"
           },
           {
             "de": "da sein",
             "type": "phrase",
             "en": "to be there; to be present",
-            "vi": "có mặt"
+            "vi": "có mặt",
+            "ipa": "daː zaɪ̯n",
+            "say": "da sein"
           }
         ],
         "analysis": {
@@ -1928,13 +2180,17 @@ const conversationGroups = [
             "de": "passen",
             "type": "verb",
             "en": "to fit; to suit",
-            "vi": "vừa; phù hợp; tiện"
+            "vi": "vừa; phù hợp; tiện",
+            "ipa": "ˈpasn̩",
+            "say": "passen"
           },
           {
             "de": "leider",
             "type": "adverb",
             "en": "unfortunately",
-            "vi": "tiếc là"
+            "vi": "tiếc là",
+            "ipa": "ˈlaɪ̯dɐ",
+            "say": "leider"
           }
         ],
         "analysis": {
@@ -1957,13 +2213,17 @@ const conversationGroups = [
             "de": "Bescheid geben",
             "type": "phrase",
             "en": "to let someone know",
-            "vi": "báo cho ai biết"
+            "vi": "báo cho ai biết",
+            "ipa": "bəˈʃaɪ̯t ˈɡeːbn̩",
+            "say": "Bescheid geben"
           },
           {
             "de": "sobald",
             "type": "conjunction",
             "en": "as soon as",
-            "vi": "ngay khi"
+            "vi": "ngay khi",
+            "ipa": "zoˈbalt",
+            "say": "sobald"
           }
         ],
         "analysis": {
@@ -1986,13 +2246,17 @@ const conversationGroups = [
             "de": "fotografieren",
             "type": "verb",
             "en": "to photograph",
-            "vi": "chụp ảnh"
+            "vi": "chụp ảnh",
+            "ipa": "fotoɡʁaˈfiːʁən",
+            "say": "fotografieren"
           },
           {
             "de": "möchten",
             "type": "verb",
             "en": "would like",
-            "vi": "muốn; mong muốn một cách nhẹ nhàng"
+            "vi": "muốn; mong muốn một cách nhẹ nhàng",
+            "ipa": "ˈmœçtn̩",
+            "say": "möchten"
           }
         ],
         "analysis": {
@@ -2016,13 +2280,17 @@ const conversationGroups = [
             "type": "noun",
             "en": "post; contribution",
             "vi": "bài đăng; đóng góp",
-            "plural": "die Beiträge"
+            "plural": "die Beiträge",
+            "ipa": "deːɐ̯ ˈbaɪ̯tʁaːk",
+            "say": "der Beitrag"
           },
           {
             "de": "löschen",
             "type": "verb",
             "en": "to delete",
-            "vi": "xóa"
+            "vi": "xóa",
+            "ipa": "ˈlœʃn̩",
+            "say": "löschen"
           }
         ],
         "analysis": {
@@ -2045,13 +2313,17 @@ const conversationGroups = [
             "de": "darüber",
             "type": "adverb",
             "en": "about it; about that",
-            "vi": "về việc đó"
+            "vi": "về việc đó",
+            "ipa": "daˈʁyːbɐ",
+            "say": "darüber"
           },
           {
             "de": "sprechen",
             "type": "verb",
             "en": "to speak",
-            "vi": "nói"
+            "vi": "nói",
+            "ipa": "ˈʃpʁɛçn̩",
+            "say": "sprechen"
           }
         ],
         "analysis": {
@@ -2074,13 +2346,17 @@ const conversationGroups = [
             "de": "früh",
             "type": "adjective",
             "en": "early",
-            "vi": "sớm"
+            "vi": "sớm",
+            "ipa": "fʁyː",
+            "say": "früh"
           },
           {
             "de": "schreiben",
             "type": "verb",
             "en": "to write",
-            "vi": "viết; nhắn tin"
+            "vi": "viết; nhắn tin",
+            "ipa": "ˈʃʁaɪ̯bn̩",
+            "say": "schreiben"
           }
         ],
         "analysis": {
@@ -2115,13 +2391,17 @@ const conversationGroups = [
             "de": "zuhören",
             "type": "verb",
             "en": "to listen attentively",
-            "vi": "chú ý lắng nghe"
+            "vi": "chú ý lắng nghe",
+            "ipa": "ˈtsuːˌhøːʁən",
+            "say": "zuhören"
           },
           {
             "de": "kurz",
             "type": "adjective",
             "en": "brief; short",
-            "vi": "ngắn; trong chốc lát"
+            "vi": "ngắn; trong chốc lát",
+            "ipa": "kʊʁts",
+            "say": "kurz"
           }
         ],
         "analysis": {
@@ -2145,13 +2425,17 @@ const conversationGroups = [
             "type": "noun",
             "en": "point",
             "vi": "điểm; ý",
-            "plural": "die Punkte"
+            "plural": "die Punkte",
+            "ipa": "deːɐ̯ pʊŋkt",
+            "say": "der Punkt"
           },
           {
             "de": "recht geben",
             "type": "phrase",
             "en": "to agree with someone",
-            "vi": "đồng ý với ai"
+            "vi": "đồng ý với ai",
+            "ipa": "ʁɛçt ˈɡeːbn̩",
+            "say": "recht geben"
           }
         ],
         "analysis": {
@@ -2174,13 +2458,17 @@ const conversationGroups = [
             "de": "beschäftigen",
             "type": "verb",
             "en": "to occupy; to preoccupy",
-            "vi": "khiến bận tâm"
+            "vi": "khiến bận tâm",
+            "ipa": "bəˈʃɛftɪɡən",
+            "say": "beschäftigen"
           },
           {
             "de": "erzählen",
             "type": "verb",
             "en": "to tell; to narrate",
-            "vi": "kể chuyện"
+            "vi": "kể chuyện",
+            "ipa": "ɛɐ̯ˈtsɛːlən",
+            "say": "erzählen"
           }
         ],
         "analysis": {
@@ -2203,13 +2491,17 @@ const conversationGroups = [
             "de": "vorsichtig",
             "type": "adjective",
             "en": "careful",
-            "vi": "cẩn thận"
+            "vi": "cẩn thận",
+            "ipa": "ˈfoːɐ̯ˌzɪçtɪç",
+            "say": "vorsichtig"
           },
           {
             "de": "sein",
             "type": "verb",
             "en": "to be",
-            "vi": "là; ở; thì"
+            "vi": "là; ở; thì",
+            "ipa": "zaɪ̯n",
+            "say": "sein"
           }
         ],
         "analysis": {
@@ -2233,13 +2525,17 @@ const conversationGroups = [
             "type": "noun",
             "en": "moment",
             "vi": "khoảnh khắc; một lát",
-            "plural": "die Momente"
+            "plural": "die Momente",
+            "ipa": "deːɐ̯ moˈmɛnt",
+            "say": "der Moment"
           },
           {
             "de": "geben",
             "type": "verb",
             "en": "to give",
-            "vi": "cho; đưa"
+            "vi": "cho; đưa",
+            "ipa": "ˈɡeːbn̩",
+            "say": "geben"
           }
         ],
         "analysis": {
@@ -2262,13 +2558,17 @@ const conversationGroups = [
             "de": "bitten",
             "type": "verb",
             "en": "to ask; to request",
-            "vi": "đề nghị; nhờ"
+            "vi": "đề nghị; nhờ",
+            "ipa": "ˈbɪtn̩",
+            "say": "bitten"
           },
           {
             "de": "aufhören",
             "type": "verb",
             "en": "to stop",
-            "vi": "dừng lại"
+            "vi": "dừng lại",
+            "ipa": "ˈaʊ̯fˌhøːʁən",
+            "say": "aufhören"
           }
         ],
         "analysis": {
@@ -2292,14 +2592,18 @@ const conversationGroups = [
             "type": "noun",
             "en": "moment",
             "vi": "khoảnh khắc; một lát",
-            "plural": "die Momente"
+            "plural": "die Momente",
+            "ipa": "deːɐ̯ moˈmɛnt",
+            "say": "der Moment"
           },
           {
             "de": "die Zeit",
             "type": "noun",
             "en": "time",
             "vi": "thời gian",
-            "plural": "die Zeiten (các thời kỳ hoặc thời điểm)"
+            "plural": "die Zeiten",
+            "ipa": "diː tsaɪ̯t",
+            "say": "die Zeit"
           }
         ],
         "analysis": {
@@ -2322,13 +2626,17 @@ const conversationGroups = [
             "de": "erklären",
             "type": "verb",
             "en": "to explain",
-            "vi": "giải thích"
+            "vi": "giải thích",
+            "ipa": "ɛɐ̯ˈklɛːʁən",
+            "say": "erklären"
           },
           {
             "de": "anders",
             "type": "adverb",
             "en": "differently",
-            "vi": "theo cách khác"
+            "vi": "theo cách khác",
+            "ipa": "ˈandɐs",
+            "say": "anders"
           }
         ],
         "analysis": {
@@ -2351,13 +2659,17 @@ const conversationGroups = [
             "de": "mitkommen",
             "type": "verb",
             "en": "to come along",
-            "vi": "đi cùng"
+            "vi": "đi cùng",
+            "ipa": "ˈmɪtˌkɔmən",
+            "say": "mitkommen"
           },
           {
             "de": "möchten",
             "type": "verb",
             "en": "would like",
-            "vi": "muốn; mong muốn một cách nhẹ nhàng"
+            "vi": "muốn; mong muốn một cách nhẹ nhàng",
+            "ipa": "ˈmœçtn̩",
+            "say": "möchten"
           }
         ],
         "analysis": {
@@ -2380,13 +2692,17 @@ const conversationGroups = [
             "de": "losgehen",
             "type": "verb",
             "en": "to start; to set off",
-            "vi": "bắt đầu; khởi hành"
+            "vi": "bắt đầu; khởi hành",
+            "ipa": "ˈloːsˌɡeːən",
+            "say": "losgehen"
           },
           {
             "de": "jetzt",
             "type": "adverb",
             "en": "now",
-            "vi": "bây giờ"
+            "vi": "bây giờ",
+            "ipa": "jɛtst",
+            "say": "jetzt"
           }
         ],
         "analysis": {
@@ -2412,13 +2728,17 @@ const conversationGroups = [
             "de": "helfen",
             "type": "verb",
             "en": "to help",
-            "vi": "giúp đỡ"
+            "vi": "giúp đỡ",
+            "ipa": "ˈhɛlfn̩",
+            "say": "helfen"
           },
           {
             "de": "kurz",
             "type": "adjective",
             "en": "brief; short",
-            "vi": "ngắn; trong chốc lát"
+            "vi": "ngắn; trong chốc lát",
+            "ipa": "kʊʁts",
+            "say": "kurz"
           }
         ],
         "analysis": {
@@ -2441,13 +2761,17 @@ const conversationGroups = [
             "de": "möglich",
             "type": "adjective",
             "en": "possible",
-            "vi": "có thể xảy ra"
+            "vi": "có thể xảy ra",
+            "ipa": "ˈmøːklɪç",
+            "say": "möglich"
           },
           {
             "de": "leider",
             "type": "adverb",
             "en": "unfortunately",
-            "vi": "tiếc là"
+            "vi": "tiếc là",
+            "ipa": "ˈlaɪ̯dɐ",
+            "say": "leider"
           }
         ],
         "analysis": {
@@ -2470,13 +2794,17 @@ const conversationGroups = [
             "de": "passen",
             "type": "verb",
             "en": "to fit; to suit",
-            "vi": "vừa; phù hợp; tiện"
+            "vi": "vừa; phù hợp; tiện",
+            "ipa": "ˈpasn̩",
+            "say": "passen"
           },
           {
             "de": "leider",
             "type": "adverb",
             "en": "unfortunately",
-            "vi": "tiếc là"
+            "vi": "tiếc là",
+            "ipa": "ˈlaɪ̯dɐ",
+            "say": "leider"
           }
         ],
         "analysis": {
@@ -2499,14 +2827,18 @@ const conversationGroups = [
             "de": "sich zutrauen",
             "type": "verb",
             "en": "to feel capable of",
-            "vi": "tin mình có thể làm được"
+            "vi": "tin mình có thể làm được",
+            "ipa": "zɪç ˈtsuːˌtʁaʊ̯ən",
+            "say": "sich zutrauen"
           },
           {
             "de": "die Aufgabe",
             "type": "noun",
             "en": "task",
             "vi": "nhiệm vụ; bài tập",
-            "plural": "die Aufgaben"
+            "plural": "die Aufgaben",
+            "ipa": "diː ˈaʊ̯fˌɡaːbə",
+            "say": "die Aufgabe"
           }
         ],
         "analysis": {
@@ -2529,14 +2861,18 @@ const conversationGroups = [
             "de": "ankommen",
             "type": "verb",
             "en": "to arrive",
-            "vi": "đến; được nhận"
+            "vi": "đến; được nhận",
+            "ipa": "ˈanˌkɔmən",
+            "say": "ankommen"
           },
           {
             "de": "die Ausführung",
             "type": "noun",
             "en": "explanation; account",
             "vi": "phần trình bày",
-            "plural": "die Ausführungen"
+            "plural": "die Ausführungen",
+            "ipa": "diː ˈaʊ̯sˌfyːʁʊŋ",
+            "say": "die Ausführung"
           }
         ],
         "analysis": {
@@ -2559,13 +2895,17 @@ const conversationGroups = [
             "de": "sagen",
             "type": "verb",
             "en": "to say; to tell",
-            "vi": "nói; cho biết"
+            "vi": "nói; cho biết",
+            "ipa": "ˈzaːɡən",
+            "say": "sagen"
           },
           {
             "de": "noch einmal",
             "type": "phrase",
             "en": "once again",
-            "vi": "một lần nữa"
+            "vi": "một lần nữa",
+            "ipa": "nɔx ˈaɪ̯nmaːl",
+            "say": "noch einmal"
           }
         ],
         "analysis": {
@@ -2588,13 +2928,17 @@ const conversationGroups = [
             "de": "langsam",
             "type": "adjective",
             "en": "slow",
-            "vi": "chậm"
+            "vi": "chậm",
+            "ipa": "ˈlaŋzaːm",
+            "say": "langsam"
           },
           {
             "de": "sprechen",
             "type": "verb",
             "en": "to speak",
-            "vi": "nói"
+            "vi": "nói",
+            "ipa": "ˈʃpʁɛçn̩",
+            "say": "sprechen"
           }
         ],
         "analysis": {
@@ -2617,13 +2961,17 @@ const conversationGroups = [
             "de": "erklären",
             "type": "verb",
             "en": "to explain",
-            "vi": "giải thích"
+            "vi": "giải thích",
+            "ipa": "ɛɐ̯ˈklɛːʁən",
+            "say": "erklären"
           },
           {
             "de": "noch einmal",
             "type": "phrase",
             "en": "once again",
-            "vi": "một lần nữa"
+            "vi": "một lần nữa",
+            "ipa": "nɔx ˈaɪ̯nmaːl",
+            "say": "noch einmal"
           }
         ],
         "analysis": {
@@ -2647,13 +2995,17 @@ const conversationGroups = [
             "type": "noun",
             "en": "appointment",
             "vi": "lịch hẹn; cuộc hẹn",
-            "plural": "die Termine"
+            "plural": "die Termine",
+            "ipa": "deːɐ̯ tɛʁˈmiːn",
+            "say": "der Termin"
           },
           {
             "de": "richtig",
             "type": "adjective",
             "en": "correct; right",
-            "vi": "đúng"
+            "vi": "đúng",
+            "ipa": "ˈʁɪçtɪç",
+            "say": "richtig"
           }
         ],
         "analysis": {
@@ -2676,13 +3028,17 @@ const conversationGroups = [
             "de": "dürfen",
             "type": "verb",
             "en": "may; to be allowed to",
-            "vi": "được phép"
+            "vi": "được phép",
+            "ipa": "ˈdʏʁfn̩",
+            "say": "dürfen"
           },
           {
             "de": "ergänzen",
             "type": "verb",
             "en": "to add; to supplement",
-            "vi": "bổ sung"
+            "vi": "bổ sung",
+            "ipa": "ɛɐ̯ˈɡɛntsn̩",
+            "say": "ergänzen"
           }
         ],
         "analysis": {
@@ -2705,13 +3061,17 @@ const conversationGroups = [
             "de": "unterbrechen",
             "type": "verb",
             "en": "to interrupt",
-            "vi": "ngắt lời; tạm dừng"
+            "vi": "ngắt lời; tạm dừng",
+            "ipa": "ʊntɐˈbʁɛçn̩",
+            "say": "unterbrechen"
           },
           {
             "de": "dürfen",
             "type": "verb",
             "en": "may; to be allowed to",
-            "vi": "được phép"
+            "vi": "được phép",
+            "ipa": "ˈdʏʁfn̩",
+            "say": "dürfen"
           }
         ],
         "analysis": {
@@ -2734,14 +3094,18 @@ const conversationGroups = [
             "de": "zu Ende führen",
             "type": "phrase",
             "en": "to bring to completion",
-            "vi": "hoàn tất; nói hết ý"
+            "vi": "hoàn tất; nói hết ý",
+            "ipa": "tsu ˈʔɛndə ˈfyːʁən",
+            "say": "zu Ende führen"
           },
           {
             "de": "der Gedanke",
             "type": "noun",
             "en": "thought",
             "vi": "ý nghĩ; ý đang nói",
-            "plural": "die Gedanken"
+            "plural": "die Gedanken",
+            "ipa": "deːɐ̯ ɡəˈdaŋkə",
+            "say": "der Gedanke"
           }
         ],
         "analysis": {
@@ -2764,14 +3128,18 @@ const conversationGroups = [
             "de": "zurückkommen auf",
             "type": "verb",
             "en": "to return to a topic",
-            "vi": "quay lại một chủ đề"
+            "vi": "quay lại một chủ đề",
+            "ipa": "tsuˈʁʏkˌkɔmən aʊ̯f",
+            "say": "zurückkommen auf"
           },
           {
             "de": "die Frage",
             "type": "noun",
             "en": "question",
             "vi": "câu hỏi",
-            "plural": "die Fragen"
+            "plural": "die Fragen",
+            "ipa": "diː ˈfʁaːɡə",
+            "say": "die Frage"
           }
         ],
         "analysis": {
@@ -2796,13 +3164,17 @@ const conversationGroups = [
             "type": "noun",
             "en": "point",
             "vi": "điểm; ý",
-            "plural": "die Punkte"
+            "plural": "die Punkte",
+            "ipa": "deːɐ̯ pʊŋkt",
+            "say": "der Punkt"
           },
           {
             "de": "hinzufügen",
             "type": "verb",
             "en": "to add",
-            "vi": "thêm vào; bổ sung"
+            "vi": "thêm vào; bổ sung",
+            "ipa": "hɪnˈtsuːˌfyːɡən",
+            "say": "hinzufügen"
           }
         ],
         "analysis": {
@@ -2824,13 +3196,17 @@ const conversationGroups = [
             "de": "fragen",
             "type": "verb",
             "en": "to ask",
-            "vi": "hỏi"
+            "vi": "hỏi",
+            "ipa": "ˈfʁaːɡən",
+            "say": "fragen"
           },
           {
             "de": "mit wem",
             "type": "phrase",
             "en": "with whom",
-            "vi": "với ai"
+            "vi": "với ai",
+            "ipa": "mɪt veːm",
+            "say": "mit wem"
           }
         ],
         "analysis": {
@@ -2853,13 +3229,17 @@ const conversationGroups = [
             "de": "im Moment",
             "type": "phrase",
             "en": "at the moment",
-            "vi": "hiện tại"
+            "vi": "hiện tại",
+            "ipa": "ɪm moˈmɛnt",
+            "say": "im Moment"
           },
           {
             "de": "möglich",
             "type": "adjective",
             "en": "possible",
-            "vi": "có thể xảy ra"
+            "vi": "có thể xảy ra",
+            "ipa": "ˈmøːklɪç",
+            "say": "möglich"
           }
         ],
         "analysis": {
@@ -2882,14 +3262,18 @@ const conversationGroups = [
             "de": "schicken",
             "type": "verb",
             "en": "to send",
-            "vi": "gửi"
+            "vi": "gửi",
+            "ipa": "ˈʃɪkn̩",
+            "say": "schicken"
           },
           {
             "de": "die E-Mail",
             "type": "noun",
             "en": "email",
             "vi": "thư điện tử",
-            "plural": "die E-Mails"
+            "plural": "die E-Mails",
+            "ipa": "diː ˈiːmeɪ̯l",
+            "say": "die E-Mail"
           }
         ],
         "analysis": {
@@ -2913,13 +3297,17 @@ const conversationGroups = [
             "type": "noun",
             "en": "reply; feedback",
             "vi": "phản hồi",
-            "plural": "die Rückmeldungen"
+            "plural": "die Rückmeldungen",
+            "ipa": "diː ˈʁʏkˌmɛldʊŋ",
+            "say": "die Rückmeldung"
           },
           {
             "de": "geben",
             "type": "verb",
             "en": "to give",
-            "vi": "cho; đưa"
+            "vi": "cho; đưa",
+            "ipa": "ˈɡeːbn̩",
+            "say": "geben"
           }
         ],
         "analysis": {
@@ -2957,13 +3345,17 @@ const conversationGroups = [
             "de": "gehen",
             "type": "verb",
             "en": "to go; to be going",
-            "vi": "đi; diễn ra"
+            "vi": "đi; diễn ra",
+            "ipa": "ˈɡeːən",
+            "say": "gehen"
           },
           {
             "de": "in letzter Zeit",
             "type": "phrase",
             "en": "lately",
-            "vi": "gần đây"
+            "vi": "gần đây",
+            "ipa": "ɪn ˈlɛtstɐ tsaɪ̯t",
+            "say": "in letzter Zeit"
           }
         ],
         "analysis": {
@@ -2983,14 +3375,18 @@ const conversationGroups = [
             "de": "sich freuen auf + Akkusativ",
             "type": "verb",
             "en": "to look forward to",
-            "vi": "mong chờ"
+            "vi": "mong chờ",
+            "ipa": "zɪç ˈfʁɔʏ̯ən aʊ̯f",
+            "say": "sich freuen auf"
           },
           {
             "de": "das Treffen",
             "type": "noun",
             "en": "meeting",
             "vi": "cuộc gặp",
-            "plural": "die Treffen"
+            "plural": "die Treffen",
+            "ipa": "das ˈtʁɛfn̩",
+            "say": "das Treffen"
           }
         ],
         "analysis": {
@@ -3013,14 +3409,18 @@ const conversationGroups = [
             "de": "wünschen",
             "type": "verb",
             "en": "to wish",
-            "vi": "chúc; mong muốn"
+            "vi": "chúc; mong muốn",
+            "ipa": "ˈvʏnʃn̩",
+            "say": "wünschen"
           },
           {
             "de": "der Geburtstag",
             "type": "noun",
             "en": "birthday",
             "vi": "sinh nhật",
-            "plural": "die Geburtstage"
+            "plural": "die Geburtstage",
+            "ipa": "deːɐ̯ ɡəˈbuːɐ̯tstaːk",
+            "say": "der Geburtstag"
           }
         ],
         "analysis": {
@@ -3043,13 +3443,17 @@ const conversationGroups = [
             "de": "schön",
             "type": "adjective",
             "en": "lovely; beautiful",
-            "vi": "đẹp; thật vui"
+            "vi": "đẹp; thật vui",
+            "ipa": "ʃøːn",
+            "say": "schön"
           },
           {
             "de": "da sein",
             "type": "phrase",
             "en": "to be there; to be present",
-            "vi": "có mặt"
+            "vi": "có mặt",
+            "ipa": "daː zaɪ̯n",
+            "say": "da sein"
           }
         ],
         "analysis": {
@@ -3072,14 +3476,18 @@ const conversationGroups = [
             "de": "wiederholen",
             "type": "verb",
             "en": "to repeat",
-            "vi": "nhắc lại"
+            "vi": "nhắc lại",
+            "ipa": "viːdɐˈhoːlən",
+            "say": "wiederholen"
           },
           {
             "de": "die Entschuldigung",
             "type": "noun",
             "en": "apology; excuse",
             "vi": "lời xin lỗi",
-            "plural": "die Entschuldigungen"
+            "plural": "die Entschuldigungen",
+            "ipa": "diː ɛntˈʃʊldɪɡʊŋ",
+            "say": "die Entschuldigung"
           }
         ],
         "analysis": {
@@ -3102,14 +3510,18 @@ const conversationGroups = [
             "de": "wünschen",
             "type": "verb",
             "en": "to wish",
-            "vi": "chúc; mong muốn"
+            "vi": "chúc; mong muốn",
+            "ipa": "ˈvʏnʃn̩",
+            "say": "wünschen"
           },
           {
             "de": "der Appetit",
             "type": "noun",
             "en": "appetite",
             "vi": "cảm giác ngon miệng",
-            "plural": "thường không dùng số nhiều"
+            "plural": "kein gebräuchlicher Plural in dieser Bedeutung",
+            "ipa": "deːɐ̯ apeˈtiːt",
+            "say": "der Appetit"
           }
         ],
         "analysis": {
@@ -3132,14 +3544,18 @@ const conversationGroups = [
             "de": "anstoßen",
             "type": "verb",
             "en": "to toast; to clink glasses",
-            "vi": "nâng ly; chạm ly"
+            "vi": "nâng ly; chạm ly",
+            "ipa": "ˈanˌʃtoːsn̩",
+            "say": "anstoßen"
           },
           {
             "de": "die Zeit",
             "type": "noun",
             "en": "time",
             "vi": "thời gian",
-            "plural": "die Zeiten (các thời kỳ hoặc thời điểm)"
+            "plural": "die Zeiten",
+            "ipa": "diː tsaɪ̯t",
+            "say": "die Zeit"
           }
         ],
         "analysis": {
@@ -3162,13 +3578,17 @@ const conversationGroups = [
             "de": "wünschen",
             "type": "verb",
             "en": "to wish",
-            "vi": "chúc; mong muốn"
+            "vi": "chúc; mong muốn",
+            "ipa": "ˈvʏnʃn̩",
+            "say": "wünschen"
           },
           {
             "de": "sicher",
             "type": "adjective",
             "en": "certain; sure",
-            "vi": "chắc chắn"
+            "vi": "chắc chắn",
+            "ipa": "ˈzɪçɐ",
+            "say": "sicher"
           }
         ],
         "analysis": {
@@ -3191,13 +3611,17 @@ const conversationGroups = [
             "de": "wünschen",
             "type": "verb",
             "en": "to wish",
-            "vi": "chúc; mong muốn"
+            "vi": "chúc; mong muốn",
+            "ipa": "ˈvʏnʃn̩",
+            "say": "wünschen"
           },
           {
             "de": "erholsam",
             "type": "adjective",
             "en": "restful",
-            "vi": "giúp nghỉ ngơi; thư thái"
+            "vi": "giúp nghỉ ngơi; thư thái",
+            "ipa": "ɛɐ̯ˈhoːlzaːm",
+            "say": "erholsam"
           }
         ],
         "analysis": {
@@ -3220,14 +3644,18 @@ const conversationGroups = [
             "de": "wünschen",
             "type": "verb",
             "en": "to wish",
-            "vi": "chúc; mong muốn"
+            "vi": "chúc; mong muốn",
+            "ipa": "ˈvʏnʃn̩",
+            "say": "wünschen"
           },
           {
             "de": "der Erfolg",
             "type": "noun",
             "en": "success",
             "vi": "thành công",
-            "plural": "die Erfolge"
+            "plural": "die Erfolge",
+            "ipa": "deːɐ̯ ɛɐ̯ˈfɔlk",
+            "say": "der Erfolg"
           }
         ],
         "analysis": {
@@ -3253,13 +3681,17 @@ const conversationGroups = [
             "de": "in Ordnung",
             "type": "phrase",
             "en": "all right; in order",
-            "vi": "ổn; đúng quy củ"
+            "vi": "ổn; đúng quy củ",
+            "ipa": "ɪn ˈʔɔʁdnʊŋ",
+            "say": "in Ordnung"
           },
           {
             "de": "alles",
             "type": "pronoun",
             "en": "everything",
-            "vi": "mọi thứ; mọi chuyện"
+            "vi": "mọi thứ; mọi chuyện",
+            "ipa": "ˈaləs",
+            "say": "alles"
           }
         ],
         "analysis": {
@@ -3282,13 +3714,17 @@ const conversationGroups = [
             "de": "nach Hause",
             "type": "phrase",
             "en": "home; towards home",
-            "vi": "về nhà"
+            "vi": "về nhà",
+            "ipa": "naːx ˈhaʊ̯zə",
+            "say": "nach Hause"
           },
           {
             "de": "kommen",
             "type": "verb",
             "en": "to come; to happen",
-            "vi": "đến; xảy ra"
+            "vi": "đến; xảy ra",
+            "ipa": "ˈkɔmən",
+            "say": "kommen"
           }
         ],
         "analysis": {
@@ -3312,13 +3748,17 @@ const conversationGroups = [
             "de": "sich duzen",
             "type": "verb",
             "en": "to address each other as du",
-            "vi": "xưng du với nhau"
+            "vi": "xưng du với nhau",
+            "ipa": "zɪç ˈduːtsn̩",
+            "say": "sich duzen"
           },
           {
             "de": "können",
             "type": "verb",
             "en": "can; to be able to",
-            "vi": "có thể"
+            "vi": "có thể",
+            "ipa": "ˈkœnən",
+            "say": "können"
           }
         ],
         "analysis": {
@@ -3352,13 +3792,17 @@ const conversationGroups = [
             "de": "selbstverständlich",
             "type": "adjective",
             "en": "self-evident; of course",
-            "vi": "hiển nhiên; tất nhiên"
+            "vi": "hiển nhiên; tất nhiên",
+            "ipa": "ˌzɛlpstfɛɐ̯ˈʃtɛntlɪç",
+            "say": "selbstverständlich"
           },
           {
             "de": "ja",
             "type": "adverb",
             "en": "yes",
-            "vi": "vâng; có"
+            "vi": "vâng; có",
+            "ipa": "jaː",
+            "say": "ja"
           }
         ],
         "analysis": {
@@ -3385,14 +3829,18 @@ const conversationGroups = [
             "de": "verstehen",
             "type": "verb",
             "en": "to understand",
-            "vi": "hiểu"
+            "vi": "hiểu",
+            "ipa": "fɛɐ̯ˈʃteːən",
+            "say": "verstehen"
           },
           {
             "de": "die Information",
             "type": "noun",
             "en": "information",
             "vi": "thông tin",
-            "plural": "die Informationen"
+            "plural": "die Informationen",
+            "ipa": "diː ɪnfɔʁmaˈtsi̯oːn",
+            "say": "die Information"
           }
         ],
         "analysis": {
@@ -3411,13 +3859,17 @@ const conversationGroups = [
             "de": "überraschen",
             "type": "verb",
             "en": "to surprise",
-            "vi": "làm ngạc nhiên"
+            "vi": "làm ngạc nhiên",
+            "ipa": "yːbɐˈʁaʃn̩",
+            "say": "überraschen"
           },
           {
             "de": "wirklich",
             "type": "adverb",
             "en": "really",
-            "vi": "thực sự"
+            "vi": "thực sự",
+            "ipa": "ˈvɪʁklɪç",
+            "say": "wirklich"
           }
         ],
         "analysis": {
@@ -3443,13 +3895,17 @@ const conversationGroups = [
             "de": "bedauerlich",
             "type": "adjective",
             "en": "regrettable",
-            "vi": "đáng tiếc"
+            "vi": "đáng tiếc",
+            "ipa": "bəˈdaʊ̯ɐlɪç",
+            "say": "bedauerlich"
           },
           {
             "de": "finden",
             "type": "verb",
             "en": "to find; to consider",
-            "vi": "thấy; cho là"
+            "vi": "thấy; cho là",
+            "ipa": "ˈfɪndn̩",
+            "say": "finden"
           }
         ],
         "analysis": {
@@ -3469,13 +3925,17 @@ const conversationGroups = [
             "de": "tatsächlich",
             "type": "adverb",
             "en": "really; actually",
-            "vi": "thực sự"
+            "vi": "thực sự",
+            "ipa": "ˈtaːtˌzɛçlɪç",
+            "say": "tatsächlich"
           },
           {
             "de": "sein",
             "type": "verb",
             "en": "to be",
-            "vi": "là; ở; thì"
+            "vi": "là; ở; thì",
+            "ipa": "zaɪ̯n",
+            "say": "sein"
           }
         ],
         "analysis": {
@@ -3498,13 +3958,17 @@ const conversationGroups = [
             "de": "außergewöhnlich",
             "type": "adjective",
             "en": "extraordinary",
-            "vi": "khác thường"
+            "vi": "khác thường",
+            "ipa": "ˈaʊ̯sɐɡəˌvøːnlɪç",
+            "say": "außergewöhnlich"
           },
           {
             "de": "wirklich",
             "type": "adverb",
             "en": "really",
-            "vi": "thực sự"
+            "vi": "thực sự",
+            "ipa": "ˈvɪʁklɪç",
+            "say": "wirklich"
           }
         ],
         "analysis": {
@@ -3527,13 +3991,17 @@ const conversationGroups = [
             "de": "schwierig",
             "type": "adjective",
             "en": "difficult",
-            "vi": "khó"
+            "vi": "khó",
+            "ipa": "ˈʃviːʁɪç",
+            "say": "schwierig"
           },
           {
             "de": "klingen",
             "type": "verb",
             "en": "to sound",
-            "vi": "nghe có vẻ"
+            "vi": "nghe có vẻ",
+            "ipa": "ˈklɪŋən",
+            "say": "klingen"
           }
         ],
         "analysis": {
@@ -3556,13 +4024,17 @@ const conversationGroups = [
             "de": "richtig",
             "type": "adjective",
             "en": "correct; right",
-            "vi": "đúng"
+            "vi": "đúng",
+            "ipa": "ˈʁɪçtɪç",
+            "say": "richtig"
           },
           {
             "de": "verstehen",
             "type": "verb",
             "en": "to understand",
-            "vi": "hiểu"
+            "vi": "hiểu",
+            "ipa": "fɛɐ̯ˈʃteːən",
+            "say": "verstehen"
           }
         ],
         "analysis": {
@@ -3585,13 +4057,17 @@ const conversationGroups = [
             "de": "überzeugt",
             "type": "adjective",
             "en": "convinced",
-            "vi": "được thuyết phục; tin chắc"
+            "vi": "được thuyết phục; tin chắc",
+            "ipa": "yːbɐˈtsɔʏ̯kt",
+            "say": "überzeugt"
           },
           {
             "de": "noch",
             "type": "adverb",
             "en": "still; yet",
-            "vi": "vẫn; còn"
+            "vi": "vẫn; còn",
+            "ipa": "nɔx",
+            "say": "noch"
           }
         ],
         "analysis": {
@@ -3617,13 +4093,17 @@ const conversationGroups = [
             "de": "schätzen",
             "type": "verb",
             "en": "to appreciate; to value",
-            "vi": "trân trọng; đánh giá cao"
+            "vi": "trân trọng; đánh giá cao",
+            "ipa": "ˈʃɛtsn̩",
+            "say": "schätzen"
           },
           {
             "de": "wirklich",
             "type": "adverb",
             "en": "really",
-            "vi": "thực sự"
+            "vi": "thực sự",
+            "ipa": "ˈvɪʁklɪç",
+            "say": "wirklich"
           }
         ],
         "analysis": {
@@ -3646,13 +4126,17 @@ const conversationGroups = [
             "de": "hinbekommen",
             "type": "verb",
             "en": "to manage; to get right",
-            "vi": "xoay xở; làm được"
+            "vi": "xoay xở; làm được",
+            "ipa": "ˈhɪnbəˌkɔmən",
+            "say": "hinbekommen"
           },
           {
             "de": "wirklich",
             "type": "adverb",
             "en": "really",
-            "vi": "thực sự"
+            "vi": "thực sự",
+            "ipa": "ˈvɪʁklɪç",
+            "say": "wirklich"
           }
         ],
         "analysis": {
@@ -3676,13 +4160,17 @@ const conversationGroups = [
             "de": "in Ordnung",
             "type": "phrase",
             "en": "all right; in order",
-            "vi": "ổn; đúng quy củ"
+            "vi": "ổn; đúng quy củ",
+            "ipa": "ɪn ˈʔɔʁdnʊŋ",
+            "say": "in Ordnung"
           },
           {
             "de": "danken",
             "type": "verb",
             "en": "to thank",
-            "vi": "cảm ơn"
+            "vi": "cảm ơn",
+            "ipa": "ˈdaŋkn̩",
+            "say": "danken"
           }
         ],
         "analysis": {
@@ -3716,13 +4204,17 @@ const conversationGroups = [
             "de": "weitermachen",
             "type": "verb",
             "en": "to continue",
-            "vi": "tiếp tục"
+            "vi": "tiếp tục",
+            "ipa": "ˈvaɪ̯tɐˌmaxn̩",
+            "say": "weitermachen"
           },
           {
             "de": "möchten",
             "type": "verb",
             "en": "would like",
-            "vi": "muốn; mong muốn một cách nhẹ nhàng"
+            "vi": "muốn; mong muốn một cách nhẹ nhàng",
+            "ipa": "ˈmœçtn̩",
+            "say": "möchten"
           }
         ],
         "analysis": {
@@ -3745,13 +4237,17 @@ const conversationGroups = [
             "de": "erleichtert",
             "type": "adjective",
             "en": "relieved",
-            "vi": "nhẹ nhõm"
+            "vi": "nhẹ nhõm",
+            "ipa": "ɛɐ̯ˈlaɪ̯çtɐt",
+            "say": "erleichtert"
           },
           {
             "de": "sein",
             "type": "verb",
             "en": "to be",
-            "vi": "là; ở; thì"
+            "vi": "là; ở; thì",
+            "ipa": "zaɪ̯n",
+            "say": "sein"
           }
         ],
         "analysis": {
@@ -3774,13 +4270,17 @@ const conversationGroups = [
             "de": "erschöpft",
             "type": "adjective",
             "en": "exhausted",
-            "vi": "kiệt sức"
+            "vi": "kiệt sức",
+            "ipa": "ɛɐ̯ˈʃœpft",
+            "say": "erschöpft"
           },
           {
             "de": "im Moment",
             "type": "phrase",
             "en": "at the moment",
-            "vi": "hiện tại"
+            "vi": "hiện tại",
+            "ipa": "ɪm moˈmɛnt",
+            "say": "im Moment"
           }
         ],
         "analysis": {
@@ -3804,13 +4304,17 @@ const conversationGroups = [
             "type": "noun",
             "en": "budget",
             "vi": "ngân sách",
-            "plural": "die Budgets"
+            "plural": "die Budgets",
+            "ipa": "das byˈdʒeː",
+            "say": "das Budget"
           },
           {
             "de": "knapp",
             "type": "adjective",
             "en": "scarce; tight",
-            "vi": "hạn hẹp; eo hẹp"
+            "vi": "hạn hẹp; eo hẹp",
+            "ipa": "knap",
+            "say": "knapp"
           }
         ],
         "analysis": {
@@ -3834,13 +4338,17 @@ const conversationGroups = [
             "type": "noun",
             "en": "variety; change",
             "vi": "sự thay đổi cho đỡ đơn điệu",
-            "plural": "die Abwechslungen"
+            "plural": "die Abwechslungen",
+            "ipa": "diː ˈapˌvɛkslʊŋ",
+            "say": "die Abwechslung"
           },
           {
             "de": "sich freuen",
             "type": "verb",
             "en": "to be pleased",
-            "vi": "vui mừng"
+            "vi": "vui mừng",
+            "ipa": "zɪç ˈfʁɔʏ̯ən",
+            "say": "sich freuen"
           }
         ],
         "analysis": {
@@ -3863,13 +4371,17 @@ const conversationGroups = [
             "de": "sich entschuldigen",
             "type": "verb",
             "en": "to apologize",
-            "vi": "xin lỗi"
+            "vi": "xin lỗi",
+            "ipa": "zɪç ɛntˈʃʊldɪɡən",
+            "say": "sich entschuldigen"
           },
           {
             "de": "aufrichtig",
             "type": "adjective",
             "en": "sincere",
-            "vi": "chân thành"
+            "vi": "chân thành",
+            "ipa": "ˈaʊ̯fˌʁɪçtɪç",
+            "say": "aufrichtig"
           }
         ],
         "analysis": {
@@ -3893,13 +4405,17 @@ const conversationGroups = [
             "type": "noun",
             "en": "glass",
             "vi": "cốc; ly",
-            "plural": "die Gläser"
+            "plural": "die Gläser",
+            "ipa": "das ɡlaːs",
+            "say": "das Glas"
           },
           {
             "de": "bekommen",
             "type": "verb",
             "en": "to get; to receive",
-            "vi": "nhận; được cấp"
+            "vi": "nhận; được cấp",
+            "ipa": "bəˈkɔmən",
+            "say": "bekommen"
           }
         ],
         "analysis": {
@@ -3922,13 +4438,17 @@ const conversationGroups = [
             "de": "essen",
             "type": "verb",
             "en": "to eat",
-            "vi": "ăn"
+            "vi": "ăn",
+            "ipa": "ˈɛsn̩",
+            "say": "essen"
           },
           {
             "de": "gern",
             "type": "adverb",
             "en": "gladly; with pleasure",
-            "vi": "sẵn lòng; thích"
+            "vi": "sẵn lòng; thích",
+            "ipa": "ɡɛʁn",
+            "say": "gern"
           }
         ],
         "analysis": {
@@ -3954,13 +4474,17 @@ const conversationGroups = [
             "de": "in Ruhe",
             "type": "phrase",
             "en": "calmly; without hurry",
-            "vi": "bình tĩnh; thong thả"
+            "vi": "bình tĩnh; thong thả",
+            "ipa": "ɪn ˈʁuːə",
+            "say": "in Ruhe"
           },
           {
             "de": "sprechen",
             "type": "verb",
             "en": "to speak",
-            "vi": "nói"
+            "vi": "nói",
+            "ipa": "ˈʃpʁɛçn̩",
+            "say": "sprechen"
           }
         ],
         "analysis": {
@@ -3984,13 +4508,17 @@ const conversationGroups = [
             "type": "noun",
             "en": "appointment",
             "vi": "lịch hẹn; cuộc hẹn",
-            "plural": "die Termine"
+            "plural": "die Termine",
+            "ipa": "deːɐ̯ tɛʁˈmiːn",
+            "say": "der Termin"
           },
           {
             "de": "hätte gern",
             "type": "phrase",
             "en": "would like to have",
-            "vi": "muốn có; muốn gọi món"
+            "vi": "muốn có; muốn gọi món",
+            "ipa": "ˈhɛtə ɡɛʁn",
+            "say": "hätte gern"
           }
         ],
         "analysis": {
@@ -4014,14 +4542,18 @@ const conversationGroups = [
             "type": "noun",
             "en": "spot; place",
             "vi": "vị trí; chỗ",
-            "plural": "die Stellen"
+            "plural": "die Stellen",
+            "ipa": "diː ˈʃtɛlə",
+            "say": "die Stelle"
           },
           {
             "de": "der Schmerz",
             "type": "noun",
             "en": "pain",
             "vi": "cơn đau",
-            "plural": "die Schmerzen"
+            "plural": "die Schmerzen",
+            "ipa": "deːɐ̯ ʃmɛʁts",
+            "say": "der Schmerz"
           }
         ],
         "analysis": {
@@ -4045,13 +4577,17 @@ const conversationGroups = [
             "type": "noun",
             "en": "medication",
             "vi": "thuốc",
-            "plural": "die Medikamente"
+            "plural": "die Medikamente",
+            "ipa": "das medikaˈmɛnt",
+            "say": "das Medikament"
           },
           {
             "de": "einnehmen",
             "type": "verb",
             "en": "to take medicine",
-            "vi": "dùng; uống thuốc"
+            "vi": "dùng; uống thuốc",
+            "ipa": "ˈaɪ̯nˌneːmən",
+            "say": "einnehmen"
           }
         ],
         "analysis": {
@@ -4075,13 +4611,17 @@ const conversationGroups = [
             "type": "noun",
             "en": "fear",
             "vi": "nỗi sợ",
-            "plural": "die Ängste"
+            "plural": "die Ängste",
+            "ipa": "diː aŋst",
+            "say": "die Angst"
           },
           {
             "de": "sprechen",
             "type": "verb",
             "en": "to speak",
-            "vi": "nói"
+            "vi": "nói",
+            "ipa": "ˈʃpʁɛçn̩",
+            "say": "sprechen"
           }
         ],
         "analysis": {
@@ -4116,13 +4656,17 @@ const conversationGroups = [
             "de": "besprechen",
             "type": "verb",
             "en": "to discuss",
-            "vi": "bàn bạc"
+            "vi": "bàn bạc",
+            "ipa": "bəˈʃpʁɛçn̩",
+            "say": "besprechen"
           },
           {
             "de": "möchten",
             "type": "verb",
             "en": "would like",
-            "vi": "muốn; mong muốn một cách nhẹ nhàng"
+            "vi": "muốn; mong muốn một cách nhẹ nhàng",
+            "ipa": "ˈmœçtn̩",
+            "say": "möchten"
           }
         ],
         "analysis": {
@@ -4145,13 +4689,17 @@ const conversationGroups = [
             "de": "laufen",
             "type": "verb",
             "en": "to go; to run",
-            "vi": "diễn ra; chạy"
+            "vi": "diễn ra; chạy",
+            "ipa": "ˈlaʊ̯fn̩",
+            "say": "laufen"
           },
           {
             "de": "im Moment",
             "type": "phrase",
             "en": "at the moment",
-            "vi": "hiện tại"
+            "vi": "hiện tại",
+            "ipa": "ɪm moˈmɛnt",
+            "say": "im Moment"
           }
         ],
         "analysis": {
@@ -4174,13 +4722,17 @@ const conversationGroups = [
             "de": "sagen",
             "type": "verb",
             "en": "to say; to tell",
-            "vi": "nói; cho biết"
+            "vi": "nói; cho biết",
+            "ipa": "ˈzaːɡən",
+            "say": "sagen"
           },
           {
             "de": "spät",
             "type": "adjective",
             "en": "late",
-            "vi": "muộn"
+            "vi": "muộn",
+            "ipa": "ʃpɛːt",
+            "say": "spät"
           }
         ],
         "analysis": {
@@ -4203,13 +4755,17 @@ const conversationGroups = [
             "de": "fragen",
             "type": "verb",
             "en": "to ask",
-            "vi": "hỏi"
+            "vi": "hỏi",
+            "ipa": "ˈfʁaːɡən",
+            "say": "fragen"
           },
           {
             "de": "dürfen",
             "type": "verb",
             "en": "may; to be allowed to",
-            "vi": "được phép"
+            "vi": "được phép",
+            "ipa": "ˈdʏʁfn̩",
+            "say": "dürfen"
           }
         ],
         "analysis": {
@@ -4232,13 +4788,17 @@ const conversationGroups = [
             "de": "fragen",
             "type": "verb",
             "en": "to ask",
-            "vi": "hỏi"
+            "vi": "hỏi",
+            "ipa": "ˈfʁaːɡən",
+            "say": "fragen"
           },
           {
             "de": "kommen",
             "type": "verb",
             "en": "to come; to happen",
-            "vi": "đến; xảy ra"
+            "vi": "đến; xảy ra",
+            "ipa": "ˈkɔmən",
+            "say": "kommen"
           }
         ],
         "analysis": {
@@ -4261,13 +4821,17 @@ const conversationGroups = [
             "de": "erzählen",
             "type": "verb",
             "en": "to tell; to narrate",
-            "vi": "kể chuyện"
+            "vi": "kể chuyện",
+            "ipa": "ɛɐ̯ˈtsɛːlən",
+            "say": "erzählen"
           },
           {
             "de": "möchten",
             "type": "verb",
             "en": "would like",
-            "vi": "muốn; mong muốn một cách nhẹ nhàng"
+            "vi": "muốn; mong muốn một cách nhẹ nhàng",
+            "ipa": "ˈmœçtn̩",
+            "say": "möchten"
           }
         ],
         "analysis": {
@@ -4290,13 +4854,17 @@ const conversationGroups = [
             "de": "sich fühlen",
             "type": "verb",
             "en": "to feel",
-            "vi": "cảm thấy"
+            "vi": "cảm thấy",
+            "ipa": "zɪç ˈfyːlən",
+            "say": "sich fühlen"
           },
           {
             "de": "im Moment",
             "type": "phrase",
             "en": "at the moment",
-            "vi": "hiện tại"
+            "vi": "hiện tại",
+            "ipa": "ɪm moˈmɛnt",
+            "say": "im Moment"
           }
         ],
         "analysis": {
@@ -4319,13 +4887,17 @@ const conversationGroups = [
             "de": "erzählen",
             "type": "verb",
             "en": "to tell; to narrate",
-            "vi": "kể chuyện"
+            "vi": "kể chuyện",
+            "ipa": "ɛɐ̯ˈtsɛːlən",
+            "say": "erzählen"
           },
           {
             "de": "passieren",
             "type": "verb",
             "en": "to happen",
-            "vi": "xảy ra"
+            "vi": "xảy ra",
+            "ipa": "paˈsiːʁən",
+            "say": "passieren"
           }
         ],
         "analysis": {
@@ -4348,14 +4920,18 @@ const conversationGroups = [
             "de": "helfen",
             "type": "verb",
             "en": "to help",
-            "vi": "giúp đỡ"
+            "vi": "giúp đỡ",
+            "ipa": "ˈhɛlfn̩",
+            "say": "helfen"
           },
           {
             "de": "die Aufgabe",
             "type": "noun",
             "en": "task",
             "vi": "nhiệm vụ; bài tập",
-            "plural": "die Aufgaben"
+            "plural": "die Aufgaben",
+            "ipa": "diː ˈaʊ̯fˌɡaːbə",
+            "say": "die Aufgabe"
           }
         ],
         "analysis": {
@@ -4382,13 +4958,17 @@ const conversationGroups = [
             "type": "noun",
             "en": "seat; place",
             "vi": "chỗ ngồi; chỗ",
-            "plural": "die Plätze"
+            "plural": "die Plätze",
+            "ipa": "deːɐ̯ plats",
+            "say": "der Platz"
           },
           {
             "de": "frei",
             "type": "adjective",
             "en": "free; available",
-            "vi": "trống; còn chỗ"
+            "vi": "trống; còn chỗ",
+            "ipa": "fʁaɪ̯",
+            "say": "frei"
           }
         ],
         "analysis": {
@@ -4411,13 +4991,17 @@ const conversationGroups = [
             "de": "zur Seite",
             "type": "phrase",
             "en": "to the side",
-            "vi": "sang một bên"
+            "vi": "sang một bên",
+            "ipa": "tsuːɐ̯ ˈzaɪ̯tə",
+            "say": "zur Seite"
           },
           {
             "de": "gehen",
             "type": "verb",
             "en": "to go; to be going",
-            "vi": "đi; diễn ra"
+            "vi": "đi; diễn ra",
+            "ipa": "ˈɡeːən",
+            "say": "gehen"
           }
         ],
         "analysis": {
@@ -4441,13 +5025,17 @@ const conversationGroups = [
             "type": "noun",
             "en": "railway track",
             "vi": "đường ray",
-            "plural": "die Gleise"
+            "plural": "die Gleise",
+            "ipa": "das ɡlaɪ̯s",
+            "say": "das Gleis"
           },
           {
             "de": "abfahren",
             "type": "verb",
             "en": "to depart",
-            "vi": "khởi hành"
+            "vi": "khởi hành",
+            "ipa": "ˈapˌfaːʁən",
+            "say": "abfahren"
           }
         ],
         "analysis": {
@@ -4470,13 +5058,17 @@ const conversationGroups = [
             "de": "abfahren",
             "type": "verb",
             "en": "to depart",
-            "vi": "khởi hành"
+            "vi": "khởi hành",
+            "ipa": "ˈapˌfaːʁən",
+            "say": "abfahren"
           },
           {
             "de": "bereits",
             "type": "adverb",
             "en": "already",
-            "vi": "đã; rồi"
+            "vi": "đã; rồi",
+            "ipa": "bəˈʁaɪ̯ts",
+            "say": "bereits"
           }
         ],
         "analysis": {
@@ -4511,13 +5103,17 @@ const conversationGroups = [
             "de": "passieren",
             "type": "verb",
             "en": "to happen",
-            "vi": "xảy ra"
+            "vi": "xảy ra",
+            "ipa": "paˈsiːʁən",
+            "say": "passieren"
           },
           {
             "de": "jedem",
             "type": "pronoun",
             "en": "to anyone; to everyone",
-            "vi": "với bất kỳ ai; Dativ của jeder"
+            "vi": "với bất kỳ ai; Dativ của jeder",
+            "ipa": "ˈjeːdəm",
+            "say": "jedem"
           }
         ],
         "analysis": {
@@ -4540,13 +5136,17 @@ const conversationGroups = [
             "de": "glauben",
             "type": "verb",
             "en": "to believe",
-            "vi": "tin"
+            "vi": "tin",
+            "ipa": "ˈɡlaʊ̯bn̩",
+            "say": "glauben"
           },
           {
             "de": "kaum",
             "type": "adverb",
             "en": "hardly",
-            "vi": "gần như không"
+            "vi": "gần như không",
+            "ipa": "kaʊ̯m",
+            "say": "kaum"
           }
         ],
         "analysis": {
@@ -4569,13 +5169,17 @@ const conversationGroups = [
             "de": "bemerkenswert",
             "type": "adjective",
             "en": "remarkable",
-            "vi": "đáng chú ý"
+            "vi": "đáng chú ý",
+            "ipa": "bəˈmɛʁkn̩sˌveːɐ̯t",
+            "say": "bemerkenswert"
           },
           {
             "de": "finden",
             "type": "verb",
             "en": "to find; to consider",
-            "vi": "thấy; cho là"
+            "vi": "thấy; cho là",
+            "ipa": "ˈfɪndn̩",
+            "say": "finden"
           }
         ],
         "analysis": {
@@ -4598,13 +5202,17 @@ const conversationGroups = [
             "de": "im Moment",
             "type": "phrase",
             "en": "at the moment",
-            "vi": "hiện tại"
+            "vi": "hiện tại",
+            "ipa": "ɪm moˈmɛnt",
+            "say": "im Moment"
           },
           {
             "de": "zu viel",
             "type": "phrase",
             "en": "too much",
-            "vi": "quá nhiều; quá mức"
+            "vi": "quá nhiều; quá mức",
+            "ipa": "tsuː fiːl",
+            "say": "zu viel"
           }
         ],
         "analysis": {
@@ -4627,13 +5235,17 @@ const conversationGroups = [
             "de": "umsetzen",
             "type": "verb",
             "en": "to implement",
-            "vi": "thực hiện; triển khai"
+            "vi": "thực hiện; triển khai",
+            "ipa": "ˈʊmˌzɛtsn̩",
+            "say": "umsetzen"
           },
           {
             "de": "können",
             "type": "verb",
             "en": "can; to be able to",
-            "vi": "có thể"
+            "vi": "có thể",
+            "ipa": "ˈkœnən",
+            "say": "können"
           }
         ],
         "analysis": {
@@ -4656,13 +5268,17 @@ const conversationGroups = [
             "de": "erkennbar",
             "type": "adjective",
             "en": "recognizable; apparent",
-            "vi": "có thể nhận thấy"
+            "vi": "có thể nhận thấy",
+            "ipa": "ɛɐ̯ˈkɛnbaːɐ̯",
+            "say": "erkennbar"
           },
           {
             "de": "ebenfalls",
             "type": "adverb",
             "en": "also; likewise",
-            "vi": "cũng"
+            "vi": "cũng",
+            "ipa": "ˈeːbn̩ˌfals",
+            "say": "ebenfalls"
           }
         ],
         "analysis": {
@@ -4685,13 +5301,17 @@ const conversationGroups = [
             "de": "bereit",
             "type": "adjective",
             "en": "ready",
-            "vi": "sẵn sàng"
+            "vi": "sẵn sàng",
+            "ipa": "bəˈʁaɪ̯t",
+            "say": "bereit"
           },
           {
             "de": "anfangen",
             "type": "verb",
             "en": "to begin",
-            "vi": "bắt đầu"
+            "vi": "bắt đầu",
+            "ipa": "ˈanˌfaŋən",
+            "say": "anfangen"
           }
         ],
         "analysis": {
@@ -4714,13 +5334,17 @@ const conversationGroups = [
             "de": "rechnen mit",
             "type": "verb",
             "en": "to expect; to reckon with",
-            "vi": "dự tính; tính đến"
+            "vi": "dự tính; tính đến",
+            "ipa": "ˈʁɛçnən mɪt",
+            "say": "rechnen mit"
           },
           {
             "de": "bereits",
             "type": "adverb",
             "en": "already",
-            "vi": "đã; rồi"
+            "vi": "đã; rồi",
+            "ipa": "bəˈʁaɪ̯ts",
+            "say": "bereits"
           }
         ],
         "analysis": {
@@ -4743,14 +5367,18 @@ const conversationGroups = [
             "de": "informiert",
             "type": "adjective",
             "en": "informed",
-            "vi": "đã nắm thông tin"
+            "vi": "đã nắm thông tin",
+            "ipa": "ɪnfɔʁˈmiːɐ̯t",
+            "say": "informiert"
           },
           {
             "de": "der Dank",
             "type": "noun",
             "en": "thanks; gratitude",
             "vi": "lời cảm ơn",
-            "plural": "thường không dùng số nhiều"
+            "plural": "kein gebräuchlicher Plural in dieser Bedeutung",
+            "ipa": "deːɐ̯ daŋk",
+            "say": "der Dank"
           }
         ],
         "analysis": {
@@ -4773,13 +5401,17 @@ const conversationGroups = [
             "de": "sich freuen",
             "type": "verb",
             "en": "to be pleased",
-            "vi": "vui mừng"
+            "vi": "vui mừng",
+            "ipa": "zɪç ˈfʁɔʏ̯ən",
+            "say": "sich freuen"
           },
           {
             "de": "losgehen",
             "type": "verb",
             "en": "to start; to set off",
-            "vi": "bắt đầu; khởi hành"
+            "vi": "bắt đầu; khởi hành",
+            "ipa": "ˈloːsˌɡeːən",
+            "say": "losgehen"
           }
         ],
         "analysis": {
@@ -4805,13 +5437,17 @@ const conversationGroups = [
             "de": "wissen",
             "type": "verb",
             "en": "to know",
-            "vi": "biết"
+            "vi": "biết",
+            "ipa": "ˈvɪsn̩",
+            "say": "wissen"
           },
           {
             "de": "prüfen",
             "type": "verb",
             "en": "to check; to examine",
-            "vi": "kiểm tra"
+            "vi": "kiểm tra",
+            "ipa": "ˈpʁyːfn̩",
+            "say": "prüfen"
           }
         ],
         "analysis": {
@@ -4834,14 +5470,18 @@ const conversationGroups = [
             "de": "nachschauen",
             "type": "verb",
             "en": "to look up; to check",
-            "vi": "tra cứu; kiểm tra lại"
+            "vi": "tra cứu; kiểm tra lại",
+            "ipa": "ˈnaːxˌʃaʊ̯ən",
+            "say": "nachschauen"
           },
           {
             "de": "der Moment",
             "type": "noun",
             "en": "moment",
             "vi": "khoảnh khắc; một lát",
-            "plural": "die Momente"
+            "plural": "die Momente",
+            "ipa": "deːɐ̯ moˈmɛnt",
+            "say": "der Moment"
           }
         ],
         "analysis": {
@@ -4864,13 +5504,17 @@ const conversationGroups = [
             "de": "sich kümmern um",
             "type": "verb",
             "en": "to take care of",
-            "vi": "chăm lo; xử lý việc gì"
+            "vi": "chăm lo; xử lý việc gì",
+            "ipa": "zɪç ˈkʏmɐn ʊm",
+            "say": "sich kümmern um"
           },
           {
             "de": "Bescheid geben",
             "type": "phrase",
             "en": "to let someone know",
-            "vi": "báo cho ai biết"
+            "vi": "báo cho ai biết",
+            "ipa": "bəˈʃaɪ̯t ˈɡeːbn̩",
+            "say": "Bescheid geben"
           }
         ],
         "analysis": {
@@ -4894,13 +5538,17 @@ const conversationGroups = [
             "de": "hoffen",
             "type": "verb",
             "en": "to hope",
-            "vi": "hy vọng"
+            "vi": "hy vọng",
+            "ipa": "ˈhɔfn̩",
+            "say": "hoffen"
           },
           {
             "de": "schaffen",
             "type": "verb",
             "en": "to manage; to accomplish",
-            "vi": "xoay xở làm được; hoàn thành"
+            "vi": "xoay xở làm được; hoàn thành",
+            "ipa": "ˈʃafn̩",
+            "say": "schaffen"
           }
         ],
         "analysis": {
@@ -4923,13 +5571,17 @@ const conversationGroups = [
             "de": "möglich",
             "type": "adjective",
             "en": "possible",
-            "vi": "có thể xảy ra"
+            "vi": "có thể xảy ra",
+            "ipa": "ˈmøːklɪç",
+            "say": "möglich"
           },
           {
             "de": "kommen",
             "type": "verb",
             "en": "to come; to happen",
-            "vi": "đến; xảy ra"
+            "vi": "đến; xảy ra",
+            "ipa": "ˈkɔmən",
+            "say": "kommen"
           }
         ],
         "analysis": {
@@ -4952,13 +5604,17 @@ const conversationGroups = [
             "de": "sich ändern",
             "type": "verb",
             "en": "to change",
-            "vi": "thay đổi"
+            "vi": "thay đổi",
+            "ipa": "zɪç ˈʔɛndɐn",
+            "say": "sich ändern"
           },
           {
             "de": "lassen",
             "type": "verb",
             "en": "to let; to leave",
-            "vi": "để; cho phép"
+            "vi": "để; cho phép",
+            "ipa": "ˈlasn̩",
+            "say": "lassen"
           }
         ],
         "analysis": {
@@ -4982,14 +5638,18 @@ const conversationGroups = [
             "type": "noun",
             "en": "moment",
             "vi": "khoảnh khắc; một lát",
-            "plural": "die Momente"
+            "plural": "die Momente",
+            "ipa": "deːɐ̯ moˈmɛnt",
+            "say": "der Moment"
           },
           {
             "de": "die Rückfrage",
             "type": "noun",
             "en": "follow-up question",
             "vi": "câu hỏi để làm rõ",
-            "plural": "die Rückfragen"
+            "plural": "die Rückfragen",
+            "ipa": "diː ˈʁʏkˌfʁaːɡə",
+            "say": "die Rückfrage"
           }
         ],
         "analysis": {
@@ -5012,13 +5672,17 @@ const conversationGroups = [
             "de": "beantworten",
             "type": "verb",
             "en": "to answer",
-            "vi": "trả lời"
+            "vi": "trả lời",
+            "ipa": "bəˈʔantvɔʁtn̩",
+            "say": "beantworten"
           },
           {
             "de": "im Moment",
             "type": "phrase",
             "en": "at the moment",
-            "vi": "hiện tại"
+            "vi": "hiện tại",
+            "ipa": "ɪm moˈmɛnt",
+            "say": "im Moment"
           }
         ],
         "analysis": {
@@ -5040,14 +5704,18 @@ const conversationGroups = [
             "de": "hätte gern",
             "type": "phrase",
             "en": "would like to have",
-            "vi": "muốn có; muốn gọi món"
+            "vi": "muốn có; muốn gọi món",
+            "ipa": "ˈhɛtə ɡɛʁn",
+            "say": "hätte gern"
           },
           {
             "de": "der Kaffee",
             "type": "noun",
             "en": "coffee",
             "vi": "cà phê",
-            "plural": "die Kaffees (các loại hoặc suất cà phê)"
+            "plural": "die Kaffees (Sorten oder Portionen)",
+            "ipa": "deːɐ̯ ˈkafe",
+            "say": "der Kaffee"
           }
         ],
         "analysis": {
@@ -5070,14 +5738,18 @@ const conversationGroups = [
             "de": "liegen",
             "type": "verb",
             "en": "to lie; to be situated",
-            "vi": "nằm; ở một mức nào đó"
+            "vi": "nằm; ở một mức nào đó",
+            "ipa": "ˈliːɡən",
+            "say": "liegen"
           },
           {
             "de": "das Budget",
             "type": "noun",
             "en": "budget",
             "vi": "ngân sách",
-            "plural": "die Budgets"
+            "plural": "die Budgets",
+            "ipa": "das byˈdʒeː",
+            "say": "das Budget"
           }
         ],
         "analysis": {
@@ -5101,13 +5773,17 @@ const conversationGroups = [
             "type": "noun",
             "en": "train station",
             "vi": "nhà ga",
-            "plural": "die Bahnhöfe"
+            "plural": "die Bahnhöfe",
+            "ipa": "deːɐ̯ ˈbaːnˌhoːf",
+            "say": "der Bahnhof"
           },
           {
             "de": "sagen",
             "type": "verb",
             "en": "to say; to tell",
-            "vi": "nói; cho biết"
+            "vi": "nói; cho biết",
+            "ipa": "ˈzaːɡən",
+            "say": "sagen"
           }
         ],
         "analysis": {
@@ -5130,13 +5806,17 @@ const conversationGroups = [
             "de": "sich vertun",
             "type": "verb",
             "en": "to make a mistake",
-            "vi": "nhầm lẫn"
+            "vi": "nhầm lẫn",
+            "ipa": "zɪç fɛɐ̯ˈtuːn",
+            "say": "sich vertun"
           },
           {
             "de": "sich entschuldigen",
             "type": "verb",
             "en": "to apologize",
-            "vi": "xin lỗi"
+            "vi": "xin lỗi",
+            "ipa": "zɪç ɛntˈʃʊldɪɡən",
+            "say": "sich entschuldigen"
           }
         ],
         "analysis": {
@@ -5159,14 +5839,18 @@ const conversationGroups = [
             "de": "sich entschuldigen",
             "type": "verb",
             "en": "to apologize",
-            "vi": "xin lỗi"
+            "vi": "xin lỗi",
+            "ipa": "zɪç ɛntˈʃʊldɪɡən",
+            "say": "sich entschuldigen"
           },
           {
             "de": "die Verspätung",
             "type": "noun",
             "en": "delay; lateness",
             "vi": "sự chậm trễ; việc đến muộn",
-            "plural": "die Verspätungen"
+            "plural": "die Verspätungen",
+            "ipa": "diː fɛɐ̯ˈʃpɛːtʊŋ",
+            "say": "die Verspätung"
           }
         ],
         "analysis": {
@@ -5190,13 +5874,17 @@ const conversationGroups = [
             "type": "noun",
             "en": "intention",
             "vi": "ý định",
-            "plural": "die Absichten"
+            "plural": "die Absichten",
+            "ipa": "diː ˈapˌzɪçt",
+            "say": "die Absicht"
           },
           {
             "de": "leidtun",
             "type": "verb",
             "en": "to be sorry",
-            "vi": "lấy làm tiếc"
+            "vi": "lấy làm tiếc",
+            "ipa": "ˈlaɪ̯tˌtuːn",
+            "say": "leidtun"
           }
         ],
         "analysis": {
@@ -5220,13 +5908,17 @@ const conversationGroups = [
             "type": "noun",
             "en": "message",
             "vi": "tin nhắn; tin tức",
-            "plural": "die Nachrichten"
+            "plural": "die Nachrichten",
+            "ipa": "diː ˈnaːxˌʁɪçt",
+            "say": "die Nachricht"
           },
           {
             "de": "bestimmt für",
             "type": "phrase",
             "en": "intended for",
-            "vi": "dành cho"
+            "vi": "dành cho",
+            "ipa": "bəˈʃtɪmt fyːɐ̯",
+            "say": "bestimmt für"
           }
         ],
         "analysis": {
@@ -5249,14 +5941,18 @@ const conversationGroups = [
             "de": "bekommen",
             "type": "verb",
             "en": "to get; to receive",
-            "vi": "nhận; được cấp"
+            "vi": "nhận; được cấp",
+            "ipa": "bəˈkɔmən",
+            "say": "bekommen"
           },
           {
             "de": "das Wasser",
             "type": "noun",
             "en": "water",
             "vi": "nước",
-            "plural": "thường không dùng số nhiều"
+            "plural": "kein gebräuchlicher Plural in dieser Bedeutung",
+            "ipa": "das ˈvasɐ",
+            "say": "das Wasser"
           }
         ],
         "analysis": {
@@ -5279,14 +5975,18 @@ const conversationGroups = [
             "de": "entsprechen",
             "type": "verb",
             "en": "to correspond to; to match",
-            "vi": "tương ứng; phù hợp"
+            "vi": "tương ứng; phù hợp",
+            "ipa": "ɛntˈʃpʁɛçn̩",
+            "say": "entsprechen"
           },
           {
             "de": "die Bestellung",
             "type": "noun",
             "en": "order",
             "vi": "đơn đặt hàng; món đã gọi",
-            "plural": "die Bestellungen"
+            "plural": "die Bestellungen",
+            "ipa": "diː bəˈʃtɛlʊŋ",
+            "say": "die Bestellung"
           }
         ],
         "analysis": {
@@ -5309,13 +6009,17 @@ const conversationGroups = [
             "de": "bezahlen",
             "type": "verb",
             "en": "to pay for",
-            "vi": "thanh toán"
+            "vi": "thanh toán",
+            "ipa": "bəˈtsaːlən",
+            "say": "bezahlen"
           },
           {
             "de": "gern",
             "type": "adverb",
             "en": "gladly; with pleasure",
-            "vi": "sẵn lòng; thích"
+            "vi": "sẵn lòng; thích",
+            "ipa": "ɡɛʁn",
+            "say": "gern"
           }
         ],
         "analysis": {
@@ -5338,13 +6042,17 @@ const conversationGroups = [
             "de": "prüfen",
             "type": "verb",
             "en": "to check; to examine",
-            "vi": "kiểm tra"
+            "vi": "kiểm tra",
+            "ipa": "ˈpʁyːfn̩",
+            "say": "prüfen"
           },
           {
             "de": "enthalten",
             "type": "verb",
             "en": "to contain",
-            "vi": "chứa"
+            "vi": "chứa",
+            "ipa": "ɛntˈhaltn̩",
+            "say": "enthalten"
           }
         ],
         "analysis": {
@@ -5368,14 +6076,18 @@ const conversationGroups = [
             "de": "bezahlen",
             "type": "verb",
             "en": "to pay for",
-            "vi": "thanh toán"
+            "vi": "thanh toán",
+            "ipa": "bəˈtsaːlən",
+            "say": "bezahlen"
           },
           {
             "de": "die Karte",
             "type": "noun",
             "en": "card; map; menu",
             "vi": "thẻ; bản đồ; thực đơn",
-            "plural": "die Karten"
+            "plural": "die Karten",
+            "ipa": "diː ˈkaʁtə",
+            "say": "die Karte"
           }
         ],
         "analysis": {
@@ -5397,14 +6109,18 @@ const conversationGroups = [
             "de": "zurückgeben",
             "type": "verb",
             "en": "to return; to give back",
-            "vi": "trả lại"
+            "vi": "trả lại",
+            "ipa": "tsuˈʁʏkˌɡeːbn̩",
+            "say": "zurückgeben"
           },
           {
             "de": "der Artikel",
             "type": "noun",
             "en": "item; article",
             "vi": "món hàng; mạo từ; bài viết",
-            "plural": "die Artikel"
+            "plural": "die Artikel",
+            "ipa": "deːɐ̯ aʁˈtiːkl̩",
+            "say": "der Artikel"
           }
         ],
         "analysis": {
@@ -5428,13 +6144,17 @@ const conversationGroups = [
             "type": "noun",
             "en": "item; article",
             "vi": "món hàng; mạo từ; bài viết",
-            "plural": "die Artikel"
+            "plural": "die Artikel",
+            "ipa": "deːɐ̯ aʁˈtiːkl̩",
+            "say": "der Artikel"
           },
           {
             "de": "funktionieren",
             "type": "verb",
             "en": "to work; to function",
-            "vi": "hoạt động"
+            "vi": "hoạt động",
+            "ipa": "fʊŋktsi̯oˈniːʁən",
+            "say": "funktionieren"
           }
         ],
         "analysis": {
@@ -5457,13 +6177,17 @@ const conversationGroups = [
             "de": "klein",
             "type": "adjective",
             "en": "small",
-            "vi": "nhỏ"
+            "vi": "nhỏ",
+            "ipa": "klaɪ̯n",
+            "say": "klein"
           },
           {
             "de": "leider",
             "type": "adverb",
             "en": "unfortunately",
-            "vi": "tiếc là"
+            "vi": "tiếc là",
+            "ipa": "ˈlaɪ̯dɐ",
+            "say": "leider"
           }
         ],
         "analysis": {
@@ -5486,13 +6210,17 @@ const conversationGroups = [
             "de": "warten",
             "type": "verb",
             "en": "to wait",
-            "vi": "chờ"
+            "vi": "chờ",
+            "ipa": "ˈvaʁtn̩",
+            "say": "warten"
           },
           {
             "de": "wie lange",
             "type": "phrase",
             "en": "how long",
-            "vi": "bao lâu"
+            "vi": "bao lâu",
+            "ipa": "viː ˈlaŋə",
+            "say": "wie lange"
           }
         ],
         "analysis": {
@@ -5516,13 +6244,17 @@ const conversationGroups = [
             "type": "noun",
             "en": "volume",
             "vi": "âm lượng",
-            "plural": "die Lautstärken"
+            "plural": "die Lautstärken",
+            "ipa": "diː ˈlaʊ̯tˌʃtɛʁkə",
+            "say": "die Lautstärke"
           },
           {
             "de": "reduzieren",
             "type": "verb",
             "en": "to reduce",
-            "vi": "giảm"
+            "vi": "giảm",
+            "ipa": "ʁeduˈtsiːʁən",
+            "say": "reduzieren"
           }
         ],
         "analysis": {
@@ -5545,13 +6277,17 @@ const conversationGroups = [
             "de": "wegräumen",
             "type": "verb",
             "en": "to clear away",
-            "vi": "dọn đi"
+            "vi": "dọn đi",
+            "ipa": "ˈvɛkˌʁɔʏ̯mən",
+            "say": "wegräumen"
           },
           {
             "de": "können",
             "type": "verb",
             "en": "can; to be able to",
-            "vi": "có thể"
+            "vi": "có thể",
+            "ipa": "ˈkœnən",
+            "say": "können"
           }
         ],
         "analysis": {
@@ -5575,13 +6311,17 @@ const conversationGroups = [
             "type": "noun",
             "en": "parcel",
             "vi": "bưu kiện",
-            "plural": "die Pakete"
+            "plural": "die Pakete",
+            "ipa": "das paˈkeːt",
+            "say": "das Paket"
           },
           {
             "de": "aufbewahren",
             "type": "verb",
             "en": "to keep safely; to store",
-            "vi": "giữ; cất giữ"
+            "vi": "giữ; cất giữ",
+            "ipa": "ˈaʊ̯fbəˌvaːʁən",
+            "say": "aufbewahren"
           }
         ],
         "analysis": {
@@ -5604,13 +6344,17 @@ const conversationGroups = [
             "de": "zur Ruhe kommen",
             "type": "phrase",
             "en": "to settle down; to find quiet",
-            "vi": "nghỉ ngơi; yên tĩnh lại"
+            "vi": "nghỉ ngơi; yên tĩnh lại",
+            "ipa": "tsuːɐ̯ ˈʁuːə ˈkɔmən",
+            "say": "zur Ruhe kommen"
           },
           {
             "de": "gern",
             "type": "adverb",
             "en": "gladly; with pleasure",
-            "vi": "sẵn lòng; thích"
+            "vi": "sẵn lòng; thích",
+            "ipa": "ɡɛʁn",
+            "say": "gern"
           }
         ],
         "analysis": {
@@ -5634,13 +6378,17 @@ const conversationGroups = [
             "type": "noun",
             "en": "heating; heater",
             "vi": "hệ thống sưởi; máy sưởi",
-            "plural": "die Heizungen"
+            "plural": "die Heizungen",
+            "ipa": "diː ˈhaɪ̯tsʊŋ",
+            "say": "die Heizung"
           },
           {
             "de": "funktionieren",
             "type": "verb",
             "en": "to work; to function",
-            "vi": "hoạt động"
+            "vi": "hoạt động",
+            "ipa": "fʊŋktsi̯oˈniːʁən",
+            "say": "funktionieren"
           }
         ],
         "analysis": {
@@ -5664,13 +6412,17 @@ const conversationGroups = [
             "type": "noun",
             "en": "point in time",
             "vi": "thời điểm",
-            "plural": "die Zeitpunkte"
+            "plural": "die Zeitpunkte",
+            "ipa": "deːɐ̯ ˈtsaɪ̯tˌpʊŋkt",
+            "say": "der Zeitpunkt"
           },
           {
             "de": "leider",
             "type": "adverb",
             "en": "unfortunately",
-            "vi": "tiếc là"
+            "vi": "tiếc là",
+            "ipa": "ˈlaɪ̯dɐ",
+            "say": "leider"
           }
         ],
         "analysis": {
@@ -5693,13 +6445,17 @@ const conversationGroups = [
             "de": "kosten",
             "type": "verb",
             "en": "to cost",
-            "vi": "có giá"
+            "vi": "có giá",
+            "ipa": "ˈkɔstn̩",
+            "say": "kosten"
           },
           {
             "de": "sagen",
             "type": "verb",
             "en": "to say; to tell",
-            "vi": "nói; cho biết"
+            "vi": "nói; cho biết",
+            "ipa": "ˈzaːɡən",
+            "say": "sagen"
           }
         ],
         "analysis": {
@@ -5722,13 +6478,17 @@ const conversationGroups = [
             "de": "schriftlich",
             "type": "adjective",
             "en": "written; in writing",
-            "vi": "bằng văn bản"
+            "vi": "bằng văn bản",
+            "ipa": "ˈʃʁɪftlɪç",
+            "say": "schriftlich"
           },
           {
             "de": "festhalten",
             "type": "verb",
             "en": "to record; to put in writing",
-            "vi": "ghi lại"
+            "vi": "ghi lại",
+            "ipa": "ˈfɛstˌhaltn̩",
+            "say": "festhalten"
           }
         ],
         "analysis": {
