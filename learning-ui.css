@@ -27,3 +27,17 @@
 .conversation-library .phrase-analysis p{margin:6px 0}
 .conversation-library button:focus-visible,.conversation-library summary:focus-visible,#phraseGroups button:focus-visible{outline:3px solid var(--green);outline-offset:3px}
 @media(max-width:650px){.conversation-library>.card{padding:14px}.conversation-library .phrase-pair{padding:14px}}
+/* Each learning card compares matching languages in two aligned columns. */
+.conversation-library .phrase-comparison{width:100%;table-layout:fixed;border-collapse:separate;border-spacing:0;border:1px solid var(--line);border-radius:12px;overflow:hidden;margin:0;background:#fff}
+.conversation-library .phrase-comparison caption{text-align:left;font-size:.85rem;font-weight:600;color:var(--muted);padding:0 0 9px}
+.conversation-library .phrase-comparison th,.conversation-library .phrase-comparison td{width:50%;padding:13px 15px;text-align:left;vertical-align:top;border:0;overflow-wrap:anywhere;line-height:1.6;background:transparent;color:var(--ink)}
+.conversation-library .phrase-comparison th{font-size:1rem;font-weight:700;border-bottom:1px solid var(--line);color:var(--green)}
+.conversation-library .phrase-comparison th small{display:block;font-size:.73rem;font-weight:400;color:var(--muted);margin-top:4px}
+.conversation-library .phrase-comparison th+th,.conversation-library .phrase-comparison td+td{border-left:1px solid var(--line)}
+.conversation-library .phrase-comparison tbody tr+tr td{border-top:1px solid var(--line)}
+.conversation-library .phrase-comparison .phrase-direct{padding-bottom:13px;margin:0}
+.conversation-library .phrase-comparison .phrase-tactful{color:var(--green);font-weight:650}
+.conversation-library .phrase-language{display:block;font-size:.7rem;color:var(--muted);font-weight:600;margin-bottom:4px;letter-spacing:.04em}
+.conversation-library .phrase-tone{display:block;margin-bottom:6px;font-size:.75rem}
+.conversation-library .phrase-grammar-pattern{font-weight:650;color:var(--green);border-bottom:1px solid var(--line);padding:8px 0}
+@media(max-width:650px){.conversation-library .phrase-pair{padding:12px}.conversation-library .phrase-comparison th,.conversation-library .phrase-comparison td{padding:10px 9px;font-size:.9rem}.conversation-library .phrase-comparison th{font-size:.88rem}.conversation-library .phrase-comparison th small{font-size:.68rem}}

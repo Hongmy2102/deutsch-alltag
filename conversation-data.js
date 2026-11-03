@@ -1,4 +1,4 @@
-// Unified comparisons inside the existing Leben Alltagssprache hub; duplicate examples consolidated.
+// Unified comparisons inside the existing Leben hub; alternatives reviewed for intent and grammatical accuracy.
 const conversationGroups = [
   {
     "id": 1,
@@ -12,28 +12,28 @@ const conversationGroups = [
     },
     "rows": [
       {
-        "tactful": "Ich wünsche dir eine gute und schnelle Genesung.",
-        "en": "I wish you a good and speedy recovery.",
-        "vi": "Mình chúc bạn hồi phục tốt và nhanh chóng.",
+        "tactful": "Ich hoffe, dass es dir bald wieder besser geht.",
+        "en": "I hope you feel better again soon.",
+        "vi": "Mình mong bạn sớm khỏe lại.",
         "vocabulary": [
           {
-            "de": "wünschen",
+            "de": "hoffen",
             "type": "verb",
-            "en": "to wish",
-            "vi": "chúc; mong muốn"
+            "en": "to hope",
+            "vi": "hy vọng"
           },
           {
-            "de": "die Genesung",
-            "type": "noun",
-            "en": "recovery",
-            "vi": "sự hồi phục",
-            "plural": "die Genesungen"
+            "de": "bald",
+            "type": "adverb",
+            "en": "soon",
+            "vi": "sớm"
           }
         ],
         "analysis": {
-          "de": "Wünschen verbindet hier eine Person im Dativ mit einem Wunsch im Akkusativ: Ich wünsche dir … .",
-          "en": "Wünschen combines the recipient in the dative with the wish in the accusative: Ich wünsche dir … .",
-          "vi": "wünschen dùng người nhận ở Dativ và điều chúc ở Akkusativ: Ich wünsche dir … . dir nghĩa là cho bạn, dùng với người đã xưng du."
+          "pattern": "hoffen, dass … + Verb am Ende",
+          "de": "Geht steht am Ende des dass-Satzes. Dir ist Dativ in es geht dir besser; besser ist der Komparativ von gut.",
+          "en": "Geht comes at the end of the dass-clause. Dir is dative in es geht dir besser; besser is the comparative of gut.",
+          "vi": "geht đứng cuối mệnh đề dass. dir ở Dativ trong es geht dir besser; besser là so sánh hơn của gut."
         },
         "source": "legacy-adapted",
         "simple": "Gute Besserung!",
@@ -41,9 +41,9 @@ const conversationGroups = [
         "simpleVi": "Chúc mau khỏe!"
       },
       {
-        "tactful": "Du brauchst dir keine Sorgen zu machen. Ich unterstütze dich.",
-        "en": "You do not need to worry. I will support you.",
-        "vi": "Bạn không cần lo. Mình sẽ hỗ trợ bạn.",
+        "tactful": "Du brauchst dir deswegen keine Sorgen zu machen.",
+        "en": "You do not need to worry about that.",
+        "vi": "Bạn không cần lo về việc đó đâu.",
         "vocabulary": [
           {
             "de": "sich Sorgen machen",
@@ -52,16 +52,17 @@ const conversationGroups = [
             "vi": "lo lắng"
           },
           {
-            "de": "unterstützen",
+            "de": "brauchen",
             "type": "verb",
-            "en": "to support",
-            "vi": "hỗ trợ"
+            "en": "to need",
+            "vi": "cần"
           }
         ],
         "analysis": {
-          "de": "Nicht/keine + brauchen + zu + Infinitiv verneint eine Notwendigkeit. Dir gehört zu sich Sorgen machen.",
-          "en": "Nicht/keine plus brauchen and a zu-infinitive expresses that something is not necessary. Dir belongs to sich Sorgen machen.",
-          "vi": "nicht/keine + brauchen + zu + nguyên mẫu diễn đạt không cần làm gì. dir đi cùng cụm phản thân sich Sorgen machen; không phải lời phủ nhận cảm xúc thật của người nghe."
+          "pattern": "nicht/kein + brauchen + zu + Infinitiv",
+          "de": "Zu steht vor dem Infinitiv machen; dir gehört zu sich Sorgen machen.",
+          "en": "Zu precedes the infinitive machen; dir belongs to sich Sorgen machen.",
+          "vi": "zu đứng trước nguyên mẫu machen; dir thuộc cụm phản thân sich Sorgen machen."
         },
         "source": "legacy-adapted",
         "simple": "Keine Sorge!",
@@ -69,122 +70,9 @@ const conversationGroups = [
         "simpleVi": "Đừng lo!"
       },
       {
-        "tactful": "Ich wünsche dir alles Gute. Komm gut nach Hause!",
-        "en": "I wish you all the best. Get home safely!",
-        "vi": "Chúc bạn mọi điều tốt lành. Về nhà an toàn nhé!",
-        "vocabulary": [
-          {
-            "de": "wünschen",
-            "type": "verb",
-            "en": "to wish",
-            "vi": "chúc; mong muốn"
-          },
-          {
-            "de": "nach Hause",
-            "type": "phrase",
-            "en": "home; towards home",
-            "vi": "về nhà"
-          }
-        ],
-        "analysis": {
-          "de": "Wünschen verbindet hier eine Person im Dativ mit einem Wunsch im Akkusativ: Ich wünsche dir … .",
-          "en": "Wünschen combines the recipient in the dative with the wish in the accusative: Ich wünsche dir … .",
-          "vi": "wünschen dùng người nhận ở Dativ và điều chúc ở Akkusativ: Ich wünsche dir … . dir nghĩa là cho bạn, dùng với người đã xưng du."
-        },
-        "source": "legacy-adapted",
-        "simple": "Mach’s gut!",
-        "simpleEn": "Take care!",
-        "simpleVi": "Bảo trọng nhé! / Chào nhé!"
-      },
-      {
-        "tactful": "Dafür bin ich nicht zuständig. Ich kann dir aber bei der Suche nach der richtigen Ansprechperson helfen.",
-        "en": "I am not responsible for that, but I can help you find the right contact.",
-        "vi": "Mình không phụ trách việc đó, nhưng có thể giúp bạn tìm đúng người liên hệ.",
-        "vocabulary": [
-          {
-            "de": "zuständig",
-            "type": "adjective",
-            "en": "responsible for; in charge",
-            "vi": "có trách nhiệm; phụ trách"
-          },
-          {
-            "de": "helfen",
-            "type": "verb",
-            "en": "to help",
-            "vi": "giúp đỡ"
-          }
-        ],
-        "analysis": {
-          "de": "Im Aussagesatz steht das konjugierte Verb an zweiter Satzgliedposition. Die Wortwahl und Betonung bestimmen den Ton.",
-          "en": "In a statement, the conjugated verb occupies the second constituent position. Word choice and intonation shape the tone.",
-          "vi": "Trong câu trần thuật, động từ chia đứng ở vị trí thành phần thứ hai. Cách chọn từ và giọng điệu quyết định sắc thái; câu ngắn không mặc nhiên bất lịch sự."
-        },
-        "source": "legacy-adapted",
-        "simple": "Das ist nicht mein Bier.",
-        "simpleEn": "That’s not my problem.",
-        "simpleVi": "Đó không phải chuyện của tôi."
-      },
-      {
-        "tactful": "Für mich sind beide Möglichkeiten in Ordnung. Entscheide du gerne.",
-        "en": "Both options are fine with me. Feel free to choose.",
-        "vi": "Cả hai phương án đều ổn với mình. Bạn cứ chọn nhé.",
-        "vocabulary": [
-          {
-            "de": "die Möglichkeit",
-            "type": "noun",
-            "en": "possibility; option",
-            "vi": "khả năng; phương án",
-            "plural": "die Möglichkeiten"
-          },
-          {
-            "de": "in Ordnung",
-            "type": "phrase",
-            "en": "all right; in order",
-            "vi": "ổn; đúng quy củ"
-          }
-        ],
-        "analysis": {
-          "de": "Im Aussagesatz steht das konjugierte Verb an zweiter Satzgliedposition. Die Wortwahl und Betonung bestimmen den Ton.",
-          "en": "In a statement, the conjugated verb occupies the second constituent position. Word choice and intonation shape the tone.",
-          "vi": "Trong câu trần thuật, động từ chia đứng ở vị trí thành phần thứ hai. Cách chọn từ và giọng điệu quyết định sắc thái; câu ngắn không mặc nhiên bất lịch sự."
-        },
-        "source": "legacy-adapted",
-        "simple": "Das ist mir Wurst.",
-        "simpleEn": "I don’t care. / It’s all the same to me.",
-        "simpleVi": "Tôi sao cũng được / Tôi chẳng quan tâm."
-      },
-      {
-        "tactful": "Ich wünsche dir viel Erfolg und hoffe, dass alles gut läuft.",
-        "en": "I wish you every success and hope everything goes well.",
-        "vi": "Mình chúc bạn thành công và mong mọi việc suôn sẻ.",
-        "vocabulary": [
-          {
-            "de": "wünschen",
-            "type": "verb",
-            "en": "to wish",
-            "vi": "chúc; mong muốn"
-          },
-          {
-            "de": "laufen",
-            "type": "verb",
-            "en": "to go; to run",
-            "vi": "diễn ra; chạy"
-          }
-        ],
-        "analysis": {
-          "de": "Wünschen verbindet hier eine Person im Dativ mit einem Wunsch im Akkusativ: Ich wünsche dir … .",
-          "en": "Wünschen combines the recipient in the dative with the wish in the accusative: Ich wünsche dir … .",
-          "vi": "wünschen dùng người nhận ở Dativ và điều chúc ở Akkusativ: Ich wünsche dir … . dir nghĩa là cho bạn, dùng với người đã xưng du."
-        },
-        "source": "legacy-adapted",
-        "simple": "Ich drück’ dir die Daumen.",
-        "simpleEn": "I’ll keep my fingers crossed for you.",
-        "simpleVi": "Tôi cầu chúc bạn may mắn, thành công."
-      },
-      {
-        "tactful": "Ich wünsche euch eine schöne Zeit und viel Freude dabei.",
-        "en": "I hope you have a lovely time and enjoy it.",
-        "vi": "Mình chúc mọi người có khoảng thời gian đẹp và nhiều niềm vui.",
+        "tactful": "Ich wünsche dir alles Gute für die nächste Zeit.",
+        "en": "I wish you all the best for the time ahead.",
+        "vi": "Mình chúc bạn mọi điều tốt đẹp trong thời gian tới.",
         "vocabulary": [
           {
             "de": "wünschen",
@@ -201,9 +89,129 @@ const conversationGroups = [
           }
         ],
         "analysis": {
-          "de": "Wünschen verbindet hier eine Person im Dativ mit einem Wunsch im Akkusativ: Ich wünsche dir … .",
-          "en": "Wünschen combines the recipient in the dative with the wish in the accusative: Ich wünsche dir … .",
-          "vi": "wünschen dùng người nhận ở Dativ và điều chúc ở Akkusativ: Ich wünsche dir … . dir nghĩa là cho bạn, dùng với người đã xưng du."
+          "pattern": "wünschen + Dativ + Akkusativ",
+          "de": "Die Person steht im Dativ; der Wunsch steht im Akkusativ.",
+          "en": "The recipient is dative; the wish is accusative.",
+          "vi": "Người nhận lời chúc ở Dativ; điều được chúc ở Akkusativ."
+        },
+        "source": "legacy-adapted",
+        "simple": "Mach’s gut!",
+        "simpleEn": "Take care!",
+        "simpleVi": "Bảo trọng nhé! / Chào nhé!"
+      },
+      {
+        "tactful": "Dafür bin ich leider nicht zuständig.",
+        "en": "Unfortunately, I am not responsible for that.",
+        "vi": "Tiếc là mình không phụ trách việc đó.",
+        "vocabulary": [
+          {
+            "de": "zuständig",
+            "type": "adjective",
+            "en": "responsible for; in charge",
+            "vi": "có trách nhiệm; phụ trách"
+          },
+          {
+            "de": "leider",
+            "type": "adverb",
+            "en": "unfortunately",
+            "vi": "tiếc là"
+          }
+        ],
+        "analysis": {
+          "pattern": "Adjektiv als Prädikativ",
+          "de": "Das Adjektiv bleibt nach sein, klingen, erscheinen oder finden in dieser Funktion ohne Deklinationsendung.",
+          "en": "Used predicatively after sein, klingen, erscheinen or finden, the adjective has no inflectional ending here.",
+          "vi": "Tính từ làm vị ngữ sau sein, klingen, erscheinen hoặc finden trong cấu trúc này không nhận đuôi biến cách."
+        },
+        "source": "legacy-adapted",
+        "simple": "Das ist nicht mein Bier.",
+        "simpleEn": "That’s not my problem.",
+        "simpleVi": "Đó không phải chuyện của tôi."
+      },
+      {
+        "tactful": "Ich habe da keine besondere Präferenz.",
+        "en": "I do not have a particular preference about that.",
+        "vi": "Mình không có lựa chọn ưu tiên nào về việc đó.",
+        "vocabulary": [
+          {
+            "de": "die Präferenz",
+            "type": "noun",
+            "en": "preference",
+            "vi": "sự ưu tiên; sở thích lựa chọn",
+            "plural": "die Präferenzen"
+          },
+          {
+            "de": "haben",
+            "type": "verb",
+            "en": "to have",
+            "vi": "có"
+          }
+        ],
+        "analysis": {
+          "pattern": "Präsens · Aussagesatz",
+          "de": "Das konjugierte Verb steht an zweiter Satzgliedposition; das Vorfeld kann aus mehreren Wörtern bestehen.",
+          "en": "The conjugated verb occupies the second constituent position; the first constituent may contain several words.",
+          "vi": "Động từ chia ở vị trí thành phần thứ hai; thành phần đầu có thể gồm nhiều từ."
+        },
+        "source": "legacy-adapted",
+        "simple": "Das ist mir Wurst.",
+        "simpleEn": "I don’t care. / It’s all the same to me.",
+        "simpleVi": "Tôi sao cũng được / Tôi chẳng quan tâm."
+      },
+      {
+        "tactful": "Ich wünsche dir von Herzen viel Erfolg.",
+        "en": "I sincerely wish you every success.",
+        "vi": "Mình chân thành chúc bạn thành công.",
+        "vocabulary": [
+          {
+            "de": "wünschen",
+            "type": "verb",
+            "en": "to wish",
+            "vi": "chúc; mong muốn"
+          },
+          {
+            "de": "der Erfolg",
+            "type": "noun",
+            "en": "success",
+            "vi": "thành công",
+            "plural": "die Erfolge"
+          }
+        ],
+        "analysis": {
+          "pattern": "wünschen + Dativ + Akkusativ",
+          "de": "Die Person steht im Dativ; der Wunsch steht im Akkusativ.",
+          "en": "The recipient is dative; the wish is accusative.",
+          "vi": "Người nhận lời chúc ở Dativ; điều được chúc ở Akkusativ."
+        },
+        "source": "legacy-adapted",
+        "simple": "Ich drück’ dir die Daumen.",
+        "simpleEn": "I’ll keep my fingers crossed for you.",
+        "simpleVi": "Tôi cầu chúc bạn may mắn, thành công."
+      },
+      {
+        "tactful": "Ich wünsche dir viel Freude dabei.",
+        "en": "I hope you really enjoy it.",
+        "vi": "Mình chúc bạn có nhiều niềm vui khi làm việc đó.",
+        "vocabulary": [
+          {
+            "de": "wünschen",
+            "type": "verb",
+            "en": "to wish",
+            "vi": "chúc; mong muốn"
+          },
+          {
+            "de": "die Freude",
+            "type": "noun",
+            "en": "joy",
+            "vi": "niềm vui",
+            "plural": "die Freuden"
+          }
+        ],
+        "analysis": {
+          "pattern": "wünschen + Dativ + Akkusativ",
+          "de": "Die Person steht im Dativ; der Wunsch steht im Akkusativ.",
+          "en": "The recipient is dative; the wish is accusative.",
+          "vi": "Người nhận lời chúc ở Dativ; điều được chúc ở Akkusativ."
         },
         "source": "legacy-adapted",
         "simple": "Viel Spaß!",
@@ -211,27 +219,29 @@ const conversationGroups = [
         "simpleVi": "Chúc vui vẻ!"
       },
       {
-        "tactful": "Lass uns bitte ruhig miteinander sprechen.",
-        "en": "Let us speak calmly to each other, please.",
-        "vi": "Chúng ta nói chuyện bình tĩnh với nhau nhé.",
+        "tactful": "Könntest du bitte einen Moment still sein?",
+        "en": "Could you be quiet for a moment, please?",
+        "vi": "Bạn có thể im lặng một lát được không?",
         "vocabulary": [
           {
-            "de": "ruhig",
+            "de": "still",
             "type": "adjective",
-            "en": "calm; quiet",
-            "vi": "bình tĩnh; yên tĩnh"
+            "en": "quiet; silent",
+            "vi": "im lặng"
           },
           {
-            "de": "sprechen",
-            "type": "verb",
-            "en": "to speak",
-            "vi": "nói"
+            "de": "der Moment",
+            "type": "noun",
+            "en": "moment",
+            "vi": "khoảnh khắc; một lát",
+            "plural": "die Momente"
           }
         ],
         "analysis": {
-          "de": "Der Imperativ richtet sich direkt an die andere Person. Bitte und der Kontext können den Ton verändern.",
-          "en": "The imperative addresses the other person directly. Bitte and context can change its tone.",
-          "vi": "Mệnh lệnh hướng trực tiếp tới người nghe. Thêm bitte và chọn giọng điệu phù hợp có thể làm nhẹ lời yêu cầu; mệnh lệnh không mặc nhiên bất lịch sự."
+          "pattern": "könnte/könntest/könnten + Infinitiv",
+          "de": "Konjunktiv II von können; der weitere Infinitiv steht am Ende.",
+          "en": "Subjunctive II of können; the other infinitive comes at the end.",
+          "vi": "Konjunktiv II của können; động từ nguyên mẫu còn lại đứng cuối câu."
         },
         "source": "legacy-adapted",
         "simple": "Halt’s Maul!",
@@ -259,9 +269,10 @@ const conversationGroups = [
           }
         ],
         "analysis": {
-          "de": "Im Aussagesatz steht das konjugierte Verb an zweiter Satzgliedposition. Die Wortwahl und Betonung bestimmen den Ton.",
-          "en": "In a statement, the conjugated verb occupies the second constituent position. Word choice and intonation shape the tone.",
-          "vi": "Trong câu trần thuật, động từ chia đứng ở vị trí thành phần thứ hai. Cách chọn từ và giọng điệu quyết định sắc thái; câu ngắn không mặc nhiên bất lịch sự."
+          "pattern": "Präsens · Aussagesatz",
+          "de": "Das konjugierte Verb steht an zweiter Satzgliedposition; das Vorfeld kann aus mehreren Wörtern bestehen.",
+          "en": "The conjugated verb occupies the second constituent position; the first constituent may contain several words.",
+          "vi": "Động từ chia ở vị trí thành phần thứ hai; thành phần đầu có thể gồm nhiều từ."
         },
         "source": "legacy-adapted",
         "simple": "Das geht auf mich.",
@@ -269,9 +280,9 @@ const conversationGroups = [
         "simpleVi": "Để tôi trả tiền / Tôi mời."
       },
       {
-        "tactful": "Das freut mich sehr für dich. Du kannst stolz auf dich sein.",
-        "en": "I am really happy for you. You can be proud of yourself.",
-        "vi": "Mình rất mừng cho bạn. Bạn có thể tự hào về bản thân.",
+        "tactful": "Ich freue mich wirklich sehr für dich.",
+        "en": "I am really very happy for you.",
+        "vi": "Mình thật sự rất mừng cho bạn.",
         "vocabulary": [
           {
             "de": "sich freuen",
@@ -280,16 +291,17 @@ const conversationGroups = [
             "vi": "vui mừng"
           },
           {
-            "de": "stolz",
-            "type": "adjective",
-            "en": "proud",
-            "vi": "tự hào"
+            "de": "wirklich",
+            "type": "adverb",
+            "en": "really",
+            "vi": "thực sự"
           }
         ],
         "analysis": {
-          "de": "Im Aussagesatz steht das konjugierte Verb an zweiter Satzgliedposition. Die Wortwahl und Betonung bestimmen den Ton.",
-          "en": "In a statement, the conjugated verb occupies the second constituent position. Word choice and intonation shape the tone.",
-          "vi": "Trong câu trần thuật, động từ chia đứng ở vị trí thành phần thứ hai. Cách chọn từ và giọng điệu quyết định sắc thái; câu ngắn không mặc nhiên bất lịch sự."
+          "pattern": "Reflexivpronomen",
+          "de": "Das Reflexivpronomen richtet sich nach dem Subjekt und der Verbverbindung, zum Beispiel ich → mich.",
+          "en": "The reflexive pronoun depends on the subject and verb expression, for example ich → mich.",
+          "vi": "Đại từ phản thân phụ thuộc chủ ngữ và cấu trúc động từ, ví dụ ich → mich."
         },
         "source": "legacy-adapted",
         "simple": "Freut mich für dich!",
@@ -298,69 +310,11 @@ const conversationGroups = [
       },
       {
         "simple": "War nichts Besonderes.",
-        "tactful": "Vielen Dank! Ich habe mir viel Mühe gegeben.",
-        "vi": "Cảm ơn! Mình đã dành nhiều công sức.",
+        "tactful": "Danke, ich freue mich sehr über dein Lob.",
+        "vi": "Cảm ơn, mình rất vui vì lời khen của bạn.",
         "simpleEn": "It was nothing special.",
         "simpleVi": "Chẳng có gì đặc biệt đâu.",
-        "en": "Thank you very much! I put a lot of effort into it.",
-        "vocabulary": [
-          {
-            "de": "sich Mühe geben",
-            "type": "phrase",
-            "en": "to make an effort",
-            "vi": "cố gắng; bỏ công sức"
-          },
-          {
-            "de": "die Mühe",
-            "type": "noun",
-            "en": "effort; trouble",
-            "vi": "công sức; sự vất vả",
-            "plural": "die Mühen"
-          }
-        ],
-        "analysis": {
-          "de": "Das Perfekt besteht hier aus haben/sein und Partizip II. Es beschreibt ein bereits geschehenes Ereignis.",
-          "en": "The perfect consists of haben/sein and a past participle here. It describes something that has already happened.",
-          "vi": "Perfekt dùng haben/sein chia theo chủ ngữ và Partizip II để nói việc đã xảy ra. Partizip II thường đứng cuối mệnh đề chính."
-        },
-        "source": "document"
-      },
-      {
-        "simple": "Nur Glück.",
-        "tactful": "Die gute Vorbereitung hat sich ausgezahlt.",
-        "vi": "Sự chuẩn bị kỹ đã được đền đáp.",
-        "simpleEn": "Just luck.",
-        "simpleVi": "Chỉ là may mắn thôi.",
-        "en": "The good preparation paid off.",
-        "vocabulary": [
-          {
-            "de": "die Vorbereitung",
-            "type": "noun",
-            "en": "preparation",
-            "vi": "sự chuẩn bị",
-            "plural": "die Vorbereitungen"
-          },
-          {
-            "de": "sich auszahlen",
-            "type": "verb",
-            "en": "to pay off",
-            "vi": "đem lại kết quả xứng đáng"
-          }
-        ],
-        "analysis": {
-          "de": "Das Perfekt besteht hier aus haben/sein und Partizip II. Es beschreibt ein bereits geschehenes Ereignis.",
-          "en": "The perfect consists of haben/sein and a past participle here. It describes something that has already happened.",
-          "vi": "Perfekt dùng haben/sein chia theo chủ ngữ và Partizip II để nói việc đã xảy ra. Partizip II thường đứng cuối mệnh đề chính."
-        },
-        "source": "document"
-      },
-      {
-        "simple": "Jeder könnte das.",
-        "tactful": "Danke, ich freue mich über das Ergebnis.",
-        "vi": "Cảm ơn, mình rất vui với kết quả.",
-        "simpleEn": "Anyone could do that.",
-        "simpleVi": "Ai cũng làm được mà.",
-        "en": "Thank you, I am pleased with the result.",
+        "en": "Thank you; I am very pleased with your praise.",
         "vocabulary": [
           {
             "de": "sich freuen",
@@ -369,17 +323,78 @@ const conversationGroups = [
             "vi": "vui mừng"
           },
           {
-            "de": "das Ergebnis",
+            "de": "das Lob",
             "type": "noun",
-            "en": "result",
-            "vi": "kết quả",
-            "plural": "die Ergebnisse"
+            "en": "praise",
+            "vi": "lời khen",
+            "plural": "thường không dùng số nhiều"
           }
         ],
         "analysis": {
-          "de": "Das Reflexivpronomen gehört hier zum Verb oder Ausdruck. Die Form richtet sich nach Subjekt und Konstruktion.",
-          "en": "The reflexive pronoun belongs to the verb or expression here. Its form depends on the subject and construction.",
-          "vi": "Đại từ phản thân đi cùng động từ/cụm từ. Chọn mich/mir, dich/dir, sich… theo chủ ngữ và cấu trúc, không thay tùy ý."
+          "pattern": "sich freuen über + Akkusativ",
+          "de": "Mich gehört zu sich freuen; über verlangt hier Akkusativ. Dein Lob ist das Objekt der Präposition.",
+          "en": "Mich belongs to sich freuen; über takes accusative here. Dein Lob is the object of the preposition.",
+          "vi": "mich thuộc cụm phản thân sich freuen; über trong cấu trúc này đi với Akkusativ. dein Lob là tân ngữ của giới từ."
+        },
+        "source": "document"
+      },
+      {
+        "simple": "Nur Glück.",
+        "tactful": "Danke, ich hatte dabei tatsächlich auch Glück.",
+        "vi": "Cảm ơn, thực ra mình cũng đã gặp may trong việc đó.",
+        "simpleEn": "Just luck.",
+        "simpleVi": "Chỉ là may mắn thôi.",
+        "en": "Thank you; I really did have some luck with that too.",
+        "vocabulary": [
+          {
+            "de": "das Glück",
+            "type": "noun",
+            "en": "luck; happiness",
+            "vi": "may mắn; hạnh phúc",
+            "plural": "thường không dùng số nhiều trong nghĩa may mắn"
+          },
+          {
+            "de": "tatsächlich",
+            "type": "adverb",
+            "en": "really; actually",
+            "vi": "thực sự"
+          }
+        ],
+        "analysis": {
+          "pattern": "Präteritum",
+          "de": "War und hatte sind Präteritumformen von sein und haben.",
+          "en": "War and hatte are past-tense forms of sein and haben.",
+          "vi": "war và hatte là dạng Präteritum của sein và haben."
+        },
+        "source": "document"
+      },
+      {
+        "simple": "Jeder könnte das.",
+        "tactful": "Danke für das freundliche Kompliment.",
+        "vi": "Cảm ơn lời khen tốt đẹp của bạn.",
+        "simpleEn": "Anyone could do that.",
+        "simpleVi": "Ai cũng làm được mà.",
+        "en": "Thank you for the kind compliment.",
+        "vocabulary": [
+          {
+            "de": "freundlich",
+            "type": "adjective",
+            "en": "friendly; kind",
+            "vi": "thân thiện; tốt bụng"
+          },
+          {
+            "de": "das Kompliment",
+            "type": "noun",
+            "en": "compliment",
+            "vi": "lời khen",
+            "plural": "die Komplimente"
+          }
+        ],
+        "analysis": {
+          "pattern": "Verkürzter Satz",
+          "de": "Diese feste Wendung kann ohne konjugiertes Verb als vollständiger Gesprächsbeitrag stehen.",
+          "en": "This fixed expression can function as a complete contribution without a conjugated verb.",
+          "vi": "Cụm cố định này có thể dùng độc lập trong hội thoại dù không có động từ chia."
         },
         "source": "document"
       },
@@ -387,86 +402,90 @@ const conversationGroups = [
         "simple": "Das hätte jeder geschafft.",
         "simpleEn": "Anyone could have done that.",
         "simpleVi": "Ai cũng làm được việc đó thôi.",
-        "tactful": "Danke! Da steckt einiges an Arbeit drin.",
-        "en": "Thank you! Quite a bit of work went into that.",
-        "vi": "Cảm ơn! Mình đã bỏ khá nhiều công sức vào việc đó.",
+        "tactful": "Vielen Dank, ich freue mich über deine Anerkennung.",
+        "en": "Thank you very much; I appreciate your recognition.",
+        "vi": "Cảm ơn nhiều, mình rất vui vì được bạn ghi nhận.",
         "source": "pdf",
         "vocabulary": [
           {
-            "de": "stecken",
+            "de": "sich freuen",
             "type": "verb",
-            "en": "to put into; to be in",
-            "vi": "bỏ vào; nằm trong"
+            "en": "to be pleased",
+            "vi": "vui mừng"
           },
           {
-            "de": "die Arbeit",
+            "de": "die Anerkennung",
             "type": "noun",
-            "en": "work",
-            "vi": "công việc; công sức",
-            "plural": "die Arbeiten (các công việc, tác phẩm)"
+            "en": "recognition; appreciation",
+            "vi": "sự ghi nhận",
+            "plural": "die Anerkennungen"
           }
         ],
         "analysis": {
-          "de": "Im Aussagesatz steht das konjugierte Verb an zweiter Satzgliedposition. Die Wortwahl bestimmt hier vor allem den Ton.",
-          "en": "In a statement, the conjugated verb occupies the second constituent position. Here, word choice mainly shapes the tone.",
-          "vi": "Trong câu trần thuật, động từ chia ở vị trí thành phần thứ hai, không nhất thiết là từ thứ hai. Ở đây sắc thái chủ yếu đến từ cách chọn từ."
+          "pattern": "Reflexivpronomen",
+          "de": "Das Reflexivpronomen richtet sich nach dem Subjekt und der Verbverbindung, zum Beispiel ich → mich.",
+          "en": "The reflexive pronoun depends on the subject and verb expression, for example ich → mich.",
+          "vi": "Đại từ phản thân phụ thuộc chủ ngữ và cấu trúc động từ, ví dụ ich → mich."
         }
       },
       {
         "simple": "War ja nicht so viel Arbeit.",
         "simpleEn": "It was not that much work.",
         "simpleVi": "Cũng không tốn nhiều công sức đâu.",
-        "tactful": "Danke! Ich habe viel Zeit in das Ergebnis gesteckt.",
-        "en": "Thank you! I put a lot of time into that result.",
-        "vi": "Cảm ơn! Mình đã dành nhiều thời gian cho kết quả đó.",
+        "tactful": "Danke, ich freue mich, dass dir das Ergebnis gefällt.",
+        "en": "Thank you; I am glad you like the result.",
+        "vi": "Cảm ơn, mình rất vui vì bạn thích kết quả đó.",
         "source": "pdf",
         "vocabulary": [
           {
-            "de": "die Zeit",
+            "de": "das Ergebnis",
             "type": "noun",
-            "en": "time",
-            "vi": "thời gian",
-            "plural": "die Zeiten (các thời kỳ hoặc thời điểm)"
+            "en": "result",
+            "vi": "kết quả",
+            "plural": "die Ergebnisse"
           },
           {
-            "de": "stecken",
+            "de": "gefallen",
             "type": "verb",
-            "en": "to put into; to be in",
-            "vi": "bỏ vào; nằm trong"
+            "en": "to please; to appeal",
+            "vi": "làm hài lòng; được thích"
           }
         ],
         "analysis": {
-          "de": "Das Perfekt besteht hier aus haben/sein und Partizip II. Es beschreibt ein bereits geschehenes Ereignis.",
-          "en": "The perfect consists of haben/sein and a past participle here. It describes something that has already happened.",
-          "vi": "Perfekt dùng haben/sein chia theo chủ ngữ và Partizip II để nói việc đã xảy ra. Partizip II thường đứng cuối mệnh đề chính."
+          "pattern": "dass + … + Verb am Ende",
+          "de": "Das konjugierte Verb steht am Ende des dass-Satzes.",
+          "en": "The conjugated verb comes at the end of the dass-clause.",
+          "vi": "Động từ chia đứng cuối mệnh đề mở đầu bằng dass."
         }
       },
       {
         "simple": "So gut war das auch nicht.",
         "simpleEn": "It was not that good.",
         "simpleVi": "Cũng chẳng tốt đến thế đâu.",
-        "tactful": "Vielen Dank. Darauf bin ich auch stolz.",
-        "en": "Thank you very much. I am proud of that too.",
-        "vi": "Cảm ơn nhiều. Mình cũng tự hào về điều đó.",
+        "tactful": "Vielen Dank, ich freue mich über deine Rückmeldung.",
+        "en": "Thank you very much; I appreciate your feedback.",
+        "vi": "Cảm ơn nhiều, mình rất vui khi nhận được phản hồi của bạn.",
         "source": "pdf",
         "vocabulary": [
           {
-            "de": "stolz",
-            "type": "adjective",
-            "en": "proud",
-            "vi": "tự hào"
+            "de": "sich freuen",
+            "type": "verb",
+            "en": "to be pleased",
+            "vi": "vui mừng"
           },
           {
-            "de": "darauf",
-            "type": "adverb",
-            "en": "on that; of that",
-            "vi": "về điều đó trong stolz darauf"
+            "de": "die Rückmeldung",
+            "type": "noun",
+            "en": "reply; feedback",
+            "vi": "phản hồi",
+            "plural": "die Rückmeldungen"
           }
         ],
         "analysis": {
-          "de": "Stolz wird mit auf + Akkusativ verbunden. Darauf verweist hier auf die genannte Leistung.",
-          "en": "Stolz takes auf plus accusative. Darauf refers back to the achievement.",
-          "vi": "stolz auf + Akkusativ = tự hào về. Darauf thay cho auf + sự việc đã nhắc tới, không dùng stolz über trong cấu trúc đang học."
+          "pattern": "Reflexivpronomen",
+          "de": "Das Reflexivpronomen richtet sich nach dem Subjekt und der Verbverbindung, zum Beispiel ich → mich.",
+          "en": "The reflexive pronoun depends on the subject and verb expression, for example ich → mich.",
+          "vi": "Đại từ phản thân phụ thuộc chủ ngữ và cấu trúc động từ, ví dụ ich → mich."
         }
       }
     ],
@@ -505,9 +524,10 @@ const conversationGroups = [
           }
         ],
         "analysis": {
-          "de": "Im Aussagesatz steht das konjugierte Verb an zweiter Satzgliedposition. Die Wortwahl und Betonung bestimmen den Ton.",
-          "en": "In a statement, the conjugated verb occupies the second constituent position. Word choice and intonation shape the tone.",
-          "vi": "Trong câu trần thuật, động từ chia đứng ở vị trí thành phần thứ hai. Cách chọn từ và giọng điệu quyết định sắc thái; câu ngắn không mặc nhiên bất lịch sự."
+          "pattern": "jemandem zustimmen / recht geben",
+          "de": "Dir steht im Dativ. Zustimmen ist trennbar: stimme … zu; jemandem recht geben verlangt ebenfalls Dativ.",
+          "en": "Dir is dative. Zustimmen is separable: stimme … zu; jemandem recht geben also takes dative.",
+          "vi": "dir ở Dativ. zustimmen là động từ tách: stimme … zu; jemandem recht geben cũng dùng Dativ chỉ người."
         },
         "source": "legacy-adapted",
         "simple": "Das stimmt!",
@@ -515,29 +535,29 @@ const conversationGroups = [
         "simpleVi": "Đúng rồi / Điều đó đúng."
       },
       {
-        "tactful": "Welche Bedeutung hat das für unsere Entscheidung?",
-        "en": "What does that mean for our decision?",
-        "vi": "Điều đó có ý nghĩa gì đối với quyết định của chúng ta?",
+        "tactful": "Was bedeutet das aus deiner Sicht für uns?",
+        "en": "What does that mean for us from your point of view?",
+        "vi": "Theo bạn, điều đó có ý nghĩa gì đối với chúng ta?",
         "vocabulary": [
           {
-            "de": "die Entscheidung",
+            "de": "die Sicht",
             "type": "noun",
-            "en": "decision",
-            "vi": "quyết định",
-            "plural": "die Entscheidungen"
+            "en": "view; perspective",
+            "vi": "góc nhìn",
+            "plural": "die Sichten"
           },
           {
-            "de": "die Bedeutung",
-            "type": "noun",
-            "en": "meaning; significance",
-            "vi": "ý nghĩa",
-            "plural": "die Bedeutungen"
+            "de": "bedeuten",
+            "type": "verb",
+            "en": "to mean",
+            "vi": "có nghĩa"
           }
         ],
         "analysis": {
-          "de": "In der Ja-/Nein-Frage steht das konjugierte Verb am Anfang.",
-          "en": "In a yes/no question, the conjugated verb comes first.",
-          "vi": "Câu hỏi có/không đặt động từ chia lên đầu; đây là cách hỏi trực tiếp, không tự động bất lịch sự."
+          "pattern": "W-Frage + konjugiertes Verb",
+          "de": "Das Fragewort steht zuerst, danach folgt das konjugierte Verb.",
+          "en": "The question word comes first, followed by the conjugated verb.",
+          "vi": "Từ để hỏi đứng đầu, theo sau là động từ đã chia."
         },
         "source": "legacy-adapted",
         "simple": "Na und?",
@@ -564,9 +584,10 @@ const conversationGroups = [
           }
         ],
         "analysis": {
-          "de": "Im Aussagesatz steht das konjugierte Verb an zweiter Satzgliedposition. Die Wortwahl und Betonung bestimmen den Ton.",
-          "en": "In a statement, the conjugated verb occupies the second constituent position. Word choice and intonation shape the tone.",
-          "vi": "Trong câu trần thuật, động từ chia đứng ở vị trí thành phần thứ hai. Cách chọn từ và giọng điệu quyết định sắc thái; câu ngắn không mặc nhiên bất lịch sự."
+          "pattern": "Präsens · Aussagesatz",
+          "de": "Das konjugierte Verb steht an zweiter Satzgliedposition; das Vorfeld kann aus mehreren Wörtern bestehen.",
+          "en": "The conjugated verb occupies the second constituent position; the first constituent may contain several words.",
+          "vi": "Động từ chia ở vị trí thành phần thứ hai; thành phần đầu có thể gồm nhiều từ."
         },
         "source": "legacy-adapted",
         "simple": "Eben!",
@@ -593,9 +614,10 @@ const conversationGroups = [
           }
         ],
         "analysis": {
-          "de": "Im Aussagesatz steht das konjugierte Verb an zweiter Satzgliedposition. Die Wortwahl und Betonung bestimmen den Ton.",
-          "en": "In a statement, the conjugated verb occupies the second constituent position. Word choice and intonation shape the tone.",
-          "vi": "Trong câu trần thuật, động từ chia đứng ở vị trí thành phần thứ hai. Cách chọn từ và giọng điệu quyết định sắc thái; câu ngắn không mặc nhiên bất lịch sự."
+          "pattern": "Präsens · Aussagesatz",
+          "de": "Das konjugierte Verb steht an zweiter Satzgliedposition; das Vorfeld kann aus mehreren Wörtern bestehen.",
+          "en": "The conjugated verb occupies the second constituent position; the first constituent may contain several words.",
+          "vi": "Động từ chia ở vị trí thành phần thứ hai; thành phần đầu có thể gồm nhiều từ."
         },
         "source": "legacy-adapted",
         "simple": "Von mir aus.",
@@ -603,9 +625,9 @@ const conversationGroups = [
         "simpleVi": "Tôi thì được thôi / Cứ làm đi (đôi khi miễn cưỡng)."
       },
       {
-        "tactful": "Damit bin ich nicht einverstanden. Lass uns eine andere Lösung suchen.",
-        "en": "I do not agree with that. Let us look for another solution.",
-        "vi": "Mình không đồng ý như vậy. Chúng ta tìm giải pháp khác nhé.",
+        "tactful": "Damit bin ich nicht einverstanden.",
+        "en": "I do not agree with that.",
+        "vi": "Mình không đồng ý với điều đó.",
         "vocabulary": [
           {
             "de": "einverstanden",
@@ -614,17 +636,17 @@ const conversationGroups = [
             "vi": "đồng ý; nhất trí"
           },
           {
-            "de": "die Lösung",
-            "type": "noun",
-            "en": "solution",
-            "vi": "giải pháp",
-            "plural": "die Lösungen"
+            "de": "sein",
+            "type": "verb",
+            "en": "to be",
+            "vi": "là; ở; thì"
           }
         ],
         "analysis": {
-          "de": "Im Aussagesatz steht das konjugierte Verb an zweiter Satzgliedposition. Die Wortwahl und Betonung bestimmen den Ton.",
-          "en": "In a statement, the conjugated verb occupies the second constituent position. Word choice and intonation shape the tone.",
-          "vi": "Trong câu trần thuật, động từ chia đứng ở vị trí thành phần thứ hai. Cách chọn từ và giọng điệu quyết định sắc thái; câu ngắn không mặc nhiên bất lịch sự."
+          "pattern": "Adjektiv als Prädikativ",
+          "de": "Das Adjektiv bleibt nach sein, klingen, erscheinen oder finden in dieser Funktion ohne Deklinationsendung.",
+          "en": "Used predicatively after sein, klingen, erscheinen or finden, the adjective has no inflectional ending here.",
+          "vi": "Tính từ làm vị ngữ sau sein, klingen, erscheinen hoặc finden trong cấu trúc này không nhận đuôi biến cách."
         },
         "source": "legacy-adapted",
         "simple": "Nichts da!",
@@ -632,28 +654,28 @@ const conversationGroups = [
         "simpleVi": "Không được đâu / Không có chuyện đó."
       },
       {
-        "tactful": "So wirkt es auch auf mich. Lass uns die Einzelheiten noch prüfen.",
-        "en": "That is how it seems to me too. Let us still check the details.",
-        "vi": "Mình cũng thấy như vậy. Chúng ta vẫn kiểm tra thêm các chi tiết nhé.",
+        "tactful": "So stellt es sich für mich auch dar.",
+        "en": "That is how it appears to me too.",
+        "vi": "Mình cũng thấy sự việc như vậy.",
         "vocabulary": [
           {
-            "de": "die Einzelheit",
-            "type": "noun",
-            "en": "detail",
-            "vi": "chi tiết",
-            "plural": "die Einzelheiten"
+            "de": "sich darstellen",
+            "type": "verb",
+            "en": "to appear; to present itself",
+            "vi": "thể hiện; hiện ra"
           },
           {
-            "de": "prüfen",
-            "type": "verb",
-            "en": "to check; to examine",
-            "vi": "kiểm tra"
+            "de": "auch",
+            "type": "adverb",
+            "en": "also; too",
+            "vi": "cũng"
           }
         ],
         "analysis": {
-          "de": "Im Aussagesatz steht das konjugierte Verb an zweiter Satzgliedposition. Die Wortwahl und Betonung bestimmen den Ton.",
-          "en": "In a statement, the conjugated verb occupies the second constituent position. Word choice and intonation shape the tone.",
-          "vi": "Trong câu trần thuật, động từ chia đứng ở vị trí thành phần thứ hai. Cách chọn từ và giọng điệu quyết định sắc thái; câu ngắn không mặc nhiên bất lịch sự."
+          "pattern": "Trennbares Verb",
+          "de": "Im Hauptsatz wird das Präfix abgetrennt und steht am Ende, sofern kein Modalverb den Infinitiv verlangt.",
+          "en": "In a main clause, the separable prefix comes at the end unless a modal requires the infinitive.",
+          "vi": "Ở câu chính, tiền tố tách ra và đứng cuối khi không có động từ tình thái yêu cầu dạng nguyên mẫu."
         },
         "source": "legacy-adapted",
         "simple": "Das sieht man doch!",
@@ -661,27 +683,28 @@ const conversationGroups = [
         "simpleVi": "Nhìn là thấy rõ rồi mà!"
       },
       {
-        "tactful": "Das weiß ich leider nicht. Wir können gemeinsam nachsehen.",
-        "en": "Unfortunately, I do not know. We can check together.",
-        "vi": "Tiếc là mình không biết. Chúng ta có thể cùng kiểm tra.",
+        "tactful": "Das kann ich dir leider nicht sagen.",
+        "en": "Unfortunately, I cannot tell you that.",
+        "vi": "Tiếc là mình không thể trả lời bạn điều đó.",
         "vocabulary": [
           {
-            "de": "gemeinsam",
-            "type": "adjective",
-            "en": "joint; together",
-            "vi": "chung; cùng nhau"
+            "de": "sagen",
+            "type": "verb",
+            "en": "to say; to tell",
+            "vi": "nói; cho biết"
           },
           {
-            "de": "prüfen",
-            "type": "verb",
-            "en": "to check; to examine",
-            "vi": "kiểm tra"
+            "de": "leider",
+            "type": "adverb",
+            "en": "unfortunately",
+            "vi": "tiếc là"
           }
         ],
         "analysis": {
-          "de": "Im Aussagesatz steht das konjugierte Verb an zweiter Satzgliedposition. Die Wortwahl und Betonung bestimmen den Ton.",
-          "en": "In a statement, the conjugated verb occupies the second constituent position. Word choice and intonation shape the tone.",
-          "vi": "Trong câu trần thuật, động từ chia đứng ở vị trí thành phần thứ hai. Cách chọn từ và giọng điệu quyết định sắc thái; câu ngắn không mặc nhiên bất lịch sự."
+          "pattern": "Modalverb + Infinitiv",
+          "de": "Das Modalverb wird konjugiert; das andere Verb steht im Infinitiv am Satzende.",
+          "en": "The modal is conjugated; the other verb stays in the infinitive at the end.",
+          "vi": "Động từ tình thái được chia; động từ còn lại giữ nguyên mẫu và đứng cuối."
         },
         "source": "legacy-adapted",
         "simple": "Woher soll ich’s wissen?",
@@ -689,9 +712,9 @@ const conversationGroups = [
         "simpleVi": "Làm sao tôi biết được?"
       },
       {
-        "tactful": "Danke für den Hinweis. Das wusste ich bisher nicht.",
-        "en": "Thank you for pointing that out. I did not know that before.",
-        "vi": "Cảm ơn bạn đã lưu ý. Trước đây mình chưa biết điều đó.",
+        "tactful": "Danke für den Hinweis, das war mir bisher nicht bekannt.",
+        "en": "Thank you for pointing that out; I did not know that before.",
+        "vi": "Cảm ơn bạn đã lưu ý, trước đây mình chưa biết điều đó.",
         "vocabulary": [
           {
             "de": "der Hinweis",
@@ -708,9 +731,10 @@ const conversationGroups = [
           }
         ],
         "analysis": {
-          "de": "Im Aussagesatz steht das konjugierte Verb an zweiter Satzgliedposition. Die Wortwahl und Betonung bestimmen den Ton.",
-          "en": "In a statement, the conjugated verb occupies the second constituent position. Word choice and intonation shape the tone.",
-          "vi": "Trong câu trần thuật, động từ chia đứng ở vị trí thành phần thứ hai. Cách chọn từ và giọng điệu quyết định sắc thái; câu ngắn không mặc nhiên bất lịch sự."
+          "pattern": "Präteritum",
+          "de": "War und hatte sind Präteritumformen von sein und haben.",
+          "en": "War and hatte are past-tense forms of sein and haben.",
+          "vi": "war và hatte là dạng Präteritum của sein và haben."
         },
         "source": "legacy-adapted",
         "simple": "Das ist mir neu.",
@@ -718,9 +742,9 @@ const conversationGroups = [
         "simpleVi": "Chuyện đó giờ tôi mới biết."
       },
       {
-        "tactful": "Das überrascht mich sehr. Kannst du mir erklären, was passiert ist?",
-        "en": "That really surprises me. Can you explain what happened?",
-        "vi": "Điều đó khiến mình rất ngạc nhiên. Bạn giải thích chuyện gì đã xảy ra được không?",
+        "tactful": "Das überrascht mich wirklich sehr.",
+        "en": "That really surprises me a lot.",
+        "vi": "Điều đó thật sự khiến mình rất ngạc nhiên.",
         "vocabulary": [
           {
             "de": "überraschen",
@@ -729,16 +753,17 @@ const conversationGroups = [
             "vi": "làm ngạc nhiên"
           },
           {
-            "de": "erklären",
-            "type": "verb",
-            "en": "to explain",
-            "vi": "giải thích"
+            "de": "wirklich",
+            "type": "adverb",
+            "en": "really",
+            "vi": "thực sự"
           }
         ],
         "analysis": {
-          "de": "In der indirekten Frage steht das konjugierte Verb am Ende des Nebensatzes.",
-          "en": "In an indirect question, the conjugated verb comes at the end of the subordinate clause.",
-          "vi": "Câu hỏi gián tiếp đưa phần cần hỏi vào mệnh đề phụ; động từ chia của phần này đứng cuối. Không đảo động từ lên đầu như câu hỏi độc lập."
+          "pattern": "Präsens · Aussagesatz",
+          "de": "Das konjugierte Verb steht an zweiter Satzgliedposition; das Vorfeld kann aus mehreren Wörtern bestehen.",
+          "en": "The conjugated verb occupies the second constituent position; the first constituent may contain several words.",
+          "vi": "Động từ chia ở vị trí thành phần thứ hai; thành phần đầu có thể gồm nhiều từ."
         },
         "source": "legacy-adapted",
         "simple": "Ich glaub’, mein Schwein pfeift!",
@@ -764,9 +789,10 @@ const conversationGroups = [
           }
         ],
         "analysis": {
-          "de": "Im Aussagesatz steht das konjugierte Verb an zweiter Satzgliedposition. Die Wortwahl und Betonung bestimmen den Ton.",
-          "en": "In a statement, the conjugated verb occupies the second constituent position. Word choice and intonation shape the tone.",
-          "vi": "Trong câu trần thuật, động từ chia đứng ở vị trí thành phần thứ hai. Cách chọn từ và giọng điệu quyết định sắc thái; câu ngắn không mặc nhiên bất lịch sự."
+          "pattern": "Präsens · Aussagesatz",
+          "de": "Das konjugierte Verb steht an zweiter Satzgliedposition; das Vorfeld kann aus mehreren Wörtern bestehen.",
+          "en": "The conjugated verb occupies the second constituent position; the first constituent may contain several words.",
+          "vi": "Động từ chia ở vị trí thành phần thứ hai; thành phần đầu có thể gồm nhiều từ."
         },
         "source": "legacy-adapted",
         "simple": "Einverstanden.",
@@ -775,87 +801,91 @@ const conversationGroups = [
       },
       {
         "simple": "Okay.",
-        "tactful": "Das klingt nach einem guten Plan.",
-        "vi": "Nghe có vẻ là một kế hoạch hợp lý.",
+        "tactful": "Das ist für mich in Ordnung.",
+        "vi": "Như vậy ổn với mình.",
         "simpleEn": "Okay.",
         "simpleVi": "Được.",
-        "en": "That sounds like a good plan.",
+        "en": "That is all right with me.",
         "vocabulary": [
           {
-            "de": "klingen",
-            "type": "verb",
-            "en": "to sound",
-            "vi": "nghe có vẻ"
+            "de": "in Ordnung",
+            "type": "phrase",
+            "en": "all right; in order",
+            "vi": "ổn; đúng quy củ"
           },
           {
-            "de": "der Plan",
-            "type": "noun",
-            "en": "plan",
-            "vi": "kế hoạch",
-            "plural": "die Pläne"
+            "de": "sein",
+            "type": "verb",
+            "en": "to be",
+            "vi": "là; ở; thì"
           }
         ],
         "analysis": {
-          "de": "Im Aussagesatz steht das konjugierte Verb an zweiter Satzgliedposition. Die Wortwahl bestimmt hier vor allem den Ton.",
-          "en": "In a statement, the conjugated verb occupies the second constituent position. Here, word choice mainly shapes the tone.",
-          "vi": "Trong câu trần thuật, động từ chia ở vị trí thành phần thứ hai, không nhất thiết là từ thứ hai. Ở đây sắc thái chủ yếu đến từ cách chọn từ."
+          "pattern": "Präsens · Aussagesatz",
+          "de": "Das konjugierte Verb steht an zweiter Satzgliedposition; das Vorfeld kann aus mehreren Wörtern bestehen.",
+          "en": "The conjugated verb occupies the second constituent position; the first constituent may contain several words.",
+          "vi": "Động từ chia ở vị trí thành phần thứ hai; thành phần đầu có thể gồm nhiều từ."
         },
         "source": "document"
       },
       {
         "simple": "Das stimmt nicht.",
-        "tactful": "Ich sehe das etwas anders.",
-        "vi": "Mình nhìn nhận việc này hơi khác.",
+        "tactful": "Nach meinem Verständnis ist das nicht richtig.",
+        "vi": "Theo cách mình hiểu thì điều đó không đúng.",
         "simpleEn": "That is not true.",
         "simpleVi": "Điều đó không đúng.",
-        "en": "I see it a little differently.",
+        "en": "As I understand it, that is not correct.",
         "vocabulary": [
           {
-            "de": "sehen",
-            "type": "verb",
-            "en": "to see",
-            "vi": "nhìn; nhận thấy"
+            "de": "das Verständnis",
+            "type": "noun",
+            "en": "understanding",
+            "vi": "cách hiểu; sự hiểu biết",
+            "plural": "thường không dùng số nhiều"
           },
           {
-            "de": "anders",
-            "type": "adverb",
-            "en": "differently",
-            "vi": "theo cách khác"
+            "de": "richtig",
+            "type": "adjective",
+            "en": "correct; right",
+            "vi": "đúng"
           }
         ],
         "analysis": {
-          "de": "Im Aussagesatz steht das konjugierte Verb an zweiter Satzgliedposition. Die Wortwahl bestimmt hier vor allem den Ton.",
-          "en": "In a statement, the conjugated verb occupies the second constituent position. Here, word choice mainly shapes the tone.",
-          "vi": "Trong câu trần thuật, động từ chia ở vị trí thành phần thứ hai, không nhất thiết là từ thứ hai. Ở đây sắc thái chủ yếu đến từ cách chọn từ."
+          "pattern": "Adjektiv als Prädikativ",
+          "de": "Das Adjektiv bleibt nach sein, klingen, erscheinen oder finden in dieser Funktion ohne Deklinationsendung.",
+          "en": "Used predicatively after sein, klingen, erscheinen or finden, the adjective has no inflectional ending here.",
+          "vi": "Tính từ làm vị ngữ sau sein, klingen, erscheinen hoặc finden trong cấu trúc này không nhận đuôi biến cách."
         },
         "source": "document"
       },
       {
         "simple": "Du hast unrecht.",
-        "tactful": "Ich verstehe deinen Punkt, sehe aber einen anderen Aspekt.",
-        "vi": "Mình hiểu ý bạn, nhưng còn nhìn thấy một khía cạnh khác.",
+        "tactful": "Ich komme in diesem Punkt zu einem anderen Schluss.",
+        "vi": "Ở điểm này, mình đi đến một kết luận khác.",
         "simpleEn": "You are wrong.",
         "simpleVi": "Bạn sai rồi.",
-        "en": "I understand your point, but I see another aspect.",
+        "en": "I reach a different conclusion on this point.",
         "vocabulary": [
           {
-            "de": "verstehen",
-            "type": "verb",
-            "en": "to understand",
-            "vi": "hiểu"
+            "de": "der Punkt",
+            "type": "noun",
+            "en": "point",
+            "vi": "điểm; ý",
+            "plural": "die Punkte"
           },
           {
-            "de": "der Aspekt",
+            "de": "der Schluss",
             "type": "noun",
-            "en": "aspect",
-            "vi": "khía cạnh",
-            "plural": "die Aspekte"
+            "en": "end; conclusion",
+            "vi": "phần kết; kết thúc",
+            "plural": "die Schlüsse"
           }
         ],
         "analysis": {
-          "de": "Im Aussagesatz steht das konjugierte Verb an zweiter Satzgliedposition. Die Wortwahl bestimmt hier vor allem den Ton.",
-          "en": "In a statement, the conjugated verb occupies the second constituent position. Here, word choice mainly shapes the tone.",
-          "vi": "Trong câu trần thuật, động từ chia ở vị trí thành phần thứ hai, không nhất thiết là từ thứ hai. Ở đây sắc thái chủ yếu đến từ cách chọn từ."
+          "pattern": "Präsens · Aussagesatz",
+          "de": "Das konjugierte Verb steht an zweiter Satzgliedposition; das Vorfeld kann aus mehreren Wörtern bestehen.",
+          "en": "The conjugated verb occupies the second constituent position; the first constituent may contain several words.",
+          "vi": "Động từ chia ở vị trí thành phần thứ hai; thành phần đầu có thể gồm nhiều từ."
         },
         "source": "document"
       },
@@ -882,47 +912,49 @@ const conversationGroups = [
           }
         ],
         "analysis": {
-          "de": "Würde/würden + Infinitiv bildet hier den Konjunktiv II und formuliert einen Wunsch oder eine Einschätzung vorsichtiger.",
-          "en": "Würde/würden plus an infinitive forms subjunctive II here, softening a wish or assessment.",
-          "vi": "würde/würden + động từ nguyên mẫu tạo Konjunktiv II, giúp diễn đạt mong muốn hoặc nhận định dè dặt hơn. Không làm thay đổi sự thật cần nói."
+          "pattern": "würde/würden + Infinitiv",
+          "de": "Würde wird konjugiert; der Infinitiv des Vollverbs steht am Ende.",
+          "en": "Würde is conjugated; the lexical verb stays in the infinitive at the end.",
+          "vi": "würde chia theo chủ ngữ; động từ chính giữ nguyên mẫu và đứng cuối."
         }
       },
       {
         "simple": "Da haben Sie unrecht.",
         "simpleEn": "You are wrong about that.",
         "simpleVi": "Anh/chị sai ở điểm đó.",
-        "tactful": "Bis zu einem gewissen Grad gebe ich Ihnen recht. Allerdings sehe ich ein Problem.",
-        "en": "I agree with you up to a point. However, I see a problem.",
-        "vi": "Tôi đồng ý với anh/chị ở một mức độ nhất định. Tuy nhiên, tôi thấy có một vấn đề.",
+        "tactful": "In diesem Punkt sehe ich das anders.",
+        "en": "I see this point differently.",
+        "vi": "Ở điểm này, tôi nhìn nhận khác với anh/chị.",
         "source": "pdf",
         "vocabulary": [
           {
-            "de": "der Grad",
+            "de": "der Punkt",
             "type": "noun",
-            "en": "degree; extent",
-            "vi": "mức độ",
-            "plural": "die Grade"
+            "en": "point",
+            "vi": "điểm; ý",
+            "plural": "die Punkte"
           },
           {
-            "de": "allerdings",
+            "de": "anders",
             "type": "adverb",
-            "en": "however; admittedly",
-            "vi": "tuy nhiên; quả thực"
+            "en": "differently",
+            "vi": "theo cách khác"
           }
         ],
         "analysis": {
-          "de": "Achte auf den Dativ beim Bezug auf eine Person, etwa dir oder Ihnen. Die passende Form hängt vom jeweiligen Verb oder Ausdruck ab.",
-          "en": "Notice the dative form referring to a person, such as dir or Ihnen. Its use depends on the particular verb or expression.",
-          "vi": "Chú ý dạng Dativ chỉ người như dir hoặc Ihnen. Cách dùng phụ thuộc động từ/cụm từ: etwas jemandem überlassen hoặc jemandem recht geben; không phải mọi động từ đều dùng Dativ."
+          "pattern": "Präsens · Aussagesatz",
+          "de": "Das konjugierte Verb steht an zweiter Satzgliedposition; das Vorfeld kann aus mehreren Wörtern bestehen.",
+          "en": "The conjugated verb occupies the second constituent position; the first constituent may contain several words.",
+          "vi": "Động từ chia ở vị trí thành phần thứ hai; thành phần đầu có thể gồm nhiều từ."
         }
       },
       {
         "simple": "Ja, genau.",
         "simpleEn": "Yes, exactly.",
         "simpleVi": "Đúng rồi.",
-        "tactful": "Da bin ich ganz Ihrer Meinung.",
+        "tactful": "Da bin ich ganz deiner Meinung.",
         "en": "I completely agree with you on that.",
-        "vi": "Ở điểm đó, tôi hoàn toàn đồng ý với anh/chị.",
+        "vi": "Ở điểm đó, mình hoàn toàn đồng ý với bạn.",
         "source": "pdf",
         "vocabulary": [
           {
@@ -940,94 +972,97 @@ const conversationGroups = [
           }
         ],
         "analysis": {
-          "de": "Im Aussagesatz steht das konjugierte Verb an zweiter Satzgliedposition. Die Wortwahl bestimmt hier vor allem den Ton.",
-          "en": "In a statement, the conjugated verb occupies the second constituent position. Here, word choice mainly shapes the tone.",
-          "vi": "Trong câu trần thuật, động từ chia ở vị trí thành phần thứ hai, không nhất thiết là từ thứ hai. Ở đây sắc thái chủ yếu đến từ cách chọn từ."
+          "pattern": "deiner Meinung sein · Dativ",
+          "de": "Deiner Meinung ist hier Dativ Singular; die Wendung lautet jemandes Meinung sein. Deiner richtet sich nach dem femininen Nomen Meinung.",
+          "en": "Deiner Meinung is dative singular here; the expression is jemandes Meinung sein. Deiner agrees with Meinung.",
+          "vi": "deiner Meinung là Dativ số ít; deiner hòa hợp với danh từ giống cái Meinung. Cụm jemandes Meinung sein diễn đạt cùng quan điểm với ai."
         }
       },
       {
         "simple": "Das ist dein Fehler.",
-        "tactful": "Lass uns gemeinsam schauen, wie es dazu gekommen ist.",
-        "vi": "Hãy cùng xem vì sao chuyện này xảy ra.",
+        "tactful": "Mir ist aufgefallen, dass dir hier ein Fehler unterlaufen ist.",
+        "vi": "Mình nhận thấy bạn đã mắc một lỗi ở đây.",
         "simpleEn": "That is your fault.",
         "simpleVi": "Đó là lỗi của bạn.",
-        "en": "Let us look together at how this happened.",
+        "en": "I noticed that you made a mistake here.",
         "vocabulary": [
           {
-            "de": "gemeinsam",
-            "type": "adjective",
-            "en": "joint; together",
-            "vi": "chung; cùng nhau"
+            "de": "auffallen",
+            "type": "verb",
+            "en": "to notice; to stand out",
+            "vi": "được chú ý; khiến ai nhận thấy"
           },
           {
-            "de": "kommen",
-            "type": "verb",
-            "en": "to come; to happen",
-            "vi": "đến; xảy ra"
+            "de": "der Fehler",
+            "type": "noun",
+            "en": "mistake; error",
+            "vi": "lỗi",
+            "plural": "die Fehler"
           }
         ],
         "analysis": {
-          "de": "In der indirekten Frage steht das konjugierte Verb am Ende des Nebensatzes.",
-          "en": "In an indirect question, the conjugated verb comes at the end of the subordinate clause.",
-          "vi": "Câu hỏi gián tiếp đưa phần cần hỏi vào mệnh đề phụ; động từ chia của phần này đứng cuối. Không đảo động từ lên đầu như câu hỏi độc lập."
+          "pattern": "dass + … + Verb am Ende",
+          "de": "Das konjugierte Verb steht am Ende des dass-Satzes.",
+          "en": "The conjugated verb comes at the end of the dass-clause.",
+          "vi": "Động từ chia đứng cuối mệnh đề mở đầu bằng dass."
         },
         "source": "document"
       },
       {
         "simple": "Das nervt.",
-        "tactful": "Ich würde mir wünschen, dass wir das anders lösen.",
-        "vi": "Mình mong chúng ta giải quyết việc này theo cách khác.",
+        "tactful": "Das stört mich, und ich würde gerne darüber sprechen.",
+        "vi": "Điều đó khiến mình khó chịu và mình muốn trao đổi về nó.",
         "simpleEn": "That is annoying.",
         "simpleVi": "Thật bực mình.",
-        "en": "I would like us to resolve this differently.",
+        "en": "That bothers me, and I would like to talk about it.",
         "vocabulary": [
           {
-            "de": "sich wünschen",
+            "de": "stören",
             "type": "verb",
-            "en": "to wish for",
-            "vi": "mong muốn"
+            "en": "to disturb; to bother",
+            "vi": "làm phiền"
           },
           {
-            "de": "lösen",
+            "de": "sprechen",
             "type": "verb",
-            "en": "to solve; to resolve",
-            "vi": "giải quyết"
+            "en": "to speak",
+            "vi": "nói"
           }
         ],
         "analysis": {
-          "de": "Würde/würden + Infinitiv bildet hier den Konjunktiv II und formuliert einen Wunsch oder eine Einschätzung vorsichtiger.",
-          "en": "Würde/würden plus an infinitive forms subjunctive II here, softening a wish or assessment.",
-          "vi": "würde/würden + động từ nguyên mẫu tạo Konjunktiv II, giúp diễn đạt mong muốn hoặc nhận định dè dặt hơn. Không làm thay đổi sự thật cần nói."
+          "pattern": "würde/würden + Infinitiv",
+          "de": "Würde wird konjugiert; der Infinitiv des Vollverbs steht am Ende.",
+          "en": "Würde is conjugated; the lexical verb stays in the infinitive at the end.",
+          "vi": "würde chia theo chủ ngữ; động từ chính giữ nguyên mẫu và đứng cuối."
         },
         "source": "document"
       },
       {
         "simple": "Vergiss es.",
-        "tactful": "Lass uns nach einer Lösung suchen, mit der beide Seiten leben können.",
-        "vi": "Hãy tìm giải pháp mà cả hai bên có thể chấp nhận.",
+        "tactful": "Lass uns das vorerst nicht weiterverfolgen.",
+        "vi": "Trước mắt chúng ta đừng tiếp tục theo đuổi việc đó nữa nhé.",
         "simpleEn": "Forget it.",
         "simpleVi": "Bỏ đi.",
-        "en": "Let us look for a solution that both sides can live with.",
+        "en": "Let us not pursue that any further for now.",
         "vocabulary": [
           {
-            "de": "die Lösung",
-            "type": "noun",
-            "en": "solution",
-            "vi": "giải pháp",
-            "plural": "die Lösungen"
+            "de": "vorerst",
+            "type": "adverb",
+            "en": "for now",
+            "vi": "trước mắt"
           },
           {
-            "de": "die Seite",
-            "type": "noun",
-            "en": "side; page",
-            "vi": "bên; trang",
-            "plural": "die Seiten"
+            "de": "weiterverfolgen",
+            "type": "verb",
+            "en": "to pursue further",
+            "vi": "tiếp tục theo đuổi"
           }
         ],
         "analysis": {
-          "de": "Der Relativsatz ergänzt ein Nomen. Die Präposition und die Funktion im Relativsatz bestimmen den Kasus des Relativpronomens.",
-          "en": "The relative clause adds information to a noun. The preposition and role within the relative clause determine the relative pronoun case.",
-          "vi": "Mệnh đề quan hệ bổ sung cho danh từ. Giới từ và vai trò trong mệnh đề quan hệ quyết định cách của đại từ; động từ chia đứng cuối mệnh đề phụ."
+          "pattern": "lass uns + Infinitiv",
+          "de": "Lass ist Imperativ von lassen; das Vollverb bleibt im Infinitiv.",
+          "en": "Lass is the imperative of lassen; the main verb remains infinitive.",
+          "vi": "Lass là mệnh lệnh của lassen; động từ chính giữ nguyên mẫu sau uns."
         },
         "source": "document"
       }
@@ -1047,9 +1082,9 @@ const conversationGroups = [
     },
     "rows": [
       {
-        "tactful": "Das ist ärgerlich. Lass uns schauen, was wir jetzt tun können.",
-        "en": "That is annoying. Let us see what we can do now.",
-        "vi": "Chuyện này thật phiền. Chúng ta xem giờ có thể làm gì nhé.",
+        "tactful": "Das ist wirklich ärgerlich.",
+        "en": "That is really annoying.",
+        "vi": "Chuyện đó thật sự gây bực mình.",
         "vocabulary": [
           {
             "de": "ärgerlich",
@@ -1058,16 +1093,17 @@ const conversationGroups = [
             "vi": "gây bực mình"
           },
           {
-            "de": "tun",
-            "type": "verb",
-            "en": "to do",
-            "vi": "làm"
+            "de": "wirklich",
+            "type": "adverb",
+            "en": "really",
+            "vi": "thực sự"
           }
         ],
         "analysis": {
-          "de": "In der indirekten Frage steht das konjugierte Verb am Ende des Nebensatzes.",
-          "en": "In an indirect question, the conjugated verb comes at the end of the subordinate clause.",
-          "vi": "Câu hỏi gián tiếp đưa phần cần hỏi vào mệnh đề phụ; động từ chia của phần này đứng cuối. Không đảo động từ lên đầu như câu hỏi độc lập."
+          "pattern": "Adjektiv als Prädikativ",
+          "de": "Das Adjektiv bleibt nach sein, klingen, erscheinen oder finden in dieser Funktion ohne Deklinationsendung.",
+          "en": "Used predicatively after sein, klingen, erscheinen or finden, the adjective has no inflectional ending here.",
+          "vi": "Tính từ làm vị ngữ sau sein, klingen, erscheinen hoặc finden trong cấu trúc này không nhận đuôi biến cách."
         },
         "source": "legacy-adapted",
         "simple": "So ein Mist!",
@@ -1075,9 +1111,9 @@ const conversationGroups = [
         "simpleVi": "Chết tiệt / Chán thật!"
       },
       {
-        "tactful": "Ich freue mich sehr über diese Nachricht.",
-        "en": "I am very pleased about this news.",
-        "vi": "Mình rất vui khi nhận được tin này.",
+        "tactful": "Darüber freue ich mich wirklich sehr.",
+        "en": "I am really very pleased about that.",
+        "vi": "Mình thật sự rất vui về điều đó.",
         "vocabulary": [
           {
             "de": "sich freuen",
@@ -1086,17 +1122,17 @@ const conversationGroups = [
             "vi": "vui mừng"
           },
           {
-            "de": "die Nachricht",
-            "type": "noun",
-            "en": "message",
-            "vi": "tin nhắn; tin tức",
-            "plural": "die Nachrichten"
+            "de": "darüber",
+            "type": "adverb",
+            "en": "about it; about that",
+            "vi": "về việc đó"
           }
         ],
         "analysis": {
-          "de": "Im Aussagesatz steht das konjugierte Verb an zweiter Satzgliedposition. Die Wortwahl und Betonung bestimmen den Ton.",
-          "en": "In a statement, the conjugated verb occupies the second constituent position. Word choice and intonation shape the tone.",
-          "vi": "Trong câu trần thuật, động từ chia đứng ở vị trí thành phần thứ hai. Cách chọn từ và giọng điệu quyết định sắc thái; câu ngắn không mặc nhiên bất lịch sự."
+          "pattern": "Reflexivpronomen",
+          "de": "Das Reflexivpronomen richtet sich nach dem Subjekt und der Verbverbindung, zum Beispiel ich → mich.",
+          "en": "The reflexive pronoun depends on the subject and verb expression, for example ich → mich.",
+          "vi": "Đại từ phản thân phụ thuộc chủ ngữ và cấu trúc động từ, ví dụ ich → mich."
         },
         "source": "legacy-adapted",
         "simple": "Das ist ja toll!",
@@ -1104,28 +1140,28 @@ const conversationGroups = [
         "simpleVi": "Tuyệt quá! (có thể mỉa mai tùy giọng)"
       },
       {
-        "tactful": "Das ist dir gut gelungen. Besonders dieser Teil gefällt mir.",
-        "en": "You did that well. I particularly like this part.",
-        "vi": "Bạn làm tốt đấy. Mình đặc biệt thích phần này.",
+        "tactful": "Das ist dir wirklich gut gelungen.",
+        "en": "You did that really well.",
+        "vi": "Bạn thực sự làm tốt việc đó.",
         "vocabulary": [
           {
-            "de": "gefallen",
+            "de": "gelingen",
             "type": "verb",
-            "en": "to please; to appeal",
-            "vi": "làm hài lòng; được thích"
+            "en": "to turn out well; to succeed",
+            "vi": "thành công; có kết quả tốt"
           },
           {
-            "de": "der Teil",
-            "type": "noun",
-            "en": "part",
-            "vi": "phần",
-            "plural": "die Teile"
+            "de": "wirklich",
+            "type": "adverb",
+            "en": "really",
+            "vi": "thực sự"
           }
         ],
         "analysis": {
-          "de": "Das Perfekt besteht hier aus haben/sein und Partizip II. Es beschreibt ein bereits geschehenes Ereignis.",
-          "en": "The perfect consists of haben/sein and a past participle here. It describes something that has already happened.",
-          "vi": "Perfekt dùng haben/sein chia theo chủ ngữ và Partizip II để nói việc đã xảy ra. Partizip II thường đứng cuối mệnh đề chính."
+          "pattern": "haben/sein + Partizip II",
+          "de": "Das Hilfsverb wird konjugiert, das Partizip II steht am Ende des Teilsatzes.",
+          "en": "The auxiliary is conjugated; the past participle comes at the end of the clause.",
+          "vi": "Trợ động từ chia theo chủ ngữ; Partizip II đứng cuối mệnh đề."
         },
         "source": "legacy-adapted",
         "simple": "Nicht schlecht!",
@@ -1133,27 +1169,28 @@ const conversationGroups = [
         "simpleVi": "Khá đấy / Không tệ!"
       },
       {
-        "tactful": "Ich kann diesen Gedanken noch nicht nachvollziehen. Könntest du ihn näher erklären?",
-        "en": "I cannot follow that thought yet. Could you explain it further?",
-        "vi": "Mình chưa theo được ý này. Bạn giải thích rõ hơn được không?",
+        "tactful": "Das erscheint mir nicht nachvollziehbar.",
+        "en": "That does not seem understandable to me.",
+        "vi": "Mình thấy điều đó chưa hợp lý hoặc chưa thể hiểu được.",
         "vocabulary": [
           {
-            "de": "nachvollziehen",
+            "de": "erscheinen",
             "type": "verb",
-            "en": "to understand; to follow a thought",
-            "vi": "hiểu; theo được lập luận"
+            "en": "to seem; to appear",
+            "vi": "có vẻ; xuất hiện"
           },
           {
-            "de": "erklären",
-            "type": "verb",
-            "en": "to explain",
-            "vi": "giải thích"
+            "de": "nachvollziehbar",
+            "type": "adjective",
+            "en": "understandable; comprehensible",
+            "vi": "có thể hiểu được"
           }
         ],
         "analysis": {
-          "de": "Könnte/könnten ist Konjunktiv II von können. Der andere Infinitiv steht am Satzende.",
-          "en": "Könnte/könnten is the subjunctive II form of können. The other infinitive comes at the end.",
-          "vi": "könnte/könnten là Konjunktiv II của können, thường dùng để hỏi khả năng hoặc nhờ lịch sự; động từ nguyên mẫu còn lại đứng cuối câu."
+          "pattern": "Adjektiv als Prädikativ",
+          "de": "Das Adjektiv bleibt nach sein, klingen, erscheinen oder finden in dieser Funktion ohne Deklinationsendung.",
+          "en": "Used predicatively after sein, klingen, erscheinen or finden, the adjective has no inflectional ending here.",
+          "vi": "Tính từ làm vị ngữ sau sein, klingen, erscheinen hoặc finden trong cấu trúc này không nhận đuôi biến cách."
         },
         "source": "legacy-adapted",
         "simple": "So ein Quatsch!",
@@ -1180,9 +1217,10 @@ const conversationGroups = [
           }
         ],
         "analysis": {
-          "de": "Im Aussagesatz steht das konjugierte Verb an zweiter Satzgliedposition. Die Wortwahl und Betonung bestimmen den Ton.",
-          "en": "In a statement, the conjugated verb occupies the second constituent position. Word choice and intonation shape the tone.",
-          "vi": "Trong câu trần thuật, động từ chia đứng ở vị trí thành phần thứ hai. Cách chọn từ và giọng điệu quyết định sắc thái; câu ngắn không mặc nhiên bất lịch sự."
+          "pattern": "Präsens · Aussagesatz",
+          "de": "Das konjugierte Verb steht an zweiter Satzgliedposition; das Vorfeld kann aus mehreren Wörtern bestehen.",
+          "en": "The conjugated verb occupies the second constituent position; the first constituent may contain several words.",
+          "vi": "Động từ chia ở vị trí thành phần thứ hai; thành phần đầu có thể gồm nhiều từ."
         },
         "source": "legacy-adapted",
         "simple": "Das ist ja irre!",
@@ -1190,27 +1228,28 @@ const conversationGroups = [
         "simpleVi": "Khó tin thật / Ghê thật!"
       },
       {
-        "tactful": "Dann halten wir das so fest. Ich freue mich darauf.",
-        "en": "Then let us agree on that. I am looking forward to it.",
-        "vi": "Vậy chúng ta thống nhất như thế nhé. Mình mong chờ điều đó.",
+        "tactful": "Dann sind wir uns darüber einig.",
+        "en": "Then we are agreed on that.",
+        "vi": "Vậy chúng ta thống nhất về điều đó nhé.",
         "vocabulary": [
           {
-            "de": "sich freuen",
-            "type": "verb",
-            "en": "to be pleased",
-            "vi": "vui mừng"
+            "de": "sich einig sein",
+            "type": "phrase",
+            "en": "to be in agreement",
+            "vi": "thống nhất với nhau"
           },
           {
-            "de": "darauf",
+            "de": "darüber",
             "type": "adverb",
-            "en": "on that; of that",
-            "vi": "về điều đó trong stolz darauf"
+            "en": "about it; about that",
+            "vi": "về việc đó"
           }
         ],
         "analysis": {
-          "de": "Im Aussagesatz steht das konjugierte Verb an zweiter Satzgliedposition. Die Wortwahl und Betonung bestimmen den Ton.",
-          "en": "In a statement, the conjugated verb occupies the second constituent position. Word choice and intonation shape the tone.",
-          "vi": "Trong câu trần thuật, động từ chia đứng ở vị trí thành phần thứ hai. Cách chọn từ và giọng điệu quyết định sắc thái; câu ngắn không mặc nhiên bất lịch sự."
+          "pattern": "sich einig sein über + Akkusativ",
+          "de": "Uns gehört zu sich einig sein; darüber verweist auf das Thema der Einigung.",
+          "en": "Uns belongs to sich einig sein; darüber refers to the topic of agreement.",
+          "vi": "uns thuộc cụm sich einig sein; darüber chỉ vấn đề hai bên thống nhất."
         },
         "source": "legacy-adapted",
         "simple": "Abgemacht!",
@@ -1218,9 +1257,9 @@ const conversationGroups = [
         "simpleVi": "Chốt nhé / Quyết định vậy nhé!"
       },
       {
-        "tactful": "Das finde ich nicht akzeptabel. Ich möchte das gerne klären.",
-        "en": "I do not find that acceptable. I would like to resolve it.",
-        "vi": "Mình thấy điều đó không thể chấp nhận. Mình muốn làm rõ việc này.",
+        "tactful": "Das finde ich nicht akzeptabel.",
+        "en": "I do not find that acceptable.",
+        "vi": "Mình thấy điều đó không thể chấp nhận.",
         "vocabulary": [
           {
             "de": "akzeptabel",
@@ -1229,16 +1268,17 @@ const conversationGroups = [
             "vi": "chấp nhận được"
           },
           {
-            "de": "klären",
+            "de": "finden",
             "type": "verb",
-            "en": "to clarify; to resolve",
-            "vi": "làm rõ; giải quyết"
+            "en": "to find; to consider",
+            "vi": "thấy; cho là"
           }
         ],
         "analysis": {
-          "de": "Möchte ist eine Konjunktiv-II-Form von mögen, die üblich für Wünsche verwendet wird.",
-          "en": "Möchte is a subjunctive II form of mögen, commonly used to express wishes.",
-          "vi": "möchte là dạng Konjunktiv II của mögen, thường dùng với nghĩa muốn một cách nhẹ nhàng. Không phải dạng quá khứ của möchten."
+          "pattern": "Adjektiv als Prädikativ",
+          "de": "Das Adjektiv bleibt nach sein, klingen, erscheinen oder finden in dieser Funktion ohne Deklinationsendung.",
+          "en": "Used predicatively after sein, klingen, erscheinen or finden, the adjective has no inflectional ending here.",
+          "vi": "Tính từ làm vị ngữ sau sein, klingen, erscheinen hoặc finden trong cấu trúc này không nhận đuôi biến cách."
         },
         "source": "legacy-adapted",
         "simple": "Das ist die Höhe!",
@@ -1246,28 +1286,29 @@ const conversationGroups = [
         "simpleVi": "Thật quá quắt / Quá đáng hết sức!"
       },
       {
-        "tactful": "Ich möchte das Gespräch an dieser Stelle unterbrechen.",
-        "en": "I would like to pause the conversation at this point.",
-        "vi": "Mình muốn tạm dừng cuộc nói chuyện ở đây.",
+        "tactful": "Für mich ist jetzt eine Grenze erreicht.",
+        "en": "For me, a limit has now been reached.",
+        "vi": "Với mình thì bây giờ đã tới giới hạn rồi.",
         "vocabulary": [
           {
-            "de": "das Gespräch",
+            "de": "die Grenze",
             "type": "noun",
-            "en": "conversation",
-            "vi": "cuộc trò chuyện",
-            "plural": "die Gespräche"
+            "en": "boundary; limit",
+            "vi": "ranh giới; giới hạn",
+            "plural": "die Grenzen"
           },
           {
-            "de": "unterbrechen",
+            "de": "erreichen",
             "type": "verb",
-            "en": "to interrupt",
-            "vi": "ngắt lời; tạm dừng"
+            "en": "to reach",
+            "vi": "đạt tới"
           }
         ],
         "analysis": {
-          "de": "Möchte ist eine Konjunktiv-II-Form von mögen, die üblich für Wünsche verwendet wird.",
-          "en": "Möchte is a subjunctive II form of mögen, commonly used to express wishes.",
-          "vi": "möchte là dạng Konjunktiv II của mögen, thường dùng với nghĩa muốn một cách nhẹ nhàng. Không phải dạng quá khứ của möchten."
+          "pattern": "sein + Partizip II",
+          "de": "Sein + erreicht beschreibt hier den erreichten Zustand, nicht den Vorgang.",
+          "en": "Sein plus erreicht describes the resulting state rather than the process here.",
+          "vi": "sein + erreicht mô tả trạng thái đã đạt tới, không nhấn vào quá trình."
         },
         "source": "legacy-adapted",
         "simple": "Es reicht!",
@@ -1275,28 +1316,28 @@ const conversationGroups = [
         "simpleVi": "Đủ rồi đấy!"
       },
       {
-        "tactful": "Das war für mich zu viel. Ich brauche jetzt eine Pause.",
-        "en": "That was too much for me. I need a break now.",
-        "vi": "Việc đó quá sức với mình. Giờ mình cần nghỉ một chút.",
+        "tactful": "Das war für mich wirklich zu viel.",
+        "en": "That really was too much for me.",
+        "vi": "Việc đó thực sự đã quá sức với mình.",
         "vocabulary": [
           {
-            "de": "die Pause",
-            "type": "noun",
-            "en": "break; pause",
-            "vi": "khoảng nghỉ",
-            "plural": "die Pausen"
+            "de": "zu viel",
+            "type": "phrase",
+            "en": "too much",
+            "vi": "quá nhiều; quá mức"
           },
           {
-            "de": "brauchen",
+            "de": "sein",
             "type": "verb",
-            "en": "to need",
-            "vi": "cần"
+            "en": "to be",
+            "vi": "là; ở; thì"
           }
         ],
         "analysis": {
-          "de": "Im Aussagesatz steht das konjugierte Verb an zweiter Satzgliedposition. Die Wortwahl und Betonung bestimmen den Ton.",
-          "en": "In a statement, the conjugated verb occupies the second constituent position. Word choice and intonation shape the tone.",
-          "vi": "Trong câu trần thuật, động từ chia đứng ở vị trí thành phần thứ hai. Cách chọn từ và giọng điệu quyết định sắc thái; câu ngắn không mặc nhiên bất lịch sự."
+          "pattern": "Präteritum",
+          "de": "War und hatte sind Präteritumformen von sein und haben.",
+          "en": "War and hatte are past-tense forms of sein and haben.",
+          "vi": "war và hatte là dạng Präteritum của sein và haben."
         },
         "source": "legacy-adapted",
         "simple": "Das hat mir gereicht!",
@@ -1304,27 +1345,28 @@ const conversationGroups = [
         "simpleVi": "Thế là tôi đủ ngán rồi."
       },
       {
-        "tactful": "Ich bin überrascht. Meinst du das wirklich ernst?",
-        "en": "I am surprised. Do you really mean that seriously?",
-        "vi": "Mình ngạc nhiên đấy. Bạn thực sự nói nghiêm túc à?",
+        "tactful": "Meinst du das tatsächlich ernst?",
+        "en": "Do you really mean that seriously?",
+        "vi": "Bạn thực sự nói nghiêm túc vậy sao?",
         "vocabulary": [
-          {
-            "de": "überrascht",
-            "type": "adjective",
-            "en": "surprised",
-            "vi": "ngạc nhiên"
-          },
           {
             "de": "meinen",
             "type": "verb",
             "en": "to mean; to think",
             "vi": "có ý nói; cho rằng"
+          },
+          {
+            "de": "tatsächlich",
+            "type": "adverb",
+            "en": "really; actually",
+            "vi": "thực sự"
           }
         ],
         "analysis": {
-          "de": "In der Ja-/Nein-Frage steht das konjugierte Verb am Anfang.",
-          "en": "In a yes/no question, the conjugated verb comes first.",
-          "vi": "Câu hỏi có/không đặt động từ chia lên đầu; đây là cách hỏi trực tiếp, không tự động bất lịch sự."
+          "pattern": "Ja-/Nein-Frage",
+          "de": "Das konjugierte Verb steht vor dem Subjekt.",
+          "en": "The conjugated verb precedes the subject.",
+          "vi": "Động từ chia đứng trước chủ ngữ trong câu hỏi có/không."
         },
         "source": "legacy-adapted",
         "simple": "Das ist nicht dein Ernst!",
@@ -1347,9 +1389,9 @@ const conversationGroups = [
     },
     "rows": [
       {
-        "tactful": "Ich würde gerne teilnehmen. Sag mir bitte, wie ich mich vorbereiten kann.",
-        "en": "I would like to take part. Please tell me how I can prepare.",
-        "vi": "Mình muốn tham gia. Bạn cho mình biết cần chuẩn bị thế nào nhé.",
+        "tactful": "Ich nehme gerne daran teil.",
+        "en": "I would be happy to take part in that.",
+        "vi": "Mình sẵn lòng tham gia việc đó.",
         "vocabulary": [
           {
             "de": "teilnehmen",
@@ -1358,16 +1400,17 @@ const conversationGroups = [
             "vi": "tham gia"
           },
           {
-            "de": "sich vorbereiten",
-            "type": "verb",
-            "en": "to prepare oneself",
-            "vi": "chuẩn bị"
+            "de": "daran",
+            "type": "adverb",
+            "en": "in it; in that",
+            "vi": "vào việc đó"
           }
         ],
         "analysis": {
-          "de": "Würde/würden + Infinitiv bildet hier den Konjunktiv II und formuliert einen Wunsch oder eine Einschätzung vorsichtiger.",
-          "en": "Würde/würden plus an infinitive forms subjunctive II here, softening a wish or assessment.",
-          "vi": "würde/würden + động từ nguyên mẫu tạo Konjunktiv II, giúp diễn đạt mong muốn hoặc nhận định dè dặt hơn. Không làm thay đổi sự thật cần nói."
+          "pattern": "teilnehmen an + Dativ",
+          "de": "Teilnehmen ist trennbar: nehme … teil. Daran ersetzt an + die erwähnte Sache.",
+          "en": "Teilnehmen is separable: nehme … teil. Daran replaces an plus the previously mentioned matter.",
+          "vi": "teilnehmen là động từ tách: nehme … teil. Daran thay cho an + sự việc đã nhắc tới; teilnehmen an đi với Dativ."
         },
         "source": "legacy-adapted",
         "simple": "Ich bin dabei.",
@@ -1375,28 +1418,29 @@ const conversationGroups = [
         "simpleVi": "Tôi tham gia / Cho tôi tham gia với."
       },
       {
-        "tactful": "Das hängt von den Bedingungen ab. Lass uns diese zuerst klären.",
-        "en": "That depends on the conditions. Let us clarify those first.",
-        "vi": "Điều đó phụ thuộc vào các điều kiện. Chúng ta làm rõ trước nhé.",
+        "tactful": "Das hängt von den jeweiligen Umständen ab.",
+        "en": "That depends on the particular circumstances.",
+        "vi": "Điều đó phụ thuộc vào hoàn cảnh cụ thể.",
         "vocabulary": [
           {
-            "de": "die Bedingung",
-            "type": "noun",
-            "en": "condition",
-            "vi": "điều kiện",
-            "plural": "die Bedingungen"
+            "de": "abhängen von",
+            "type": "verb",
+            "en": "to depend on",
+            "vi": "phụ thuộc vào"
           },
           {
-            "de": "klären",
-            "type": "verb",
-            "en": "to clarify; to resolve",
-            "vi": "làm rõ; giải quyết"
+            "de": "der Umstand",
+            "type": "noun",
+            "en": "circumstance",
+            "vi": "hoàn cảnh; điều kiện",
+            "plural": "die Umstände"
           }
         ],
         "analysis": {
-          "de": "Im Aussagesatz steht das konjugierte Verb an zweiter Satzgliedposition. Die Wortwahl und Betonung bestimmen den Ton.",
-          "en": "In a statement, the conjugated verb occupies the second constituent position. Word choice and intonation shape the tone.",
-          "vi": "Trong câu trần thuật, động từ chia đứng ở vị trí thành phần thứ hai. Cách chọn từ và giọng điệu quyết định sắc thái; câu ngắn không mặc nhiên bất lịch sự."
+          "pattern": "Trennbares Verb",
+          "de": "Im Hauptsatz wird das Präfix abgetrennt und steht am Ende, sofern kein Modalverb den Infinitiv verlangt.",
+          "en": "In a main clause, the separable prefix comes at the end unless a modal requires the infinitive.",
+          "vi": "Ở câu chính, tiền tố tách ra và đứng cuối khi không có động từ tình thái yêu cầu dạng nguyên mẫu."
         },
         "source": "legacy-adapted",
         "simple": "Es kommt darauf an.",
@@ -1423,9 +1467,10 @@ const conversationGroups = [
           }
         ],
         "analysis": {
-          "de": "Könnte/könnten ist Konjunktiv II von können. Der andere Infinitiv steht am Satzende.",
-          "en": "Könnte/könnten is the subjunctive II form of können. The other infinitive comes at the end.",
-          "vi": "könnte/könnten là Konjunktiv II của können, thường dùng để hỏi khả năng hoặc nhờ lịch sự; động từ nguyên mẫu còn lại đứng cuối câu."
+          "pattern": "könnte/könntest/könnten + Infinitiv",
+          "de": "Konjunktiv II von können; der weitere Infinitiv steht am Ende.",
+          "en": "Subjunctive II of können; the other infinitive comes at the end.",
+          "vi": "Konjunktiv II của können; động từ nguyên mẫu còn lại đứng cuối câu."
         },
         "source": "legacy-adapted",
         "simple": "Wovon redest du?",
@@ -1433,27 +1478,28 @@ const conversationGroups = [
         "simpleVi": "Bạn đang nói chuyện gì vậy?"
       },
       {
-        "tactful": "Wir können es vorerst dabei belassen und später noch einmal darüber sprechen.",
-        "en": "We can leave it at that for now and discuss it again later.",
-        "vi": "Trước mắt chúng ta có thể để như vậy rồi trao đổi lại sau.",
+        "tactful": "Lass uns das so stehen lassen.",
+        "en": "Let us leave it at that.",
+        "vi": "Chúng ta cứ để như vậy nhé.",
         "vocabulary": [
           {
-            "de": "vorerst",
-            "type": "adverb",
-            "en": "for now",
-            "vi": "trước mắt"
+            "de": "stehen lassen",
+            "type": "phrase",
+            "en": "to leave as it is",
+            "vi": "để nguyên như vậy"
           },
           {
-            "de": "sprechen",
+            "de": "lassen",
             "type": "verb",
-            "en": "to speak",
-            "vi": "nói"
+            "en": "to let; to leave",
+            "vi": "để; cho phép"
           }
         ],
         "analysis": {
-          "de": "Im Aussagesatz steht das konjugierte Verb an zweiter Satzgliedposition. Die Wortwahl und Betonung bestimmen den Ton.",
-          "en": "In a statement, the conjugated verb occupies the second constituent position. Word choice and intonation shape the tone.",
-          "vi": "Trong câu trần thuật, động từ chia đứng ở vị trí thành phần thứ hai. Cách chọn từ và giọng điệu quyết định sắc thái; câu ngắn không mặc nhiên bất lịch sự."
+          "pattern": "lass uns + Infinitiv",
+          "de": "Lass ist Imperativ von lassen; das Vollverb bleibt im Infinitiv.",
+          "en": "Lass is the imperative of lassen; the main verb remains infinitive.",
+          "vi": "Lass là mệnh lệnh của lassen; động từ chính giữ nguyên mẫu sau uns."
         },
         "source": "legacy-adapted",
         "simple": "Was soll’s!",
@@ -1461,29 +1507,28 @@ const conversationGroups = [
         "simpleVi": "Thôi kệ / Kệ vậy!"
       },
       {
-        "tactful": "Andere Aufgaben haben gerade Vorrang. Wir können das später erledigen.",
-        "en": "Other tasks have priority right now. We can do this later.",
-        "vi": "Hiện tại các việc khác được ưu tiên. Chúng ta có thể làm việc này sau.",
+        "tactful": "Damit müssen wir uns nicht sofort befassen.",
+        "en": "We do not need to deal with that immediately.",
+        "vi": "Chúng ta không cần xử lý việc đó ngay lập tức.",
         "vocabulary": [
           {
-            "de": "der Vorrang",
-            "type": "noun",
-            "en": "priority",
-            "vi": "sự ưu tiên",
-            "plural": "thường không dùng số nhiều trong nghĩa này"
+            "de": "sich befassen mit",
+            "type": "verb",
+            "en": "to deal with",
+            "vi": "xử lý; xem xét"
           },
           {
-            "de": "die Aufgabe",
-            "type": "noun",
-            "en": "task",
-            "vi": "nhiệm vụ; bài tập",
-            "plural": "die Aufgaben"
+            "de": "sofort",
+            "type": "adverb",
+            "en": "immediately",
+            "vi": "ngay lập tức"
           }
         ],
         "analysis": {
-          "de": "Im Aussagesatz steht das konjugierte Verb an zweiter Satzgliedposition. Die Wortwahl und Betonung bestimmen den Ton.",
-          "en": "In a statement, the conjugated verb occupies the second constituent position. Word choice and intonation shape the tone.",
-          "vi": "Trong câu trần thuật, động từ chia đứng ở vị trí thành phần thứ hai. Cách chọn từ và giọng điệu quyết định sắc thái; câu ngắn không mặc nhiên bất lịch sự."
+          "pattern": "Modalverb + Infinitiv",
+          "de": "Das Modalverb wird konjugiert; das andere Verb steht im Infinitiv am Satzende.",
+          "en": "The modal is conjugated; the other verb stays in the infinitive at the end.",
+          "vi": "Động từ tình thái được chia; động từ còn lại giữ nguyên mẫu và đứng cuối."
         },
         "source": "legacy-adapted",
         "simple": "Das hat Zeit.",
@@ -1492,11 +1537,11 @@ const conversationGroups = [
       },
       {
         "simple": "Kein Problem.",
-        "tactful": "Sehr gerne, jederzeit wieder!",
-        "vi": "Rất sẵn lòng, lần sau cũng vậy nhé!",
+        "tactful": "Sehr gerne.",
+        "vi": "Rất sẵn lòng.",
         "simpleEn": "No problem.",
         "simpleVi": "Không có gì.",
-        "en": "Very gladly; happy to help again any time!",
+        "en": "My pleasure.",
         "vocabulary": [
           {
             "de": "gern",
@@ -1505,42 +1550,44 @@ const conversationGroups = [
             "vi": "sẵn lòng; thích"
           },
           {
-            "de": "jederzeit",
+            "de": "sehr",
             "type": "adverb",
-            "en": "at any time",
-            "vi": "bất cứ lúc nào"
+            "en": "very; very much",
+            "vi": "rất"
           }
         ],
         "analysis": {
-          "de": "Gern/gerne ist ein Adverb, keine Konjunktiv-II-Form. Es drückt Bereitschaft oder Freude an etwas aus.",
-          "en": "Gern/gerne is an adverb, not a subjunctive II form. It expresses willingness or pleasure.",
-          "vi": "gern/gerne là trạng từ, không phải Konjunktiv II. Nó thể hiện sự sẵn lòng hoặc thích làm gì; jederzeit wieder thêm ý sẵn lòng giúp lần sau."
+          "pattern": "Verkürzter Satz",
+          "de": "Diese feste Wendung kann ohne konjugiertes Verb als vollständiger Gesprächsbeitrag stehen.",
+          "en": "This fixed expression can function as a complete contribution without a conjugated verb.",
+          "vi": "Cụm cố định này có thể dùng độc lập trong hội thoại dù không có động từ chia."
         },
         "source": "document"
       },
       {
-        "tactful": "Ich brauche gerade Zeit für mich. Bitte respektiere das.",
-        "en": "I need some time to myself right now. Please respect that.",
-        "vi": "Hiện giờ mình cần thời gian riêng. Bạn tôn trọng điều đó nhé.",
+        "tactful": "Ich möchte jetzt gerne einen Moment allein sein.",
+        "en": "I would like a moment to myself now.",
+        "vi": "Bây giờ mình muốn ở một mình một lát.",
         "vocabulary": [
           {
-            "de": "die Zeit",
-            "type": "noun",
-            "en": "time",
-            "vi": "thời gian",
-            "plural": "die Zeiten (các thời kỳ hoặc thời điểm)"
+            "de": "allein",
+            "type": "adjective",
+            "en": "alone",
+            "vi": "một mình"
           },
           {
-            "de": "respektieren",
-            "type": "verb",
-            "en": "to respect",
-            "vi": "tôn trọng"
+            "de": "der Moment",
+            "type": "noun",
+            "en": "moment",
+            "vi": "khoảnh khắc; một lát",
+            "plural": "die Momente"
           }
         ],
         "analysis": {
-          "de": "Im Aussagesatz steht das konjugierte Verb an zweiter Satzgliedposition. Die Wortwahl und Betonung bestimmen den Ton.",
-          "en": "In a statement, the conjugated verb occupies the second constituent position. Word choice and intonation shape the tone.",
-          "vi": "Trong câu trần thuật, động từ chia đứng ở vị trí thành phần thứ hai. Cách chọn từ và giọng điệu quyết định sắc thái; câu ngắn không mặc nhiên bất lịch sự."
+          "pattern": "möchte + Infinitiv",
+          "de": "Möchte ist eine Konjunktiv-II-Form von mögen; der weitere Infinitiv steht am Ende.",
+          "en": "Möchte is a subjunctive II form of mögen; the other infinitive comes at the end.",
+          "vi": "möchte là dạng Konjunktiv II của mögen; động từ nguyên mẫu còn lại đứng cuối."
         },
         "source": "legacy-adapted",
         "simple": "Lass mich in Ruhe!",
@@ -1548,28 +1595,28 @@ const conversationGroups = [
         "simpleVi": "Để tôi yên!"
       },
       {
-        "tactful": "Ich wäre jetzt an der Reihe. Darf ich anfangen?",
-        "en": "It would be my turn now. May I start?",
-        "vi": "Giờ đến lượt mình rồi. Mình bắt đầu được không?",
+        "tactful": "Ich wäre jetzt an der Reihe.",
+        "en": "It would be my turn now.",
+        "vi": "Bây giờ đến lượt mình rồi.",
         "vocabulary": [
           {
-            "de": "die Reihe",
-            "type": "noun",
-            "en": "turn; row",
-            "vi": "lượt; hàng",
-            "plural": "die Reihen"
+            "de": "an der Reihe sein",
+            "type": "phrase",
+            "en": "to have one's turn",
+            "vi": "đến lượt"
           },
           {
-            "de": "anfangen",
-            "type": "verb",
-            "en": "to begin",
-            "vi": "bắt đầu"
+            "de": "jetzt",
+            "type": "adverb",
+            "en": "now",
+            "vi": "bây giờ"
           }
         ],
         "analysis": {
-          "de": "Darf ist Präsens von dürfen. Darf ich + Infinitiv fragt um Erlaubnis.",
-          "en": "Darf is the present form of dürfen. Darf ich plus infinitive asks permission.",
-          "vi": "Darf là hiện tại của dürfen. Darf ich + động từ nguyên mẫu dùng để xin phép; không phải Konjunktiv II."
+          "pattern": "wäre + an der Reihe",
+          "de": "Wäre ist Konjunktiv II von sein; an der Reihe sein ist eine feste Verbindung.",
+          "en": "Wäre is subjunctive II of sein; an der Reihe sein is a fixed expression.",
+          "vi": "wäre là Konjunktiv II của sein; an der Reihe sein là cụm cố định nghĩa là đến lượt."
         },
         "source": "legacy-adapted",
         "simple": "Ich bin dran.",
@@ -1577,28 +1624,29 @@ const conversationGroups = [
         "simpleVi": "Đến lượt tôi."
       },
       {
-        "tactful": "Vielen Dank, ich habe die Information verstanden.",
-        "en": "Thank you; I have understood the information.",
-        "vi": "Cảm ơn, mình đã hiểu thông tin đó.",
+        "tactful": "Vielen Dank, ich habe verstanden.",
+        "en": "Thank you; I have understood.",
+        "vi": "Cảm ơn, mình đã hiểu.",
         "vocabulary": [
-          {
-            "de": "die Information",
-            "type": "noun",
-            "en": "information",
-            "vi": "thông tin",
-            "plural": "die Informationen"
-          },
           {
             "de": "verstehen",
             "type": "verb",
             "en": "to understand",
             "vi": "hiểu"
+          },
+          {
+            "de": "der Dank",
+            "type": "noun",
+            "en": "thanks; gratitude",
+            "vi": "lời cảm ơn",
+            "plural": "thường không dùng số nhiều"
           }
         ],
         "analysis": {
-          "de": "Das Perfekt besteht hier aus haben/sein und Partizip II. Es beschreibt ein bereits geschehenes Ereignis.",
-          "en": "The perfect consists of haben/sein and a past participle here. It describes something that has already happened.",
-          "vi": "Perfekt dùng haben/sein chia theo chủ ngữ và Partizip II để nói việc đã xảy ra. Partizip II thường đứng cuối mệnh đề chính."
+          "pattern": "haben/sein + Partizip II",
+          "de": "Das Hilfsverb wird konjugiert, das Partizip II steht am Ende des Teilsatzes.",
+          "en": "The auxiliary is conjugated; the past participle comes at the end of the clause.",
+          "vi": "Trợ động từ chia theo chủ ngữ; Partizip II đứng cuối mệnh đề."
         },
         "source": "legacy-adapted",
         "simple": "Alles klar.",
@@ -1625,9 +1673,10 @@ const conversationGroups = [
           }
         ],
         "analysis": {
-          "de": "In der indirekten Frage steht das konjugierte Verb am Ende des Nebensatzes.",
-          "en": "In an indirect question, the conjugated verb comes at the end of the subordinate clause.",
-          "vi": "Câu hỏi gián tiếp đưa phần cần hỏi vào mệnh đề phụ; động từ chia của phần này đứng cuối. Không đảo động từ lên đầu như câu hỏi độc lập."
+          "pattern": "Indirekte Frage + Verb am Ende",
+          "de": "Das Fragewort oder ob leitet den Nebensatz ein; dessen konjugiertes Verb steht am Ende.",
+          "en": "The question word or ob introduces the subordinate clause, whose conjugated verb comes last.",
+          "vi": "Từ để hỏi hoặc ob mở đầu mệnh đề phụ; động từ chia của mệnh đề đó đứng cuối."
         },
         "source": "legacy-adapted",
         "simple": "Das hat keinen Sinn.",
@@ -1656,19 +1705,20 @@ const conversationGroups = [
           }
         ],
         "analysis": {
-          "de": "Möchte ist eine Konjunktiv-II-Form von mögen, die üblich für Wünsche verwendet wird.",
-          "en": "Möchte is a subjunctive II form of mögen, commonly used to express wishes.",
-          "vi": "möchte là dạng Konjunktiv II của mögen, thường dùng với nghĩa muốn một cách nhẹ nhàng. Không phải dạng quá khứ của möchten."
+          "pattern": "möchte + Infinitiv",
+          "de": "Möchte ist eine Konjunktiv-II-Form von mögen; der weitere Infinitiv steht am Ende.",
+          "en": "Möchte is a subjunctive II form of mögen; the other infinitive comes at the end.",
+          "vi": "möchte là dạng Konjunktiv II của mögen; động từ nguyên mẫu còn lại đứng cuối."
         },
         "source": "document"
       },
       {
         "simple": "Lass das.",
-        "tactful": "Bitte hör damit auf. Das ist mir unangenehm.",
-        "vi": "Làm ơn dừng lại. Điều đó khiến mình không thoải mái.",
+        "tactful": "Bitte hör damit auf.",
+        "vi": "Bạn dừng việc đó lại nhé.",
         "simpleEn": "Stop that.",
         "simpleVi": "Đừng làm thế nữa.",
-        "en": "Please stop doing that. It makes me uncomfortable.",
+        "en": "Please stop doing that.",
         "vocabulary": [
           {
             "de": "aufhören",
@@ -1677,73 +1727,76 @@ const conversationGroups = [
             "vi": "dừng lại"
           },
           {
-            "de": "unangenehm",
-            "type": "adjective",
-            "en": "unpleasant; uncomfortable",
-            "vi": "khó chịu; không thoải mái"
+            "de": "bitte",
+            "type": "adverb",
+            "en": "please",
+            "vi": "làm ơn; nhé"
           }
         ],
         "analysis": {
-          "de": "Der Imperativ richtet sich direkt an die andere Person. Bitte und der Kontext können den Ton verändern.",
-          "en": "The imperative addresses the other person directly. Bitte and context can change its tone.",
-          "vi": "Mệnh lệnh hướng trực tiếp tới người nghe. Thêm bitte và chọn giọng điệu phù hợp có thể làm nhẹ lời yêu cầu; mệnh lệnh không mặc nhiên bất lịch sự."
+          "pattern": "aufhören → hör … auf",
+          "de": "Hör ist der Imperativ für du; das trennbare Präfix auf steht am Ende. Damit verweist auf die Handlung.",
+          "en": "Hör is the du-imperative; the separable prefix auf comes at the end. Damit refers to the action.",
+          "vi": "Hör là mệnh lệnh cho du; tiền tố tách auf đứng cuối. Damit chỉ hành động đang được nhắc tới."
         },
         "source": "document"
       },
       {
         "simple": "Das geht nicht.",
-        "tactful": "Für mich ist diese Lösung leider nicht akzeptabel.",
-        "vi": "Rất tiếc, phương án này không thể chấp nhận đối với mình.",
+        "tactful": "Das ist für mich leider nicht möglich.",
+        "vi": "Tiếc là việc đó không thể thực hiện được với mình.",
         "simpleEn": "That will not work.",
         "simpleVi": "Như vậy không được.",
-        "en": "Unfortunately, this solution is not acceptable to me.",
+        "en": "Unfortunately, that is not possible for me.",
         "vocabulary": [
           {
-            "de": "die Lösung",
-            "type": "noun",
-            "en": "solution",
-            "vi": "giải pháp",
-            "plural": "die Lösungen"
+            "de": "möglich",
+            "type": "adjective",
+            "en": "possible",
+            "vi": "có thể xảy ra"
           },
           {
-            "de": "akzeptabel",
-            "type": "adjective",
-            "en": "acceptable",
-            "vi": "chấp nhận được"
+            "de": "leider",
+            "type": "adverb",
+            "en": "unfortunately",
+            "vi": "tiếc là"
           }
         ],
         "analysis": {
-          "de": "Im Aussagesatz steht das konjugierte Verb an zweiter Satzgliedposition. Die Wortwahl bestimmt hier vor allem den Ton.",
-          "en": "In a statement, the conjugated verb occupies the second constituent position. Here, word choice mainly shapes the tone.",
-          "vi": "Trong câu trần thuật, động từ chia ở vị trí thành phần thứ hai, không nhất thiết là từ thứ hai. Ở đây sắc thái chủ yếu đến từ cách chọn từ."
+          "pattern": "Adjektiv als Prädikativ",
+          "de": "Das Adjektiv bleibt nach sein, klingen, erscheinen oder finden in dieser Funktion ohne Deklinationsendung.",
+          "en": "Used predicatively after sein, klingen, erscheinen or finden, the adjective has no inflectional ending here.",
+          "vi": "Tính từ làm vị ngữ sau sein, klingen, erscheinen hoặc finden trong cấu trúc này không nhận đuôi biến cách."
         },
         "source": "document"
       },
       {
         "simple": "Egal.",
-        "tactful": "Mir ist beides recht. Was wäre dir lieber?",
-        "vi": "Cả hai đều được với mình. Bạn thích phương án nào hơn?",
+        "tactful": "Ich habe keine besondere Vorliebe.",
+        "vi": "Mình không có sở thích lựa chọn nào đặc biệt.",
         "simpleEn": "Whatever.",
         "simpleVi": "Sao cũng được.",
-        "en": "Either is fine with me. Which would you prefer?",
+        "en": "I have no particular preference.",
         "vocabulary": [
           {
-            "de": "recht sein",
-            "type": "phrase",
-            "en": "to be acceptable to someone",
-            "vi": "phù hợp; được với ai"
+            "de": "die Vorliebe",
+            "type": "noun",
+            "en": "preference",
+            "vi": "sở thích; sự ưu tiên",
+            "plural": "die Vorlieben"
           },
           {
-            "de": "lieber",
-            "type": "adverb",
-            "en": "rather; preferably",
-            "vi": "thích hơn; muốn hơn"
+            "de": "haben",
+            "type": "verb",
+            "en": "to have",
+            "vi": "có"
           }
         ],
         "analysis": {
-          "de": "Wäre ist Konjunktiv II von sein und stellt eine Möglichkeit oder einen Vorschlag zur Diskussion.",
-          "en": "Wäre is subjunctive II of sein and presents a possibility or suggestion for discussion.",
-          "vi": "wäre là Konjunktiv II của sein, nêu khả năng hoặc đề nghị để cùng cân nhắc; không khẳng định việc đã xảy ra."
+          "pattern": "Präsens · Aussagesatz",
+          "de": "Das konjugierte Verb steht an zweiter Satzgliedposition; das Vorfeld kann aus mehreren Wörtern bestehen.",
+          "en": "The conjugated verb occupies the second constituent position; the first constituent may contain several words.",
+          "vi": "Động từ chia ở vị trí thành phần thứ hai; thành phần đầu có thể gồm nhiều từ."
         },
         "source": "document"
       },
@@ -1769,46 +1822,48 @@ const conversationGroups = [
           }
         ],
         "analysis": {
-          "de": "Die Infinitivgruppe mit zu ergänzt hier die Aussage. Bei einem trennbaren Verb steht zu zwischen Präfix und Verbstamm.",
-          "en": "The infinitive phrase with zu complements the statement. With a separable verb, zu goes between prefix and stem.",
-          "vi": "Cụm zu + nguyên mẫu bổ sung nội dung cho câu. Với động từ tách, zu nằm giữa tiền tố và thân động từ, ví dụ zuzuhören; không dùng zu sau mọi động từ tình thái."
+          "pattern": "würde + sich freuen + zu-Infinitiv",
+          "de": "Würde wird konjugiert; freuen bleibt Infinitiv. Von dir gehört zu hören; zu hören ergänzt freuen.",
+          "en": "Würde is conjugated; freuen remains infinitive. Von dir belongs to hören; zu hören complements freuen.",
+          "vi": "Würde được chia; freuen giữ nguyên mẫu. von dir đi với hören; zu hören bổ sung cho freuen."
         },
         "source": "document"
       },
       {
         "simple": "Ich bin sauer.",
-        "tactful": "Das hat mich verletzt, und ich möchte gerne darüber sprechen.",
-        "vi": "Điều đó khiến mình tổn thương và mình muốn trao đổi.",
+        "tactful": "Ich ärgere mich darüber und möchte das gerne ansprechen.",
+        "vi": "Mình bực về việc đó và muốn trao đổi rõ.",
         "simpleEn": "I am angry.",
         "simpleVi": "Mình đang giận.",
-        "en": "That hurt me, and I would like to talk about it.",
+        "en": "I am upset about that and would like to bring it up.",
         "vocabulary": [
           {
-            "de": "verletzen",
+            "de": "sich ärgern über",
             "type": "verb",
-            "en": "to hurt; to injure",
-            "vi": "làm tổn thương"
+            "en": "to be annoyed about",
+            "vi": "bực mình về"
           },
           {
-            "de": "darüber",
-            "type": "adverb",
-            "en": "about it; about that",
-            "vi": "về việc đó"
+            "de": "ansprechen",
+            "type": "verb",
+            "en": "to bring up; to address",
+            "vi": "đề cập; trao đổi về"
           }
         ],
         "analysis": {
-          "de": "Das Perfekt besteht hier aus haben/sein und Partizip II. Es beschreibt ein bereits geschehenes Ereignis.",
-          "en": "The perfect consists of haben/sein and a past participle here. It describes something that has already happened.",
-          "vi": "Perfekt dùng haben/sein chia theo chủ ngữ và Partizip II để nói việc đã xảy ra. Partizip II thường đứng cuối mệnh đề chính."
+          "pattern": "möchte + Infinitiv",
+          "de": "Möchte ist eine Konjunktiv-II-Form von mögen; der weitere Infinitiv steht am Ende.",
+          "en": "Möchte is a subjunctive II form of mögen; the other infinitive comes at the end.",
+          "vi": "möchte là dạng Konjunktiv II của mögen; động từ nguyên mẫu còn lại đứng cuối."
         },
         "source": "document"
       },
       {
         "simple": "Geht morgen?",
         "simpleVi": "Ngày mai được không?",
-        "tactful": "Würde es dir morgen gegen drei passen?",
-        "vi": "Khoảng ba giờ ngày mai có tiện cho bạn không?",
-        "en": "Would around three tomorrow work for you?",
+        "tactful": "Würde es dir morgen passen?",
+        "vi": "Ngày mai có tiện cho bạn không?",
+        "en": "Would tomorrow work for you?",
         "simpleEn": "Does tomorrow work?",
         "vocabulary": [
           {
@@ -1818,82 +1873,84 @@ const conversationGroups = [
             "vi": "vừa; phù hợp; tiện"
           },
           {
-            "de": "gegen drei",
-            "type": "phrase",
-            "en": "around three o'clock",
-            "vi": "khoảng ba giờ"
+            "de": "morgen",
+            "type": "adverb",
+            "en": "tomorrow",
+            "vi": "ngày mai"
           }
         ],
         "analysis": {
-          "de": "Würde/würden + Infinitiv bildet hier den Konjunktiv II und formuliert einen Wunsch oder eine Einschätzung vorsichtiger.",
-          "en": "Würde/würden plus an infinitive forms subjunctive II here, softening a wish or assessment.",
-          "vi": "würde/würden + động từ nguyên mẫu tạo Konjunktiv II, giúp diễn đạt mong muốn hoặc nhận định dè dặt hơn. Không làm thay đổi sự thật cần nói."
+          "pattern": "würde/würden + Infinitiv",
+          "de": "Würde wird konjugiert; der Infinitiv des Vollverbs steht am Ende.",
+          "en": "Würde is conjugated; the lexical verb stays in the infinitive at the end.",
+          "vi": "würde chia theo chủ ngữ; động từ chính giữ nguyên mẫu và đứng cuối."
         },
         "source": "editorial"
       },
       {
         "simple": "Ich komme später.",
         "simpleVi": "Mình đến sau.",
-        "tactful": "Ich bin etwa zehn Minuten später da. Passt das für dich noch?",
-        "vi": "Mình sẽ đến muộn khoảng mười phút. Bạn còn tiện không?",
-        "en": "I will be about ten minutes late. Does that still work for you?",
+        "tactful": "Ich werde etwas später da sein.",
+        "vi": "Mình sẽ có mặt muộn hơn một chút.",
+        "en": "I will be there a little later.",
         "simpleEn": "I will come later.",
         "vocabulary": [
-          {
-            "de": "etwa",
-            "type": "adverb",
-            "en": "approximately",
-            "vi": "khoảng; xấp xỉ"
-          },
           {
             "de": "später",
             "type": "adverb",
             "en": "later",
             "vi": "muộn hơn; sau đó"
+          },
+          {
+            "de": "da sein",
+            "type": "phrase",
+            "en": "to be there; to be present",
+            "vi": "có mặt"
           }
         ],
         "analysis": {
-          "de": "Der Komparativ vergleicht: leiser, größer, später. Etwas kann die Stärke einer Bitte abschwächen.",
-          "en": "The comparative makes a comparison: leiser, größer, später. Etwas can soften the degree of a request.",
-          "vi": "So sánh hơn như leiser, größer, später diễn đạt nhỏ hơn, lớn hơn, muộn hơn. etwas trong lời nhờ có thể mang nghĩa một chút."
+          "pattern": "werden + Infinitiv",
+          "de": "Werden bildet mit sein das Futur I: werde … da sein.",
+          "en": "Werden plus sein forms the future: werde … da sein.",
+          "vi": "werden kết hợp với nguyên mẫu sein tạo Futur I: werde … da sein."
         },
         "source": "editorial"
       },
       {
         "simple": "Heute nicht.",
         "simpleVi": "Hôm nay không được.",
-        "tactful": "Heute schaffe ich es leider nicht. Wie wäre es am Donnerstag?",
-        "vi": "Tiếc là hôm nay mình không thu xếp được. Thứ Năm thì sao?",
-        "en": "I cannot make it today, unfortunately. How about Thursday?",
+        "tactful": "Heute passt es mir leider nicht.",
+        "vi": "Tiếc là hôm nay mình không tiện.",
+        "en": "Unfortunately, today does not work for me.",
         "simpleEn": "Not today.",
         "vocabulary": [
           {
-            "de": "schaffen",
+            "de": "passen",
             "type": "verb",
-            "en": "to manage; to accomplish",
-            "vi": "xoay xở làm được; hoàn thành"
+            "en": "to fit; to suit",
+            "vi": "vừa; phù hợp; tiện"
           },
           {
-            "de": "der Donnerstag",
-            "type": "noun",
-            "en": "Thursday",
-            "vi": "thứ Năm",
-            "plural": "die Donnerstage"
+            "de": "leider",
+            "type": "adverb",
+            "en": "unfortunately",
+            "vi": "tiếc là"
           }
         ],
         "analysis": {
-          "de": "Wäre ist Konjunktiv II von sein und stellt eine Möglichkeit oder einen Vorschlag zur Diskussion.",
-          "en": "Wäre is subjunctive II of sein and presents a possibility or suggestion for discussion.",
-          "vi": "wäre là Konjunktiv II của sein, nêu khả năng hoặc đề nghị để cùng cân nhắc; không khẳng định việc đã xảy ra."
+          "pattern": "Präsens · Aussagesatz",
+          "de": "Das konjugierte Verb steht an zweiter Satzgliedposition; das Vorfeld kann aus mehreren Wörtern bestehen.",
+          "en": "The conjugated verb occupies the second constituent position; the first constituent may contain several words.",
+          "vi": "Động từ chia ở vị trí thành phần thứ hai; thành phần đầu có thể gồm nhiều từ."
         },
         "source": "editorial"
       },
       {
         "simple": "Sag mir Bescheid.",
         "simpleVi": "Báo mình nhé.",
-        "tactful": "Gib mir bitte bis morgen Bescheid, damit ich planen kann.",
-        "vi": "Báo mình trước ngày mai nhé, để mình sắp xếp.",
-        "en": "Please let me know by tomorrow so I can plan.",
+        "tactful": "Gib mir bitte Bescheid, sobald du etwas weißt.",
+        "vi": "Báo mình biết ngay khi bạn có thông tin nhé.",
+        "en": "Please let me know as soon as you know something.",
         "simpleEn": "Let me know.",
         "vocabulary": [
           {
@@ -1903,25 +1960,26 @@ const conversationGroups = [
             "vi": "báo cho ai biết"
           },
           {
-            "de": "planen",
-            "type": "verb",
-            "en": "to plan",
-            "vi": "lên kế hoạch"
+            "de": "sobald",
+            "type": "conjunction",
+            "en": "as soon as",
+            "vi": "ngay khi"
           }
         ],
         "analysis": {
-          "de": "Damit leitet einen Zwecksatz ein; das konjugierte Verb steht am Ende.",
-          "en": "Damit introduces a purpose clause, with the conjugated verb at the end.",
-          "vi": "damit mở đầu mệnh đề mục đích, nghĩa là để; động từ chia đứng cuối mệnh đề đó."
+          "pattern": "sobald + … + Verb am Ende",
+          "de": "Sobald leitet einen zeitlichen Nebensatz ein; weißt steht am Ende.",
+          "en": "Sobald introduces a time clause; weißt comes at its end.",
+          "vi": "sobald mở đầu mệnh đề thời gian; weißt đứng cuối mệnh đề đó."
         },
         "source": "editorial"
       },
       {
         "simple": "Kein Foto!",
         "simpleVi": "Không chụp ảnh!",
-        "tactful": "Ich möchte nicht fotografiert werden. Bitte respektiere das.",
-        "vi": "Mình không muốn bị chụp ảnh. Bạn tôn trọng điều đó nhé.",
-        "en": "I do not want to be photographed. Please respect that.",
+        "tactful": "Ich möchte nicht fotografiert werden.",
+        "vi": "Mình không muốn bị chụp ảnh.",
+        "en": "I do not want to be photographed.",
         "simpleEn": "No photo!",
         "vocabulary": [
           {
@@ -1931,54 +1989,56 @@ const conversationGroups = [
             "vi": "chụp ảnh"
           },
           {
-            "de": "respektieren",
+            "de": "möchten",
             "type": "verb",
-            "en": "to respect",
-            "vi": "tôn trọng"
+            "en": "would like",
+            "vi": "muốn; mong muốn một cách nhẹ nhàng"
           }
         ],
         "analysis": {
-          "de": "Werden + Partizip II bildet hier den Vorgangspassiv. Das Modalverb möchte steht im Hauptsatz vor dem Infinitiv fotografiert werden.",
-          "en": "Werden plus past participle forms the passive here. The modal möchte precedes the passive infinitive fotografiert werden.",
-          "vi": "werden + Partizip II tạo bị động. Trong Ich möchte nicht fotografiert werden, möchte chia theo chủ ngữ, còn fotografiert werden là cụm nguyên mẫu bị động ở cuối."
+          "pattern": "möchte + Partizip II + werden",
+          "de": "Fotografiert werden ist ein passiver Infinitiv. Möchte wird nach dem Subjekt konjugiert.",
+          "en": "Fotografiert werden is a passive infinitive. Möchte is conjugated for the subject.",
+          "vi": "fotografiert werden là cụm nguyên mẫu bị động. möchte được chia theo chủ ngữ."
         },
         "source": "editorial"
       },
       {
         "simple": "Lösch das.",
         "simpleVi": "Xóa cái đó đi.",
-        "tactful": "Bitte nimm das Foto von mir aus deinem Beitrag. Ich möchte nicht, dass es dort öffentlich zu sehen ist.",
-        "vi": "Bạn gỡ ảnh có mình khỏi bài đăng nhé. Mình không muốn ảnh đó hiển thị công khai ở đó.",
-        "en": "Please remove the photo of me from your post. I do not want it to be publicly visible there.",
+        "tactful": "Könntest du diesen Beitrag bitte löschen?",
+        "vi": "Bạn có thể xóa bài đăng này giúp mình không?",
+        "en": "Could you delete this post, please?",
         "simpleEn": "Delete that.",
         "vocabulary": [
-          {
-            "de": "öffentlich",
-            "type": "adjective",
-            "en": "public; publicly",
-            "vi": "công khai"
-          },
           {
             "de": "der Beitrag",
             "type": "noun",
             "en": "post; contribution",
             "vi": "bài đăng; đóng góp",
             "plural": "die Beiträge"
+          },
+          {
+            "de": "löschen",
+            "type": "verb",
+            "en": "to delete",
+            "vi": "xóa"
           }
         ],
         "analysis": {
-          "de": "Im Nebensatz mit dass steht das konjugierte Verb am Ende.",
-          "en": "In a subordinate clause introduced by dass, the conjugated verb comes last.",
-          "vi": "Mệnh đề với dass đưa nội dung một nhận định hoặc thông tin; động từ chia đứng cuối mệnh đề đó."
+          "pattern": "könnte/könntest/könnten + Infinitiv",
+          "de": "Konjunktiv II von können; der weitere Infinitiv steht am Ende.",
+          "en": "Subjunctive II of können; the other infinitive comes at the end.",
+          "vi": "Konjunktiv II của können; động từ nguyên mẫu còn lại đứng cuối câu."
         },
         "source": "editorial"
       },
       {
         "simple": "Das ist privat.",
         "simpleVi": "Đó là chuyện riêng.",
-        "tactful": "Darüber möchte ich lieber nicht sprechen. Lass uns über etwas anderes reden.",
-        "vi": "Mình không muốn nói về chuyện đó. Mình chuyển sang chuyện khác nhé.",
-        "en": "I would rather not talk about that. Let us talk about something else.",
+        "tactful": "Darüber möchte ich lieber nicht sprechen.",
+        "vi": "Mình không muốn nói về chuyện đó.",
+        "en": "I would rather not talk about that.",
         "simpleEn": "That is private.",
         "vocabulary": [
           {
@@ -1988,44 +2048,46 @@ const conversationGroups = [
             "vi": "về việc đó"
           },
           {
-            "de": "reden",
+            "de": "sprechen",
             "type": "verb",
-            "en": "to talk",
-            "vi": "nói chuyện"
+            "en": "to speak",
+            "vi": "nói"
           }
         ],
         "analysis": {
-          "de": "Möchte ist eine Konjunktiv-II-Form von mögen, die üblich für Wünsche verwendet wird.",
-          "en": "Möchte is a subjunctive II form of mögen, commonly used to express wishes.",
-          "vi": "möchte là dạng Konjunktiv II của mögen, thường dùng với nghĩa muốn một cách nhẹ nhàng. Không phải dạng quá khứ của möchten."
+          "pattern": "möchte + Infinitiv",
+          "de": "Möchte ist eine Konjunktiv-II-Form von mögen; der weitere Infinitiv steht am Ende.",
+          "en": "Möchte is a subjunctive II form of mögen; the other infinitive comes at the end.",
+          "vi": "möchte là dạng Konjunktiv II của mögen; động từ nguyên mẫu còn lại đứng cuối."
         },
         "source": "editorial"
       },
       {
         "simple": "Schreib nicht so spät.",
         "simpleVi": "Đừng nhắn muộn thế.",
-        "tactful": "Ich lese Nachrichten abends nicht mehr. Wenn es nicht dringend ist, antworte ich am nächsten Tag.",
-        "vi": "Buổi tối mình không đọc tin nhắn nữa. Nếu không khẩn cấp, hôm sau mình sẽ trả lời.",
-        "en": "I do not read messages in the evening. If it is not urgent, I reply the next day.",
+        "tactful": "Könntest du mir bitte etwas früher schreiben?",
+        "vi": "Bạn có thể nhắn mình sớm hơn một chút không?",
+        "en": "Could you message me a little earlier, please?",
         "simpleEn": "Do not message so late.",
         "vocabulary": [
           {
-            "de": "dringend",
+            "de": "früh",
             "type": "adjective",
-            "en": "urgent",
-            "vi": "khẩn cấp"
+            "en": "early",
+            "vi": "sớm"
           },
           {
-            "de": "antworten",
+            "de": "schreiben",
             "type": "verb",
-            "en": "to reply; to answer",
-            "vi": "trả lời"
+            "en": "to write",
+            "vi": "viết; nhắn tin"
           }
         ],
         "analysis": {
-          "de": "Wenn leitet hier einen Bedingungssatz mit Verb am Ende ein. Danach folgt im Hauptsatz direkt das konjugierte Verb.",
-          "en": "Wenn introduces a conditional clause with the verb at the end. The following main clause begins with its conjugated verb.",
-          "vi": "Wenn mở đầu mệnh đề điều kiện, động từ chia đứng cuối. Khi mệnh đề wenn đứng trước, câu chính bắt đầu bằng động từ chia: …, antworte ich … ."
+          "pattern": "könnte/könntest/könnten + Infinitiv",
+          "de": "Konjunktiv II von können; der weitere Infinitiv steht am Ende.",
+          "en": "Subjunctive II of können; the other infinitive comes at the end.",
+          "vi": "Konjunktiv II của können; động từ nguyên mẫu còn lại đứng cuối câu."
         },
         "source": "editorial"
       }
@@ -2063,9 +2125,10 @@ const conversationGroups = [
           }
         ],
         "analysis": {
-          "de": "Könnte/könnten ist Konjunktiv II von können. Der andere Infinitiv steht am Satzende.",
-          "en": "Könnte/könnten is the subjunctive II form of können. The other infinitive comes at the end.",
-          "vi": "könnte/könnten là Konjunktiv II của können, thường dùng để hỏi khả năng hoặc nhờ lịch sự; động từ nguyên mẫu còn lại đứng cuối câu."
+          "pattern": "könnte/könntest/könnten + Infinitiv",
+          "de": "Konjunktiv II von können; der weitere Infinitiv steht am Ende.",
+          "en": "Subjunctive II of können; the other infinitive comes at the end.",
+          "vi": "Konjunktiv II của können; động từ nguyên mẫu còn lại đứng cuối câu."
         },
         "source": "legacy-adapted",
         "simple": "Hör mal zu.",
@@ -2092,9 +2155,10 @@ const conversationGroups = [
           }
         ],
         "analysis": {
-          "de": "Im Aussagesatz steht das konjugierte Verb an zweiter Satzgliedposition. Die Wortwahl und Betonung bestimmen den Ton.",
-          "en": "In a statement, the conjugated verb occupies the second constituent position. Word choice and intonation shape the tone.",
-          "vi": "Trong câu trần thuật, động từ chia đứng ở vị trí thành phần thứ hai. Cách chọn từ và giọng điệu quyết định sắc thái; câu ngắn không mặc nhiên bất lịch sự."
+          "pattern": "jemandem zustimmen / recht geben",
+          "de": "Dir steht im Dativ. Zustimmen ist trennbar: stimme … zu; jemandem recht geben verlangt ebenfalls Dativ.",
+          "en": "Dir is dative. Zustimmen is separable: stimme … zu; jemandem recht geben also takes dative.",
+          "vi": "dir ở Dativ. zustimmen là động từ tách: stimme … zu; jemandem recht geben cũng dùng Dativ chỉ người."
         },
         "source": "legacy-adapted",
         "simple": "Du hast recht.",
@@ -2102,27 +2166,28 @@ const conversationGroups = [
         "simpleVi": "Bạn nói đúng."
       },
       {
-        "tactful": "Ich merke, dass dich etwas beschäftigt. Möchtest du darüber sprechen?",
-        "en": "I notice something is on your mind. Would you like to talk about it?",
-        "vi": "Mình thấy bạn đang bận tâm điều gì đó. Bạn có muốn nói về nó không?",
+        "tactful": "Möchtest du mir erzählen, was dich gerade beschäftigt?",
+        "en": "Would you like to tell me what is on your mind?",
+        "vi": "Bạn có muốn kể điều gì đang khiến bạn bận tâm không?",
         "vocabulary": [
           {
-            "de": "merken",
+            "de": "beschäftigen",
             "type": "verb",
-            "en": "to notice; to realize",
-            "vi": "nhận ra"
+            "en": "to occupy; to preoccupy",
+            "vi": "khiến bận tâm"
           },
           {
-            "de": "sprechen",
+            "de": "erzählen",
             "type": "verb",
-            "en": "to speak",
-            "vi": "nói"
+            "en": "to tell; to narrate",
+            "vi": "kể chuyện"
           }
         ],
         "analysis": {
-          "de": "Im Nebensatz mit dass steht das konjugierte Verb am Ende.",
-          "en": "In a subordinate clause introduced by dass, the conjugated verb comes last.",
-          "vi": "Mệnh đề với dass đưa nội dung một nhận định hoặc thông tin; động từ chia đứng cuối mệnh đề đó."
+          "pattern": "Indirekte Frage + Verb am Ende",
+          "de": "Das Fragewort oder ob leitet den Nebensatz ein; dessen konjugiertes Verb steht am Ende.",
+          "en": "The question word or ob introduces the subordinate clause, whose conjugated verb comes last.",
+          "vi": "Từ để hỏi hoặc ob mở đầu mệnh đề phụ; động từ chia của mệnh đề đó đứng cuối."
         },
         "source": "legacy-adapted",
         "simple": "Was ist los?",
@@ -2130,28 +2195,28 @@ const conversationGroups = [
         "simpleVi": "Có chuyện gì vậy?"
       },
       {
-        "tactful": "Bitte achte auf die Stufe vor dir.",
-        "en": "Please watch the step in front of you.",
-        "vi": "Bạn chú ý bậc thềm phía trước nhé.",
+        "tactful": "Bitte sei vorsichtig.",
+        "en": "Please be careful.",
+        "vi": "Bạn hãy cẩn thận nhé.",
         "vocabulary": [
           {
-            "de": "achten auf + Akkusativ",
-            "type": "verb",
-            "en": "to pay attention to",
-            "vi": "chú ý tới"
+            "de": "vorsichtig",
+            "type": "adjective",
+            "en": "careful",
+            "vi": "cẩn thận"
           },
           {
-            "de": "die Stufe",
-            "type": "noun",
-            "en": "step; level",
-            "vi": "bậc thềm; cấp độ",
-            "plural": "die Stufen"
+            "de": "sein",
+            "type": "verb",
+            "en": "to be",
+            "vi": "là; ở; thì"
           }
         ],
         "analysis": {
-          "de": "Der Imperativ richtet sich direkt an die andere Person. Bitte und der Kontext können den Ton verändern.",
-          "en": "The imperative addresses the other person directly. Bitte and context can change its tone.",
-          "vi": "Mệnh lệnh hướng trực tiếp tới người nghe. Thêm bitte và chọn giọng điệu phù hợp có thể làm nhẹ lời yêu cầu; mệnh lệnh không mặc nhiên bất lịch sự."
+          "pattern": "Imperativ von sein: sei",
+          "de": "Sei ist die unregelmäßige Imperativform von sein für du; vorsichtig ist ein prädikatives Adjektiv.",
+          "en": "Sei is the irregular du-imperative of sein; vorsichtig is a predicative adjective.",
+          "vi": "Sei là mệnh lệnh bất quy tắc của sein cho du; vorsichtig là tính từ vị ngữ, không chia đuôi."
         },
         "source": "legacy-adapted",
         "simple": "Pass auf!",
@@ -2178,9 +2243,10 @@ const conversationGroups = [
           }
         ],
         "analysis": {
-          "de": "Könnte/könnten ist Konjunktiv II von können. Der andere Infinitiv steht am Satzende.",
-          "en": "Könnte/könnten is the subjunctive II form of können. The other infinitive comes at the end.",
-          "vi": "könnte/könnten là Konjunktiv II của können, thường dùng để hỏi khả năng hoặc nhờ lịch sự; động từ nguyên mẫu còn lại đứng cuối câu."
+          "pattern": "könnte/könntest/könnten + Infinitiv",
+          "de": "Konjunktiv II von können; der weitere Infinitiv steht am Ende.",
+          "en": "Subjunctive II of können; the other infinitive comes at the end.",
+          "vi": "Konjunktiv II của können; động từ nguyên mẫu còn lại đứng cuối câu."
         },
         "source": "legacy-adapted",
         "simple": "Warte einen Moment.",
@@ -2188,15 +2254,15 @@ const conversationGroups = [
         "simpleVi": "Đợi một lát."
       },
       {
-        "tactful": "Ich möchte, dass Sie damit aufhören.",
-        "en": "I would like you to stop doing that.",
-        "vi": "Tôi muốn anh/chị dừng việc đó lại.",
+        "tactful": "Ich möchte Sie bitten, damit aufzuhören.",
+        "en": "I would like to ask you to stop doing that.",
+        "vi": "Tôi muốn đề nghị anh/chị dừng việc đó lại.",
         "vocabulary": [
           {
-            "de": "möchten",
+            "de": "bitten",
             "type": "verb",
-            "en": "would like",
-            "vi": "muốn; mong muốn một cách nhẹ nhàng"
+            "en": "to ask; to request",
+            "vi": "đề nghị; nhờ"
           },
           {
             "de": "aufhören",
@@ -2206,9 +2272,10 @@ const conversationGroups = [
           }
         ],
         "analysis": {
-          "de": "Im Nebensatz mit dass steht das konjugierte Verb am Ende.",
-          "en": "In a subordinate clause introduced by dass, the conjugated verb comes last.",
-          "vi": "Mệnh đề với dass đưa nội dung một nhận định hoặc thông tin; động từ chia đứng cuối mệnh đề đó."
+          "pattern": "zu + Infinitiv",
+          "de": "Aufzuhören ist der zu-Infinitiv von aufhören; zu steht zwischen Präfix und Stamm.",
+          "en": "Aufzuhören is the zu-infinitive of aufhören; zu goes between the prefix and stem.",
+          "vi": "aufzuhören là nguyên mẫu có zu của aufhören; zu nằm giữa tiền tố và thân động từ."
         },
         "source": "legacy-adapted",
         "simple": "Lassen Sie das bitte.",
@@ -2216,9 +2283,9 @@ const conversationGroups = [
         "simpleVi": "Xin anh/chị đừng làm vậy nữa. (Sie lịch sự)"
       },
       {
-        "tactful": "Hätten Sie einen kurzen Moment für eine Frage?",
-        "en": "Would you have a brief moment for a question?",
-        "vi": "Anh/chị có chút thời gian cho tôi hỏi một câu không?",
+        "tactful": "Hätten Sie einen Moment Zeit?",
+        "en": "Would you have a moment?",
+        "vi": "Anh/chị có chút thời gian không?",
         "vocabulary": [
           {
             "de": "der Moment",
@@ -2228,17 +2295,18 @@ const conversationGroups = [
             "plural": "die Momente"
           },
           {
-            "de": "die Frage",
+            "de": "die Zeit",
             "type": "noun",
-            "en": "question",
-            "vi": "câu hỏi",
-            "plural": "die Fragen"
+            "en": "time",
+            "vi": "thời gian",
+            "plural": "die Zeiten (các thời kỳ hoặc thời điểm)"
           }
         ],
         "analysis": {
-          "de": "Hätten ist Konjunktiv II von haben. Sie fragt nach einer Möglichkeit und steht hier als höfliche Anrede.",
-          "en": "Hätten is subjunctive II of haben. The sentence asks about availability, using the formal Sie.",
-          "vi": "Hätten là Konjunktiv II của haben, dùng để hỏi về khả năng dành thời gian một cách dè dặt; Sie là xưng hô trang trọng."
+          "pattern": "hätte/hätten + Akkusativ",
+          "de": "Hätte/hätten ist Konjunktiv II von haben; das Objekt steht im Akkusativ.",
+          "en": "Hätte/hätten is subjunctive II of haben; its object is accusative.",
+          "vi": "hätte/hätten là Konjunktiv II của haben; tân ngữ trực tiếp ở Akkusativ."
         },
         "source": "legacy-adapted",
         "simple": "Darf ich kurz stören?",
@@ -2246,27 +2314,28 @@ const conversationGroups = [
         "simpleVi": "Xin phép làm phiền một chút được không?"
       },
       {
-        "tactful": "Ich habe das noch nicht verstanden. Könntest du es anders erklären?",
-        "en": "I have not understood that yet. Could you explain it differently?",
-        "vi": "Mình chưa hiểu điều đó. Bạn giải thích theo cách khác được không?",
+        "tactful": "Könntest du mir das bitte anders erklären?",
+        "en": "Could you explain that to me differently, please?",
+        "vi": "Bạn có thể giải thích điều đó theo cách khác giúp mình không?",
         "vocabulary": [
-          {
-            "de": "verstehen",
-            "type": "verb",
-            "en": "to understand",
-            "vi": "hiểu"
-          },
           {
             "de": "erklären",
             "type": "verb",
             "en": "to explain",
             "vi": "giải thích"
+          },
+          {
+            "de": "anders",
+            "type": "adverb",
+            "en": "differently",
+            "vi": "theo cách khác"
           }
         ],
         "analysis": {
-          "de": "Könnte/könnten ist Konjunktiv II von können. Der andere Infinitiv steht am Satzende.",
-          "en": "Könnte/könnten is the subjunctive II form of können. The other infinitive comes at the end.",
-          "vi": "könnte/könnten là Konjunktiv II của können, thường dùng để hỏi khả năng hoặc nhờ lịch sự; động từ nguyên mẫu còn lại đứng cuối câu."
+          "pattern": "könnte/könntest/könnten + Infinitiv",
+          "de": "Konjunktiv II von können; der weitere Infinitiv steht am Ende.",
+          "en": "Subjunctive II of können; the other infinitive comes at the end.",
+          "vi": "Konjunktiv II của können; động từ nguyên mẫu còn lại đứng cuối câu."
         },
         "source": "legacy-adapted",
         "simple": "Ich verstehe nur Bahnhof.",
@@ -2274,9 +2343,9 @@ const conversationGroups = [
         "simpleVi": "Tôi chẳng hiểu gì cả. (thành ngữ)"
       },
       {
-        "tactful": "Möchtest du mitkommen? Ich würde mich freuen.",
-        "en": "Would you like to come along? I would be pleased.",
-        "vi": "Bạn có muốn đi cùng không? Mình sẽ rất vui.",
+        "tactful": "Möchtest du mitkommen?",
+        "en": "Would you like to come along?",
+        "vi": "Bạn có muốn đi cùng không?",
         "vocabulary": [
           {
             "de": "mitkommen",
@@ -2285,16 +2354,17 @@ const conversationGroups = [
             "vi": "đi cùng"
           },
           {
-            "de": "sich freuen",
+            "de": "möchten",
             "type": "verb",
-            "en": "to be pleased",
-            "vi": "vui mừng"
+            "en": "would like",
+            "vi": "muốn; mong muốn một cách nhẹ nhàng"
           }
         ],
         "analysis": {
-          "de": "Möchte ist eine Konjunktiv-II-Form von mögen, die üblich für Wünsche verwendet wird.",
-          "en": "Möchte is a subjunctive II form of mögen, commonly used to express wishes.",
-          "vi": "möchte là dạng Konjunktiv II của mögen, thường dùng với nghĩa muốn một cách nhẹ nhàng. Không phải dạng quá khứ của möchten."
+          "pattern": "möchte + Infinitiv",
+          "de": "Möchte ist eine Konjunktiv-II-Form von mögen; der weitere Infinitiv steht am Ende.",
+          "en": "Möchte is a subjunctive II form of mögen; the other infinitive comes at the end.",
+          "vi": "möchte là dạng Konjunktiv II của mögen; động từ nguyên mẫu còn lại đứng cuối."
         },
         "source": "legacy-adapted",
         "simple": "Komm mit!",
@@ -2302,9 +2372,9 @@ const conversationGroups = [
         "simpleVi": "Đi cùng tôi nào!"
       },
       {
-        "tactful": "Wollen wir langsam losgehen?",
-        "en": "Shall we start heading off?",
-        "vi": "Chúng ta bắt đầu đi nhé?",
+        "tactful": "Wollen wir jetzt losgehen?",
+        "en": "Shall we head off now?",
+        "vi": "Bây giờ chúng ta đi nhé?",
         "vocabulary": [
           {
             "de": "losgehen",
@@ -2313,16 +2383,17 @@ const conversationGroups = [
             "vi": "bắt đầu; khởi hành"
           },
           {
-            "de": "langsam",
-            "type": "adjective",
-            "en": "slow",
-            "vi": "chậm"
+            "de": "jetzt",
+            "type": "adverb",
+            "en": "now",
+            "vi": "bây giờ"
           }
         ],
         "analysis": {
-          "de": "In der Ja-/Nein-Frage steht das konjugierte Verb am Anfang.",
-          "en": "In a yes/no question, the conjugated verb comes first.",
-          "vi": "Câu hỏi có/không đặt động từ chia lên đầu; đây là cách hỏi trực tiếp, không tự động bất lịch sự."
+          "pattern": "Ja-/Nein-Frage",
+          "de": "Das konjugierte Verb steht vor dem Subjekt.",
+          "en": "The conjugated verb precedes the subject.",
+          "vi": "Động từ chia đứng trước chủ ngữ trong câu hỏi có/không."
         },
         "source": "legacy-adapted",
         "simple": "Lass uns gehen.",
@@ -2351,25 +2422,26 @@ const conversationGroups = [
           }
         ],
         "analysis": {
-          "de": "Könnte/könnten ist Konjunktiv II von können. Der andere Infinitiv steht am Satzende.",
-          "en": "Könnte/könnten is the subjunctive II form of können. The other infinitive comes at the end.",
-          "vi": "könnte/könnten là Konjunktiv II của können, thường dùng để hỏi khả năng hoặc nhờ lịch sự; động từ nguyên mẫu còn lại đứng cuối câu."
+          "pattern": "könnte/könntest/könnten + Infinitiv",
+          "de": "Konjunktiv II von können; der weitere Infinitiv steht am Ende.",
+          "en": "Subjunctive II of können; the other infinitive comes at the end.",
+          "vi": "Konjunktiv II của können; động từ nguyên mẫu còn lại đứng cuối câu."
         },
         "source": "document"
       },
       {
         "simple": "Ich kann nicht.",
-        "tactful": "Heute schaffe ich es leider nicht.",
-        "vi": "Tiếc là hôm nay mình không xoay xở được.",
+        "tactful": "Das ist mir leider nicht möglich.",
+        "vi": "Tiếc là mình không thể làm được việc đó.",
         "simpleEn": "I cannot.",
         "simpleVi": "Mình không thể.",
-        "en": "Unfortunately, I cannot manage it today.",
+        "en": "Unfortunately, that is not possible for me.",
         "vocabulary": [
           {
-            "de": "schaffen",
-            "type": "verb",
-            "en": "to manage; to accomplish",
-            "vi": "xoay xở làm được; hoàn thành"
+            "de": "möglich",
+            "type": "adjective",
+            "en": "possible",
+            "vi": "có thể xảy ra"
           },
           {
             "de": "leider",
@@ -2379,9 +2451,10 @@ const conversationGroups = [
           }
         ],
         "analysis": {
-          "de": "Im Aussagesatz steht das konjugierte Verb an zweiter Satzgliedposition. Die Wortwahl bestimmt hier vor allem den Ton.",
-          "en": "In a statement, the conjugated verb occupies the second constituent position. Here, word choice mainly shapes the tone.",
-          "vi": "Trong câu trần thuật, động từ chia ở vị trí thành phần thứ hai, không nhất thiết là từ thứ hai. Ở đây sắc thái chủ yếu đến từ cách chọn từ."
+          "pattern": "Adjektiv als Prädikativ",
+          "de": "Das Adjektiv bleibt nach sein, klingen, erscheinen oder finden in dieser Funktion ohne Deklinationsendung.",
+          "en": "Used predicatively after sein, klingen, erscheinen or finden, the adjective has no inflectional ending here.",
+          "vi": "Tính từ làm vị ngữ sau sein, klingen, erscheinen hoặc finden trong cấu trúc này không nhận đuôi biến cách."
         },
         "source": "document"
       },
@@ -2407,68 +2480,70 @@ const conversationGroups = [
           }
         ],
         "analysis": {
-          "de": "Im Aussagesatz steht das konjugierte Verb an zweiter Satzgliedposition. Die Wortwahl bestimmt hier vor allem den Ton.",
-          "en": "In a statement, the conjugated verb occupies the second constituent position. Here, word choice mainly shapes the tone.",
-          "vi": "Trong câu trần thuật, động từ chia ở vị trí thành phần thứ hai, không nhất thiết là từ thứ hai. Ở đây sắc thái chủ yếu đến từ cách chọn từ."
+          "pattern": "Präsens · Aussagesatz",
+          "de": "Das konjugierte Verb steht an zweiter Satzgliedposition; das Vorfeld kann aus mehreren Wörtern bestehen.",
+          "en": "The conjugated verb occupies the second constituent position; the first constituent may contain several words.",
+          "vi": "Động từ chia ở vị trí thành phần thứ hai; thành phần đầu có thể gồm nhiều từ."
         },
         "source": "document"
       },
       {
         "simple": "Ich kann das.",
-        "tactful": "Ich bringe bereits praktische Erfahrung in diesem Bereich mit.",
-        "vi": "Tôi đã có kinh nghiệm thực tế trong lĩnh vực này.",
+        "tactful": "Ich traue mir diese Aufgabe zu.",
+        "vi": "Mình tin mình có thể làm được việc này.",
         "simpleEn": "I can do that.",
         "simpleVi": "Tôi làm được việc đó.",
-        "en": "I already bring practical experience in this field.",
+        "en": "I feel capable of doing this task.",
         "vocabulary": [
           {
-            "de": "mitbringen",
+            "de": "sich zutrauen",
             "type": "verb",
-            "en": "to bring along; to bring to a role",
-            "vi": "mang theo; có sẵn để đóng góp"
+            "en": "to feel capable of",
+            "vi": "tin mình có thể làm được"
           },
           {
-            "de": "die Erfahrung",
+            "de": "die Aufgabe",
             "type": "noun",
-            "en": "experience",
-            "vi": "kinh nghiệm; trải nghiệm",
-            "plural": "die Erfahrungen"
+            "en": "task",
+            "vi": "nhiệm vụ; bài tập",
+            "plural": "die Aufgaben"
           }
         ],
         "analysis": {
-          "de": "Beim trennbaren Verb steht der abgetrennte Verbteil im Hauptsatz gewöhnlich am Ende.",
-          "en": "With a separable verb, the separated prefix usually comes at the end of the main clause.",
-          "vi": "Với động từ tách, phần tiền tố thường đứng cuối câu chính khi động từ chia ở hiện tại; khi dùng nguyên mẫu hoặc Partizip II, hình thức sẽ khác."
+          "pattern": "sich etwas zutrauen",
+          "de": "Zutrauen ist trennbar: traue … zu. Mir ist Dativ, diese Aufgabe ist Akkusativ.",
+          "en": "Zutrauen is separable: traue … zu. Mir is dative; diese Aufgabe is accusative.",
+          "vi": "zutrauen là động từ tách: traue … zu. mir ở Dativ; diese Aufgabe ở Akkusativ."
         },
         "source": "document"
       },
       {
         "simple": "Ich bin fertig.",
-        "tactful": "Damit komme ich zum Schluss meiner Präsentation.",
-        "vi": "Đến đây tôi xin kết thúc phần trình bày.",
+        "tactful": "Damit bin ich am Ende meiner Ausführungen angekommen.",
+        "vi": "Đến đây tôi đã trình bày xong.",
         "simpleEn": "I am finished.",
         "simpleVi": "Tôi xong rồi.",
-        "en": "That brings me to the end of my presentation.",
+        "en": "That brings me to the end of my remarks.",
         "vocabulary": [
           {
-            "de": "der Schluss",
-            "type": "noun",
-            "en": "end; conclusion",
-            "vi": "phần kết; kết thúc",
-            "plural": "die Schlüsse"
+            "de": "ankommen",
+            "type": "verb",
+            "en": "to arrive",
+            "vi": "đến; được nhận"
           },
           {
-            "de": "die Präsentation",
+            "de": "die Ausführung",
             "type": "noun",
-            "en": "presentation",
-            "vi": "bài thuyết trình",
-            "plural": "die Präsentationen"
+            "en": "explanation; account",
+            "vi": "phần trình bày",
+            "plural": "die Ausführungen"
           }
         ],
         "analysis": {
-          "de": "Im Aussagesatz steht das konjugierte Verb an zweiter Satzgliedposition. Die Wortwahl bestimmt hier vor allem den Ton.",
-          "en": "In a statement, the conjugated verb occupies the second constituent position. Here, word choice mainly shapes the tone.",
-          "vi": "Trong câu trần thuật, động từ chia ở vị trí thành phần thứ hai, không nhất thiết là từ thứ hai. Ở đây sắc thái chủ yếu đến từ cách chọn từ."
+          "pattern": "haben/sein + Partizip II",
+          "de": "Das Hilfsverb wird konjugiert, das Partizip II steht am Ende des Teilsatzes.",
+          "en": "The auxiliary is conjugated; the past participle comes at the end of the clause.",
+          "vi": "Trợ động từ chia theo chủ ngữ; Partizip II đứng cuối mệnh đề."
         },
         "source": "document"
       },
@@ -2494,18 +2569,19 @@ const conversationGroups = [
           }
         ],
         "analysis": {
-          "de": "Könnte/könnten ist Konjunktiv II von können. Der andere Infinitiv steht am Satzende.",
-          "en": "Könnte/könnten is the subjunctive II form of können. The other infinitive comes at the end.",
-          "vi": "könnte/könnten là Konjunktiv II của können, thường dùng để hỏi khả năng hoặc nhờ lịch sự; động từ nguyên mẫu còn lại đứng cuối câu."
+          "pattern": "könnte/könntest/könnten + Infinitiv",
+          "de": "Konjunktiv II von können; der weitere Infinitiv steht am Ende.",
+          "en": "Subjunctive II of können; the other infinitive comes at the end.",
+          "vi": "Konjunktiv II của können; động từ nguyên mẫu còn lại đứng cuối câu."
         },
         "source": "editorial"
       },
       {
         "simple": "Langsamer, bitte.",
         "simpleVi": "Chậm hơn giúp tôi.",
-        "tactful": "Könnten Sie bitte etwas langsamer sprechen? Ich lerne noch Deutsch.",
-        "vi": "Anh/chị có thể nói chậm hơn một chút không? Tôi vẫn đang học tiếng Đức.",
-        "en": "Could you speak a little more slowly, please? I am still learning German.",
+        "tactful": "Könnten Sie bitte etwas langsamer sprechen?",
+        "vi": "Anh/chị có thể nói chậm hơn một chút không?",
+        "en": "Could you speak a little more slowly, please?",
         "simpleEn": "More slowly, please.",
         "vocabulary": [
           {
@@ -2515,73 +2591,76 @@ const conversationGroups = [
             "vi": "chậm"
           },
           {
-            "de": "lernen",
+            "de": "sprechen",
             "type": "verb",
-            "en": "to learn",
-            "vi": "học"
+            "en": "to speak",
+            "vi": "nói"
           }
         ],
         "analysis": {
-          "de": "Könnte/könnten ist Konjunktiv II von können. Der andere Infinitiv steht am Satzende.",
-          "en": "Könnte/könnten is the subjunctive II form of können. The other infinitive comes at the end.",
-          "vi": "könnte/könnten là Konjunktiv II của können, thường dùng để hỏi khả năng hoặc nhờ lịch sự; động từ nguyên mẫu còn lại đứng cuối câu."
+          "pattern": "könnte/könntest/könnten + Infinitiv",
+          "de": "Konjunktiv II von können; der weitere Infinitiv steht am Ende.",
+          "en": "Subjunctive II of können; the other infinitive comes at the end.",
+          "vi": "Konjunktiv II của können; động từ nguyên mẫu còn lại đứng cuối câu."
         },
         "source": "editorial"
       },
       {
         "simple": "Ich verstehe das nicht.",
         "simpleVi": "Tôi không hiểu điều đó.",
-        "tactful": "Könnten Sie mir ein Beispiel dazu geben?",
-        "vi": "Anh/chị có thể cho tôi một ví dụ về điều đó không?",
-        "en": "Could you give me an example of that?",
+        "tactful": "Könntest du mir das bitte noch einmal erklären?",
+        "vi": "Bạn có thể giải thích lại điều đó cho mình được không?",
+        "en": "Could you explain that to me once again, please?",
         "simpleEn": "I do not understand that.",
         "vocabulary": [
           {
-            "de": "das Beispiel",
-            "type": "noun",
-            "en": "example",
-            "vi": "ví dụ",
-            "plural": "die Beispiele"
+            "de": "erklären",
+            "type": "verb",
+            "en": "to explain",
+            "vi": "giải thích"
           },
           {
-            "de": "geben",
-            "type": "verb",
-            "en": "to give",
-            "vi": "cho; đưa"
+            "de": "noch einmal",
+            "type": "phrase",
+            "en": "once again",
+            "vi": "một lần nữa"
           }
         ],
         "analysis": {
-          "de": "Könnte/könnten ist Konjunktiv II von können. Der andere Infinitiv steht am Satzende.",
-          "en": "Könnte/könnten is the subjunctive II form of können. The other infinitive comes at the end.",
-          "vi": "könnte/könnten là Konjunktiv II của können, thường dùng để hỏi khả năng hoặc nhờ lịch sự; động từ nguyên mẫu còn lại đứng cuối câu."
+          "pattern": "könnte/könntest/könnten + Infinitiv",
+          "de": "Konjunktiv II von können; der weitere Infinitiv steht am Ende.",
+          "en": "Subjunctive II of können; the other infinitive comes at the end.",
+          "vi": "Konjunktiv II của können; động từ nguyên mẫu còn lại đứng cuối câu."
         },
         "source": "editorial"
       },
       {
         "simple": "Also morgen?",
         "simpleVi": "Vậy ngày mai à?",
-        "tactful": "Habe ich Sie richtig verstanden: Wir treffen uns morgen um zehn?",
-        "vi": "Tôi hiểu đúng chứ: chúng ta gặp nhau lúc mười giờ ngày mai?",
-        "en": "Have I understood you correctly: we are meeting tomorrow at ten?",
+        "tactful": "Habe ich Sie richtig verstanden: Unser Termin ist morgen?",
+        "vi": "Tôi hiểu đúng chứ: lịch hẹn của chúng ta là ngày mai?",
+        "en": "Have I understood you correctly: our appointment is tomorrow?",
         "simpleEn": "So, tomorrow?",
         "vocabulary": [
+          {
+            "de": "der Termin",
+            "type": "noun",
+            "en": "appointment",
+            "vi": "lịch hẹn; cuộc hẹn",
+            "plural": "die Termine"
+          },
           {
             "de": "richtig",
             "type": "adjective",
             "en": "correct; right",
             "vi": "đúng"
-          },
-          {
-            "de": "sich treffen",
-            "type": "verb",
-            "en": "to meet each other",
-            "vi": "gặp nhau"
           }
         ],
         "analysis": {
-          "de": "Das Perfekt besteht hier aus haben/sein und Partizip II. Es beschreibt ein bereits geschehenes Ereignis.",
-          "en": "The perfect consists of haben/sein and a past participle here. It describes something that has already happened.",
-          "vi": "Perfekt dùng haben/sein chia theo chủ ngữ và Partizip II để nói việc đã xảy ra. Partizip II thường đứng cuối mệnh đề chính."
+          "pattern": "haben/sein + Partizip II",
+          "de": "Das Hilfsverb wird konjugiert, das Partizip II steht am Ende des Teilsatzes.",
+          "en": "The auxiliary is conjugated; the past participle comes at the end of the clause.",
+          "vi": "Trợ động từ chia theo chủ ngữ; Partizip II đứng cuối mệnh đề."
         },
         "source": "editorial"
       },
@@ -2607,37 +2686,39 @@ const conversationGroups = [
           }
         ],
         "analysis": {
-          "de": "Darf ist Präsens von dürfen. Darf ich + Infinitiv fragt um Erlaubnis.",
-          "en": "Darf is the present form of dürfen. Darf ich plus infinitive asks permission.",
-          "vi": "Darf là hiện tại của dürfen. Darf ich + động từ nguyên mẫu dùng để xin phép; không phải Konjunktiv II."
+          "pattern": "darf ich + Infinitiv",
+          "de": "Darf ist Präsens von dürfen, nicht Konjunktiv II.",
+          "en": "Darf is present indicative of dürfen, not subjunctive II.",
+          "vi": "Darf là hiện tại của dürfen, không phải Konjunktiv II."
         },
         "source": "editorial"
       },
       {
         "simple": "Moment!",
         "simpleVi": "Khoan!",
-        "tactful": "Entschuldigung, darf ich kurz nachfragen, bevor wir weitermachen?",
-        "vi": "Xin lỗi, tôi hỏi rõ một chút trước khi chúng ta tiếp tục được không?",
-        "en": "Sorry, may I ask a quick question before we continue?",
+        "tactful": "Darf ich kurz unterbrechen?",
+        "vi": "Cho tôi ngắt lời một chút được không?",
+        "en": "May I interrupt briefly?",
         "simpleEn": "One moment!",
         "vocabulary": [
           {
-            "de": "nachfragen",
+            "de": "unterbrechen",
             "type": "verb",
-            "en": "to ask for clarification",
-            "vi": "hỏi lại; hỏi rõ"
+            "en": "to interrupt",
+            "vi": "ngắt lời; tạm dừng"
           },
           {
-            "de": "weitermachen",
+            "de": "dürfen",
             "type": "verb",
-            "en": "to continue",
-            "vi": "tiếp tục"
+            "en": "may; to be allowed to",
+            "vi": "được phép"
           }
         ],
         "analysis": {
-          "de": "Bevor leitet hier einen zeitlichen Nebensatz ein; weitermachen steht am Ende. Darf ich fragt um Erlaubnis.",
-          "en": "Bevor introduces a time clause here, with weitermachen at its end. Darf ich asks permission.",
-          "vi": "bevor nghĩa là trước khi, mở mệnh đề thời gian và đưa động từ chia weitermachen xuống cuối. Darf ich là cách xin phép ở hiện tại, không phải câu hỏi gián tiếp."
+          "pattern": "darf ich + Infinitiv",
+          "de": "Darf ist Präsens von dürfen, nicht Konjunktiv II.",
+          "en": "Darf is present indicative of dürfen, not subjunctive II.",
+          "vi": "Darf là hiện tại của dürfen, không phải Konjunktiv II."
         },
         "source": "editorial"
       },
@@ -2664,9 +2745,10 @@ const conversationGroups = [
           }
         ],
         "analysis": {
-          "de": "Würde/würden + Infinitiv bildet hier den Konjunktiv II und formuliert einen Wunsch oder eine Einschätzung vorsichtiger.",
-          "en": "Würde/würden plus an infinitive forms subjunctive II here, softening a wish or assessment.",
-          "vi": "würde/würden + động từ nguyên mẫu tạo Konjunktiv II, giúp diễn đạt mong muốn hoặc nhận định dè dặt hơn. Không làm thay đổi sự thật cần nói."
+          "pattern": "würde/würden + Infinitiv",
+          "de": "Würde wird konjugiert; der Infinitiv des Vollverbs steht am Ende.",
+          "en": "Würde is conjugated; the lexical verb stays in the infinitive at the end.",
+          "vi": "würde chia theo chủ ngữ; động từ chính giữ nguyên mẫu và đứng cuối."
         },
         "source": "editorial"
       },
@@ -2693,9 +2775,10 @@ const conversationGroups = [
           }
         ],
         "analysis": {
-          "de": "Nach können steht zurückkommen als Infinitiv am Satzende. Zurückkommen auf + Akkusativ heißt, ein Thema erneut aufzugreifen.",
-          "en": "After können, zurückkommen is the infinitive at the end. Zurückkommen auf plus accusative means returning to a topic.",
-          "vi": "Sau können, zurückkommen giữ nguyên dạng nguyên mẫu và đứng cuối; không tách thành kommen … zurück trong câu này. zurückkommen auf + Akkusativ = quay lại một chủ đề."
+          "pattern": "Modalverb + Infinitiv",
+          "de": "Das Modalverb wird konjugiert; das andere Verb steht im Infinitiv am Satzende.",
+          "en": "The modal is conjugated; the other verb stays in the infinitive at the end.",
+          "vi": "Động từ tình thái được chia; động từ còn lại giữ nguyên mẫu và đứng cuối."
         },
         "source": "editorial"
       },
@@ -2723,9 +2806,10 @@ const conversationGroups = [
           }
         ],
         "analysis": {
-          "de": "Darf ist Präsens von dürfen. Darf ich + Infinitiv fragt um Erlaubnis.",
-          "en": "Darf is the present form of dürfen. Darf ich plus infinitive asks permission.",
-          "vi": "Darf là hiện tại của dürfen. Darf ich + động từ nguyên mẫu dùng để xin phép; không phải Konjunktiv II."
+          "pattern": "darf ich + Infinitiv",
+          "de": "Darf ist Präsens von dürfen, nicht Konjunktiv II.",
+          "en": "Darf is present indicative of dürfen, not subjunctive II.",
+          "vi": "Darf là hiện tại của dürfen, không phải Konjunktiv II."
         }
       },
       {
@@ -2750,95 +2834,99 @@ const conversationGroups = [
           }
         ],
         "analysis": {
-          "de": "In der indirekten Frage steht das konjugierte Verb am Ende des Nebensatzes.",
-          "en": "In an indirect question, the conjugated verb comes at the end of the subordinate clause.",
-          "vi": "Câu hỏi gián tiếp đưa phần cần hỏi vào mệnh đề phụ; động từ chia của phần này đứng cuối. Không đảo động từ lên đầu như câu hỏi độc lập."
+          "pattern": "Indirekte Frage + Verb am Ende",
+          "de": "Das Fragewort oder ob leitet den Nebensatz ein; dessen konjugiertes Verb steht am Ende.",
+          "en": "The question word or ob introduces the subordinate clause, whose conjugated verb comes last.",
+          "vi": "Từ để hỏi hoặc ob mở đầu mệnh đề phụ; động từ chia của mệnh đề đó đứng cuối."
         },
         "source": "editorial"
       },
       {
         "simple": "Jetzt nicht.",
         "simpleVi": "Giờ không được.",
-        "tactful": "Ich bin gerade in einem Gespräch. Darf ich Sie in einer halben Stunde zurückrufen?",
-        "vi": "Tôi đang có cuộc trao đổi. Nửa tiếng nữa tôi gọi lại được không?",
-        "en": "I am in a conversation right now. May I call you back in half an hour?",
+        "tactful": "Im Moment ist es mir leider nicht möglich.",
+        "vi": "Tiếc là hiện giờ tôi không thể làm việc đó.",
+        "en": "Unfortunately, I cannot do that at the moment.",
         "simpleEn": "Not right now.",
         "vocabulary": [
           {
-            "de": "das Gespräch",
-            "type": "noun",
-            "en": "conversation",
-            "vi": "cuộc trò chuyện",
-            "plural": "die Gespräche"
+            "de": "im Moment",
+            "type": "phrase",
+            "en": "at the moment",
+            "vi": "hiện tại"
           },
           {
-            "de": "zurückrufen",
-            "type": "verb",
-            "en": "to call back",
-            "vi": "gọi điện lại"
+            "de": "möglich",
+            "type": "adjective",
+            "en": "possible",
+            "vi": "có thể xảy ra"
           }
         ],
         "analysis": {
-          "de": "Darf ist Präsens von dürfen. Darf ich + Infinitiv fragt um Erlaubnis.",
-          "en": "Darf is the present form of dürfen. Darf ich plus infinitive asks permission.",
-          "vi": "Darf là hiện tại của dürfen. Darf ich + động từ nguyên mẫu dùng để xin phép; không phải Konjunktiv II."
+          "pattern": "Adjektiv als Prädikativ",
+          "de": "Das Adjektiv bleibt nach sein, klingen, erscheinen oder finden in dieser Funktion ohne Deklinationsendung.",
+          "en": "Used predicatively after sein, klingen, erscheinen or finden, the adjective has no inflectional ending here.",
+          "vi": "Tính từ làm vị ngữ sau sein, klingen, erscheinen hoặc finden trong cấu trúc này không nhận đuôi biến cách."
         },
         "source": "editorial"
       },
       {
         "simple": "Schicken Sie eine Mail.",
         "simpleVi": "Gửi email đi.",
-        "tactful": "Könnten Sie mir die Einzelheiten bitte per E-Mail schicken? Dann kann ich sie in Ruhe prüfen.",
-        "vi": "Anh/chị gửi chi tiết qua email giúp tôi được không? Như vậy tôi có thể xem kỹ.",
-        "en": "Could you send me the details by email, please? Then I can review them properly.",
+        "tactful": "Könnten Sie mir das bitte per E-Mail schicken?",
+        "vi": "Anh/chị có thể gửi việc đó cho tôi qua email được không?",
+        "en": "Could you send that to me by email, please?",
         "simpleEn": "Send an email.",
         "vocabulary": [
-          {
-            "de": "die Einzelheit",
-            "type": "noun",
-            "en": "detail",
-            "vi": "chi tiết",
-            "plural": "die Einzelheiten"
-          },
           {
             "de": "schicken",
             "type": "verb",
             "en": "to send",
             "vi": "gửi"
+          },
+          {
+            "de": "die E-Mail",
+            "type": "noun",
+            "en": "email",
+            "vi": "thư điện tử",
+            "plural": "die E-Mails"
           }
         ],
         "analysis": {
-          "de": "Könnte/könnten ist Konjunktiv II von können. Der andere Infinitiv steht am Satzende.",
-          "en": "Könnte/könnten is the subjunctive II form of können. The other infinitive comes at the end.",
-          "vi": "könnte/könnten là Konjunktiv II của können, thường dùng để hỏi khả năng hoặc nhờ lịch sự; động từ nguyên mẫu còn lại đứng cuối câu."
+          "pattern": "könnte/könntest/könnten + Infinitiv",
+          "de": "Konjunktiv II von können; der weitere Infinitiv steht am Ende.",
+          "en": "Subjunctive II of können; the other infinitive comes at the end.",
+          "vi": "Konjunktiv II của können; động từ nguyên mẫu còn lại đứng cuối câu."
         },
         "source": "editorial"
       },
       {
         "simple": "Antworten Sie bitte.",
         "simpleVi": "Trả lời giúp tôi.",
-        "tactful": "Ich wollte kurz nachfragen, ob meine Nachricht angekommen ist.",
-        "vi": "Tôi muốn hỏi nhanh xem anh/chị đã nhận được tin nhắn của tôi chưa.",
-        "en": "I just wanted to check whether my message arrived.",
+        "tactful": "Könnten Sie mir bitte eine Rückmeldung geben?",
+        "vi": "Anh/chị có thể phản hồi giúp tôi được không?",
+        "en": "Could you give me a reply, please?",
         "simpleEn": "Please reply.",
         "vocabulary": [
           {
-            "de": "nachfragen",
-            "type": "verb",
-            "en": "to ask for clarification",
-            "vi": "hỏi lại; hỏi rõ"
+            "de": "die Rückmeldung",
+            "type": "noun",
+            "en": "reply; feedback",
+            "vi": "phản hồi",
+            "plural": "die Rückmeldungen"
           },
           {
-            "de": "ankommen",
+            "de": "geben",
             "type": "verb",
-            "en": "to arrive",
-            "vi": "đến; được nhận"
+            "en": "to give",
+            "vi": "cho; đưa"
           }
         ],
         "analysis": {
-          "de": "In der indirekten Frage steht das konjugierte Verb am Ende des Nebensatzes.",
-          "en": "In an indirect question, the conjugated verb comes at the end of the subordinate clause.",
-          "vi": "Câu hỏi gián tiếp đưa phần cần hỏi vào mệnh đề phụ; động từ chia của phần này đứng cuối. Không đảo động từ lên đầu như câu hỏi độc lập."
+          "pattern": "könnte/könntest/könnten + Infinitiv",
+          "de": "Konjunktiv II von können; der weitere Infinitiv steht am Ende.",
+          "en": "Subjunctive II of können; the other infinitive comes at the end.",
+          "vi": "Konjunktiv II của können; động từ nguyên mẫu còn lại đứng cuối câu."
         },
         "source": "editorial"
       }
@@ -2859,36 +2947,37 @@ const conversationGroups = [
     "rows": [
       {
         "simple": "Wie geht’s?",
-        "tactful": "Wie läuft’s bei dir?",
-        "vi": "Dạo này mọi chuyện thế nào?",
+        "tactful": "Wie geht es dir in letzter Zeit?",
+        "vi": "Dạo gần đây bạn thế nào?",
         "simpleEn": "How are you?",
         "simpleVi": "Bạn khỏe không?",
-        "en": "How are things going for you?",
+        "en": "How have you been lately?",
         "vocabulary": [
           {
-            "de": "laufen",
+            "de": "gehen",
             "type": "verb",
-            "en": "to go; to run",
-            "vi": "diễn ra; chạy"
+            "en": "to go; to be going",
+            "vi": "đi; diễn ra"
           },
           {
-            "de": "bei + Dativ",
+            "de": "in letzter Zeit",
             "type": "phrase",
-            "en": "with; at (someone’s place)",
-            "vi": "với; ở chỗ ai; đi với Dativ"
+            "en": "lately",
+            "vi": "gần đây"
           }
         ],
         "analysis": {
-          "de": "Wie leitet eine W-Frage ein. Das konjugierte Verb läuft folgt direkt danach; es wird in läuft’s verkürzt.",
-          "en": "Wie introduces a wh-question. The conjugated verb läuft comes next; läuft’s is short for läuft es.",
-          "vi": "Wie mở câu hỏi W, động từ chia läuft đứng ngay sau. läuft’s là cách viết rút gọn của läuft es, rất thường gặp trong lời nói thân mật."
+          "pattern": "W-Frage + konjugiertes Verb",
+          "de": "Das Fragewort steht zuerst, danach folgt das konjugierte Verb.",
+          "en": "The question word comes first, followed by the conjugated verb.",
+          "vi": "Từ để hỏi đứng đầu, theo sau là động từ đã chia."
         },
         "source": "document"
       },
       {
-        "tactful": "Ich freue mich auf unser nächstes Treffen. Bis bald!",
-        "en": "I am looking forward to our next meeting. See you soon!",
-        "vi": "Mình mong lần gặp tiếp theo. Hẹn sớm gặp lại nhé!",
+        "tactful": "Ich freue mich auf unser nächstes Treffen.",
+        "en": "I look forward to our next meeting.",
+        "vi": "Mình mong lần gặp tiếp theo của chúng ta.",
         "vocabulary": [
           {
             "de": "sich freuen auf + Akkusativ",
@@ -2905,9 +2994,10 @@ const conversationGroups = [
           }
         ],
         "analysis": {
-          "de": "Im Aussagesatz steht das konjugierte Verb an zweiter Satzgliedposition. Die Wortwahl und Betonung bestimmen den Ton.",
-          "en": "In a statement, the conjugated verb occupies the second constituent position. Word choice and intonation shape the tone.",
-          "vi": "Trong câu trần thuật, động từ chia đứng ở vị trí thành phần thứ hai. Cách chọn từ và giọng điệu quyết định sắc thái; câu ngắn không mặc nhiên bất lịch sự."
+          "pattern": "Reflexivpronomen",
+          "de": "Das Reflexivpronomen richtet sich nach dem Subjekt und der Verbverbindung, zum Beispiel ich → mich.",
+          "en": "The reflexive pronoun depends on the subject and verb expression, for example ich → mich.",
+          "vi": "Đại từ phản thân phụ thuộc chủ ngữ và cấu trúc động từ, ví dụ ich → mich."
         },
         "source": "legacy-adapted",
         "simple": "Bis dann!",
@@ -2934,9 +3024,10 @@ const conversationGroups = [
           }
         ],
         "analysis": {
-          "de": "Wünschen verbindet hier eine Person im Dativ mit einem Wunsch im Akkusativ: Ich wünsche dir … .",
-          "en": "Wünschen combines the recipient in the dative with the wish in the accusative: Ich wünsche dir … .",
-          "vi": "wünschen dùng người nhận ở Dativ và điều chúc ở Akkusativ: Ich wünsche dir … . dir nghĩa là cho bạn, dùng với người đã xưng du."
+          "pattern": "wünschen + Dativ + Akkusativ",
+          "de": "Die Person steht im Dativ; der Wunsch steht im Akkusativ.",
+          "en": "The recipient is dative; the wish is accusative.",
+          "vi": "Người nhận lời chúc ở Dativ; điều được chúc ở Akkusativ."
         },
         "source": "legacy-adapted",
         "simple": "Alles Gute zum Geburtstag!",
@@ -2944,27 +3035,28 @@ const conversationGroups = [
         "simpleVi": "Chúc mừng sinh nhật!"
       },
       {
-        "tactful": "Schön, dass du da bist. Fühl dich willkommen!",
-        "en": "It is lovely that you are here. Feel welcome!",
-        "vi": "Thật vui vì bạn có mặt. Cứ tự nhiên nhé!",
+        "tactful": "Schön, dass du da bist.",
+        "en": "It is lovely that you are here.",
+        "vi": "Thật vui vì bạn có mặt ở đây.",
         "vocabulary": [
           {
-            "de": "willkommen",
+            "de": "schön",
             "type": "adjective",
-            "en": "welcome",
-            "vi": "được chào đón"
+            "en": "lovely; beautiful",
+            "vi": "đẹp; thật vui"
           },
           {
-            "de": "sich fühlen",
-            "type": "verb",
-            "en": "to feel",
-            "vi": "cảm thấy"
+            "de": "da sein",
+            "type": "phrase",
+            "en": "to be there; to be present",
+            "vi": "có mặt"
           }
         ],
         "analysis": {
-          "de": "Im Nebensatz mit dass steht das konjugierte Verb am Ende.",
-          "en": "In a subordinate clause introduced by dass, the conjugated verb comes last.",
-          "vi": "Mệnh đề với dass đưa nội dung một nhận định hoặc thông tin; động từ chia đứng cuối mệnh đề đó."
+          "pattern": "dass + … + Verb am Ende",
+          "de": "Das konjugierte Verb steht am Ende des dass-Satzes.",
+          "en": "The conjugated verb comes at the end of the dass-clause.",
+          "vi": "Động từ chia đứng cuối mệnh đề mở đầu bằng dass."
         },
         "source": "legacy-adapted",
         "simple": "Herzlich willkommen!",
@@ -2972,9 +3064,9 @@ const conversationGroups = [
         "simpleVi": "Nhiệt liệt chào mừng!"
       },
       {
-        "tactful": "Entschuldigung, könnten Sie das bitte noch einmal wiederholen?",
-        "en": "Excuse me, could you repeat that once more, please?",
-        "vi": "Xin lỗi, anh/chị có thể nhắc lại một lần nữa không?",
+        "tactful": "Entschuldigung, könnten Sie das bitte wiederholen?",
+        "en": "Excuse me, could you repeat that, please?",
+        "vi": "Xin lỗi, anh/chị có thể nhắc lại điều đó không?",
         "vocabulary": [
           {
             "de": "wiederholen",
@@ -2983,16 +3075,18 @@ const conversationGroups = [
             "vi": "nhắc lại"
           },
           {
-            "de": "noch einmal",
-            "type": "phrase",
-            "en": "once again",
-            "vi": "một lần nữa"
+            "de": "die Entschuldigung",
+            "type": "noun",
+            "en": "apology; excuse",
+            "vi": "lời xin lỗi",
+            "plural": "die Entschuldigungen"
           }
         ],
         "analysis": {
-          "de": "Könnte/könnten ist Konjunktiv II von können. Der andere Infinitiv steht am Satzende.",
-          "en": "Könnte/könnten is the subjunctive II form of können. The other infinitive comes at the end.",
-          "vi": "könnte/könnten là Konjunktiv II của können, thường dùng để hỏi khả năng hoặc nhờ lịch sự; động từ nguyên mẫu còn lại đứng cuối câu."
+          "pattern": "könnte/könntest/könnten + Infinitiv",
+          "de": "Konjunktiv II von können; der weitere Infinitiv steht am Ende.",
+          "en": "Subjunctive II of können; the other infinitive comes at the end.",
+          "vi": "Konjunktiv II của können; động từ nguyên mẫu còn lại đứng cuối câu."
         },
         "source": "legacy-adapted",
         "simple": "Wie bitte?",
@@ -3000,9 +3094,9 @@ const conversationGroups = [
         "simpleVi": "Xin lỗi, bạn nói gì cơ? (giọng mạnh có thể bất bình)"
       },
       {
-        "tactful": "Ich wünsche euch einen guten Appetit. Lasst es euch schmecken!",
-        "en": "Enjoy your meal, everyone. I hope you like it!",
-        "vi": "Chúc mọi người ngon miệng. Mong mọi người thưởng thức vui vẻ!",
+        "tactful": "Ich wünsche euch einen guten Appetit.",
+        "en": "I wish you an enjoyable meal.",
+        "vi": "Mình chúc mọi người ăn ngon miệng.",
         "vocabulary": [
           {
             "de": "wünschen",
@@ -3019,9 +3113,10 @@ const conversationGroups = [
           }
         ],
         "analysis": {
-          "de": "Wünschen verbindet hier eine Person im Dativ mit einem Wunsch im Akkusativ: Ich wünsche dir … .",
-          "en": "Wünschen combines the recipient in the dative with the wish in the accusative: Ich wünsche dir … .",
-          "vi": "wünschen dùng người nhận ở Dativ và điều chúc ở Akkusativ: Ich wünsche dir … . dir nghĩa là cho bạn, dùng với người đã xưng du."
+          "pattern": "wünschen + Dativ + Akkusativ",
+          "de": "Die Person steht im Dativ; der Wunsch steht im Akkusativ.",
+          "en": "The recipient is dative; the wish is accusative.",
+          "vi": "Người nhận lời chúc ở Dativ; điều được chúc ở Akkusativ."
         },
         "source": "legacy-adapted",
         "simple": "Guten Appetit!",
@@ -3048,9 +3143,10 @@ const conversationGroups = [
           }
         ],
         "analysis": {
-          "de": "Möchte ist eine Konjunktiv-II-Form von mögen, die üblich für Wünsche verwendet wird.",
-          "en": "Möchte is a subjunctive II form of mögen, commonly used to express wishes.",
-          "vi": "möchte là dạng Konjunktiv II của mögen, thường dùng với nghĩa muốn một cách nhẹ nhàng. Không phải dạng quá khứ của möchten."
+          "pattern": "möchte + Infinitiv",
+          "de": "Möchte ist eine Konjunktiv-II-Form von mögen; der weitere Infinitiv steht am Ende.",
+          "en": "Möchte is a subjunctive II form of mögen; the other infinitive comes at the end.",
+          "vi": "möchte là dạng Konjunktiv II của mögen; động từ nguyên mẫu còn lại đứng cuối."
         },
         "source": "legacy-adapted",
         "simple": "Prost! / Zum Wohl!",
@@ -3076,9 +3172,10 @@ const conversationGroups = [
           }
         ],
         "analysis": {
-          "de": "Wünschen verbindet hier eine Person im Dativ mit einem Wunsch im Akkusativ: Ich wünsche dir … .",
-          "en": "Wünschen combines the recipient in the dative with the wish in the accusative: Ich wünsche dir … .",
-          "vi": "wünschen dùng người nhận ở Dativ và điều chúc ở Akkusativ: Ich wünsche dir … . dir nghĩa là cho bạn, dùng với người đã xưng du."
+          "pattern": "wünschen + Dativ + Akkusativ",
+          "de": "Die Person steht im Dativ; der Wunsch steht im Akkusativ.",
+          "en": "The recipient is dative; the wish is accusative.",
+          "vi": "Người nhận lời chúc ở Dativ; điều được chúc ở Akkusativ."
         },
         "source": "legacy-adapted",
         "simple": "Gute Fahrt!",
@@ -3086,37 +3183,9 @@ const conversationGroups = [
         "simpleVi": "Chúc đi đường an toàn!"
       },
       {
-        "tactful": "Schlaf gut und erhol dich. Bis morgen!",
-        "en": "Sleep well and get some rest. See you tomorrow!",
-        "vi": "Ngủ ngon và nghỉ ngơi nhé. Hẹn mai gặp!",
-        "vocabulary": [
-          {
-            "de": "schlafen",
-            "type": "verb",
-            "en": "to sleep",
-            "vi": "ngủ"
-          },
-          {
-            "de": "sich erholen",
-            "type": "verb",
-            "en": "to recover; to rest",
-            "vi": "hồi phục; nghỉ ngơi"
-          }
-        ],
-        "analysis": {
-          "de": "Der Imperativ richtet sich direkt an die andere Person. Bitte und der Kontext können den Ton verändern.",
-          "en": "The imperative addresses the other person directly. Bitte and context can change its tone.",
-          "vi": "Mệnh lệnh hướng trực tiếp tới người nghe. Thêm bitte và chọn giọng điệu phù hợp có thể làm nhẹ lời yêu cầu; mệnh lệnh không mặc nhiên bất lịch sự."
-        },
-        "source": "legacy-adapted",
-        "simple": "Gute Nacht!",
-        "simpleEn": "Good night!",
-        "simpleVi": "Chúc ngủ ngon!"
-      },
-      {
-        "tactful": "Ich wünsche dir viel Erfolg bei deiner Prüfung.",
-        "en": "I wish you every success in your exam.",
-        "vi": "Mình chúc bạn thi thật tốt.",
+        "tactful": "Ich wünsche dir eine erholsame Nacht.",
+        "en": "I wish you a restful night.",
+        "vi": "Mình chúc bạn một đêm nghỉ ngơi thật tốt.",
         "vocabulary": [
           {
             "de": "wünschen",
@@ -3125,17 +3194,47 @@ const conversationGroups = [
             "vi": "chúc; mong muốn"
           },
           {
-            "de": "die Prüfung",
-            "type": "noun",
-            "en": "exam; examination",
-            "vi": "kỳ thi; cuộc kiểm tra",
-            "plural": "die Prüfungen"
+            "de": "erholsam",
+            "type": "adjective",
+            "en": "restful",
+            "vi": "giúp nghỉ ngơi; thư thái"
           }
         ],
         "analysis": {
-          "de": "Wünschen verbindet hier eine Person im Dativ mit einem Wunsch im Akkusativ: Ich wünsche dir … .",
-          "en": "Wünschen combines the recipient in the dative with the wish in the accusative: Ich wünsche dir … .",
-          "vi": "wünschen dùng người nhận ở Dativ và điều chúc ở Akkusativ: Ich wünsche dir … . dir nghĩa là cho bạn, dùng với người đã xưng du."
+          "pattern": "wünschen + Dativ + Akkusativ",
+          "de": "Die Person steht im Dativ; der Wunsch steht im Akkusativ.",
+          "en": "The recipient is dative; the wish is accusative.",
+          "vi": "Người nhận lời chúc ở Dativ; điều được chúc ở Akkusativ."
+        },
+        "source": "legacy-adapted",
+        "simple": "Gute Nacht!",
+        "simpleEn": "Good night!",
+        "simpleVi": "Chúc ngủ ngon!"
+      },
+      {
+        "tactful": "Ich wünsche dir viel Erfolg.",
+        "en": "I wish you every success.",
+        "vi": "Mình chúc bạn thành công.",
+        "vocabulary": [
+          {
+            "de": "wünschen",
+            "type": "verb",
+            "en": "to wish",
+            "vi": "chúc; mong muốn"
+          },
+          {
+            "de": "der Erfolg",
+            "type": "noun",
+            "en": "success",
+            "vi": "thành công",
+            "plural": "die Erfolge"
+          }
+        ],
+        "analysis": {
+          "pattern": "wünschen + Dativ + Akkusativ",
+          "de": "Die Person steht im Dativ; der Wunsch steht im Akkusativ.",
+          "en": "The recipient is dative; the wish is accusative.",
+          "vi": "Người nhận lời chúc ở Dativ; điều được chúc ở Akkusativ."
         },
         "source": "legacy-adapted",
         "simple": "Viel Glück!",
@@ -3164,9 +3263,10 @@ const conversationGroups = [
           }
         ],
         "analysis": {
-          "de": "In der Ja-/Nein-Frage steht das konjugierte Verb am Anfang.",
-          "en": "In a yes/no question, the conjugated verb comes first.",
-          "vi": "Câu hỏi có/không đặt động từ chia lên đầu; đây là cách hỏi trực tiếp, không tự động bất lịch sự."
+          "pattern": "Ja-/Nein-Frage",
+          "de": "Das konjugierte Verb steht vor dem Subjekt.",
+          "en": "The conjugated verb precedes the subject.",
+          "vi": "Động từ chia đứng trước chủ ngữ trong câu hỏi có/không."
         },
         "source": "document"
       },
@@ -3192,9 +3292,10 @@ const conversationGroups = [
           }
         ],
         "analysis": {
-          "de": "Der Imperativ richtet sich direkt an die andere Person. Bitte und der Kontext können den Ton verändern.",
-          "en": "The imperative addresses the other person directly. Bitte and context can change its tone.",
-          "vi": "Mệnh lệnh hướng trực tiếp tới người nghe. Thêm bitte và chọn giọng điệu phù hợp có thể làm nhẹ lời yêu cầu; mệnh lệnh không mặc nhiên bất lịch sự."
+          "pattern": "lass uns + Infinitiv",
+          "de": "Lass ist Imperativ von lassen; das Vollverb bleibt im Infinitiv.",
+          "en": "Lass is the imperative of lassen; the main verb remains infinitive.",
+          "vi": "Lass là mệnh lệnh của lassen; động từ chính giữ nguyên mẫu sau uns."
         },
         "source": "document"
       },
@@ -3221,9 +3322,10 @@ const conversationGroups = [
           }
         ],
         "analysis": {
-          "de": "Können steht hier im Indikativ Präsens; uns gehört zu sich duzen. Auch eine Frage ohne Konjunktiv II kann höflich sein.",
-          "en": "Können is present indicative here; uns belongs to the reciprocal verb sich duzen. A question can be polite without subjunctive II.",
-          "vi": "Können ở đây là hiện tại thông thường, không phải Konjunktiv II; uns thể hiện hai bên xưng du với nhau. Không bắt buộc dùng Konjunktiv II mới lịch sự."
+          "pattern": "können + sich duzen",
+          "de": "Können ist Indikativ Präsens. Uns ist das reziproke Pronomen zu sich duzen.",
+          "en": "Können is present indicative. Uns is the reciprocal pronoun in sich duzen.",
+          "vi": "Können là hiện tại thông thường. uns là đại từ chỉ quan hệ hai bên trong sich duzen."
         }
       }
     ],
@@ -3242,9 +3344,9 @@ const conversationGroups = [
     },
     "rows": [
       {
-        "tactful": "Selbstverständlich helfe ich dir gerne.",
-        "en": "Of course, I would be happy to help you.",
-        "vi": "Tất nhiên, mình sẵn lòng giúp bạn.",
+        "tactful": "Ja, selbstverständlich.",
+        "en": "Yes, of course.",
+        "vi": "Vâng, tất nhiên rồi.",
         "vocabulary": [
           {
             "de": "selbstverständlich",
@@ -3253,16 +3355,17 @@ const conversationGroups = [
             "vi": "hiển nhiên; tất nhiên"
           },
           {
-            "de": "helfen",
-            "type": "verb",
-            "en": "to help",
-            "vi": "giúp đỡ"
+            "de": "ja",
+            "type": "adverb",
+            "en": "yes",
+            "vi": "vâng; có"
           }
         ],
         "analysis": {
-          "de": "Im Aussagesatz steht das konjugierte Verb an zweiter Satzgliedposition. Die Wortwahl und Betonung bestimmen den Ton.",
-          "en": "In a statement, the conjugated verb occupies the second constituent position. Word choice and intonation shape the tone.",
-          "vi": "Trong câu trần thuật, động từ chia đứng ở vị trí thành phần thứ hai. Cách chọn từ và giọng điệu quyết định sắc thái; câu ngắn không mặc nhiên bất lịch sự."
+          "pattern": "Verkürzter Satz",
+          "de": "Diese feste Wendung kann ohne konjugiertes Verb als vollständiger Gesprächsbeitrag stehen.",
+          "en": "This fixed expression can function as a complete contribution without a conjugated verb.",
+          "vi": "Cụm cố định này có thể dùng độc lập trong hội thoại dù không có động từ chia."
         },
         "source": "legacy-adapted",
         "simple": "Na klar!",
@@ -3293,15 +3396,16 @@ const conversationGroups = [
           }
         ],
         "analysis": {
-          "de": "Verstanden ist Partizip II von verstehen. Hier wird es als verkürzte Bestätigung verwendet.",
-          "en": "Verstanden is the past participle of verstehen, used here as a shortened acknowledgment.",
-          "vi": "Verstanden là Partizip II của verstehen, ở đây dùng như lời xác nhận rút gọn rằng đã hiểu; không phải Konjunktiv II."
+          "pattern": "verstehen → verstanden",
+          "de": "Verstanden ist Partizip II von verstehen und steht hier als verkürzter Satz.",
+          "en": "Verstanden is the past participle of verstehen, used as a shortened sentence here.",
+          "vi": "Verstanden là Partizip II của verstehen, dùng trong câu rút gọn ở đây."
         }
       },
       {
-        "tactful": "Das überrascht mich. Kannst du mir mehr darüber erzählen?",
-        "en": "That surprises me. Can you tell me more about it?",
-        "vi": "Điều đó khiến mình ngạc nhiên. Bạn kể thêm được không?",
+        "tactful": "Das überrascht mich wirklich.",
+        "en": "That really surprises me.",
+        "vi": "Điều đó thật sự khiến mình ngạc nhiên.",
         "vocabulary": [
           {
             "de": "überraschen",
@@ -3310,16 +3414,17 @@ const conversationGroups = [
             "vi": "làm ngạc nhiên"
           },
           {
-            "de": "erzählen",
-            "type": "verb",
-            "en": "to tell; to narrate",
-            "vi": "kể chuyện"
+            "de": "wirklich",
+            "type": "adverb",
+            "en": "really",
+            "vi": "thực sự"
           }
         ],
         "analysis": {
-          "de": "In der Ja-/Nein-Frage steht das konjugierte Verb am Anfang.",
-          "en": "In a yes/no question, the conjugated verb comes first.",
-          "vi": "Câu hỏi có/không đặt động từ chia lên đầu; đây là cách hỏi trực tiếp, không tự động bất lịch sự."
+          "pattern": "Präsens · Aussagesatz",
+          "de": "Das konjugierte Verb steht an zweiter Satzgliedposition; das Vorfeld kann aus mehreren Wörtern bestehen.",
+          "en": "The conjugated verb occupies the second constituent position; the first constituent may contain several words.",
+          "vi": "Động từ chia ở vị trí thành phần thứ hai; thành phần đầu có thể gồm nhiều từ."
         },
         "source": "legacy-adapted",
         "simple": "Ach was!",
@@ -3328,36 +3433,37 @@ const conversationGroups = [
       },
       {
         "simple": "Schade.",
-        "tactful": "Das tut mir leid zu hören.",
-        "vi": "Mình rất tiếc khi nghe điều đó.",
+        "tactful": "Das finde ich wirklich bedauerlich.",
+        "vi": "Mình thật sự thấy điều đó đáng tiếc.",
         "simpleEn": "What a shame.",
         "simpleVi": "Tiếc quá.",
-        "en": "I am sorry to hear that.",
+        "en": "I find that truly regrettable.",
         "vocabulary": [
           {
-            "de": "leidtun",
-            "type": "verb",
-            "en": "to be sorry",
-            "vi": "lấy làm tiếc"
+            "de": "bedauerlich",
+            "type": "adjective",
+            "en": "regrettable",
+            "vi": "đáng tiếc"
           },
           {
-            "de": "hören",
+            "de": "finden",
             "type": "verb",
-            "en": "to hear; to listen",
-            "vi": "nghe"
+            "en": "to find; to consider",
+            "vi": "thấy; cho là"
           }
         ],
         "analysis": {
-          "de": "Die Infinitivgruppe mit zu ergänzt hier die Aussage. Bei einem trennbaren Verb steht zu zwischen Präfix und Verbstamm.",
-          "en": "The infinitive phrase with zu complements the statement. With a separable verb, zu goes between prefix and stem.",
-          "vi": "Cụm zu + nguyên mẫu bổ sung nội dung cho câu. Với động từ tách, zu nằm giữa tiền tố và thân động từ, ví dụ zuzuhören; không dùng zu sau mọi động từ tình thái."
+          "pattern": "Adjektiv als Prädikativ",
+          "de": "Das Adjektiv bleibt nach sein, klingen, erscheinen oder finden in dieser Funktion ohne Deklinationsendung.",
+          "en": "Used predicatively after sein, klingen, erscheinen or finden, the adjective has no inflectional ending here.",
+          "vi": "Tính từ làm vị ngữ sau sein, klingen, erscheinen hoặc finden trong cấu trúc này không nhận đuôi biến cách."
         },
         "source": "document"
       },
       {
-        "tactful": "Ist das tatsächlich so? Das wusste ich noch nicht.",
-        "en": "Is that really the case? I did not know that yet.",
-        "vi": "Thực sự như vậy à? Mình chưa biết điều đó.",
+        "tactful": "Ist das tatsächlich so?",
+        "en": "Is that really the case?",
+        "vi": "Thực sự là như vậy sao?",
         "vocabulary": [
           {
             "de": "tatsächlich",
@@ -3366,16 +3472,17 @@ const conversationGroups = [
             "vi": "thực sự"
           },
           {
-            "de": "wissen",
+            "de": "sein",
             "type": "verb",
-            "en": "to know",
-            "vi": "biết"
+            "en": "to be",
+            "vi": "là; ở; thì"
           }
         ],
         "analysis": {
-          "de": "In der Ja-/Nein-Frage steht das konjugierte Verb am Anfang.",
-          "en": "In a yes/no question, the conjugated verb comes first.",
-          "vi": "Câu hỏi có/không đặt động từ chia lên đầu; đây là cách hỏi trực tiếp, không tự động bất lịch sự."
+          "pattern": "Ja-/Nein-Frage",
+          "de": "Das konjugierte Verb steht vor dem Subjekt.",
+          "en": "The conjugated verb precedes the subject.",
+          "vi": "Động từ chia đứng trước chủ ngữ trong câu hỏi có/không."
         },
         "source": "legacy-adapted",
         "simple": "Echt?",
@@ -3383,9 +3490,9 @@ const conversationGroups = [
         "simpleVi": "Thật à?"
       },
       {
-        "tactful": "Das ist wirklich außergewöhnlich. Erzähl mir gerne mehr davon.",
-        "en": "That is really extraordinary. Feel free to tell me more.",
-        "vi": "Điều đó thật khác thường. Bạn cứ kể thêm nhé.",
+        "tactful": "Das ist wirklich außergewöhnlich.",
+        "en": "That really is extraordinary.",
+        "vi": "Điều đó thật sự khác thường.",
         "vocabulary": [
           {
             "de": "außergewöhnlich",
@@ -3394,16 +3501,17 @@ const conversationGroups = [
             "vi": "khác thường"
           },
           {
-            "de": "erzählen",
-            "type": "verb",
-            "en": "to tell; to narrate",
-            "vi": "kể chuyện"
+            "de": "wirklich",
+            "type": "adverb",
+            "en": "really",
+            "vi": "thực sự"
           }
         ],
         "analysis": {
-          "de": "Im Aussagesatz steht das konjugierte Verb an zweiter Satzgliedposition. Die Wortwahl und Betonung bestimmen den Ton.",
-          "en": "In a statement, the conjugated verb occupies the second constituent position. Word choice and intonation shape the tone.",
-          "vi": "Trong câu trần thuật, động từ chia đứng ở vị trí thành phần thứ hai. Cách chọn từ và giọng điệu quyết định sắc thái; câu ngắn không mặc nhiên bất lịch sự."
+          "pattern": "Adjektiv als Prädikativ",
+          "de": "Das Adjektiv bleibt nach sein, klingen, erscheinen oder finden in dieser Funktion ohne Deklinationsendung.",
+          "en": "Used predicatively after sein, klingen, erscheinen or finden, the adjective has no inflectional ending here.",
+          "vi": "Tính từ làm vị ngữ sau sein, klingen, erscheinen hoặc finden trong cấu trúc này không nhận đuôi biến cách."
         },
         "source": "legacy-adapted",
         "simple": "Krass!",
@@ -3411,9 +3519,9 @@ const conversationGroups = [
         "simpleVi": "Ghê thật / Đỉnh thật / Sốc thật! (khẩu ngữ)"
       },
       {
-        "tactful": "Das klingt schwierig. Kann ich dich irgendwie unterstützen?",
-        "en": "That sounds difficult. Is there any way I can support you?",
-        "vi": "Nghe có vẻ khó khăn. Mình có thể hỗ trợ bạn bằng cách nào không?",
+        "tactful": "Das klingt wirklich schwierig.",
+        "en": "That really sounds difficult.",
+        "vi": "Nghe có vẻ thực sự khó khăn.",
         "vocabulary": [
           {
             "de": "schwierig",
@@ -3422,16 +3530,17 @@ const conversationGroups = [
             "vi": "khó"
           },
           {
-            "de": "unterstützen",
+            "de": "klingen",
             "type": "verb",
-            "en": "to support",
-            "vi": "hỗ trợ"
+            "en": "to sound",
+            "vi": "nghe có vẻ"
           }
         ],
         "analysis": {
-          "de": "In der Ja-/Nein-Frage steht das konjugierte Verb am Anfang.",
-          "en": "In a yes/no question, the conjugated verb comes first.",
-          "vi": "Câu hỏi có/không đặt động từ chia lên đầu; đây là cách hỏi trực tiếp, không tự động bất lịch sự."
+          "pattern": "Adjektiv als Prädikativ",
+          "de": "Das Adjektiv bleibt nach sein, klingen, erscheinen oder finden in dieser Funktion ohne Deklinationsendung.",
+          "en": "Used predicatively after sein, klingen, erscheinen or finden, the adjective has no inflectional ending here.",
+          "vi": "Tính từ làm vị ngữ sau sein, klingen, erscheinen hoặc finden trong cấu trúc này không nhận đuôi biến cách."
         },
         "source": "legacy-adapted",
         "simple": "Oh je!",
@@ -3457,9 +3566,10 @@ const conversationGroups = [
           }
         ],
         "analysis": {
-          "de": "Das Perfekt besteht hier aus haben/sein und Partizip II. Es beschreibt ein bereits geschehenes Ereignis.",
-          "en": "The perfect consists of haben/sein and a past participle here. It describes something that has already happened.",
-          "vi": "Perfekt dùng haben/sein chia theo chủ ngữ và Partizip II để nói việc đã xảy ra. Partizip II thường đứng cuối mệnh đề chính."
+          "pattern": "haben/sein + Partizip II",
+          "de": "Das Hilfsverb wird konjugiert, das Partizip II steht am Ende des Teilsatzes.",
+          "en": "The auxiliary is conjugated; the past participle comes at the end of the clause.",
+          "vi": "Trợ động từ chia theo chủ ngữ; Partizip II đứng cuối mệnh đề."
         },
         "source": "legacy-adapted",
         "simple": "Stimmt’s?",
@@ -3467,28 +3577,28 @@ const conversationGroups = [
         "simpleVi": "Đúng không?"
       },
       {
-        "tactful": "Ich stimme dir teilweise zu, sehe aber noch einen offenen Punkt.",
-        "en": "I partly agree with you, but I still see one unresolved point.",
-        "vi": "Mình đồng ý một phần, nhưng vẫn thấy còn một điểm chưa rõ.",
+        "tactful": "Ich bin da noch nicht ganz überzeugt.",
+        "en": "I am not entirely convinced about that yet.",
+        "vi": "Mình vẫn chưa hoàn toàn bị thuyết phục về điều đó.",
         "vocabulary": [
           {
-            "de": "teilweise",
-            "type": "adverb",
-            "en": "partly",
-            "vi": "một phần"
+            "de": "überzeugt",
+            "type": "adjective",
+            "en": "convinced",
+            "vi": "được thuyết phục; tin chắc"
           },
           {
-            "de": "der Punkt",
-            "type": "noun",
-            "en": "point",
-            "vi": "điểm; ý",
-            "plural": "die Punkte"
+            "de": "noch",
+            "type": "adverb",
+            "en": "still; yet",
+            "vi": "vẫn; còn"
           }
         ],
         "analysis": {
-          "de": "Im Aussagesatz steht das konjugierte Verb an zweiter Satzgliedposition. Die Wortwahl und Betonung bestimmen den Ton.",
-          "en": "In a statement, the conjugated verb occupies the second constituent position. Word choice and intonation shape the tone.",
-          "vi": "Trong câu trần thuật, động từ chia đứng ở vị trí thành phần thứ hai. Cách chọn từ và giọng điệu quyết định sắc thái; câu ngắn không mặc nhiên bất lịch sự."
+          "pattern": "Adjektiv als Prädikativ",
+          "de": "Das Adjektiv bleibt nach sein, klingen, erscheinen oder finden in dieser Funktion ohne Deklinationsendung.",
+          "en": "Used predicatively after sein, klingen, erscheinen or finden, the adjective has no inflectional ending here.",
+          "vi": "Tính từ làm vị ngữ sau sein, klingen, erscheinen hoặc finden trong cấu trúc này không nhận đuôi biến cách."
         },
         "source": "legacy-adapted",
         "simple": "Na ja …",
@@ -3517,9 +3627,10 @@ const conversationGroups = [
           }
         ],
         "analysis": {
-          "de": "Etwas zu schätzen wissen ist eine feste Verbindung und bedeutet, den Wert von etwas anzuerkennen.",
-          "en": "Etwas zu schätzen wissen is a fixed expression meaning to appreciate the value of something.",
-          "vi": "etwas zu schätzen wissen là cụm cố định nghĩa là biết trân trọng. Das là việc được nhắc tới; weiß là dạng chia của wissen, không phải Konjunktiv II."
+          "pattern": "etwas zu schätzen wissen",
+          "de": "Weiß ist Präsens von wissen. Zu schätzen gehört zur festen Verbindung etwas zu schätzen wissen.",
+          "en": "Weiß is the present form of wissen. Zu schätzen belongs to the fixed expression etwas zu schätzen wissen.",
+          "vi": "Weiß là hiện tại của wissen. zu schätzen thuộc cụm cố định etwas zu schätzen wissen."
         },
         "source": "document"
       },
@@ -3545,9 +3656,10 @@ const conversationGroups = [
           }
         ],
         "analysis": {
-          "de": "Das Perfekt besteht hier aus haben/sein und Partizip II. Es beschreibt ein bereits geschehenes Ereignis.",
-          "en": "The perfect consists of haben/sein and a past participle here. It describes something that has already happened.",
-          "vi": "Perfekt dùng haben/sein chia theo chủ ngữ và Partizip II để nói việc đã xảy ra. Partizip II thường đứng cuối mệnh đề chính."
+          "pattern": "haben/sein + Partizip II",
+          "de": "Das Hilfsverb wird konjugiert, das Partizip II steht am Ende des Teilsatzes.",
+          "en": "The auxiliary is conjugated; the past participle comes at the end of the clause.",
+          "vi": "Trợ động từ chia theo chủ ngữ; Partizip II đứng cuối mệnh đề."
         },
         "source": "document"
       },
@@ -3555,28 +3667,29 @@ const conversationGroups = [
         "simple": "Passt schon.",
         "simpleEn": "It is okay.",
         "simpleVi": "Ổn mà.",
-        "tactful": "Mach dir keine Gedanken, das kann passieren.",
-        "en": "Do not worry; that can happen.",
-        "vi": "Đừng lo, chuyện đó có thể xảy ra mà.",
+        "tactful": "Für mich ist das so in Ordnung, danke.",
+        "en": "That is fine with me as it is, thank you.",
+        "vi": "Với mình thì như vậy ổn rồi, cảm ơn.",
         "source": "pdf",
         "vocabulary": [
           {
-            "de": "sich Gedanken machen",
+            "de": "in Ordnung",
             "type": "phrase",
-            "en": "to worry; to think about something",
-            "vi": "lo nghĩ; suy nghĩ về điều gì"
+            "en": "all right; in order",
+            "vi": "ổn; đúng quy củ"
           },
           {
-            "de": "passieren",
+            "de": "danken",
             "type": "verb",
-            "en": "to happen",
-            "vi": "xảy ra"
+            "en": "to thank",
+            "vi": "cảm ơn"
           }
         ],
         "analysis": {
-          "de": "Der Imperativ richtet sich direkt an die andere Person. Bitte und der Kontext können den Ton verändern.",
-          "en": "The imperative addresses the other person directly. Bitte and context can change its tone.",
-          "vi": "Mệnh lệnh hướng trực tiếp tới người nghe. Thêm bitte và chọn giọng điệu phù hợp có thể làm nhẹ lời yêu cầu; mệnh lệnh không mặc nhiên bất lịch sự."
+          "pattern": "Präsens · Aussagesatz",
+          "de": "Das konjugierte Verb steht an zweiter Satzgliedposition; das Vorfeld kann aus mehreren Wörtern bestehen.",
+          "en": "The conjugated verb occupies the second constituent position; the first constituent may contain several words.",
+          "vi": "Động từ chia ở vị trí thành phần thứ hai; thành phần đầu có thể gồm nhiều từ."
         }
       }
     ],
@@ -3595,9 +3708,9 @@ const conversationGroups = [
     },
     "rows": [
       {
-        "tactful": "So möchte ich nicht weitermachen. Können wir etwas ändern?",
-        "en": "I do not want to carry on like this. Can we change something?",
-        "vi": "Mình không muốn tiếp tục như vậy. Chúng ta thay đổi điều gì được không?",
+        "tactful": "So möchte ich nicht weitermachen.",
+        "en": "I do not want to carry on like this.",
+        "vi": "Mình không muốn tiếp tục như thế này.",
         "vocabulary": [
           {
             "de": "weitermachen",
@@ -3606,16 +3719,17 @@ const conversationGroups = [
             "vi": "tiếp tục"
           },
           {
-            "de": "ändern",
+            "de": "möchten",
             "type": "verb",
-            "en": "to change something",
-            "vi": "thay đổi điều gì"
+            "en": "would like",
+            "vi": "muốn; mong muốn một cách nhẹ nhàng"
           }
         ],
         "analysis": {
-          "de": "Möchte ist eine Konjunktiv-II-Form von mögen, die üblich für Wünsche verwendet wird.",
-          "en": "Möchte is a subjunctive II form of mögen, commonly used to express wishes.",
-          "vi": "möchte là dạng Konjunktiv II của mögen, thường dùng với nghĩa muốn một cách nhẹ nhàng. Không phải dạng quá khứ của möchten."
+          "pattern": "möchte + Infinitiv",
+          "de": "Möchte ist eine Konjunktiv-II-Form von mögen; der weitere Infinitiv steht am Ende.",
+          "en": "Möchte is a subjunctive II form of mögen; the other infinitive comes at the end.",
+          "vi": "möchte là dạng Konjunktiv II của mögen; động từ nguyên mẫu còn lại đứng cuối."
         },
         "source": "legacy-adapted",
         "simple": "Ich habe die Nase voll.",
@@ -3623,9 +3737,9 @@ const conversationGroups = [
         "simpleVi": "Tôi chán ngấy rồi / Ngán tận cổ rồi."
       },
       {
-        "tactful": "Ich bin sehr erleichtert, dass es gut ausgegangen ist.",
-        "en": "I am very relieved that it turned out well.",
-        "vi": "Mình rất nhẹ nhõm vì mọi việc đã kết thúc tốt đẹp.",
+        "tactful": "Ich bin sehr erleichtert.",
+        "en": "I am very relieved.",
+        "vi": "Mình cảm thấy rất nhẹ nhõm.",
         "vocabulary": [
           {
             "de": "erleichtert",
@@ -3634,16 +3748,17 @@ const conversationGroups = [
             "vi": "nhẹ nhõm"
           },
           {
-            "de": "ausgehen",
+            "de": "sein",
             "type": "verb",
-            "en": "to turn out; to go out",
-            "vi": "kết thúc theo một cách; đi ra ngoài"
+            "en": "to be",
+            "vi": "là; ở; thì"
           }
         ],
         "analysis": {
-          "de": "Im Nebensatz mit dass steht das konjugierte Verb am Ende.",
-          "en": "In a subordinate clause introduced by dass, the conjugated verb comes last.",
-          "vi": "Mệnh đề với dass đưa nội dung một nhận định hoặc thông tin; động từ chia đứng cuối mệnh đề đó."
+          "pattern": "Adjektiv als Prädikativ",
+          "de": "Das Adjektiv bleibt nach sein, klingen, erscheinen oder finden in dieser Funktion ohne Deklinationsendung.",
+          "en": "Used predicatively after sein, klingen, erscheinen or finden, the adjective has no inflectional ending here.",
+          "vi": "Tính từ làm vị ngữ sau sein, klingen, erscheinen hoặc finden trong cấu trúc này không nhận đuôi biến cách."
         },
         "source": "legacy-adapted",
         "simple": "Mir fällt ein Stein vom Herzen.",
@@ -3651,9 +3766,9 @@ const conversationGroups = [
         "simpleVi": "Tôi nhẹ cả người. (thành ngữ đầy đủ)"
       },
       {
-        "tactful": "Ich bin gerade sehr erschöpft und brauche etwas Ruhe.",
-        "en": "I am very exhausted right now and need some rest.",
-        "vi": "Hiện giờ mình rất mệt và cần nghỉ ngơi một chút.",
+        "tactful": "Ich bin im Moment sehr erschöpft.",
+        "en": "I am very exhausted at the moment.",
+        "vi": "Hiện giờ mình rất kiệt sức.",
         "vocabulary": [
           {
             "de": "erschöpft",
@@ -3662,17 +3777,17 @@ const conversationGroups = [
             "vi": "kiệt sức"
           },
           {
-            "de": "die Ruhe",
-            "type": "noun",
-            "en": "rest; quiet",
-            "vi": "sự yên tĩnh; nghỉ ngơi",
-            "plural": "thường không dùng số nhiều"
+            "de": "im Moment",
+            "type": "phrase",
+            "en": "at the moment",
+            "vi": "hiện tại"
           }
         ],
         "analysis": {
-          "de": "Im Aussagesatz steht das konjugierte Verb an zweiter Satzgliedposition. Die Wortwahl und Betonung bestimmen den Ton.",
-          "en": "In a statement, the conjugated verb occupies the second constituent position. Word choice and intonation shape the tone.",
-          "vi": "Trong câu trần thuật, động từ chia đứng ở vị trí thành phần thứ hai. Cách chọn từ và giọng điệu quyết định sắc thái; câu ngắn không mặc nhiên bất lịch sự."
+          "pattern": "Adjektiv als Prädikativ",
+          "de": "Das Adjektiv bleibt nach sein, klingen, erscheinen oder finden in dieser Funktion ohne Deklinationsendung.",
+          "en": "Used predicatively after sein, klingen, erscheinen or finden, the adjective has no inflectional ending here.",
+          "vi": "Tính từ làm vị ngữ sau sein, klingen, erscheinen hoặc finden trong cấu trúc này không nhận đuôi biến cách."
         },
         "source": "legacy-adapted",
         "simple": "Ich bin fix und fertig.",
@@ -3699,9 +3814,10 @@ const conversationGroups = [
           }
         ],
         "analysis": {
-          "de": "Im Aussagesatz steht das konjugierte Verb an zweiter Satzgliedposition. Die Wortwahl und Betonung bestimmen den Ton.",
-          "en": "In a statement, the conjugated verb occupies the second constituent position. Word choice and intonation shape the tone.",
-          "vi": "Trong câu trần thuật, động từ chia đứng ở vị trí thành phần thứ hai. Cách chọn từ và giọng điệu quyết định sắc thái; câu ngắn không mặc nhiên bất lịch sự."
+          "pattern": "Adjektiv als Prädikativ",
+          "de": "Das Adjektiv bleibt nach sein, klingen, erscheinen oder finden in dieser Funktion ohne Deklinationsendung.",
+          "en": "Used predicatively after sein, klingen, erscheinen or finden, the adjective has no inflectional ending here.",
+          "vi": "Tính từ làm vị ngữ sau sein, klingen, erscheinen hoặc finden trong cấu trúc này không nhận đuôi biến cách."
         },
         "source": "legacy-adapted",
         "simple": "Ich bin pleite.",
@@ -3709,28 +3825,29 @@ const conversationGroups = [
         "simpleVi": "Tôi cháy túi rồi. (thân mật)"
       },
       {
-        "tactful": "Ich würde gerne etwas anderes unternehmen. Hast du einen Vorschlag?",
-        "en": "I would like to do something different. Do you have a suggestion?",
-        "vi": "Mình muốn làm gì đó khác đi. Bạn có đề xuất nào không?",
+        "tactful": "Ich würde mich über etwas Abwechslung freuen.",
+        "en": "I would welcome a little variety.",
+        "vi": "Mình sẽ rất vui nếu có chút thay đổi cho đỡ đơn điệu.",
         "vocabulary": [
           {
-            "de": "unternehmen",
-            "type": "verb",
-            "en": "to undertake an activity",
-            "vi": "tham gia; thực hiện hoạt động"
+            "de": "die Abwechslung",
+            "type": "noun",
+            "en": "variety; change",
+            "vi": "sự thay đổi cho đỡ đơn điệu",
+            "plural": "die Abwechslungen"
           },
           {
-            "de": "der Vorschlag",
-            "type": "noun",
-            "en": "suggestion",
-            "vi": "đề xuất",
-            "plural": "die Vorschläge"
+            "de": "sich freuen",
+            "type": "verb",
+            "en": "to be pleased",
+            "vi": "vui mừng"
           }
         ],
         "analysis": {
-          "de": "Würde/würden + Infinitiv bildet hier den Konjunktiv II und formuliert einen Wunsch oder eine Einschätzung vorsichtiger.",
-          "en": "Würde/würden plus an infinitive forms subjunctive II here, softening a wish or assessment.",
-          "vi": "würde/würden + động từ nguyên mẫu tạo Konjunktiv II, giúp diễn đạt mong muốn hoặc nhận định dè dặt hơn. Không làm thay đổi sự thật cần nói."
+          "pattern": "würde/würden + Infinitiv",
+          "de": "Würde wird konjugiert; der Infinitiv des Vollverbs steht am Ende.",
+          "en": "Würde is conjugated; the lexical verb stays in the infinitive at the end.",
+          "vi": "würde chia theo chủ ngữ; động từ chính giữ nguyên mẫu và đứng cuối."
         },
         "source": "legacy-adapted",
         "simple": "Mir ist langweilig.",
@@ -3738,28 +3855,28 @@ const conversationGroups = [
         "simpleVi": "Tôi đang thấy chán."
       },
       {
-        "tactful": "Das war mein Fehler. Ich möchte mich dafür entschuldigen.",
-        "en": "That was my mistake. I would like to apologize for it.",
-        "vi": "Đó là lỗi của mình. Mình muốn xin lỗi về việc đó.",
+        "tactful": "Ich möchte mich dafür aufrichtig entschuldigen.",
+        "en": "I would like to sincerely apologize for that.",
+        "vi": "Mình muốn chân thành xin lỗi về việc đó.",
         "vocabulary": [
-          {
-            "de": "der Fehler",
-            "type": "noun",
-            "en": "mistake; error",
-            "vi": "lỗi",
-            "plural": "die Fehler"
-          },
           {
             "de": "sich entschuldigen",
             "type": "verb",
             "en": "to apologize",
             "vi": "xin lỗi"
+          },
+          {
+            "de": "aufrichtig",
+            "type": "adjective",
+            "en": "sincere",
+            "vi": "chân thành"
           }
         ],
         "analysis": {
-          "de": "Möchte ist eine Konjunktiv-II-Form von mögen, die üblich für Wünsche verwendet wird.",
-          "en": "Möchte is a subjunctive II form of mögen, commonly used to express wishes.",
-          "vi": "möchte là dạng Konjunktiv II của mögen, thường dùng với nghĩa muốn một cách nhẹ nhàng. Không phải dạng quá khứ của möchten."
+          "pattern": "möchte + Infinitiv",
+          "de": "Möchte ist eine Konjunktiv-II-Form von mögen; der weitere Infinitiv steht am Ende.",
+          "en": "Möchte is a subjunctive II form of mögen; the other infinitive comes at the end.",
+          "vi": "möchte là dạng Konjunktiv II của mögen; động từ nguyên mẫu còn lại đứng cuối."
         },
         "source": "legacy-adapted",
         "simple": "Es tut mir leid.",
@@ -3786,9 +3903,10 @@ const conversationGroups = [
           }
         ],
         "analysis": {
-          "de": "Könnte/könnten ist Konjunktiv II von können. Der andere Infinitiv steht am Satzende.",
-          "en": "Könnte/könnten is the subjunctive II form of können. The other infinitive comes at the end.",
-          "vi": "könnte/könnten là Konjunktiv II của können, thường dùng để hỏi khả năng hoặc nhờ lịch sự; động từ nguyên mẫu còn lại đứng cuối câu."
+          "pattern": "könnte/könntest/könnten + Infinitiv",
+          "de": "Konjunktiv II von können; der weitere Infinitiv steht am Ende.",
+          "en": "Subjunctive II of können; the other infinitive comes at the end.",
+          "vi": "Konjunktiv II của können; động từ nguyên mẫu còn lại đứng cuối câu."
         },
         "source": "legacy-adapted",
         "simple": "Ich habe Durst.",
@@ -3796,27 +3914,28 @@ const conversationGroups = [
         "simpleVi": "Tôi khát."
       },
       {
-        "tactful": "Ich würde gerne eine Kleinigkeit essen. Möchtest du mitkommen?",
-        "en": "I would like to have a little something to eat. Would you like to come along?",
-        "vi": "Mình muốn ăn chút gì đó. Bạn có muốn đi cùng không?",
+        "tactful": "Ich würde gerne etwas essen.",
+        "en": "I would like to have something to eat.",
+        "vi": "Mình muốn ăn chút gì đó.",
         "vocabulary": [
           {
-            "de": "eine Kleinigkeit",
-            "type": "phrase",
-            "en": "a little something",
-            "vi": "một chút; món nhỏ"
+            "de": "essen",
+            "type": "verb",
+            "en": "to eat",
+            "vi": "ăn"
           },
           {
-            "de": "mitkommen",
-            "type": "verb",
-            "en": "to come along",
-            "vi": "đi cùng"
+            "de": "gern",
+            "type": "adverb",
+            "en": "gladly; with pleasure",
+            "vi": "sẵn lòng; thích"
           }
         ],
         "analysis": {
-          "de": "Würde/würden + Infinitiv bildet hier den Konjunktiv II und formuliert einen Wunsch oder eine Einschätzung vorsichtiger.",
-          "en": "Würde/würden plus an infinitive forms subjunctive II here, softening a wish or assessment.",
-          "vi": "würde/würden + động từ nguyên mẫu tạo Konjunktiv II, giúp diễn đạt mong muốn hoặc nhận định dè dặt hơn. Không làm thay đổi sự thật cần nói."
+          "pattern": "würde/würden + Infinitiv",
+          "de": "Würde wird konjugiert; der Infinitiv des Vollverbs steht am Ende.",
+          "en": "Würde is conjugated; the lexical verb stays in the infinitive at the end.",
+          "vi": "würde chia theo chủ ngữ; động từ chính giữ nguyên mẫu và đứng cuối."
         },
         "source": "legacy-adapted",
         "simple": "Ich habe Hunger.",
@@ -3845,67 +3964,71 @@ const conversationGroups = [
           }
         ],
         "analysis": {
-          "de": "Im Aussagesatz steht das konjugierte Verb an zweiter Satzgliedposition. Die Wortwahl bestimmt hier vor allem den Ton.",
-          "en": "In a statement, the conjugated verb occupies the second constituent position. Here, word choice mainly shapes the tone.",
-          "vi": "Trong câu trần thuật, động từ chia ở vị trí thành phần thứ hai, không nhất thiết là từ thứ hai. Ở đây sắc thái chủ yếu đến từ cách chọn từ."
+          "pattern": "Modalverb + Infinitiv",
+          "de": "Das Modalverb wird konjugiert; das andere Verb steht im Infinitiv am Satzende.",
+          "en": "The modal is conjugated; the other verb stays in the infinitive at the end.",
+          "vi": "Động từ tình thái được chia; động từ còn lại giữ nguyên mẫu và đứng cuối."
         },
         "source": "document"
       },
       {
         "simple": "Ich brauche einen Termin.",
         "simpleVi": "Tôi cần lịch hẹn.",
-        "tactful": "Ich habe seit zwei Tagen Beschwerden. Wäre ein Termin in dieser Woche möglich?",
-        "vi": "Tôi có triệu chứng hai ngày nay. Tuần này có thể đặt lịch khám không?",
-        "en": "I have had symptoms for two days. Would an appointment this week be possible?",
+        "tactful": "Ich hätte gerne einen Termin, bitte.",
+        "vi": "Cho tôi đặt một lịch hẹn nhé.",
+        "en": "I would like an appointment, please.",
         "simpleEn": "I need an appointment.",
         "vocabulary": [
-          {
-            "de": "die Beschwerde",
-            "type": "noun",
-            "en": "complaint; symptom",
-            "vi": "lời phàn nàn; triệu chứng",
-            "plural": "die Beschwerden"
-          },
           {
             "de": "der Termin",
             "type": "noun",
             "en": "appointment",
             "vi": "lịch hẹn; cuộc hẹn",
             "plural": "die Termine"
+          },
+          {
+            "de": "hätte gern",
+            "type": "phrase",
+            "en": "would like to have",
+            "vi": "muốn có; muốn gọi món"
           }
         ],
         "analysis": {
-          "de": "Seit + Dativ bezeichnet hier den Beginn oder die Dauer eines weiterhin bestehenden Zustands. Im Deutschen steht dafür oft Präsens.",
-          "en": "Seit plus dative indicates the start or duration of an ongoing state. German often uses the present tense for this.",
-          "vi": "seit + Dativ chỉ mốc bắt đầu hoặc khoảng thời gian của trạng thái còn tiếp diễn. Tiếng Đức thường dùng hiện tại, dù tiếng Anh hay dùng thì hoàn thành."
+          "pattern": "hätte/hätten + Akkusativ",
+          "de": "Hätte/hätten ist Konjunktiv II von haben; das Objekt steht im Akkusativ.",
+          "en": "Hätte/hätten is subjunctive II of haben; its object is accusative.",
+          "vi": "hätte/hätten là Konjunktiv II của haben; tân ngữ trực tiếp ở Akkusativ."
         },
         "source": "editorial"
       },
       {
         "simple": "Das tut weh.",
         "simpleVi": "Chỗ đó đau.",
-        "tactful": "Hier tut es besonders weh, vor allem beim Bewegen.",
-        "vi": "Chỗ này đau nhiều, nhất là khi cử động.",
-        "en": "It hurts particularly here, especially when I move.",
+        "tactful": "An dieser Stelle habe ich Schmerzen.",
+        "vi": "Tôi bị đau ở vị trí này.",
+        "en": "I am in pain at this spot.",
         "simpleEn": "That hurts.",
         "vocabulary": [
           {
-            "de": "wehtun",
-            "type": "verb",
-            "en": "to hurt; to ache",
-            "vi": "đau"
+            "de": "die Stelle",
+            "type": "noun",
+            "en": "spot; place",
+            "vi": "vị trí; chỗ",
+            "plural": "die Stellen"
           },
           {
-            "de": "beim Bewegen",
-            "type": "phrase",
-            "en": "when moving",
-            "vi": "khi cử động"
+            "de": "der Schmerz",
+            "type": "noun",
+            "en": "pain",
+            "vi": "cơn đau",
+            "plural": "die Schmerzen"
           }
         ],
         "analysis": {
-          "de": "Im Aussagesatz steht das konjugierte Verb an zweiter Satzgliedposition. Die Wortwahl bestimmt hier vor allem den Ton.",
-          "en": "In a statement, the conjugated verb occupies the second constituent position. Here, word choice mainly shapes the tone.",
-          "vi": "Trong câu trần thuật, động từ chia ở vị trí thành phần thứ hai, không nhất thiết là từ thứ hai. Ở đây sắc thái chủ yếu đến từ cách chọn từ."
+          "pattern": "Präsens · Aussagesatz",
+          "de": "Das konjugierte Verb steht an zweiter Satzgliedposition; das Vorfeld kann aus mehreren Wörtern bestehen.",
+          "en": "The conjugated verb occupies the second constituent position; the first constituent may contain several words.",
+          "vi": "Động từ chia ở vị trí thành phần thứ hai; thành phần đầu có thể gồm nhiều từ."
         },
         "source": "editorial"
       },
@@ -3932,38 +4055,40 @@ const conversationGroups = [
           }
         ],
         "analysis": {
-          "de": "In der indirekten Frage steht das konjugierte Verb am Ende des Nebensatzes.",
-          "en": "In an indirect question, the conjugated verb comes at the end of the subordinate clause.",
-          "vi": "Câu hỏi gián tiếp đưa phần cần hỏi vào mệnh đề phụ; động từ chia của phần này đứng cuối. Không đảo động từ lên đầu như câu hỏi độc lập."
+          "pattern": "Indirekte Frage + Verb am Ende",
+          "de": "Das Fragewort oder ob leitet den Nebensatz ein; dessen konjugiertes Verb steht am Ende.",
+          "en": "The question word or ob introduces the subordinate clause, whose conjugated verb comes last.",
+          "vi": "Từ để hỏi hoặc ob mở đầu mệnh đề phụ; động từ chia của mệnh đề đó đứng cuối."
         },
         "source": "editorial"
       },
       {
         "simple": "Ich habe Angst.",
         "simpleVi": "Tôi sợ.",
-        "tactful": "Ich bin wegen der Untersuchung etwas angespannt. Können Sie mir die nächsten Schritte erklären?",
-        "vi": "Tôi hơi căng thẳng về buổi khám. Anh/chị giải thích các bước tiếp theo được không?",
-        "en": "I am a little anxious about the examination. Could you explain the next steps?",
+        "tactful": "Ich habe Angst und möchte gerne darüber sprechen.",
+        "vi": "Mình đang sợ và muốn nói về điều đó.",
+        "en": "I am afraid and would like to talk about it.",
         "simpleEn": "I am afraid.",
         "vocabulary": [
           {
-            "de": "die Untersuchung",
+            "de": "die Angst",
             "type": "noun",
-            "en": "examination",
-            "vi": "buổi khám; sự kiểm tra",
-            "plural": "die Untersuchungen"
+            "en": "fear",
+            "vi": "nỗi sợ",
+            "plural": "die Ängste"
           },
           {
-            "de": "angespannt",
-            "type": "adjective",
-            "en": "tense; anxious",
-            "vi": "căng thẳng"
+            "de": "sprechen",
+            "type": "verb",
+            "en": "to speak",
+            "vi": "nói"
           }
         ],
         "analysis": {
-          "de": "Im Aussagesatz steht das konjugierte Verb an zweiter Satzgliedposition. Die Wortwahl bestimmt hier vor allem den Ton.",
-          "en": "In a statement, the conjugated verb occupies the second constituent position. Here, word choice mainly shapes the tone.",
-          "vi": "Trong câu trần thuật, động từ chia ở vị trí thành phần thứ hai, không nhất thiết là từ thứ hai. Ở đây sắc thái chủ yếu đến từ cách chọn từ."
+          "pattern": "möchte + Infinitiv",
+          "de": "Möchte ist eine Konjunktiv-II-Form von mögen; der weitere Infinitiv steht am Ende.",
+          "en": "Möchte is a subjunctive II form of mögen; the other infinitive comes at the end.",
+          "vi": "möchte là dạng Konjunktiv II của mögen; động từ nguyên mẫu còn lại đứng cuối."
         },
         "source": "editorial"
       }
@@ -4001,9 +4126,10 @@ const conversationGroups = [
           }
         ],
         "analysis": {
-          "de": "In der Ja-/Nein-Frage steht das konjugierte Verb am Anfang.",
-          "en": "In a yes/no question, the conjugated verb comes first.",
-          "vi": "Câu hỏi có/không đặt động từ chia lên đầu; đây là cách hỏi trực tiếp, không tự động bất lịch sự."
+          "pattern": "Relativsatz",
+          "de": "Das Relativpronomen bezieht sich auf ein Nomen; das konjugierte Verb steht am Ende.",
+          "en": "The relative pronoun refers to a noun; the conjugated verb comes last.",
+          "vi": "Đại từ quan hệ liên hệ tới một danh từ; động từ chia đứng cuối mệnh đề quan hệ."
         },
         "source": "legacy-adapted",
         "simple": "Was ist denn?",
@@ -4011,9 +4137,9 @@ const conversationGroups = [
         "simpleVi": "Có chuyện gì thế / Sao vậy?"
       },
       {
-        "tactful": "Wie läuft dein Tag bisher?",
-        "en": "How is your day going so far?",
-        "vi": "Ngày hôm nay của bạn tới giờ thế nào?",
+        "tactful": "Wie läuft es bei dir im Moment?",
+        "en": "How are things going for you at the moment?",
+        "vi": "Hiện tại mọi chuyện với bạn thế nào?",
         "vocabulary": [
           {
             "de": "laufen",
@@ -4022,17 +4148,17 @@ const conversationGroups = [
             "vi": "diễn ra; chạy"
           },
           {
-            "de": "der Tag",
-            "type": "noun",
-            "en": "day",
-            "vi": "ngày",
-            "plural": "die Tage"
+            "de": "im Moment",
+            "type": "phrase",
+            "en": "at the moment",
+            "vi": "hiện tại"
           }
         ],
         "analysis": {
-          "de": "In dieser W-Frage steht wie zuerst und danach das konjugierte Verb. Bei sich fühlen gehört das Reflexivpronomen zum Verb.",
-          "en": "In this wh-question, wie comes first, followed by the conjugated verb. With sich fühlen, the reflexive pronoun belongs to the verb.",
-          "vi": "Trong câu hỏi W này, wie đứng đầu rồi đến động từ chia. Với sich fühlen, cần đại từ phản thân như dich khi chủ ngữ là du."
+          "pattern": "W-Frage + konjugiertes Verb",
+          "de": "Das Fragewort steht zuerst, danach folgt das konjugierte Verb.",
+          "en": "The question word comes first, followed by the conjugated verb.",
+          "vi": "Từ để hỏi đứng đầu, theo sau là động từ đã chia."
         },
         "source": "legacy-adapted",
         "simple": "Was geht ab?",
@@ -4058,9 +4184,10 @@ const conversationGroups = [
           }
         ],
         "analysis": {
-          "de": "In der indirekten Frage steht das konjugierte Verb am Ende des Nebensatzes.",
-          "en": "In an indirect question, the conjugated verb comes at the end of the subordinate clause.",
-          "vi": "Câu hỏi gián tiếp đưa phần cần hỏi vào mệnh đề phụ; động từ chia của phần này đứng cuối. Không đảo động từ lên đầu như câu hỏi độc lập."
+          "pattern": "Indirekte Frage + Verb am Ende",
+          "de": "Das Fragewort oder ob leitet den Nebensatz ein; dessen konjugiertes Verb steht am Ende.",
+          "en": "The question word or ob introduces the subordinate clause, whose conjugated verb comes last.",
+          "vi": "Từ để hỏi hoặc ob mở đầu mệnh đề phụ; động từ chia của mệnh đề đó đứng cuối."
         },
         "source": "legacy-adapted",
         "simple": "Wie spät ist es?",
@@ -4068,9 +4195,9 @@ const conversationGroups = [
         "simpleVi": "Mấy giờ rồi?"
       },
       {
-        "tactful": "Darf ich fragen, wie Sie heißen?",
+        "tactful": "Darf ich fragen, wie du heißt?",
         "en": "May I ask what your name is?",
-        "vi": "Cho tôi hỏi tên anh/chị được không?",
+        "vi": "Mình có thể hỏi tên bạn được không?",
         "vocabulary": [
           {
             "de": "fragen",
@@ -4086,9 +4213,10 @@ const conversationGroups = [
           }
         ],
         "analysis": {
-          "de": "In der indirekten Frage steht das konjugierte Verb am Ende des Nebensatzes.",
-          "en": "In an indirect question, the conjugated verb comes at the end of the subordinate clause.",
-          "vi": "Câu hỏi gián tiếp đưa phần cần hỏi vào mệnh đề phụ; động từ chia của phần này đứng cuối. Không đảo động từ lên đầu như câu hỏi độc lập."
+          "pattern": "Indirekte Frage + Verb am Ende",
+          "de": "Das Fragewort oder ob leitet den Nebensatz ein; dessen konjugiertes Verb steht am Ende.",
+          "en": "The question word or ob introduces the subordinate clause, whose conjugated verb comes last.",
+          "vi": "Từ để hỏi hoặc ob mở đầu mệnh đề phụ; động từ chia của mệnh đề đó đứng cuối."
         },
         "source": "legacy-adapted",
         "simple": "Wie heißt du?",
@@ -4096,9 +4224,9 @@ const conversationGroups = [
         "simpleVi": "Bạn tên gì? (thân mật)"
       },
       {
-        "tactful": "Darf ich fragen, woher Sie kommen?",
+        "tactful": "Darf ich fragen, woher du kommst?",
         "en": "May I ask where you come from?",
-        "vi": "Cho tôi hỏi anh/chị đến từ đâu được không?",
+        "vi": "Mình có thể hỏi bạn đến từ đâu được không?",
         "vocabulary": [
           {
             "de": "fragen",
@@ -4114,9 +4242,10 @@ const conversationGroups = [
           }
         ],
         "analysis": {
-          "de": "In der indirekten Frage steht das konjugierte Verb am Ende des Nebensatzes.",
-          "en": "In an indirect question, the conjugated verb comes at the end of the subordinate clause.",
-          "vi": "Câu hỏi gián tiếp đưa phần cần hỏi vào mệnh đề phụ; động từ chia của phần này đứng cuối. Không đảo động từ lên đầu như câu hỏi độc lập."
+          "pattern": "Indirekte Frage + Verb am Ende",
+          "de": "Das Fragewort oder ob leitet den Nebensatz ein; dessen konjugiertes Verb steht am Ende.",
+          "en": "The question word or ob introduces the subordinate clause, whose conjugated verb comes last.",
+          "vi": "Từ để hỏi hoặc ob mở đầu mệnh đề phụ; động từ chia của mệnh đề đó đứng cuối."
         },
         "source": "legacy-adapted",
         "simple": "Woher kommst du?",
@@ -4124,28 +4253,28 @@ const conversationGroups = [
         "simpleVi": "Bạn đến từ đâu? (thân mật)"
       },
       {
-        "tactful": "Gibt es etwas Neues, das du erzählen möchtest?",
+        "tactful": "Gibt es etwas Neues, das du gerne erzählen möchtest?",
         "en": "Is there anything new you would like to share?",
         "vi": "Có chuyện gì mới bạn muốn kể không?",
         "vocabulary": [
-          {
-            "de": "die Neuigkeit",
-            "type": "noun",
-            "en": "piece of news",
-            "vi": "tin mới",
-            "plural": "die Neuigkeiten"
-          },
           {
             "de": "erzählen",
             "type": "verb",
             "en": "to tell; to narrate",
             "vi": "kể chuyện"
+          },
+          {
+            "de": "möchten",
+            "type": "verb",
+            "en": "would like",
+            "vi": "muốn; mong muốn một cách nhẹ nhàng"
           }
         ],
         "analysis": {
-          "de": "In der Ja-/Nein-Frage steht das konjugierte Verb am Anfang.",
-          "en": "In a yes/no question, the conjugated verb comes first.",
-          "vi": "Câu hỏi có/không đặt động từ chia lên đầu; đây là cách hỏi trực tiếp, không tự động bất lịch sự."
+          "pattern": "Relativsatz",
+          "de": "Das Relativpronomen bezieht sich auf ein Nomen; das konjugierte Verb steht am Ende.",
+          "en": "The relative pronoun refers to a noun; the conjugated verb comes last.",
+          "vi": "Đại từ quan hệ liên hệ tới một danh từ; động từ chia đứng cuối mệnh đề quan hệ."
         },
         "source": "legacy-adapted",
         "simple": "Was gibt’s Neues?",
@@ -4153,9 +4282,9 @@ const conversationGroups = [
         "simpleVi": "Có gì mới không?"
       },
       {
-        "tactful": "Wie fühlst du dich? Wenn du reden möchtest, höre ich gerne zu.",
-        "en": "How are you feeling? If you want to talk, I am happy to listen.",
-        "vi": "Bạn cảm thấy thế nào? Nếu bạn muốn nói chuyện, mình sẵn lòng nghe.",
+        "tactful": "Wie fühlst du dich im Moment?",
+        "en": "How are you feeling at the moment?",
+        "vi": "Hiện giờ bạn cảm thấy thế nào?",
         "vocabulary": [
           {
             "de": "sich fühlen",
@@ -4164,16 +4293,17 @@ const conversationGroups = [
             "vi": "cảm thấy"
           },
           {
-            "de": "zuhören",
-            "type": "verb",
-            "en": "to listen attentively",
-            "vi": "chú ý lắng nghe"
+            "de": "im Moment",
+            "type": "phrase",
+            "en": "at the moment",
+            "vi": "hiện tại"
           }
         ],
         "analysis": {
-          "de": "Wenn leitet den Bedingungssatz ein; möchtest steht am Ende. Danach folgt höre ich, und zuhören wird im Hauptsatz getrennt.",
-          "en": "Wenn introduces the conditional clause, with möchtest at the end. The following clause starts höre ich; zuhören is separable.",
-          "vi": "Wenn mở mệnh đề điều kiện và đưa möchtest xuống cuối. Câu chính theo sau bắt đầu bằng höre ich; zuhören là động từ tách nên zu đứng cuối câu chính."
+          "pattern": "W-Frage + konjugiertes Verb",
+          "de": "Das Fragewort steht zuerst, danach folgt das konjugierte Verb.",
+          "en": "The question word comes first, followed by the conjugated verb.",
+          "vi": "Từ để hỏi đứng đầu, theo sau là động từ đã chia."
         },
         "source": "legacy-adapted",
         "simple": "Geht es dir gut?",
@@ -4181,15 +4311,15 @@ const conversationGroups = [
         "simpleVi": "Bạn có ổn không?"
       },
       {
-        "tactful": "Du wirkst besorgt. Möchtest du erzählen, was passiert ist?",
-        "en": "You seem worried. Would you like to tell me what happened?",
-        "vi": "Trông bạn có vẻ lo. Bạn có muốn kể chuyện gì đã xảy ra không?",
+        "tactful": "Möchtest du erzählen, ob etwas passiert ist?",
+        "en": "Would you like to say whether something happened?",
+        "vi": "Bạn có muốn kể xem có chuyện gì xảy ra không?",
         "vocabulary": [
           {
-            "de": "besorgt",
-            "type": "adjective",
-            "en": "concerned; worried",
-            "vi": "lo lắng"
+            "de": "erzählen",
+            "type": "verb",
+            "en": "to tell; to narrate",
+            "vi": "kể chuyện"
           },
           {
             "de": "passieren",
@@ -4199,9 +4329,10 @@ const conversationGroups = [
           }
         ],
         "analysis": {
-          "de": "In der indirekten Frage steht das konjugierte Verb am Ende des Nebensatzes.",
-          "en": "In an indirect question, the conjugated verb comes at the end of the subordinate clause.",
-          "vi": "Câu hỏi gián tiếp đưa phần cần hỏi vào mệnh đề phụ; động từ chia của phần này đứng cuối. Không đảo động từ lên đầu như câu hỏi độc lập."
+          "pattern": "Indirekte Frage + Verb am Ende",
+          "de": "Das Fragewort oder ob leitet den Nebensatz ein; dessen konjugiertes Verb steht am Ende.",
+          "en": "The question word or ob introduces the subordinate clause, whose conjugated verb comes last.",
+          "vi": "Từ để hỏi hoặc ob mở đầu mệnh đề phụ; động từ chia của mệnh đề đó đứng cuối."
         },
         "source": "legacy-adapted",
         "simple": "Ist was passiert?",
@@ -4228,9 +4359,10 @@ const conversationGroups = [
           }
         ],
         "analysis": {
-          "de": "Könnte/könnten ist Konjunktiv II von können. Der andere Infinitiv steht am Satzende.",
-          "en": "Könnte/könnten is the subjunctive II form of können. The other infinitive comes at the end.",
-          "vi": "könnte/könnten là Konjunktiv II của können, thường dùng để hỏi khả năng hoặc nhờ lịch sự; động từ nguyên mẫu còn lại đứng cuối câu."
+          "pattern": "könnte/könntest/könnten + Infinitiv",
+          "de": "Konjunktiv II von können; der weitere Infinitiv steht am Ende.",
+          "en": "Subjunctive II of können; the other infinitive comes at the end.",
+          "vi": "Konjunktiv II của können; động từ nguyên mẫu còn lại đứng cuối câu."
         },
         "source": "legacy-adapted",
         "simple": "Kannst du mir helfen?",
@@ -4260,37 +4392,39 @@ const conversationGroups = [
           }
         ],
         "analysis": {
-          "de": "In der Ja-/Nein-Frage steht das konjugierte Verb am Anfang.",
-          "en": "In a yes/no question, the conjugated verb comes first.",
-          "vi": "Câu hỏi có/không đặt động từ chia lên đầu; đây là cách hỏi trực tiếp, không tự động bất lịch sự."
+          "pattern": "Ja-/Nein-Frage",
+          "de": "Das konjugierte Verb steht vor dem Subjekt.",
+          "en": "The conjugated verb precedes the subject.",
+          "vi": "Động từ chia đứng trước chủ ngữ trong câu hỏi có/không."
         },
         "source": "editorial"
       },
       {
         "simple": "Gehen Sie weg.",
         "simpleVi": "Tránh ra.",
-        "tactful": "Entschuldigung, ich müsste hier aussteigen. Darf ich kurz vorbei?",
-        "vi": "Xin lỗi, tôi cần xuống ở đây. Cho tôi đi qua một chút được không?",
-        "en": "Excuse me, I need to get off here. May I get past?",
+        "tactful": "Könnten Sie bitte kurz zur Seite gehen?",
+        "vi": "Anh/chị có thể tránh sang một bên một chút không?",
+        "en": "Could you step to the side for a moment, please?",
         "simpleEn": "Move away.",
         "vocabulary": [
           {
-            "de": "aussteigen",
-            "type": "verb",
-            "en": "to get off a vehicle",
-            "vi": "xuống tàu; xuống xe"
+            "de": "zur Seite",
+            "type": "phrase",
+            "en": "to the side",
+            "vi": "sang một bên"
           },
           {
-            "de": "vorbei",
-            "type": "adverb",
-            "en": "past; through",
-            "vi": "đi qua"
+            "de": "gehen",
+            "type": "verb",
+            "en": "to go; to be going",
+            "vi": "đi; diễn ra"
           }
         ],
         "analysis": {
-          "de": "Müsste ist Konjunktiv II von müssen; darf ist Präsens von dürfen. Beide Sätze erklären den Wunsch, vorbeizugehen.",
-          "en": "Müsste is subjunctive II of müssen; darf is present indicative of dürfen. The two sentences explain the request to get past.",
-          "vi": "müsste là Konjunktiv II của müssen; darf là hiện tại của dürfen. Câu đầu nêu nhu cầu xuống xe, câu sau xin đi qua."
+          "pattern": "könnte/könntest/könnten + Infinitiv",
+          "de": "Konjunktiv II von können; der weitere Infinitiv steht am Ende.",
+          "en": "Subjunctive II of können; the other infinitive comes at the end.",
+          "vi": "Konjunktiv II của können; động từ nguyên mẫu còn lại đứng cuối câu."
         },
         "source": "editorial"
       },
@@ -4317,68 +4451,41 @@ const conversationGroups = [
           }
         ],
         "analysis": {
-          "de": "In der indirekten Frage steht das konjugierte Verb am Ende des Nebensatzes.",
-          "en": "In an indirect question, the conjugated verb comes at the end of the subordinate clause.",
-          "vi": "Câu hỏi gián tiếp đưa phần cần hỏi vào mệnh đề phụ; động từ chia của phần này đứng cuối. Không đảo động từ lên đầu như câu hỏi độc lập."
+          "pattern": "Indirekte Frage + Verb am Ende",
+          "de": "Das Fragewort oder ob leitet den Nebensatz ein; dessen konjugiertes Verb steht am Ende.",
+          "en": "The question word or ob introduces the subordinate clause, whose conjugated verb comes last.",
+          "vi": "Từ để hỏi hoặc ob mở đầu mệnh đề phụ; động từ chia của mệnh đề đó đứng cuối."
         },
         "source": "editorial"
       },
       {
         "simple": "Der Zug ist weg.",
         "simpleVi": "Tàu đi mất rồi.",
-        "tactful": "Ich habe meinen Anschluss verpasst. Welche Verbindung kann ich jetzt nehmen?",
-        "vi": "Tôi lỡ chuyến nối tiếp rồi. Giờ tôi có thể đi chuyến nào?",
-        "en": "I missed my connection. Which service can I take now?",
+        "tactful": "Mein Zug ist bereits abgefahren.",
+        "vi": "Chuyến tàu của tôi đã khởi hành rồi.",
+        "en": "My train has already departed.",
         "simpleEn": "The train has left.",
         "vocabulary": [
           {
-            "de": "der Anschluss",
-            "type": "noun",
-            "en": "connection; connecting service",
-            "vi": "chuyến nối tiếp; kết nối",
-            "plural": "die Anschlüsse"
+            "de": "abfahren",
+            "type": "verb",
+            "en": "to depart",
+            "vi": "khởi hành"
           },
           {
-            "de": "verpassen",
-            "type": "verb",
-            "en": "to miss",
-            "vi": "bỏ lỡ"
+            "de": "bereits",
+            "type": "adverb",
+            "en": "already",
+            "vi": "đã; rồi"
           }
         ],
         "analysis": {
-          "de": "Das Perfekt besteht hier aus haben/sein und Partizip II. Es beschreibt ein bereits geschehenes Ereignis.",
-          "en": "The perfect consists of haben/sein and a past participle here. It describes something that has already happened.",
-          "vi": "Perfekt dùng haben/sein chia theo chủ ngữ và Partizip II để nói việc đã xảy ra. Partizip II thường đứng cuối mệnh đề chính."
+          "pattern": "haben/sein + Partizip II",
+          "de": "Das Hilfsverb wird konjugiert, das Partizip II steht am Ende des Teilsatzes.",
+          "en": "The auxiliary is conjugated; the past participle comes at the end of the clause.",
+          "vi": "Trợ động từ chia theo chủ ngữ; Partizip II đứng cuối mệnh đề."
         },
         "source": "editorial"
-      },
-      {
-        "simple": "Ich sitze hier.",
-        "simpleEn": "I am sitting here.",
-        "simpleVi": "Tôi ngồi đây.",
-        "tactful": "Könnte ich hier sitzen?",
-        "en": "Could I sit here?",
-        "vi": "Tôi ngồi ở đây được không?",
-        "source": "pdf",
-        "vocabulary": [
-          {
-            "de": "sitzen",
-            "type": "verb",
-            "en": "to sit",
-            "vi": "ngồi"
-          },
-          {
-            "de": "hier",
-            "type": "adverb",
-            "en": "here",
-            "vi": "ở đây"
-          }
-        ],
-        "analysis": {
-          "de": "Könnte/könnten ist Konjunktiv II von können. Der andere Infinitiv steht am Satzende.",
-          "en": "Könnte/könnten is the subjunctive II form of können. The other infinitive comes at the end.",
-          "vi": "könnte/könnten là Konjunktiv II của können, thường dùng để hỏi khả năng hoặc nhờ lịch sự; động từ nguyên mẫu còn lại đứng cuối câu."
-        }
       }
     ],
     "topics": [],
@@ -4396,28 +4503,28 @@ const conversationGroups = [
     },
     "rows": [
       {
-        "tactful": "Das kann passieren. Lass uns schauen, wie wir den Fehler beheben.",
-        "en": "That can happen. Let us see how we can fix the mistake.",
-        "vi": "Chuyện đó có thể xảy ra. Chúng ta xem cách sửa lỗi nhé.",
+        "tactful": "So etwas kann jedem passieren.",
+        "en": "That can happen to anyone.",
+        "vi": "Chuyện như vậy có thể xảy ra với bất kỳ ai.",
         "vocabulary": [
           {
-            "de": "der Fehler",
-            "type": "noun",
-            "en": "mistake; error",
-            "vi": "lỗi",
-            "plural": "die Fehler"
+            "de": "passieren",
+            "type": "verb",
+            "en": "to happen",
+            "vi": "xảy ra"
           },
           {
-            "de": "beheben",
-            "type": "verb",
-            "en": "to fix; to rectify",
-            "vi": "khắc phục"
+            "de": "jedem",
+            "type": "pronoun",
+            "en": "to anyone; to everyone",
+            "vi": "với bất kỳ ai; Dativ của jeder"
           }
         ],
         "analysis": {
-          "de": "In der indirekten Frage steht das konjugierte Verb am Ende des Nebensatzes.",
-          "en": "In an indirect question, the conjugated verb comes at the end of the subordinate clause.",
-          "vi": "Câu hỏi gián tiếp đưa phần cần hỏi vào mệnh đề phụ; động từ chia của phần này đứng cuối. Không đảo động từ lên đầu như câu hỏi độc lập."
+          "pattern": "Modalverb + Infinitiv",
+          "de": "Das Modalverb wird konjugiert; das andere Verb steht im Infinitiv am Satzende.",
+          "en": "The modal is conjugated; the other verb stays in the infinitive at the end.",
+          "vi": "Động từ tình thái được chia; động từ còn lại giữ nguyên mẫu và đứng cuối."
         },
         "source": "legacy-adapted",
         "simple": "Das kann passieren.",
@@ -4425,28 +4532,28 @@ const conversationGroups = [
         "simpleVi": "Chuyện đó có thể xảy ra mà. (an ủi)"
       },
       {
-        "tactful": "Das fällt mir schwer zu glauben. Können wir die Information prüfen?",
-        "en": "I find that hard to believe. Can we check the information?",
-        "vi": "Mình thấy khó tin. Chúng ta kiểm tra thông tin được không?",
+        "tactful": "Das kann ich kaum glauben.",
+        "en": "I can hardly believe that.",
+        "vi": "Mình gần như không thể tin được điều đó.",
         "vocabulary": [
           {
-            "de": "die Information",
-            "type": "noun",
-            "en": "information",
-            "vi": "thông tin",
-            "plural": "die Informationen"
+            "de": "glauben",
+            "type": "verb",
+            "en": "to believe",
+            "vi": "tin"
           },
           {
-            "de": "prüfen",
-            "type": "verb",
-            "en": "to check; to examine",
-            "vi": "kiểm tra"
+            "de": "kaum",
+            "type": "adverb",
+            "en": "hardly",
+            "vi": "gần như không"
           }
         ],
         "analysis": {
-          "de": "In der Ja-/Nein-Frage steht das konjugierte Verb am Anfang.",
-          "en": "In a yes/no question, the conjugated verb comes first.",
-          "vi": "Câu hỏi có/không đặt động từ chia lên đầu; đây là cách hỏi trực tiếp, không tự động bất lịch sự."
+          "pattern": "Modalverb + Infinitiv",
+          "de": "Das Modalverb wird konjugiert; das andere Verb steht im Infinitiv am Satzende.",
+          "en": "The modal is conjugated; the other verb stays in the infinitive at the end.",
+          "vi": "Động từ tình thái được chia; động từ còn lại giữ nguyên mẫu và đứng cuối."
         },
         "source": "legacy-adapted",
         "simple": "Nicht zu fassen!",
@@ -4454,27 +4561,28 @@ const conversationGroups = [
         "simpleVi": "Không thể tin nổi!"
       },
       {
-        "tactful": "Das ist eine ungewöhnliche Situation. Ich möchte sie besser verstehen.",
-        "en": "That is an unusual situation. I would like to understand it better.",
-        "vi": "Đây là tình huống khác thường. Mình muốn hiểu rõ hơn.",
+        "tactful": "Das finde ich wirklich bemerkenswert.",
+        "en": "I find that truly remarkable.",
+        "vi": "Mình thấy điều đó thật đáng chú ý.",
         "vocabulary": [
           {
-            "de": "ungewöhnlich",
+            "de": "bemerkenswert",
             "type": "adjective",
-            "en": "unusual",
-            "vi": "khác thường"
+            "en": "remarkable",
+            "vi": "đáng chú ý"
           },
           {
-            "de": "verstehen",
+            "de": "finden",
             "type": "verb",
-            "en": "to understand",
-            "vi": "hiểu"
+            "en": "to find; to consider",
+            "vi": "thấy; cho là"
           }
         ],
         "analysis": {
-          "de": "Möchte ist eine Konjunktiv-II-Form von mögen, die üblich für Wünsche verwendet wird.",
-          "en": "Möchte is a subjunctive II form of mögen, commonly used to express wishes.",
-          "vi": "möchte là dạng Konjunktiv II của mögen, thường dùng với nghĩa muốn một cách nhẹ nhàng. Không phải dạng quá khứ của möchten."
+          "pattern": "Adjektiv als Prädikativ",
+          "de": "Das Adjektiv bleibt nach sein, klingen, erscheinen oder finden in dieser Funktion ohne Deklinationsendung.",
+          "en": "Used predicatively after sein, klingen, erscheinen or finden, the adjective has no inflectional ending here.",
+          "vi": "Tính từ làm vị ngữ sau sein, klingen, erscheinen hoặc finden trong cấu trúc này không nhận đuôi biến cách."
         },
         "source": "legacy-adapted",
         "simple": "Das ist doch Wahnsinn!",
@@ -4482,28 +4590,28 @@ const conversationGroups = [
         "simpleVi": "Thật điên rồ / khó tin!"
       },
       {
-        "tactful": "Das überfordert mich gerade. Ich brauche Unterstützung.",
-        "en": "This is overwhelming me right now. I need support.",
-        "vi": "Việc này đang quá sức với mình. Mình cần được hỗ trợ.",
+        "tactful": "Das ist mir im Moment zu viel.",
+        "en": "This is too much for me at the moment.",
+        "vi": "Hiện giờ việc này quá sức với mình.",
         "vocabulary": [
           {
-            "de": "überfordern",
-            "type": "verb",
-            "en": "to overwhelm",
-            "vi": "làm quá sức; khiến quá tải"
+            "de": "im Moment",
+            "type": "phrase",
+            "en": "at the moment",
+            "vi": "hiện tại"
           },
           {
-            "de": "die Unterstützung",
-            "type": "noun",
-            "en": "support",
-            "vi": "sự hỗ trợ",
-            "plural": "die Unterstützungen"
+            "de": "zu viel",
+            "type": "phrase",
+            "en": "too much",
+            "vi": "quá nhiều; quá mức"
           }
         ],
         "analysis": {
-          "de": "Im Aussagesatz steht das konjugierte Verb an zweiter Satzgliedposition. Die Wortwahl und Betonung bestimmen den Ton.",
-          "en": "In a statement, the conjugated verb occupies the second constituent position. Word choice and intonation shape the tone.",
-          "vi": "Trong câu trần thuật, động từ chia đứng ở vị trí thành phần thứ hai. Cách chọn từ và giọng điệu quyết định sắc thái; câu ngắn không mặc nhiên bất lịch sự."
+          "pattern": "Adjektiv als Prädikativ",
+          "de": "Das Adjektiv bleibt nach sein, klingen, erscheinen oder finden in dieser Funktion ohne Deklinationsendung.",
+          "en": "Used predicatively after sein, klingen, erscheinen or finden, the adjective has no inflectional ending here.",
+          "vi": "Tính từ làm vị ngữ sau sein, klingen, erscheinen hoặc finden trong cấu trúc này không nhận đuôi biến cách."
         },
         "source": "legacy-adapted",
         "simple": "Ich kann nicht mehr.",
@@ -4511,9 +4619,9 @@ const conversationGroups = [
         "simpleVi": "Tôi không chịu nổi nữa / hết sức rồi."
       },
       {
-        "tactful": "Das können wir umsetzen. Lass uns die nächsten Schritte vereinbaren.",
-        "en": "We can implement that. Let us agree on the next steps.",
-        "vi": "Chúng ta có thể thực hiện việc đó. Cùng thống nhất các bước tiếp theo nhé.",
+        "tactful": "Das können wir gerne umsetzen.",
+        "en": "We would be happy to implement that.",
+        "vi": "Chúng ta có thể thực hiện việc đó.",
         "vocabulary": [
           {
             "de": "umsetzen",
@@ -4522,16 +4630,17 @@ const conversationGroups = [
             "vi": "thực hiện; triển khai"
           },
           {
-            "de": "vereinbaren",
+            "de": "können",
             "type": "verb",
-            "en": "to arrange; to agree on",
-            "vi": "thống nhất; hẹn"
+            "en": "can; to be able to",
+            "vi": "có thể"
           }
         ],
         "analysis": {
-          "de": "Im Aussagesatz steht das konjugierte Verb an zweiter Satzgliedposition. Die Wortwahl und Betonung bestimmen den Ton.",
-          "en": "In a statement, the conjugated verb occupies the second constituent position. Word choice and intonation shape the tone.",
-          "vi": "Trong câu trần thuật, động từ chia đứng ở vị trí thành phần thứ hai. Cách chọn từ và giọng điệu quyết định sắc thái; câu ngắn không mặc nhiên bất lịch sự."
+          "pattern": "Modalverb + Infinitiv",
+          "de": "Das Modalverb wird konjugiert; das andere Verb steht im Infinitiv am Satzende.",
+          "en": "The modal is conjugated; the other verb stays in the infinitive at the end.",
+          "vi": "Động từ tình thái được chia; động từ còn lại giữ nguyên mẫu và đứng cuối."
         },
         "source": "legacy-adapted",
         "simple": "Das lässt sich machen.",
@@ -4539,28 +4648,28 @@ const conversationGroups = [
         "simpleVi": "Việc đó làm được / Có thể thu xếp."
       },
       {
-        "tactful": "Das habe ich auch bemerkt. Danke für den Hinweis.",
-        "en": "I noticed that too. Thank you for pointing it out.",
-        "vi": "Mình cũng nhận thấy điều đó. Cảm ơn bạn đã lưu ý.",
+        "tactful": "Das ist für mich ebenfalls erkennbar.",
+        "en": "That is apparent to me too.",
+        "vi": "Mình cũng có thể nhận thấy điều đó.",
         "vocabulary": [
           {
-            "de": "bemerken",
-            "type": "verb",
-            "en": "to notice",
-            "vi": "nhận thấy"
+            "de": "erkennbar",
+            "type": "adjective",
+            "en": "recognizable; apparent",
+            "vi": "có thể nhận thấy"
           },
           {
-            "de": "die Information",
-            "type": "noun",
-            "en": "information",
-            "vi": "thông tin",
-            "plural": "die Informationen"
+            "de": "ebenfalls",
+            "type": "adverb",
+            "en": "also; likewise",
+            "vi": "cũng"
           }
         ],
         "analysis": {
-          "de": "Das Perfekt besteht hier aus haben/sein und Partizip II. Es beschreibt ein bereits geschehenes Ereignis.",
-          "en": "The perfect consists of haben/sein and a past participle here. It describes something that has already happened.",
-          "vi": "Perfekt dùng haben/sein chia theo chủ ngữ và Partizip II để nói việc đã xảy ra. Partizip II thường đứng cuối mệnh đề chính."
+          "pattern": "Adjektiv als Prädikativ",
+          "de": "Das Adjektiv bleibt nach sein, klingen, erscheinen oder finden in dieser Funktion ohne Deklinationsendung.",
+          "en": "Used predicatively after sein, klingen, erscheinen or finden, the adjective has no inflectional ending here.",
+          "vi": "Tính từ làm vị ngữ sau sein, klingen, erscheinen hoặc finden trong cấu trúc này không nhận đuôi biến cách."
         },
         "source": "legacy-adapted",
         "simple": "Das sieht man.",
@@ -4568,15 +4677,15 @@ const conversationGroups = [
         "simpleVi": "Nhìn là thấy / Điều đó thể hiện rõ."
       },
       {
-        "tactful": "Ich bin vorbereitet. Wir können gerne anfangen.",
-        "en": "I am prepared. We can start whenever you are ready.",
-        "vi": "Mình đã chuẩn bị xong. Chúng ta có thể bắt đầu nhé.",
+        "tactful": "Ich bin bereit, wir können anfangen.",
+        "en": "I am ready; we can begin.",
+        "vi": "Mình đã sẵn sàng, chúng ta có thể bắt đầu.",
         "vocabulary": [
           {
-            "de": "vorbereitet",
+            "de": "bereit",
             "type": "adjective",
-            "en": "prepared",
-            "vi": "đã chuẩn bị sẵn"
+            "en": "ready",
+            "vi": "sẵn sàng"
           },
           {
             "de": "anfangen",
@@ -4586,9 +4695,10 @@ const conversationGroups = [
           }
         ],
         "analysis": {
-          "de": "Im Aussagesatz steht das konjugierte Verb an zweiter Satzgliedposition. Die Wortwahl und Betonung bestimmen den Ton.",
-          "en": "In a statement, the conjugated verb occupies the second constituent position. Word choice and intonation shape the tone.",
-          "vi": "Trong câu trần thuật, động từ chia đứng ở vị trí thành phần thứ hai. Cách chọn từ và giọng điệu quyết định sắc thái; câu ngắn không mặc nhiên bất lịch sự."
+          "pattern": "Modalverb + Infinitiv",
+          "de": "Das Modalverb wird konjugiert; das andere Verb steht im Infinitiv am Satzende.",
+          "en": "The modal is conjugated; the other verb stays in the infinitive at the end.",
+          "vi": "Động từ tình thái được chia; động từ còn lại giữ nguyên mẫu và đứng cuối."
         },
         "source": "legacy-adapted",
         "simple": "Ich bin so weit.",
@@ -4596,27 +4706,28 @@ const conversationGroups = [
         "simpleVi": "Tôi sẵn sàng rồi."
       },
       {
-        "tactful": "Damit hatte ich gerechnet. Lass uns überlegen, wie wir damit umgehen.",
-        "en": "I had expected that. Let us think about how to deal with it.",
-        "vi": "Mình đã dự tính điều đó. Chúng ta nghĩ cách xử lý nhé.",
+        "tactful": "Damit hatte ich bereits gerechnet.",
+        "en": "I had already expected that.",
+        "vi": "Mình đã dự tính điều đó rồi.",
         "vocabulary": [
           {
-            "de": "überlegen",
+            "de": "rechnen mit",
             "type": "verb",
-            "en": "to consider",
-            "vi": "cân nhắc"
+            "en": "to expect; to reckon with",
+            "vi": "dự tính; tính đến"
           },
           {
-            "de": "umgehen mit",
-            "type": "verb",
-            "en": "to deal with",
-            "vi": "ứng phó; xử lý việc gì"
+            "de": "bereits",
+            "type": "adverb",
+            "en": "already",
+            "vi": "đã; rồi"
           }
         ],
         "analysis": {
-          "de": "In der indirekten Frage steht das konjugierte Verb am Ende des Nebensatzes.",
-          "en": "In an indirect question, the conjugated verb comes at the end of the subordinate clause.",
-          "vi": "Câu hỏi gián tiếp đưa phần cần hỏi vào mệnh đề phụ; động từ chia của phần này đứng cuối. Không đảo động từ lên đầu như câu hỏi độc lập."
+          "pattern": "hatte + Partizip II",
+          "de": "Hatte + gerechnet bildet das Plusquamperfekt.",
+          "en": "Hatte plus gerechnet forms the past perfect.",
+          "vi": "hatte + gerechnet tạo Plusquamperfekt."
         },
         "source": "legacy-adapted",
         "simple": "Das wundert mich nicht.",
@@ -4624,9 +4735,9 @@ const conversationGroups = [
         "simpleVi": "Tôi không ngạc nhiên về chuyện đó."
       },
       {
-        "tactful": "Vielen Dank, ich bin informiert und kümmere mich darum.",
-        "en": "Thank you, I have the information and will take care of it.",
-        "vi": "Cảm ơn, mình đã nắm thông tin và sẽ xử lý.",
+        "tactful": "Vielen Dank, ich bin informiert.",
+        "en": "Thank you; I have the information.",
+        "vi": "Cảm ơn, mình đã nắm thông tin.",
         "vocabulary": [
           {
             "de": "informiert",
@@ -4635,16 +4746,18 @@ const conversationGroups = [
             "vi": "đã nắm thông tin"
           },
           {
-            "de": "sich kümmern um",
-            "type": "verb",
-            "en": "to take care of",
-            "vi": "chăm lo; xử lý việc gì"
+            "de": "der Dank",
+            "type": "noun",
+            "en": "thanks; gratitude",
+            "vi": "lời cảm ơn",
+            "plural": "thường không dùng số nhiều"
           }
         ],
         "analysis": {
-          "de": "Im Aussagesatz steht das konjugierte Verb an zweiter Satzgliedposition. Die Wortwahl und Betonung bestimmen den Ton.",
-          "en": "In a statement, the conjugated verb occupies the second constituent position. Word choice and intonation shape the tone.",
-          "vi": "Trong câu trần thuật, động từ chia đứng ở vị trí thành phần thứ hai. Cách chọn từ và giọng điệu quyết định sắc thái; câu ngắn không mặc nhiên bất lịch sự."
+          "pattern": "Adjektiv als Prädikativ",
+          "de": "Das Adjektiv bleibt nach sein, klingen, erscheinen oder finden in dieser Funktion ohne Deklinationsendung.",
+          "en": "Used predicatively after sein, klingen, erscheinen or finden, the adjective has no inflectional ending here.",
+          "vi": "Tính từ làm vị ngữ sau sein, klingen, erscheinen hoặc finden trong cấu trúc này không nhận đuôi biến cách."
         },
         "source": "legacy-adapted",
         "simple": "Ich weiß Bescheid.",
@@ -4670,9 +4783,10 @@ const conversationGroups = [
           }
         ],
         "analysis": {
-          "de": "Im Nebensatz mit dass steht das konjugierte Verb am Ende.",
-          "en": "In a subordinate clause introduced by dass, the conjugated verb comes last.",
-          "vi": "Mệnh đề với dass đưa nội dung một nhận định hoặc thông tin; động từ chia đứng cuối mệnh đề đó."
+          "pattern": "dass + … + Verb am Ende",
+          "de": "Das konjugierte Verb steht am Ende des dass-Satzes.",
+          "en": "The conjugated verb comes at the end of the dass-clause.",
+          "vi": "Động từ chia đứng cuối mệnh đề mở đầu bằng dass."
         },
         "source": "legacy-adapted",
         "simple": "Endlich!",
@@ -4681,29 +4795,30 @@ const conversationGroups = [
       },
       {
         "simple": "Ich weiß nicht.",
-        "tactful": "Das müsste ich noch einmal prüfen.",
-        "vi": "Tôi cần kiểm tra lại việc đó.",
+        "tactful": "Das weiß ich leider nicht; ich müsste es erst prüfen.",
+        "vi": "Tiếc là tôi chưa biết điều đó; tôi cần kiểm tra trước.",
         "simpleEn": "I do not know.",
         "simpleVi": "Tôi không biết.",
-        "en": "I would need to check that again.",
+        "en": "Unfortunately, I do not know that; I would need to check first.",
         "vocabulary": [
+          {
+            "de": "wissen",
+            "type": "verb",
+            "en": "to know",
+            "vi": "biết"
+          },
           {
             "de": "prüfen",
             "type": "verb",
             "en": "to check; to examine",
             "vi": "kiểm tra"
-          },
-          {
-            "de": "noch einmal",
-            "type": "phrase",
-            "en": "once again",
-            "vi": "một lần nữa"
           }
         ],
         "analysis": {
-          "de": "Müsste ist Konjunktiv II von müssen. Prüfen steht als Infinitiv am Satzende.",
-          "en": "Müsste is subjunctive II of müssen. Prüfen is the infinitive at the end.",
-          "vi": "müsste là Konjunktiv II của müssen, diễn đạt cần kiểm tra một cách dè dặt. Không phải cấu trúc würde + nguyên mẫu."
+          "pattern": "müsste + Infinitiv",
+          "de": "Müsste ist Konjunktiv II von müssen, nicht eine würde-Konstruktion.",
+          "en": "Müsste is subjunctive II of müssen, not a würde construction.",
+          "vi": "müsste là Konjunktiv II của müssen, không phải cấu trúc würde."
         },
         "source": "document"
       },
@@ -4730,9 +4845,10 @@ const conversationGroups = [
           }
         ],
         "analysis": {
-          "de": "Beim trennbaren Verb steht der abgetrennte Verbteil im Hauptsatz gewöhnlich am Ende.",
-          "en": "With a separable verb, the separated prefix usually comes at the end of the main clause.",
-          "vi": "Với động từ tách, phần tiền tố thường đứng cuối câu chính khi động từ chia ở hiện tại; khi dùng nguyên mẫu hoặc Partizip II, hình thức sẽ khác."
+          "pattern": "Trennbares Verb",
+          "de": "Im Hauptsatz wird das Präfix abgetrennt und steht am Ende, sofern kein Modalverb den Infinitiv verlangt.",
+          "en": "In a main clause, the separable prefix comes at the end unless a modal requires the infinitive.",
+          "vi": "Ở câu chính, tiền tố tách ra và đứng cuối khi không có động từ tình thái yêu cầu dạng nguyên mẫu."
         },
         "source": "document"
       },
@@ -4758,9 +4874,10 @@ const conversationGroups = [
           }
         ],
         "analysis": {
-          "de": "Das Reflexivpronomen gehört hier zum Verb oder Ausdruck. Die Form richtet sich nach Subjekt und Konstruktion.",
-          "en": "The reflexive pronoun belongs to the verb or expression here. Its form depends on the subject and construction.",
-          "vi": "Đại từ phản thân đi cùng động từ/cụm từ. Chọn mich/mir, dich/dir, sich… theo chủ ngữ và cấu trúc, không thay tùy ý."
+          "pattern": "Reflexivpronomen",
+          "de": "Das Reflexivpronomen richtet sich nach dem Subjekt und der Verbverbindung, zum Beispiel ich → mich.",
+          "en": "The reflexive pronoun depends on the subject and verb expression, for example ich → mich.",
+          "vi": "Đại từ phản thân phụ thuộc chủ ngữ và cấu trúc động từ, ví dụ ich → mich."
         },
         "source": "document"
       },
@@ -4768,16 +4885,16 @@ const conversationGroups = [
         "simple": "Hoffentlich schaffen wir das.",
         "simpleEn": "Hopefully we can do it.",
         "simpleVi": "Hy vọng chúng ta làm được.",
-        "tactful": "Ich bin zuversichtlich, dass wir es schaffen.",
-        "en": "I am confident that we can do it.",
-        "vi": "Tôi tin tưởng rằng chúng ta làm được.",
+        "tactful": "Ich hoffe sehr, dass wir das schaffen.",
+        "en": "I very much hope that we can do it.",
+        "vi": "Mình rất hy vọng chúng ta làm được việc đó.",
         "source": "pdf",
         "vocabulary": [
           {
-            "de": "zuversichtlich",
-            "type": "adjective",
-            "en": "confident; hopeful",
-            "vi": "tin tưởng; lạc quan có cơ sở"
+            "de": "hoffen",
+            "type": "verb",
+            "en": "to hope",
+            "vi": "hy vọng"
           },
           {
             "de": "schaffen",
@@ -4787,18 +4904,19 @@ const conversationGroups = [
           }
         ],
         "analysis": {
-          "de": "Nach dass steht schaffen am Ende. Zuversichtlich drückt Zuversicht aus; hoffentlich drückt vor allem einen Wunsch aus. Die Aussagen sind nicht gleichbedeutend.",
-          "en": "The verb schaffen comes at the end of the dass-clause. Zuversichtlich expresses confidence; hoffentlich mainly expresses a hope. The statements are not equivalent.",
-          "vi": "Sau dass, động từ schaffen đứng cuối mệnh đề. zuversichtlich thể hiện sự tin tưởng; hoffentlich chủ yếu là mong điều đó xảy ra. Hai câu không đồng nghĩa hoàn toàn và không phải cách nói nào cũng lịch sự hơn trong mọi hoàn cảnh."
+          "pattern": "dass + … + Verb am Ende",
+          "de": "Das konjugierte Verb steht am Ende des dass-Satzes.",
+          "en": "The conjugated verb comes at the end of the dass-clause.",
+          "vi": "Động từ chia đứng cuối mệnh đề mở đầu bằng dass."
         }
       },
       {
         "simple": "Vielleicht kommt er heute.",
         "simpleEn": "Maybe he will come today.",
         "simpleVi": "Có lẽ hôm nay anh ấy đến.",
-        "tactful": "Gut möglich, dass er heute kommt.",
-        "en": "It is quite possible that he will come today.",
-        "vi": "Hoàn toàn có thể là hôm nay anh ấy đến.",
+        "tactful": "Es ist möglich, dass er heute kommt.",
+        "en": "It is possible that he will come today.",
+        "vi": "Có khả năng hôm nay anh ấy đến.",
         "source": "pdf",
         "vocabulary": [
           {
@@ -4815,18 +4933,19 @@ const conversationGroups = [
           }
         ],
         "analysis": {
-          "de": "Im Nebensatz mit dass steht das konjugierte Verb am Ende.",
-          "en": "In a subordinate clause introduced by dass, the conjugated verb comes last.",
-          "vi": "Mệnh đề với dass đưa nội dung một nhận định hoặc thông tin; động từ chia đứng cuối mệnh đề đó."
+          "pattern": "dass + … + Verb am Ende",
+          "de": "Das konjugierte Verb steht am Ende des dass-Satzes.",
+          "en": "The conjugated verb comes at the end of the dass-clause.",
+          "vi": "Động từ chia đứng cuối mệnh đề mở đầu bằng dass."
         }
       },
       {
         "simple": "Ist halt so.",
         "simpleEn": "That is just how it is.",
         "simpleVi": "Nó là vậy thôi.",
-        "tactful": "Das lässt sich leider nicht ändern. Welche Alternative haben wir?",
-        "en": "Unfortunately, that cannot be changed. What alternative do we have?",
-        "vi": "Tiếc là điều đó không thay đổi được. Chúng ta có phương án nào khác?",
+        "tactful": "Das lässt sich leider nicht ändern.",
+        "en": "Unfortunately, that cannot be changed.",
+        "vi": "Tiếc là điều đó không thay đổi được.",
         "source": "pdf",
         "vocabulary": [
           {
@@ -4836,17 +4955,17 @@ const conversationGroups = [
             "vi": "thay đổi"
           },
           {
-            "de": "die Alternative",
-            "type": "noun",
-            "en": "alternative",
-            "vi": "phương án khác",
-            "plural": "die Alternativen"
+            "de": "lassen",
+            "type": "verb",
+            "en": "to let; to leave",
+            "vi": "để; cho phép"
           }
         ],
         "analysis": {
-          "de": "Sich lassen + Infinitiv kann eine Möglichkeit ausdrücken: Das lässt sich nicht ändern = Das kann nicht geändert werden.",
-          "en": "Sich lassen plus infinitive can express possibility: Das lässt sich nicht ändern means it cannot be changed.",
-          "vi": "sich lassen + nguyên mẫu có thể diễn đạt khả năng: Das lässt sich nicht ändern = điều đó không thay đổi được. Đây không tự động là lời từ chối."
+          "pattern": "sich lassen + Infinitiv",
+          "de": "Lässt sich ändern entspricht hier kann geändert werden.",
+          "en": "Lässt sich ändern means can be changed here.",
+          "vi": "lässt sich ändern ở đây tương đương với có thể thay đổi được."
         }
       },
       {
@@ -4874,37 +4993,39 @@ const conversationGroups = [
           }
         ],
         "analysis": {
-          "de": "Hätte/hätten ist Konjunktiv II von haben; die Frage oder der Wunsch wirkt dadurch zurückhaltender.",
-          "en": "Hätte/hätten is subjunctive II of haben, making a request or wish more tentative.",
-          "vi": "hätte/hätten là Konjunktiv II của haben. Dùng để hỏi có thứ gì/thời gian hoặc nêu mong muốn; không có nghĩa đang nói về quá khứ."
+          "pattern": "hätte/hätten + Akkusativ",
+          "de": "Hätte/hätten ist Konjunktiv II von haben; das Objekt steht im Akkusativ.",
+          "en": "Hätte/hätten is subjunctive II of haben; its object is accusative.",
+          "vi": "hätte/hätten là Konjunktiv II của haben; tân ngữ trực tiếp ở Akkusativ."
         }
       },
       {
         "simple": "Keine Ahnung.",
         "simpleEn": "No idea.",
         "simpleVi": "Tôi không biết.",
-        "tactful": "Ich bin mir nicht ganz sicher. Ich prüfe das und melde mich danach.",
-        "en": "I am not entirely sure. I will check and get back to you afterwards.",
-        "vi": "Tôi chưa hoàn toàn chắc. Tôi sẽ kiểm tra rồi phản hồi.",
+        "tactful": "Das kann ich Ihnen im Moment leider nicht beantworten.",
+        "en": "Unfortunately, I cannot answer that at the moment.",
+        "vi": "Tiếc là hiện tại tôi không thể trả lời anh/chị điều đó.",
         "source": "pdf",
         "vocabulary": [
           {
-            "de": "sicher",
-            "type": "adjective",
-            "en": "certain; sure",
-            "vi": "chắc chắn"
+            "de": "beantworten",
+            "type": "verb",
+            "en": "to answer",
+            "vi": "trả lời"
           },
           {
-            "de": "sich melden",
-            "type": "verb",
-            "en": "to get in touch",
-            "vi": "liên hệ; phản hồi"
+            "de": "im Moment",
+            "type": "phrase",
+            "en": "at the moment",
+            "vi": "hiện tại"
           }
         ],
         "analysis": {
-          "de": "Das Reflexivpronomen gehört hier zum Verb oder Ausdruck. Die Form richtet sich nach Subjekt und Konstruktion.",
-          "en": "The reflexive pronoun belongs to the verb or expression here. Its form depends on the subject and construction.",
-          "vi": "Đại từ phản thân đi cùng động từ/cụm từ. Chọn mich/mir, dich/dir, sich… theo chủ ngữ và cấu trúc, không thay tùy ý."
+          "pattern": "Modalverb + Infinitiv",
+          "de": "Das Modalverb wird konjugiert; das andere Verb steht im Infinitiv am Satzende.",
+          "en": "The modal is conjugated; the other verb stays in the infinitive at the end.",
+          "vi": "Động từ tình thái được chia; động từ còn lại giữ nguyên mẫu và đứng cuối."
         }
       },
       {
@@ -4930,9 +5051,10 @@ const conversationGroups = [
           }
         ],
         "analysis": {
-          "de": "Hätte/hätten ist Konjunktiv II von haben; die Frage oder der Wunsch wirkt dadurch zurückhaltender.",
-          "en": "Hätte/hätten is subjunctive II of haben, making a request or wish more tentative.",
-          "vi": "hätte/hätten là Konjunktiv II của haben. Dùng để hỏi có thứ gì/thời gian hoặc nêu mong muốn; không có nghĩa đang nói về quá khứ."
+          "pattern": "hätte/hätten + Akkusativ",
+          "de": "Hätte/hätten ist Konjunktiv II von haben; das Objekt steht im Akkusativ.",
+          "en": "Hätte/hätten is subjunctive II of haben; its object is accusative.",
+          "vi": "hätte/hätten là Konjunktiv II của haben; tân ngữ trực tiếp ở Akkusativ."
         },
         "source": "document"
       },
@@ -4959,9 +5081,10 @@ const conversationGroups = [
           }
         ],
         "analysis": {
-          "de": "Im Aussagesatz steht das konjugierte Verb an zweiter Satzgliedposition. Die Wortwahl bestimmt hier vor allem den Ton.",
-          "en": "In a statement, the conjugated verb occupies the second constituent position. Here, word choice mainly shapes the tone.",
-          "vi": "Trong câu trần thuật, động từ chia ở vị trí thành phần thứ hai, không nhất thiết là từ thứ hai. Ở đây sắc thái chủ yếu đến từ cách chọn từ."
+          "pattern": "Präsens · Aussagesatz",
+          "de": "Das konjugierte Verb steht an zweiter Satzgliedposition; das Vorfeld kann aus mehreren Wörtern bestehen.",
+          "en": "The conjugated verb occupies the second constituent position; the first constituent may contain several words.",
+          "vi": "Động từ chia ở vị trí thành phần thứ hai; thành phần đầu có thể gồm nhiều từ."
         },
         "source": "document"
       },
@@ -4988,18 +5111,19 @@ const conversationGroups = [
           }
         ],
         "analysis": {
-          "de": "In der indirekten Frage steht das konjugierte Verb am Ende des Nebensatzes.",
-          "en": "In an indirect question, the conjugated verb comes at the end of the subordinate clause.",
-          "vi": "Câu hỏi gián tiếp đưa phần cần hỏi vào mệnh đề phụ; động từ chia của phần này đứng cuối. Không đảo động từ lên đầu như câu hỏi độc lập."
+          "pattern": "Indirekte Frage + Verb am Ende",
+          "de": "Das Fragewort oder ob leitet den Nebensatz ein; dessen konjugiertes Verb steht am Ende.",
+          "en": "The question word or ob introduces the subordinate clause, whose conjugated verb comes last.",
+          "vi": "Từ để hỏi hoặc ob mở đầu mệnh đề phụ; động từ chia của mệnh đề đó đứng cuối."
         },
         "source": "document"
       },
       {
         "simple": "Mein Fehler.",
         "simpleVi": "Lỗi của tôi.",
-        "tactful": "Da habe ich mich vertan. Ich korrigiere das gleich.",
-        "vi": "Tôi đã nhầm ở chỗ đó. Tôi sẽ sửa ngay.",
-        "en": "I made a mistake there. I will correct it right away.",
+        "tactful": "Da habe ich mich vertan, bitte entschuldigen Sie.",
+        "vi": "Tôi đã nhầm ở chỗ đó, mong anh/chị thông cảm.",
+        "en": "I made a mistake there; please excuse me.",
         "simpleEn": "My mistake.",
         "vocabulary": [
           {
@@ -5009,25 +5133,26 @@ const conversationGroups = [
             "vi": "nhầm lẫn"
           },
           {
-            "de": "korrigieren",
+            "de": "sich entschuldigen",
             "type": "verb",
-            "en": "to correct",
-            "vi": "sửa lại"
+            "en": "to apologize",
+            "vi": "xin lỗi"
           }
         ],
         "analysis": {
-          "de": "Das Perfekt besteht hier aus haben/sein und Partizip II. Es beschreibt ein bereits geschehenes Ereignis.",
-          "en": "The perfect consists of haben/sein and a past participle here. It describes something that has already happened.",
-          "vi": "Perfekt dùng haben/sein chia theo chủ ngữ và Partizip II để nói việc đã xảy ra. Partizip II thường đứng cuối mệnh đề chính."
+          "pattern": "haben/sein + Partizip II",
+          "de": "Das Hilfsverb wird konjugiert, das Partizip II steht am Ende des Teilsatzes.",
+          "en": "The auxiliary is conjugated; the past participle comes at the end of the clause.",
+          "vi": "Trợ động từ chia theo chủ ngữ; Partizip II đứng cuối mệnh đề."
         },
         "source": "editorial"
       },
       {
         "simple": "Ich bin zu spät.",
         "simpleVi": "Tôi đến muộn.",
-        "tactful": "Entschuldigen Sie bitte die Verspätung. Danke, dass Sie gewartet haben.",
-        "vi": "Xin lỗi vì đến muộn. Cảm ơn anh/chị đã đợi.",
-        "en": "Please excuse my being late. Thank you for waiting.",
+        "tactful": "Entschuldigen Sie bitte meine Verspätung.",
+        "vi": "Xin lỗi anh/chị vì tôi đến muộn.",
+        "en": "Please excuse my lateness.",
         "simpleEn": "I am late.",
         "vocabulary": [
           {
@@ -5045,38 +5170,40 @@ const conversationGroups = [
           }
         ],
         "analysis": {
-          "de": "Das Perfekt besteht hier aus haben/sein und Partizip II. Es beschreibt ein bereits geschehenes Ereignis.",
-          "en": "The perfect consists of haben/sein and a past participle here. It describes something that has already happened.",
-          "vi": "Perfekt dùng haben/sein chia theo chủ ngữ và Partizip II để nói việc đã xảy ra. Partizip II thường đứng cuối mệnh đề chính."
+          "pattern": "Imperativ: Verb + Sie",
+          "de": "Bei der formellen Aufforderung steht das Verb vor Sie.",
+          "en": "In the formal imperative, the verb precedes Sie.",
+          "vi": "Trong mệnh lệnh trang trọng, động từ đứng trước Sie."
         },
         "source": "editorial"
       },
       {
         "simple": "Das wollte ich nicht.",
         "simpleVi": "Tôi không định như vậy.",
-        "tactful": "Meine Formulierung war unpassend. Es tut mir leid.",
-        "vi": "Cách diễn đạt của tôi không phù hợp. Tôi xin lỗi.",
-        "en": "My wording was inappropriate. I am sorry.",
+        "tactful": "Es tut mir leid, das war nicht meine Absicht.",
+        "vi": "Mình xin lỗi, đó không phải chủ ý của mình.",
+        "en": "I am sorry; that was not my intention.",
         "simpleEn": "I did not mean that.",
         "vocabulary": [
           {
-            "de": "die Formulierung",
+            "de": "die Absicht",
             "type": "noun",
-            "en": "wording",
-            "vi": "cách diễn đạt",
-            "plural": "die Formulierungen"
+            "en": "intention",
+            "vi": "ý định",
+            "plural": "die Absichten"
           },
           {
-            "de": "unpassend",
-            "type": "adjective",
-            "en": "inappropriate",
-            "vi": "không phù hợp"
+            "de": "leidtun",
+            "type": "verb",
+            "en": "to be sorry",
+            "vi": "lấy làm tiếc"
           }
         ],
         "analysis": {
-          "de": "Im Aussagesatz steht das konjugierte Verb an zweiter Satzgliedposition. Die Wortwahl bestimmt hier vor allem den Ton.",
-          "en": "In a statement, the conjugated verb occupies the second constituent position. Here, word choice mainly shapes the tone.",
-          "vi": "Trong câu trần thuật, động từ chia ở vị trí thành phần thứ hai, không nhất thiết là từ thứ hai. Ở đây sắc thái chủ yếu đến từ cách chọn từ."
+          "pattern": "Präteritum",
+          "de": "War und hatte sind Präteritumformen von sein und haben.",
+          "en": "War and hatte are past-tense forms of sein and haben.",
+          "vi": "war và hatte là dạng Präteritum của sein và haben."
         },
         "source": "editorial"
       },
@@ -5103,111 +5230,115 @@ const conversationGroups = [
           }
         ],
         "analysis": {
-          "de": "Im Aussagesatz steht das konjugierte Verb an zweiter Satzgliedposition. Die Wortwahl bestimmt hier vor allem den Ton.",
-          "en": "In a statement, the conjugated verb occupies the second constituent position. Here, word choice mainly shapes the tone.",
-          "vi": "Trong câu trần thuật, động từ chia ở vị trí thành phần thứ hai, không nhất thiết là từ thứ hai. Ở đây sắc thái chủ yếu đến từ cách chọn từ."
+          "pattern": "Präteritum von sein: war",
+          "de": "War ist die Präteritumform von sein. Für Sie nennt den vorgesehenen Empfänger.",
+          "en": "War is the past-tense form of sein. Für Sie identifies the intended recipient.",
+          "vi": "War là Präteritum của sein. für Sie chỉ người nhận dự kiến."
         },
         "source": "editorial"
       },
       {
         "simple": "Noch Wasser.",
         "simpleVi": "Thêm nước.",
-        "tactful": "Könnten wir bitte noch eine Flasche Wasser bekommen?",
-        "vi": "Cho chúng tôi thêm một chai nước được không?",
-        "en": "Could we have another bottle of water, please?",
+        "tactful": "Könnten wir bitte noch etwas Wasser bekommen?",
+        "vi": "Cho chúng tôi xin thêm chút nước được không?",
+        "en": "Could we have some more water, please?",
         "simpleEn": "More water.",
         "vocabulary": [
-          {
-            "de": "die Flasche",
-            "type": "noun",
-            "en": "bottle",
-            "vi": "chai",
-            "plural": "die Flaschen"
-          },
           {
             "de": "bekommen",
             "type": "verb",
             "en": "to get; to receive",
             "vi": "nhận; được cấp"
+          },
+          {
+            "de": "das Wasser",
+            "type": "noun",
+            "en": "water",
+            "vi": "nước",
+            "plural": "thường không dùng số nhiều"
           }
         ],
         "analysis": {
-          "de": "Könnte/könnten ist Konjunktiv II von können. Der andere Infinitiv steht am Satzende.",
-          "en": "Könnte/könnten is the subjunctive II form of können. The other infinitive comes at the end.",
-          "vi": "könnte/könnten là Konjunktiv II của können, thường dùng để hỏi khả năng hoặc nhờ lịch sự; động từ nguyên mẫu còn lại đứng cuối câu."
+          "pattern": "könnte/könntest/könnten + Infinitiv",
+          "de": "Konjunktiv II von können; der weitere Infinitiv steht am Ende.",
+          "en": "Subjunctive II of können; the other infinitive comes at the end.",
+          "vi": "Konjunktiv II của können; động từ nguyên mẫu còn lại đứng cuối câu."
         },
         "source": "editorial"
       },
       {
         "simple": "Das ist falsch.",
         "simpleVi": "Cái này sai rồi.",
-        "tactful": "Entschuldigung, ich hatte die vegetarische Variante bestellt. Könnten Sie das bitte prüfen?",
-        "vi": "Xin lỗi, tôi đã gọi món chay. Anh/chị kiểm tra giúp được không?",
-        "en": "Excuse me, I ordered the vegetarian option. Could you check that, please?",
+        "tactful": "Entschuldigung, das entspricht nicht meiner Bestellung.",
+        "vi": "Xin lỗi, món này không đúng với đơn tôi đã gọi.",
+        "en": "Excuse me, that does not match my order.",
         "simpleEn": "That is wrong.",
         "vocabulary": [
           {
-            "de": "vegetarisch",
-            "type": "adjective",
-            "en": "vegetarian",
-            "vi": "chay; không có thịt cá"
+            "de": "entsprechen",
+            "type": "verb",
+            "en": "to correspond to; to match",
+            "vi": "tương ứng; phù hợp"
           },
           {
-            "de": "bestellen",
-            "type": "verb",
-            "en": "to order",
-            "vi": "đặt; gọi món"
+            "de": "die Bestellung",
+            "type": "noun",
+            "en": "order",
+            "vi": "đơn đặt hàng; món đã gọi",
+            "plural": "die Bestellungen"
           }
         ],
         "analysis": {
-          "de": "Hatte bestellt ist Plusquamperfekt: haben im Präteritum + Partizip II. Die Bestellung liegt vor dem späteren Servieren.",
-          "en": "Hatte bestellt is past perfect: past-tense haben plus a past participle. Ordering happened before the later serving.",
-          "vi": "hatte … bestellt là Plusquamperfekt, không phải Perfekt: haben ở quá khứ đơn + Partizip II. Việc gọi món xảy ra trước lúc nhân viên đưa món ra."
+          "pattern": "Dativ",
+          "de": "Entsprechen verlangt Dativ: meiner Bestellung.",
+          "en": "Entsprechen takes dative: meiner Bestellung.",
+          "vi": "entsprechen đi với Dativ: meiner Bestellung."
         },
         "source": "editorial"
       },
       {
         "simple": "Die Rechnung.",
         "simpleVi": "Hóa đơn.",
-        "tactful": "Wir würden gerne zahlen. Könnten wir bitte getrennt zahlen?",
-        "vi": "Chúng tôi muốn thanh toán. Chúng tôi trả riêng được không?",
-        "en": "We would like to pay. Could we pay separately, please?",
+        "tactful": "Ich würde gerne bezahlen, bitte.",
+        "vi": "Cho tôi thanh toán nhé.",
+        "en": "I would like to pay, please.",
         "simpleEn": "The bill.",
         "vocabulary": [
           {
-            "de": "getrennt",
-            "type": "adjective",
-            "en": "separate; separately",
-            "vi": "riêng; tách riêng"
+            "de": "bezahlen",
+            "type": "verb",
+            "en": "to pay for",
+            "vi": "thanh toán"
           },
           {
-            "de": "zahlen",
-            "type": "verb",
-            "en": "to pay",
-            "vi": "trả tiền"
+            "de": "gern",
+            "type": "adverb",
+            "en": "gladly; with pleasure",
+            "vi": "sẵn lòng; thích"
           }
         ],
         "analysis": {
-          "de": "Würde/würden + Infinitiv bildet hier den Konjunktiv II und formuliert einen Wunsch oder eine Einschätzung vorsichtiger.",
-          "en": "Würde/würden plus an infinitive forms subjunctive II here, softening a wish or assessment.",
-          "vi": "würde/würden + động từ nguyên mẫu tạo Konjunktiv II, giúp diễn đạt mong muốn hoặc nhận định dè dặt hơn. Không làm thay đổi sự thật cần nói."
+          "pattern": "würde/würden + Infinitiv",
+          "de": "Würde wird konjugiert; der Infinitiv des Vollverbs steht am Ende.",
+          "en": "Würde is conjugated; the lexical verb stays in the infinitive at the end.",
+          "vi": "würde chia theo chủ ngữ; động từ chính giữ nguyên mẫu và đứng cuối."
         },
         "source": "editorial"
       },
       {
         "simple": "Ist das mit Nüssen?",
         "simpleVi": "Món này có hạt không?",
-        "tactful": "Ich habe eine Nussallergie. Können Sie bitte prüfen, ob das Gericht Nüsse enthält?",
-        "vi": "Tôi dị ứng các loại hạt. Anh/chị kiểm tra giúp món này có hạt không?",
-        "en": "I have a nut allergy. Could you check whether this dish contains nuts?",
+        "tactful": "Könnten Sie bitte prüfen, ob das Nüsse enthält?",
+        "vi": "Anh/chị kiểm tra giúp món này có các loại hạt không?",
+        "en": "Could you check whether this contains nuts, please?",
         "simpleEn": "Does that contain nuts?",
         "vocabulary": [
           {
-            "de": "die Nussallergie",
-            "type": "noun",
-            "en": "nut allergy",
-            "vi": "dị ứng các loại hạt",
-            "plural": "die Nussallergien"
+            "de": "prüfen",
+            "type": "verb",
+            "en": "to check; to examine",
+            "vi": "kiểm tra"
           },
           {
             "de": "enthalten",
@@ -5217,9 +5348,10 @@ const conversationGroups = [
           }
         ],
         "analysis": {
-          "de": "In der indirekten Frage steht das konjugierte Verb am Ende des Nebensatzes.",
-          "en": "In an indirect question, the conjugated verb comes at the end of the subordinate clause.",
-          "vi": "Câu hỏi gián tiếp đưa phần cần hỏi vào mệnh đề phụ; động từ chia của phần này đứng cuối. Không đảo động từ lên đầu như câu hỏi độc lập."
+          "pattern": "Indirekte Frage + Verb am Ende",
+          "de": "Das Fragewort oder ob leitet den Nebensatz ein; dessen konjugiertes Verb steht am Ende.",
+          "en": "The question word or ob introduces the subordinate clause, whose conjugated verb comes last.",
+          "vi": "Từ để hỏi hoặc ob mở đầu mệnh đề phụ; động từ chia của mệnh đề đó đứng cuối."
         },
         "source": "editorial"
       },
@@ -5247,17 +5379,18 @@ const conversationGroups = [
           }
         ],
         "analysis": {
-          "de": "Könnte/könnten ist Konjunktiv II von können. Der andere Infinitiv steht am Satzende.",
-          "en": "Könnte/könnten is the subjunctive II form of können. The other infinitive comes at the end.",
-          "vi": "könnte/könnten là Konjunktiv II của können, thường dùng để hỏi khả năng hoặc nhờ lịch sự; động từ nguyên mẫu còn lại đứng cuối câu."
+          "pattern": "könnte/könntest/könnten + Infinitiv",
+          "de": "Konjunktiv II von können; der weitere Infinitiv steht am Ende.",
+          "en": "Subjunctive II of können; the other infinitive comes at the end.",
+          "vi": "Konjunktiv II của können; động từ nguyên mẫu còn lại đứng cuối câu."
         }
       },
       {
         "simple": "Ich will das zurückgeben.",
         "simpleVi": "Tôi muốn trả món này.",
-        "tactful": "Ich würde diesen Artikel gerne zurückgeben. Welche Möglichkeiten gibt es?",
-        "vi": "Tôi muốn trả sản phẩm này. Có những phương án nào?",
-        "en": "I would like to return this item. What options are available?",
+        "tactful": "Ich würde diesen Artikel gerne zurückgeben.",
+        "vi": "Tôi muốn trả lại sản phẩm này.",
+        "en": "I would like to return this item.",
         "simpleEn": "I want to return this.",
         "vocabulary": [
           {
@@ -5265,35 +5398,6 @@ const conversationGroups = [
             "type": "verb",
             "en": "to return; to give back",
             "vi": "trả lại"
-          },
-          {
-            "de": "die Möglichkeit",
-            "type": "noun",
-            "en": "possibility; option",
-            "vi": "khả năng; phương án",
-            "plural": "die Möglichkeiten"
-          }
-        ],
-        "analysis": {
-          "de": "Würde/würden + Infinitiv bildet hier den Konjunktiv II und formuliert einen Wunsch oder eine Einschätzung vorsichtiger.",
-          "en": "Würde/würden plus an infinitive forms subjunctive II here, softening a wish or assessment.",
-          "vi": "würde/würden + động từ nguyên mẫu tạo Konjunktiv II, giúp diễn đạt mong muốn hoặc nhận định dè dặt hơn. Không làm thay đổi sự thật cần nói."
-        },
-        "source": "editorial"
-      },
-      {
-        "simple": "Das ist kaputt.",
-        "simpleVi": "Cái này hỏng rồi.",
-        "tactful": "Der Artikel funktioniert seit gestern nicht mehr. Wie können wir das klären?",
-        "vi": "Sản phẩm không hoạt động từ hôm qua. Chúng ta xử lý thế nào?",
-        "en": "The item has not worked since yesterday. How can we resolve this?",
-        "simpleEn": "This is broken.",
-        "vocabulary": [
-          {
-            "de": "funktionieren",
-            "type": "verb",
-            "en": "to work; to function",
-            "vi": "hoạt động"
           },
           {
             "de": "der Artikel",
@@ -5304,47 +5408,78 @@ const conversationGroups = [
           }
         ],
         "analysis": {
-          "de": "Seit + Dativ bezeichnet hier den Beginn oder die Dauer eines weiterhin bestehenden Zustands. Im Deutschen steht dafür oft Präsens.",
-          "en": "Seit plus dative indicates the start or duration of an ongoing state. German often uses the present tense for this.",
-          "vi": "seit + Dativ chỉ mốc bắt đầu hoặc khoảng thời gian của trạng thái còn tiếp diễn. Tiếng Đức thường dùng hiện tại, dù tiếng Anh hay dùng thì hoàn thành."
+          "pattern": "würde/würden + Infinitiv",
+          "de": "Würde wird konjugiert; der Infinitiv des Vollverbs steht am Ende.",
+          "en": "Würde is conjugated; the lexical verb stays in the infinitive at the end.",
+          "vi": "würde chia theo chủ ngữ; động từ chính giữ nguyên mẫu và đứng cuối."
+        },
+        "source": "editorial"
+      },
+      {
+        "simple": "Das ist kaputt.",
+        "simpleVi": "Cái này hỏng rồi.",
+        "tactful": "Dieser Artikel funktioniert leider nicht mehr.",
+        "vi": "Tiếc là sản phẩm này không hoạt động nữa.",
+        "en": "Unfortunately, this item no longer works.",
+        "simpleEn": "This is broken.",
+        "vocabulary": [
+          {
+            "de": "der Artikel",
+            "type": "noun",
+            "en": "item; article",
+            "vi": "món hàng; mạo từ; bài viết",
+            "plural": "die Artikel"
+          },
+          {
+            "de": "funktionieren",
+            "type": "verb",
+            "en": "to work; to function",
+            "vi": "hoạt động"
+          }
+        ],
+        "analysis": {
+          "pattern": "Präsens · Aussagesatz",
+          "de": "Das konjugierte Verb steht an zweiter Satzgliedposition; das Vorfeld kann aus mehreren Wörtern bestehen.",
+          "en": "The conjugated verb occupies the second constituent position; the first constituent may contain several words.",
+          "vi": "Động từ chia ở vị trí thành phần thứ hai; thành phần đầu có thể gồm nhiều từ."
         },
         "source": "editorial"
       },
       {
         "simple": "Zu klein.",
         "simpleVi": "Nhỏ quá.",
-        "tactful": "Die Größe passt leider nicht. Haben Sie das auch eine Nummer größer?",
-        "vi": "Tiếc là cỡ này không vừa. Có cỡ lớn hơn một số không?",
-        "en": "Unfortunately, this size does not fit. Do you have it one size larger?",
+        "tactful": "Das ist mir leider etwas zu klein.",
+        "vi": "Tiếc là món này hơi nhỏ với tôi.",
+        "en": "Unfortunately, that is a little too small for me.",
         "simpleEn": "Too small.",
         "vocabulary": [
           {
-            "de": "die Größe",
-            "type": "noun",
-            "en": "size",
-            "vi": "kích cỡ",
-            "plural": "die Größen"
+            "de": "klein",
+            "type": "adjective",
+            "en": "small",
+            "vi": "nhỏ"
           },
           {
-            "de": "groß",
-            "type": "adjective",
-            "en": "big; large",
-            "vi": "to; lớn"
+            "de": "leider",
+            "type": "adverb",
+            "en": "unfortunately",
+            "vi": "tiếc là"
           }
         ],
         "analysis": {
-          "de": "Der Komparativ vergleicht: leiser, größer, später. Etwas kann die Stärke einer Bitte abschwächen.",
-          "en": "The comparative makes a comparison: leiser, größer, später. Etwas can soften the degree of a request.",
-          "vi": "So sánh hơn như leiser, größer, später diễn đạt nhỏ hơn, lớn hơn, muộn hơn. etwas trong lời nhờ có thể mang nghĩa một chút."
+          "pattern": "zu + Adjektiv",
+          "de": "Zu steigert hier den Grad: zu klein; etwas schwächt ihn ab. Klein ist kein Komparativ.",
+          "en": "Zu marks excess degree in zu klein; etwas softens it. Klein is not a comparative.",
+          "vi": "zu đánh dấu mức quá: zu klein; etwas làm nhẹ mức độ. klein không phải dạng so sánh hơn."
         },
         "source": "editorial"
       },
       {
         "simple": "Ich warte schon lange.",
         "simpleVi": "Tôi đợi lâu rồi.",
-        "tactful": "Ich warte seit zwanzig Minuten. Können Sie mir sagen, wann ich ungefähr dran bin?",
-        "vi": "Tôi đợi hai mươi phút rồi. Anh/chị cho biết khoảng khi nào đến lượt tôi không?",
-        "en": "I have been waiting for twenty minutes. Could you tell me roughly when it will be my turn?",
+        "tactful": "Könnten Sie mir bitte sagen, wie lange ich noch warten muss?",
+        "vi": "Anh/chị cho tôi biết tôi còn phải đợi bao lâu được không?",
+        "en": "Could you tell me how much longer I need to wait, please?",
         "simpleEn": "I have been waiting a long time.",
         "vocabulary": [
           {
@@ -5354,83 +5489,85 @@ const conversationGroups = [
             "vi": "chờ"
           },
           {
-            "de": "ungefähr",
-            "type": "adverb",
-            "en": "approximately",
-            "vi": "khoảng chừng"
+            "de": "wie lange",
+            "type": "phrase",
+            "en": "how long",
+            "vi": "bao lâu"
           }
         ],
         "analysis": {
-          "de": "In der indirekten Frage steht das konjugierte Verb am Ende des Nebensatzes.",
-          "en": "In an indirect question, the conjugated verb comes at the end of the subordinate clause.",
-          "vi": "Câu hỏi gián tiếp đưa phần cần hỏi vào mệnh đề phụ; động từ chia của phần này đứng cuối. Không đảo động từ lên đầu như câu hỏi độc lập."
+          "pattern": "Indirekte Frage + Verb am Ende",
+          "de": "Das Fragewort oder ob leitet den Nebensatz ein; dessen konjugiertes Verb steht am Ende.",
+          "en": "The question word or ob introduces the subordinate clause, whose conjugated verb comes last.",
+          "vi": "Từ để hỏi hoặc ob mở đầu mệnh đề phụ; động từ chia của mệnh đề đó đứng cuối."
         },
         "source": "editorial"
       },
       {
         "simple": "Leiser!",
         "simpleVi": "Nhỏ tiếng thôi!",
-        "tactful": "Die Musik ist bei mir deutlich zu hören. Könnten Sie sie bitte etwas leiser stellen?",
-        "vi": "Tôi nghe rất rõ tiếng nhạc bên nhà mình. Anh/chị giảm âm lượng một chút được không?",
-        "en": "I can hear the music clearly in my apartment. Could you turn it down a little, please?",
+        "tactful": "Könnten Sie die Lautstärke bitte etwas reduzieren?",
+        "vi": "Anh/chị giảm âm lượng một chút giúp tôi được không?",
+        "en": "Could you lower the volume a little, please?",
         "simpleEn": "Quieter!",
         "vocabulary": [
           {
-            "de": "deutlich",
-            "type": "adjective",
-            "en": "clear; clearly perceptible",
-            "vi": "rõ; nghe thấy rõ"
+            "de": "die Lautstärke",
+            "type": "noun",
+            "en": "volume",
+            "vi": "âm lượng",
+            "plural": "die Lautstärken"
           },
           {
-            "de": "leise",
-            "type": "adjective",
-            "en": "quiet; low in volume",
-            "vi": "nhỏ tiếng; yên lặng"
+            "de": "reduzieren",
+            "type": "verb",
+            "en": "to reduce",
+            "vi": "giảm"
           }
         ],
         "analysis": {
-          "de": "Der Komparativ vergleicht: leiser, größer, später. Etwas kann die Stärke einer Bitte abschwächen.",
-          "en": "The comparative makes a comparison: leiser, größer, später. Etwas can soften the degree of a request.",
-          "vi": "So sánh hơn như leiser, größer, später diễn đạt nhỏ hơn, lớn hơn, muộn hơn. etwas trong lời nhờ có thể mang nghĩa một chút."
+          "pattern": "könnte/könntest/könnten + Infinitiv",
+          "de": "Konjunktiv II von können; der weitere Infinitiv steht am Ende.",
+          "en": "Subjunctive II of können; the other infinitive comes at the end.",
+          "vi": "Konjunktiv II của können; động từ nguyên mẫu còn lại đứng cuối câu."
         },
         "source": "editorial"
       },
       {
         "simple": "Räumen Sie das weg.",
         "simpleVi": "Dọn cái đó đi.",
-        "tactful": "Könnten Sie bitte den Durchgang frei machen? Ich komme mit dem Kinderwagen nicht durch.",
-        "vi": "Anh/chị dọn lối đi giúp được không? Tôi không đưa xe đẩy em bé qua được.",
-        "en": "Could you clear the passage, please? I cannot get through with the stroller.",
+        "tactful": "Könnten Sie das bitte wegräumen?",
+        "vi": "Anh/chị có thể dọn món đó đi giúp tôi không?",
+        "en": "Could you move that away, please?",
         "simpleEn": "Move that away.",
         "vocabulary": [
           {
-            "de": "der Durchgang",
-            "type": "noun",
-            "en": "passage; walkway",
-            "vi": "lối đi",
-            "plural": "die Durchgänge"
+            "de": "wegräumen",
+            "type": "verb",
+            "en": "to clear away",
+            "vi": "dọn đi"
           },
           {
-            "de": "der Kinderwagen",
-            "type": "noun",
-            "en": "stroller; pram",
-            "vi": "xe đẩy em bé",
-            "plural": "die Kinderwagen"
+            "de": "können",
+            "type": "verb",
+            "en": "can; to be able to",
+            "vi": "có thể"
           }
         ],
         "analysis": {
-          "de": "Könnte/könnten ist Konjunktiv II von können. Der andere Infinitiv steht am Satzende.",
-          "en": "Könnte/könnten is the subjunctive II form of können. The other infinitive comes at the end.",
-          "vi": "könnte/könnten là Konjunktiv II của können, thường dùng để hỏi khả năng hoặc nhờ lịch sự; động từ nguyên mẫu còn lại đứng cuối câu."
+          "pattern": "könnte/könntest/könnten + Infinitiv",
+          "de": "Konjunktiv II von können; der weitere Infinitiv steht am Ende.",
+          "en": "Subjunctive II of können; the other infinitive comes at the end.",
+          "vi": "Konjunktiv II của können; động từ nguyên mẫu còn lại đứng cuối câu."
         },
         "source": "editorial"
       },
       {
         "simple": "Ihr Paket ist hier.",
         "simpleVi": "Bưu kiện của anh/chị ở đây.",
-        "tactful": "Ich habe ein Paket für Sie angenommen. Wann möchten Sie es abholen?",
-        "vi": "Tôi đã nhận giúp bưu kiện. Khi nào anh/chị muốn lấy?",
-        "en": "I accepted a parcel for you. When would you like to collect it?",
+        "tactful": "Ich habe Ihr Paket hier für Sie aufbewahrt.",
+        "vi": "Tôi đã giữ bưu kiện của anh/chị ở đây.",
+        "en": "I have kept your parcel here for you.",
         "simpleEn": "Your parcel is here.",
         "vocabulary": [
           {
@@ -5441,54 +5578,55 @@ const conversationGroups = [
             "plural": "die Pakete"
           },
           {
-            "de": "annehmen",
+            "de": "aufbewahren",
             "type": "verb",
-            "en": "to accept; to receive",
-            "vi": "nhận; nhận hộ"
+            "en": "to keep safely; to store",
+            "vi": "giữ; cất giữ"
           }
         ],
         "analysis": {
-          "de": "Das Perfekt besteht hier aus haben/sein und Partizip II. Es beschreibt ein bereits geschehenes Ereignis.",
-          "en": "The perfect consists of haben/sein and a past participle here. It describes something that has already happened.",
-          "vi": "Perfekt dùng haben/sein chia theo chủ ngữ và Partizip II để nói việc đã xảy ra. Partizip II thường đứng cuối mệnh đề chính."
+          "pattern": "haben/sein + Partizip II",
+          "de": "Das Hilfsverb wird konjugiert, das Partizip II steht am Ende des Teilsatzes.",
+          "en": "The auxiliary is conjugated; the past participle comes at the end of the clause.",
+          "vi": "Trợ động từ chia theo chủ ngữ; Partizip II đứng cuối mệnh đề."
         },
         "source": "editorial"
       },
       {
         "simple": "Ich brauche Ruhe.",
         "simpleVi": "Tôi cần yên tĩnh.",
-        "tactful": "Ich arbeite morgen früh. Können wir eine Uhrzeit vereinbaren, ab der es ruhiger wird?",
-        "vi": "Mai tôi làm sớm. Chúng ta thống nhất giờ giảm tiếng ồn được không?",
-        "en": "I work early tomorrow. Can we agree on a time after which it will be quieter?",
+        "tactful": "Ich würde jetzt gerne etwas zur Ruhe kommen.",
+        "vi": "Bây giờ mình muốn được yên tĩnh nghỉ ngơi một chút.",
+        "en": "I would like to have some peace and quiet now.",
         "simpleEn": "I need quiet.",
         "vocabulary": [
           {
-            "de": "die Uhrzeit",
-            "type": "noun",
-            "en": "time of day",
-            "vi": "giờ cụ thể",
-            "plural": "die Uhrzeiten"
+            "de": "zur Ruhe kommen",
+            "type": "phrase",
+            "en": "to settle down; to find quiet",
+            "vi": "nghỉ ngơi; yên tĩnh lại"
           },
           {
-            "de": "vereinbaren",
-            "type": "verb",
-            "en": "to arrange; to agree on",
-            "vi": "thống nhất; hẹn"
+            "de": "gern",
+            "type": "adverb",
+            "en": "gladly; with pleasure",
+            "vi": "sẵn lòng; thích"
           }
         ],
         "analysis": {
-          "de": "Der Relativsatz ergänzt ein Nomen. Die Präposition und die Funktion im Relativsatz bestimmen den Kasus des Relativpronomens.",
-          "en": "The relative clause adds information to a noun. The preposition and role within the relative clause determine the relative pronoun case.",
-          "vi": "Mệnh đề quan hệ bổ sung cho danh từ. Giới từ và vai trò trong mệnh đề quan hệ quyết định cách của đại từ; động từ chia đứng cuối mệnh đề phụ."
+          "pattern": "würde/würden + Infinitiv",
+          "de": "Würde wird konjugiert; der Infinitiv des Vollverbs steht am Ende.",
+          "en": "Würde is conjugated; the lexical verb stays in the infinitive at the end.",
+          "vi": "würde chia theo chủ ngữ; động từ chính giữ nguyên mẫu và đứng cuối."
         },
         "source": "editorial"
       },
       {
         "simple": "Die Heizung geht nicht.",
         "simpleVi": "Máy sưởi không chạy.",
-        "tactful": "Seit gestern funktioniert die Heizung nicht. Wann kann jemand zur Reparatur kommen?",
-        "vi": "Hệ thống sưởi không hoạt động từ hôm qua. Khi nào có người đến sửa được?",
-        "en": "The heating has not worked since yesterday. When can someone come to repair it?",
+        "tactful": "Die Heizung funktioniert leider nicht.",
+        "vi": "Tiếc là hệ thống sưởi không hoạt động.",
+        "en": "Unfortunately, the heating is not working.",
         "simpleEn": "The heating is not working.",
         "vocabulary": [
           {
@@ -5499,83 +5637,85 @@ const conversationGroups = [
             "plural": "die Heizungen"
           },
           {
-            "de": "die Reparatur",
-            "type": "noun",
-            "en": "repair",
-            "vi": "việc sửa chữa",
-            "plural": "die Reparaturen"
+            "de": "funktionieren",
+            "type": "verb",
+            "en": "to work; to function",
+            "vi": "hoạt động"
           }
         ],
         "analysis": {
-          "de": "Seit + Dativ bezeichnet hier den Beginn oder die Dauer eines weiterhin bestehenden Zustands. Im Deutschen steht dafür oft Präsens.",
-          "en": "Seit plus dative indicates the start or duration of an ongoing state. German often uses the present tense for this.",
-          "vi": "seit + Dativ chỉ mốc bắt đầu hoặc khoảng thời gian của trạng thái còn tiếp diễn. Tiếng Đức thường dùng hiện tại, dù tiếng Anh hay dùng thì hoàn thành."
+          "pattern": "Präsens · Aussagesatz",
+          "de": "Das konjugierte Verb steht an zweiter Satzgliedposition; das Vorfeld kann aus mehreren Wörtern bestehen.",
+          "en": "The conjugated verb occupies the second constituent position; the first constituent may contain several words.",
+          "vi": "Động từ chia ở vị trí thành phần thứ hai; thành phần đầu có thể gồm nhiều từ."
         },
         "source": "editorial"
       },
       {
         "simple": "Ich bin nicht da.",
         "simpleVi": "Tôi không ở nhà.",
-        "tactful": "Zu diesem Termin bin ich leider nicht zu Hause. Können wir eine andere Uhrzeit vereinbaren?",
-        "vi": "Tiếc là giờ đó tôi không ở nhà. Chúng ta hẹn giờ khác được không?",
-        "en": "Unfortunately, I will not be home at that time. Can we arrange a different time?",
+        "tactful": "Zu diesem Zeitpunkt bin ich leider nicht da.",
+        "vi": "Tiếc là vào thời điểm đó tôi không có mặt.",
+        "en": "Unfortunately, I will not be there at that time.",
         "simpleEn": "I will not be there.",
         "vocabulary": [
           {
-            "de": "zu Hause",
-            "type": "phrase",
-            "en": "at home",
-            "vi": "ở nhà"
+            "de": "der Zeitpunkt",
+            "type": "noun",
+            "en": "point in time",
+            "vi": "thời điểm",
+            "plural": "die Zeitpunkte"
           },
           {
-            "de": "vereinbaren",
-            "type": "verb",
-            "en": "to arrange; to agree on",
-            "vi": "thống nhất; hẹn"
+            "de": "leider",
+            "type": "adverb",
+            "en": "unfortunately",
+            "vi": "tiếc là"
           }
         ],
         "analysis": {
-          "de": "Im Aussagesatz steht das konjugierte Verb an zweiter Satzgliedposition. Die Wortwahl bestimmt hier vor allem den Ton.",
-          "en": "In a statement, the conjugated verb occupies the second constituent position. Here, word choice mainly shapes the tone.",
-          "vi": "Trong câu trần thuật, động từ chia ở vị trí thành phần thứ hai, không nhất thiết là từ thứ hai. Ở đây sắc thái chủ yếu đến từ cách chọn từ."
+          "pattern": "Präsens · Aussagesatz",
+          "de": "Das konjugierte Verb steht an zweiter Satzgliedposition; das Vorfeld kann aus mehreren Wörtern bestehen.",
+          "en": "The conjugated verb occupies the second constituent position; the first constituent may contain several words.",
+          "vi": "Động từ chia ở vị trí thành phần thứ hai; thành phần đầu có thể gồm nhiều từ."
         },
         "source": "editorial"
       },
       {
         "simple": "Was kostet das?",
         "simpleVi": "Cái đó giá bao nhiêu?",
-        "tactful": "Könnten Sie mir vorab sagen, mit welchen Kosten ich ungefähr rechnen muss?",
-        "vi": "Anh/chị cho biết trước chi phí dự kiến khoảng bao nhiêu được không?",
-        "en": "Could you tell me in advance roughly what costs I should expect?",
+        "tactful": "Könnten Sie mir bitte sagen, was das kostet?",
+        "vi": "Anh/chị cho tôi biết món đó giá bao nhiêu được không?",
+        "en": "Could you tell me how much that costs, please?",
         "simpleEn": "How much does that cost?",
         "vocabulary": [
           {
-            "de": "vorab",
-            "type": "adverb",
-            "en": "in advance",
-            "vi": "trước; trước khi thực hiện"
+            "de": "kosten",
+            "type": "verb",
+            "en": "to cost",
+            "vi": "có giá"
           },
           {
-            "de": "die Kosten",
-            "type": "noun",
-            "en": "costs",
-            "vi": "chi phí",
-            "plural": "chỉ dùng số nhiều trong nghĩa này"
+            "de": "sagen",
+            "type": "verb",
+            "en": "to say; to tell",
+            "vi": "nói; cho biết"
           }
         ],
         "analysis": {
-          "de": "In der indirekten Frage steht das konjugierte Verb am Ende des Nebensatzes.",
-          "en": "In an indirect question, the conjugated verb comes at the end of the subordinate clause.",
-          "vi": "Câu hỏi gián tiếp đưa phần cần hỏi vào mệnh đề phụ; động từ chia của phần này đứng cuối. Không đảo động từ lên đầu như câu hỏi độc lập."
+          "pattern": "Indirekte Frage + Verb am Ende",
+          "de": "Das Fragewort oder ob leitet den Nebensatz ein; dessen konjugiertes Verb steht am Ende.",
+          "en": "The question word or ob introduces the subordinate clause, whose conjugated verb comes last.",
+          "vi": "Từ để hỏi hoặc ob mở đầu mệnh đề phụ; động từ chia của mệnh đề đó đứng cuối."
         },
         "source": "editorial"
       },
       {
         "simple": "Schreiben Sie das auf.",
         "simpleVi": "Viết điều đó ra.",
-        "tactful": "Könnten Sie mir die Vereinbarung bitte noch einmal schriftlich bestätigen?",
-        "vi": "Anh/chị xác nhận lại thỏa thuận bằng văn bản giúp tôi được không?",
-        "en": "Could you confirm the agreement in writing, please?",
+        "tactful": "Könnten Sie das bitte schriftlich festhalten?",
+        "vi": "Anh/chị có thể ghi việc đó lại bằng văn bản giúp tôi không?",
+        "en": "Could you put that in writing, please?",
         "simpleEn": "Write that down.",
         "vocabulary": [
           {
@@ -5585,16 +5725,17 @@ const conversationGroups = [
             "vi": "bằng văn bản"
           },
           {
-            "de": "bestätigen",
+            "de": "festhalten",
             "type": "verb",
-            "en": "to confirm",
-            "vi": "xác nhận"
+            "en": "to record; to put in writing",
+            "vi": "ghi lại"
           }
         ],
         "analysis": {
-          "de": "Könnte/könnten ist Konjunktiv II von können. Der andere Infinitiv steht am Satzende.",
-          "en": "Könnte/könnten is the subjunctive II form of können. The other infinitive comes at the end.",
-          "vi": "könnte/könnten là Konjunktiv II của können, thường dùng để hỏi khả năng hoặc nhờ lịch sự; động từ nguyên mẫu còn lại đứng cuối câu."
+          "pattern": "könnte/könntest/könnten + Infinitiv",
+          "de": "Konjunktiv II von können; der weitere Infinitiv steht am Ende.",
+          "en": "Subjunctive II of können; the other infinitive comes at the end.",
+          "vi": "Konjunktiv II của können; động từ nguyên mẫu còn lại đứng cuối câu."
         },
         "source": "editorial"
       }
