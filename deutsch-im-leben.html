@@ -12,7 +12,7 @@
 .sectionhead .eyebrow{color:#24578a}
 .study-note summary:after{color:#24578a}
 </style>
-<link rel="stylesheet" href="./learning-ui.css?v=ec0494b66a">
+<link rel="stylesheet" href="./learning-ui.css?v=66ac64da6e">
 </head><body>
 <header class="top"><div class="topin"><div class="brand"><span class="mark">D</span> Deutsch im Leben</div><div class="top-actions"><small>Deutsch · English · Tiếng Việt</small><a class="home-link" href="./index.html">Startseite</a></div></div></header>
 <div class="wrap hero"><span class="eyebrow">Deutsch im Leben · A1–C1</span><h1>Deutsch im Leben: Alltag verstehen und Gedanken ausdrücken.</h1><p class="lead"><b>DE:</b> Lerne Wortschatz und Grammatik mit Alltagsthemen und nutze sie, um deine Gedanken aufzuschreiben.<br><b>EN:</b> Learn vocabulary and grammar through everyday themes, then use them to express your ideas in writing.<br><b>VI:</b> Học từ vựng và ngữ pháp qua các chủ đề đời sống, rồi vận dụng để diễn đạt suy nghĩ bằng văn bản.</p><div class="pills"><span class="pill">A1 → C1</span><span class="pill">91 thẻ câu mẫu · 13 chủ đề · bối cảnh 2026</span><span class="pill">Từ vựng trong ngữ cảnh</span><span class="pill">Luyện viết có khung</span></div></div>
@@ -213,6 +213,6 @@ function grammarNotes(text){const q=[],s=text.trim();const add=(en,vi)=>q.push([
 init();loadGermanVoices();if('speechSynthesis'in window)speechSynthesis.onvoiceschanged=loadGermanVoices;$('#speechVoice').onchange=e=>{selectedVoice=e.target.value;updateVoiceStatus()};$('#search').oninput=filter;$('#levelFilter').onchange=filter;$('#reveal').onclick=flip;$('#flashGerman').onclick=flip;$('#flashCard').onkeydown=e=>{if((e.key==='Enter'||e.key===' ')&&e.target===$('#flashCard')){e.preventDefault();flip()}};$('#speak').onclick=()=>list[idx]&&speak(list[idx][2]);$('#nextLevel').onclick=nextLevel;$('#shuffle').onclick=()=>{list.sort(()=>Math.random()-.5);idx=0;showCard()};$('#writeTopic').onchange=write;$('#writeLevel').onchange=write;$('#draft').oninput=e=>$('#wordCount').textContent=e.target.value.trim()?e.target.value.trim().split(/\s+/).length:0;$('#clearDraft').onclick=()=>{$('#draft').value='';$('#wordCount').textContent='0'};document.querySelectorAll('[data-jump]').forEach(b=>b.onclick=()=>jump(b.dataset.jump));
 </script><script src="./conversation-data.js?v=047fc7bb1e"></script>
 <script src="./conversation-ui.js?v=0455e44bb4"></script>
-<script src="./leben-conversations.js?v=10641095a3"></script>
+<script src="./leben-conversations.js?v=46b7313960"></script>
 </body></html>
 

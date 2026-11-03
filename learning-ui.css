@@ -1,6 +1,6 @@
 /* Only the unified Alltagssprache lesson is styled here; original page themes remain intact. */
 #alltagssprache [hidden]{display:none!important}
-#phraseGroups button.primary{background:transparent;color:var(--green);border:1px solid var(--green);border-radius:999px;padding:7px 12px;font:inherit;font-weight:600;cursor:pointer}
+#phraseGroups button.phrase-open-button{background:transparent;color:var(--green);border:1px solid var(--green);border-radius:999px;padding:7px 12px;font:inherit;font-weight:600;cursor:pointer}
 .conversation-library{font:inherit;color:var(--ink)}
 .conversation-library .phrase-comparisons{display:grid;gap:18px;margin:16px 0}
 .conversation-library .phrase-pair{min-width:0;padding:18px;border:1px solid var(--line);border-radius:14px;background:#fff;overflow-wrap:anywhere}
@@ -41,3 +41,16 @@
 .conversation-library .phrase-tone{display:block;margin-bottom:6px;font-size:.75rem}
 .conversation-library .phrase-grammar-pattern{font-weight:650;color:var(--green);border-bottom:1px solid var(--line);padding:8px 0}
 @media(max-width:650px){.conversation-library .phrase-pair{padding:12px}.conversation-library .phrase-comparison th,.conversation-library .phrase-comparison td{padding:10px 9px;font-size:.9rem}.conversation-library .phrase-comparison th{font-size:.88rem}.conversation-library .phrase-comparison th small{font-size:.68rem}}
+
+/* Match overview and open-lesson headings without changing other Leben themes. */
+#alltagssprache{--ink:#244b7e;--green:#2c548f;--muted:#4e6583;color:var(--ink)}
+#alltagssprache h2,#alltagssprache h3,#alltagssprache h4{color:var(--ink)}
+#alltagssprache #phraseGroups .phrase-lesson-title,#alltagssprache #phraseLesson .phrase-lesson-title{font-size:clamp(1.65rem,3vw,2.2rem);line-height:1.25;font-weight:750;letter-spacing:-.02em;margin:12px 0 16px;color:var(--ink);overflow-wrap:anywhere}
+#alltagssprache #phraseGroups button.phrase-open-button,#alltagssprache #phraseGroups button.phrase-open-button:hover,#alltagssprache #phraseGroups button.phrase-open-button:focus-visible{display:inline-flex;align-items:center;justify-content:center;width:fit-content;max-width:100%;padding:7px 13px;border:1px solid #2c548f;border-radius:999px;background:transparent;background-image:none;color:#2c548f;box-shadow:none;font-weight:600;font-size:.95rem;line-height:1.5;text-align:left}
+#alltagssprache #phraseGroups button.phrase-open-button:focus-visible{outline:2px solid #2c548f;outline-offset:3px}
+
+/* A selected tile opens a focused lesson in place of the overview. */
+#alltagssprache.phrase-focus>.sectionhead,#alltagssprache.phrase-focus>#phraseLegacyTools,#alltagssprache.phrase-focus>#phraseGroups{display:none!important}
+#phraseGroups [data-open-group].card,#phraseGroups [data-open-extra].card{cursor:pointer}
+#phraseLesson,#phraseExtra,#phraseGroups{scroll-margin-top:110px}
+#phraseLesson .phrase-lesson-title:focus{outline:none}
