@@ -251,13 +251,42 @@ const conversationGroups = [
             "vi": "có",
             "ipa": "ˈhaːbn̩",
             "say": "haben"
+          },
+          {
+            "de": "besondere",
+            "type": "adjective",
+            "ipa": "bəˈzɔndəʁə",
+            "en": "particular; special",
+            "vi": "đặc biệt; cụ thể",
+            "say": "besondere",
+            "formHelp": {
+              "base": "besonder- (Stamm)",
+              "surface": "besondere",
+              "example": "keine besondere Präferenz",
+              "de": "Besonder- ist der Adjektivstamm. Präferenz ist feminin und steht als Objekt von haben im Akkusativ. Nach keine lautet die Endung hier -e. Besonders wäre dagegen ein anderes Wort, ein Adverb im Sinn von vor allem oder außergewöhnlich.",
+              "en": "Besonder- is the adjective stem. Präferenz is the feminine accusative object of haben. After keine, the adjective takes -e here. Besonders, by contrast, is a different word: an adverb meaning especially or particularly.",
+              "vi": "besonder- là gốc tính từ. Präferenz giống cái, là tân ngữ Akkusativ (cách 4) của haben. Sau keine, tính từ nhận -e. Đừng đổi thành besonders: đó là trạng từ khác, không phải dạng đang dùng ở đây; besonders thường nghĩa là đặc biệt/nhất là."
+            }
+          },
+          {
+            "de": "da",
+            "type": "adverb",
+            "ipa": "daː",
+            "en": "in that regard; there",
+            "vi": "về việc đó; ở đó",
+            "say": "da",
+            "usageHelp": {
+              "de": "Da verweist hier auf den besprochenen Punkt, etwa in dieser Hinsicht, nicht auf einen räumlichen Ort.",
+              "en": "Da refers to the point being discussed here, meaning in that regard, rather than a physical place.",
+              "vi": "da ở câu này trỏ tới việc đang bàn: về việc đó/ở điểm đó, không phải chỉ địa điểm ở kia."
+            }
           }
         ],
         "analysis": {
-          "pattern": "Präsens · Aussagesatz",
-          "de": "Das konjugierte Verb steht an zweiter Satzgliedposition; das Vorfeld kann aus mehreren Wörtern bestehen.",
-          "en": "The conjugated verb occupies the second constituent position; the first constituent may contain several words.",
-          "vi": "Động từ chia ở vị trí thành phần thứ hai; thành phần đầu có thể gồm nhiều từ."
+          "pattern": "keine + Adjektiv auf -e + Akkusativ Feminin",
+          "de": "Präferenz ist feminin und Akkusativobjekt von habe. Nach keine steht besondere mit -e. Besonder- ist der Adjektivstamm; besonders ist dagegen ein Adverb. Da verweist auf das besprochene Thema.",
+          "en": "Präferenz is feminine and the accusative object of habe. After keine, besondere takes -e. Besonder- is the adjective stem; besonders is instead an adverb. Da refers to the topic being discussed.",
+          "vi": "Präferenz giống cái, là tân ngữ Akkusativ (cách 4) của habe. Sau keine, besondere nhận -e. besonder- là gốc tính từ; besonders lại là trạng từ khác. da chỉ việc đang bàn: về việc đó."
         },
         "source": "legacy-adapted",
         "simple": "Das ist mir Wurst.",
@@ -409,6 +438,34 @@ const conversationGroups = [
             "plural": "die Rechnungen",
             "ipa": "diː ˈʁɛçnʊŋ",
             "say": "die Rechnung"
+          },
+          {
+            "de": "heute",
+            "type": "adverb",
+            "ipa": "ˈhɔʏ̯tə",
+            "en": "today",
+            "vi": "hôm nay",
+            "say": "heute",
+            "usageHelp": {
+              "de": "Heute ist eine Zeitangabe für den gegenwärtigen Tag und wird nicht dekliniert.",
+              "en": "Heute is a time expression for the present day and is not declined.",
+              "vi": "heute chỉ thời gian là hôm nay; trạng từ này không chia đuôi."
+            }
+          },
+          {
+            "de": "gern",
+            "type": "adverb",
+            "en": "gladly; with pleasure",
+            "vi": "sẵn lòng; thích",
+            "ipa": "ɡɛʁn",
+            "say": "gern",
+            "formHelp": {
+              "base": "gern",
+              "surface": "gerne",
+              "de": "Gern und gerne sind gleichbedeutende Varianten; -e ist keine Adjektivdeklination.",
+              "en": "Gern and gerne are equivalent variants; -e is not adjective declension.",
+              "vi": "gern và gerne là hai cách dùng tương đương; -e không phải đuôi biến cách tính từ."
+            }
           }
         ],
         "analysis": {
@@ -447,6 +504,14 @@ const conversationGroups = [
               "en": "Wirklich strengthens the statement here, meaning really or genuinely.",
               "vi": "wirklich nhấn mạnh sự việc là thực sự; không có đuôi theo giống hay cách của danh từ."
             }
+          },
+          {
+            "de": "sehr",
+            "type": "adverb",
+            "en": "very; very much",
+            "vi": "rất",
+            "ipa": "zeːɐ̯",
+            "say": "sehr"
           }
         ],
         "analysis": {
@@ -484,6 +549,14 @@ const conversationGroups = [
             "plural": "kein gebräuchlicher Plural in dieser Bedeutung",
             "ipa": "das loːp",
             "say": "das Lob"
+          },
+          {
+            "de": "sehr",
+            "type": "adverb",
+            "en": "very; very much",
+            "vi": "rất",
+            "ipa": "zeːɐ̯",
+            "say": "sehr"
           }
         ],
         "analysis": {
@@ -915,6 +988,19 @@ const conversationGroups = [
             "vi": "cũng",
             "ipa": "aʊ̯x",
             "say": "auch"
+          },
+          {
+            "de": "so",
+            "type": "adverb",
+            "ipa": "zoː",
+            "en": "like this; that way",
+            "vi": "như vậy; theo cách đó",
+            "say": "so",
+            "usageHelp": {
+              "de": "So bedeutet hier auf diese Weise oder in dieser Form; es wird nicht nach einem Nomen dekliniert.",
+              "en": "So means in this way or in this form here; it does not change to agree with a noun.",
+              "vi": "so ở đây là như vậy/theo cách đó; không chia đuôi theo danh từ."
+            }
           }
         ],
         "analysis": {
@@ -1033,6 +1119,14 @@ const conversationGroups = [
               "en": "Wirklich strengthens the statement here, meaning really or genuinely.",
               "vi": "wirklich nhấn mạnh sự việc là thực sự; không có đuôi theo giống hay cách của danh từ."
             }
+          },
+          {
+            "de": "sehr",
+            "type": "adverb",
+            "en": "very; very much",
+            "vi": "rất",
+            "ipa": "zeːɐ̯",
+            "say": "sehr"
           }
         ],
         "analysis": {
@@ -1066,6 +1160,19 @@ const conversationGroups = [
             "vi": "làm",
             "ipa": "ˈmaxn̩",
             "say": "machen"
+          },
+          {
+            "de": "so",
+            "type": "adverb",
+            "ipa": "zoː",
+            "en": "like this; that way",
+            "vi": "như vậy; theo cách đó",
+            "say": "so",
+            "usageHelp": {
+              "de": "So bedeutet hier auf diese Weise oder in dieser Form; es wird nicht nach einem Nomen dekliniert.",
+              "en": "So means in this way or in this form here; it does not change to agree with a noun.",
+              "vi": "so ở đây là như vậy/theo cách đó; không chia đuôi theo danh từ."
+            }
           }
         ],
         "analysis": {
@@ -1179,6 +1286,30 @@ const conversationGroups = [
             "plural": "die Schlüsse",
             "ipa": "deːɐ̯ ʃlʊs",
             "say": "der Schluss"
+          },
+          {
+            "de": "kommen",
+            "type": "verb",
+            "en": "to come; to happen",
+            "vi": "đến; xảy ra",
+            "ipa": "ˈkɔmən",
+            "say": "kommen"
+          },
+          {
+            "de": "anderen",
+            "type": "adjective",
+            "ipa": "ˈandəʁən",
+            "en": "other; different (inflected form)",
+            "vi": "khác, dạng đã chia đuôi",
+            "say": "anderen",
+            "formHelp": {
+              "base": "ander- (Stamm)",
+              "surface": "anderen",
+              "example": "zu einem anderen Schluss",
+              "de": "Zu verlangt Dativ; Schluss ist maskulin. Nach einem hat das Adjektiv hier -en: einem anderen Schluss.",
+              "en": "Zu takes dative; Schluss is masculine. After einem, the adjective has -en here: einem anderen Schluss.",
+              "vi": "zu yêu cầu Dativ (cách 3); Schluss giống đực. Sau einem, tính từ nhận -en: einem anderen Schluss. Không dùng anders thay cho tính từ này."
+            }
           }
         ],
         "analysis": {
@@ -1260,6 +1391,14 @@ const conversationGroups = [
               "en": "Anders means in a different way here and is not declined to andere or anderen.",
               "vi": "anders ở đây nghĩa là theo cách khác. Không đổi nó thành andere/anderen; đó là cách dùng của từ khác, không phải biến cách trạng từ anders."
             }
+          },
+          {
+            "de": "sehen",
+            "type": "verb",
+            "en": "to see",
+            "vi": "nhìn; nhận thấy",
+            "ipa": "ˈzeːən",
+            "say": "sehen"
           }
         ],
         "analysis": {
@@ -1294,6 +1433,19 @@ const conversationGroups = [
             "vi": "hoàn toàn",
             "ipa": "ɡants",
             "say": "ganz"
+          },
+          {
+            "de": "da",
+            "type": "adverb",
+            "ipa": "daː",
+            "en": "in that regard; there",
+            "vi": "về việc đó; ở đó",
+            "say": "da",
+            "usageHelp": {
+              "de": "Da verweist hier auf den besprochenen Punkt, etwa in dieser Hinsicht, nicht auf einen räumlichen Ort.",
+              "en": "Da refers to the point being discussed here, meaning in that regard, rather than a physical place.",
+              "vi": "da ở câu này trỏ tới việc đang bàn: về việc đó/ở điểm đó, không phải chỉ địa điểm ở kia."
+            }
           }
         ],
         "analysis": {
@@ -1335,6 +1487,14 @@ const conversationGroups = [
             "en": "to occur unintentionally (of a mistake)",
             "vi": "xảy ra do sơ suất, thường nói về lỗi",
             "say": "unterlaufen"
+          },
+          {
+            "de": "hier",
+            "type": "adverb",
+            "ipa": "hiːɐ̯",
+            "en": "here; at this point",
+            "vi": "ở đây; ở điểm này",
+            "say": "hier"
           }
         ],
         "analysis": {
@@ -1380,6 +1540,21 @@ const conversationGroups = [
               "de": "Darüber ist da + über und verweist auf das Thema oder den Anlass.",
               "en": "Darüber is da plus über and refers to a topic or cause.",
               "vi": "darüber = da + über, chỉ chủ đề hoặc sự việc đã nhắc đến, ví dụ sprechen über hoặc sich freuen über."
+            }
+          },
+          {
+            "de": "gern",
+            "type": "adverb",
+            "en": "gladly; with pleasure",
+            "vi": "sẵn lòng; thích",
+            "ipa": "ɡɛʁn",
+            "say": "gern",
+            "formHelp": {
+              "base": "gern",
+              "surface": "gerne",
+              "de": "Gern und gerne sind gleichbedeutende Varianten; -e ist keine Adjektivdeklination.",
+              "en": "Gern and gerne are equivalent variants; -e is not adjective declension.",
+              "vi": "gern và gerne là hai cách dùng tương đương; -e không phải đuôi biến cách tính từ."
             }
           }
         ],
@@ -1507,6 +1682,14 @@ const conversationGroups = [
               "en": "Darüber is da plus über and refers to a topic or cause.",
               "vi": "darüber = da + über, chỉ chủ đề hoặc sự việc đã nhắc đến, ví dụ sprechen über hoặc sich freuen über."
             }
+          },
+          {
+            "de": "sehr",
+            "type": "adverb",
+            "en": "very; very much",
+            "vi": "rất",
+            "ipa": "zeːɐ̯",
+            "say": "sehr"
           }
         ],
         "analysis": {
@@ -1544,6 +1727,19 @@ const conversationGroups = [
               "de": "Wirklich verstärkt hier die Aussage im Sinn von tatsächlich oder sehr.",
               "en": "Wirklich strengthens the statement here, meaning really or genuinely.",
               "vi": "wirklich nhấn mạnh sự việc là thực sự; không có đuôi theo giống hay cách của danh từ."
+            }
+          },
+          {
+            "de": "gut",
+            "type": "adjective",
+            "ipa": "ɡuːt",
+            "en": "good; well",
+            "vi": "tốt; khỏe",
+            "say": "gut",
+            "usageHelp": {
+              "de": "Gut wird hier ohne Deklinationsendung beim Verb verwendet. Es steht nicht als attributives Adjektiv vor einem Nomen.",
+              "en": "Gut is used with the verb without a declension ending here, rather than attributively before a noun.",
+              "vi": "gut trong câu này đi với động từ và không nhận đuôi biến cách; nó không đứng trước danh từ để làm tính từ định ngữ."
             }
           }
         ],
@@ -1844,6 +2040,21 @@ const conversationGroups = [
               "en": "Daran is da plus an in teilnehmen an.",
               "vi": "daran = da + an trong teilnehmen an: tham gia vào việc đó."
             }
+          },
+          {
+            "de": "gern",
+            "type": "adverb",
+            "en": "gladly; with pleasure",
+            "vi": "sẵn lòng; thích",
+            "ipa": "ɡɛʁn",
+            "say": "gern",
+            "formHelp": {
+              "base": "gern",
+              "surface": "gerne",
+              "de": "Gern und gerne sind gleichbedeutende Varianten; -e ist keine Adjektivdeklination.",
+              "en": "Gern and gerne are equivalent variants; -e is not adjective declension.",
+              "vi": "gern và gerne là hai cách dùng tương đương; -e không phải đuôi biến cách tính từ."
+            }
           }
         ],
         "analysis": {
@@ -1936,6 +2147,22 @@ const conversationGroups = [
             "vi": "giải thích",
             "ipa": "ɛɐ̯ˈklɛːʁən",
             "say": "erklären"
+          },
+          {
+            "de": "genau",
+            "type": "adjective",
+            "ipa": "ɡəˈnaʊ̯",
+            "en": "precise; exact",
+            "vi": "chính xác; rõ",
+            "say": "genau",
+            "formHelp": {
+              "base": "genau",
+              "surface": "genauer",
+              "example": "genauer erklären",
+              "de": "Genauer ist Komparativ von genau. Es ergänzt erklären adverbial; -er ist eine Vergleichsform, keine Endung für ein Nomen.",
+              "en": "Genauer is the comparative of genau. It modifies erklären adverbially; -er marks comparison, not agreement with a noun.",
+              "vi": "genauer là so sánh hơn của genau: rõ/chính xác hơn. Trong câu nó bổ nghĩa cho erklären; -er không phải đuôi hòa hợp với danh từ."
+            }
           }
         ],
         "analysis": {
@@ -1969,6 +2196,19 @@ const conversationGroups = [
             "vi": "để; cho phép",
             "ipa": "ˈlasn̩",
             "say": "lassen"
+          },
+          {
+            "de": "so",
+            "type": "adverb",
+            "ipa": "zoː",
+            "en": "like this; that way",
+            "vi": "như vậy; theo cách đó",
+            "say": "so",
+            "usageHelp": {
+              "de": "So bedeutet hier auf diese Weise oder in dieser Form; es wird nicht nach einem Nomen dekliniert.",
+              "en": "So means in this way or in this form here; it does not change to agree with a noun.",
+              "vi": "so ở đây là như vậy/theo cách đó; không chia đuôi theo danh từ."
+            }
           }
         ],
         "analysis": {
@@ -2056,9 +2296,9 @@ const conversationGroups = [
             "formHelp": {
               "base": "gern",
               "surface": "gerne",
-              "de": "Gern und gerne sind gleichbedeutende Varianten. Das -e ist hier keine Deklinationsendung.",
-              "en": "Gern and gerne are equivalent variants. The -e is not a declension ending here.",
-              "vi": "gern và gerne là hai cách dùng tương đương. Chữ -e này không phải đuôi biến cách."
+              "de": "Gern und gerne sind gleichbedeutende Varianten; -e ist keine Adjektivdeklination.",
+              "en": "Gern and gerne are equivalent variants; -e is not adjective declension.",
+              "vi": "gern và gerne là hai cách dùng tương đương; -e không phải đuôi biến cách tính từ."
             }
           },
           {
@@ -2099,6 +2339,21 @@ const conversationGroups = [
             "plural": "die Momente",
             "ipa": "deːɐ̯ moˈmɛnt",
             "say": "der Moment"
+          },
+          {
+            "de": "gern",
+            "type": "adverb",
+            "en": "gladly; with pleasure",
+            "vi": "sẵn lòng; thích",
+            "ipa": "ɡɛʁn",
+            "say": "gern",
+            "formHelp": {
+              "base": "gern",
+              "surface": "gerne",
+              "de": "Gern und gerne sind gleichbedeutende Varianten; -e ist keine Adjektivdeklination.",
+              "en": "Gern and gerne are equivalent variants; -e is not adjective declension.",
+              "vi": "gern và gerne là hai cách dùng tương đương; -e không phải đuôi biến cách tính từ."
+            }
           }
         ],
         "analysis": {
@@ -2213,6 +2468,14 @@ const conversationGroups = [
             "en": "not yet",
             "vi": "chưa",
             "say": "noch nicht"
+          },
+          {
+            "de": "näherbringen",
+            "type": "verb",
+            "ipa": "ˈnɛːɐ̯ˌbʁɪŋən",
+            "en": "to bring closer",
+            "vi": "đưa đến gần hơn",
+            "say": "näherbringen"
           }
         ],
         "analysis": {
@@ -2367,13 +2630,29 @@ const conversationGroups = [
             "vi": "có",
             "ipa": "ˈhaːbn̩",
             "say": "haben"
+          },
+          {
+            "de": "besondere",
+            "type": "adjective",
+            "ipa": "bəˈzɔndəʁə",
+            "en": "particular; special",
+            "vi": "đặc biệt; cụ thể",
+            "say": "besondere",
+            "formHelp": {
+              "base": "besonder- (Stamm)",
+              "surface": "besondere",
+              "example": "keine besondere Vorliebe",
+              "de": "Besonder- ist der Adjektivstamm. Vorliebe ist feminin und steht als Objekt von haben im Akkusativ. Nach keine lautet die Endung hier -e. Besonders wäre dagegen ein anderes Wort, ein Adverb im Sinn von vor allem oder außergewöhnlich.",
+              "en": "Besonder- is the adjective stem. Vorliebe is the feminine accusative object of haben. After keine, the adjective takes -e here. Besonders, by contrast, is a different word: an adverb meaning especially or particularly.",
+              "vi": "besonder- là gốc tính từ. Vorliebe giống cái, là tân ngữ Akkusativ (cách 4) của haben. Sau keine, tính từ nhận -e. Đừng đổi thành besonders: đó là trạng từ khác, không phải dạng đang dùng ở đây; besonders thường nghĩa là đặc biệt/nhất là."
+            }
           }
         ],
         "analysis": {
-          "pattern": "Präsens · Aussagesatz",
-          "de": "Das konjugierte Verb steht an zweiter Satzgliedposition; das Vorfeld kann aus mehreren Wörtern bestehen.",
-          "en": "The conjugated verb occupies the second constituent position; the first constituent may contain several words.",
-          "vi": "Động từ chia ở vị trí thành phần thứ hai; thành phần đầu có thể gồm nhiều từ."
+          "pattern": "keine + Adjektiv auf -e + Akkusativ Feminin",
+          "de": "Vorliebe ist feminin und Akkusativobjekt von habe. Nach keine steht besondere mit -e. Besonder- ist der Adjektivstamm; besonders ist dagegen ein Adverb.",
+          "en": "Vorliebe is feminine and the accusative object of habe. After keine, besondere takes -e. Besonder- is the adjective stem; besonders is instead an adverb.",
+          "vi": "Vorliebe giống cái, là tân ngữ Akkusativ (cách 4) của habe. Sau keine, besondere nhận -e. besonder- là gốc tính từ; besonders lại là trạng từ khác."
         },
         "source": "document"
       },
@@ -2407,6 +2686,14 @@ const conversationGroups = [
               "en": "Öfter is the comparative of oft, with an umlaut and -er, not adjective declension.",
               "vi": "öfter là so sánh hơn của oft, có đổi o → ö và thêm -er; đây không phải biến cách tính từ."
             }
+          },
+          {
+            "de": "hören",
+            "type": "verb",
+            "ipa": "ˈhøːʁən",
+            "en": "to hear; to listen",
+            "vi": "nghe",
+            "say": "hören"
           }
         ],
         "analysis": {
@@ -2452,6 +2739,21 @@ const conversationGroups = [
               "de": "Darüber ist da + über und verweist auf das Thema oder den Anlass.",
               "en": "Darüber is da plus über and refers to a topic or cause.",
               "vi": "darüber = da + über, chỉ chủ đề hoặc sự việc đã nhắc đến, ví dụ sprechen über hoặc sich freuen über."
+            }
+          },
+          {
+            "de": "gern",
+            "type": "adverb",
+            "en": "gladly; with pleasure",
+            "vi": "sẵn lòng; thích",
+            "ipa": "ɡɛʁn",
+            "say": "gern",
+            "formHelp": {
+              "base": "gern",
+              "surface": "gerne",
+              "de": "Gern und gerne sind gleichbedeutende Varianten; -e ist keine Adjektivdeklination.",
+              "en": "Gern and gerne are equivalent variants; -e is not adjective declension.",
+              "vi": "gern và gerne là hai cách dùng tương đương; -e không phải đuôi biến cách tính từ."
             }
           }
         ],
@@ -2576,6 +2878,19 @@ const conversationGroups = [
               "de": "Leider kommentiert die gesamte Aussage als bedauerlich, nicht die Eigenschaft eines Nomens.",
               "en": "Leider comments on the whole statement as regrettable, rather than describing a noun.",
               "vi": "leider bình luận cả sự việc là đáng tiếc, không nêu đặc điểm của một danh từ nên không chia đuôi tính từ."
+            }
+          },
+          {
+            "de": "heute",
+            "type": "adverb",
+            "ipa": "ˈhɔʏ̯tə",
+            "en": "today",
+            "vi": "hôm nay",
+            "say": "heute",
+            "usageHelp": {
+              "de": "Heute ist eine Zeitangabe für den gegenwärtigen Tag und wird nicht dekliniert.",
+              "en": "Heute is a time expression for the present day and is not declined.",
+              "vi": "heute chỉ thời gian là hôm nay; trạng từ này không chia đuôi."
             }
           }
         ],
@@ -2836,7 +3151,12 @@ const conversationGroups = [
             "en": "brief; short",
             "vi": "ngắn; trong chốc lát",
             "ipa": "kʊʁts",
-            "say": "kurz"
+            "say": "kurz",
+            "usageHelp": {
+              "de": "Kurz wird hier adverbial zum Verb verwendet und bedeutet für einen kurzen Moment; es steht nicht vor einem Nomen.",
+              "en": "Kurz is used adverbially with the verb here, meaning for a short moment; it is not before a noun.",
+              "vi": "kurz là tính từ được dùng làm trạng ngữ cho động từ ở đây: trong chốc lát. Vì không đứng trước danh từ nên không thêm -e/-en."
+            }
           }
         ],
         "analysis": {
@@ -3212,7 +3532,12 @@ const conversationGroups = [
             "en": "brief; short",
             "vi": "ngắn; trong chốc lát",
             "ipa": "kʊʁts",
-            "say": "kurz"
+            "say": "kurz",
+            "usageHelp": {
+              "de": "Kurz wird hier adverbial zum Verb verwendet und bedeutet für einen kurzen Moment; es steht nicht vor einem Nomen.",
+              "en": "Kurz is used adverbially with the verb here, meaning for a short moment; it is not before a noun.",
+              "vi": "kurz là tính từ được dùng làm trạng ngữ cho động từ ở đây: trong chốc lát. Vì không đứng trước danh từ nên không thêm -e/-en."
+            }
           },
           {
             "de": "dabei",
@@ -3302,6 +3627,40 @@ const conversationGroups = [
               "en": "Leider comments on the whole statement as regrettable, rather than describing a noun.",
               "vi": "leider bình luận cả sự việc là đáng tiếc, không nêu đặc điểm của một danh từ nên không chia đuôi tính từ."
             }
+          },
+          {
+            "de": "so",
+            "type": "adverb",
+            "ipa": "zoː",
+            "en": "like this; that way",
+            "vi": "như vậy; theo cách đó",
+            "say": "so",
+            "usageHelp": {
+              "de": "So bedeutet hier auf diese Weise oder in dieser Form; es wird nicht nach einem Nomen dekliniert.",
+              "en": "So means in this way or in this form here; it does not change to agree with a noun.",
+              "vi": "so ở đây là như vậy/theo cách đó; không chia đuôi theo danh từ."
+            }
+          },
+          {
+            "de": "gut",
+            "type": "adjective",
+            "ipa": "ɡuːt",
+            "en": "good; well",
+            "vi": "tốt; khỏe",
+            "say": "gut",
+            "usageHelp": {
+              "de": "Gut wird hier ohne Deklinationsendung beim Verb verwendet. Es steht nicht als attributives Adjektiv vor einem Nomen.",
+              "en": "Gut is used with the verb without a declension ending here, rather than attributively before a noun.",
+              "vi": "gut trong câu này đi với động từ và không nhận đuôi biến cách; nó không đứng trước danh từ để làm tính từ định ngữ."
+            }
+          },
+          {
+            "de": "im Moment",
+            "type": "phrase",
+            "en": "at the moment",
+            "vi": "hiện tại",
+            "ipa": "ɪm moˈmɛnt",
+            "say": "im Moment"
           }
         ],
         "analysis": {
@@ -3369,7 +3728,15 @@ const conversationGroups = [
             "vi": "phần trình bày",
             "plural": "die Ausführungen",
             "ipa": "diː ˈaʊ̯sˌfyːʁʊŋ",
-            "say": "die Ausführung"
+            "say": "die Ausführung",
+            "formHelp": {
+              "base": "die Ausführung",
+              "surface": "Ausführungen",
+              "example": "am Ende meiner Ausführungen",
+              "de": "Ausführungen ist der Plural mit -en. Meiner Ausführungen ist hier ein Genitivattribut zu Ende; das -en bildet den Nomenplural.",
+              "en": "Ausführungen is the plural with -en. Meiner Ausführungen is a genitive modifier of Ende here; -en forms the noun plural.",
+              "vi": "Ausführungen là số nhiều của Ausführung, thêm -en. Meiner Ausführungen ở Genitiv bổ nghĩa cho Ende; -en ở danh từ này là đuôi số nhiều."
+            }
           },
           {
             "de": "damit",
@@ -3383,13 +3750,22 @@ const conversationGroups = [
               "en": "Damit is da plus mit here, replacing a matter following mit; it is not the purpose conjunction in these examples.",
               "vi": "damit ở các câu này là da + mit, thay cho mit + việc đó; không phải liên từ để chỉ mục đích là để."
             }
+          },
+          {
+            "de": "das Ende",
+            "type": "noun",
+            "ipa": "das ˈʔɛndə",
+            "en": "end; conclusion",
+            "vi": "phần kết; kết thúc",
+            "say": "das Ende",
+            "plural": "die Enden"
           }
         ],
         "analysis": {
           "pattern": "haben/sein + Partizip II",
-          "de": "Das Hilfsverb wird konjugiert, das Partizip II steht am Ende des Teilsatzes.",
-          "en": "The auxiliary is conjugated; the past participle comes at the end of the clause.",
-          "vi": "Trợ động từ chia theo chủ ngữ; Partizip II đứng cuối mệnh đề."
+          "de": "Das Hilfsverb wird konjugiert, das Partizip II steht am Ende des Teilsatzes. Am ist an + dem im Dativ; meiner Ausführungen ist ein Genitivattribut zu Ende.",
+          "en": "The auxiliary is conjugated; the past participle comes at the end of the clause. Am is an plus dem in dative; meiner Ausführungen is a genitive modifier of Ende.",
+          "vi": "Trợ động từ chia theo chủ ngữ; Partizip II đứng cuối mệnh đề. am = an + dem ở Dativ; meiner Ausführungen ở Genitiv, bổ nghĩa cho Ende: phần kết của nội dung tôi trình bày."
         },
         "source": "document"
       },
@@ -3532,6 +3908,14 @@ const conversationGroups = [
             "vi": "đúng",
             "ipa": "ˈʁɪçtɪç",
             "say": "richtig"
+          },
+          {
+            "de": "verstehen",
+            "type": "verb",
+            "en": "to understand",
+            "vi": "hiểu",
+            "ipa": "fɛɐ̯ˈʃteːən",
+            "say": "verstehen"
           }
         ],
         "analysis": {
@@ -3586,6 +3970,19 @@ const conversationGroups = [
             "en": "something; some",
             "vi": "điều gì đó; một ít",
             "say": "etwas"
+          },
+          {
+            "de": "kurz",
+            "type": "adjective",
+            "en": "brief; short",
+            "vi": "ngắn; trong chốc lát",
+            "ipa": "kʊʁts",
+            "say": "kurz",
+            "usageHelp": {
+              "de": "Kurz wird hier adverbial zum Verb verwendet und bedeutet für einen kurzen Moment; es steht nicht vor einem Nomen.",
+              "en": "Kurz is used adverbially with the verb here, meaning for a short moment; it is not before a noun.",
+              "vi": "kurz là tính từ được dùng làm trạng ngữ cho động từ ở đây: trong chốc lát. Vì không đứng trước danh từ nên không thêm -e/-en."
+            }
           }
         ],
         "analysis": {
@@ -3619,6 +4016,19 @@ const conversationGroups = [
             "vi": "được phép",
             "ipa": "ˈdʏʁfn̩",
             "say": "dürfen"
+          },
+          {
+            "de": "kurz",
+            "type": "adjective",
+            "en": "brief; short",
+            "vi": "ngắn; trong chốc lát",
+            "ipa": "kʊʁts",
+            "say": "kurz",
+            "usageHelp": {
+              "de": "Kurz wird hier adverbial zum Verb verwendet und bedeutet für einen kurzen Moment; es steht nicht vor einem Nomen.",
+              "en": "Kurz is used adverbially with the verb here, meaning for a short moment; it is not before a noun.",
+              "vi": "kurz là tính từ được dùng làm trạng ngữ cho động từ ở đây: trong chốc lát. Vì không đứng trước danh từ nên không thêm -e/-en."
+            }
           }
         ],
         "analysis": {
@@ -3665,6 +4075,21 @@ const conversationGroups = [
               "de": "Noch kann eine Fortdauer oder eine zusätzliche Menge ausdrücken; die Bedeutung hängt von der Verbindung ab.",
               "en": "Noch can indicate continuation or an additional amount, depending on the expression.",
               "vi": "noch có thể là vẫn/còn hoặc thêm một ít; cần đọc theo cả cụm, như noch nicht = chưa."
+            }
+          },
+          {
+            "de": "gern",
+            "type": "adverb",
+            "en": "gladly; with pleasure",
+            "vi": "sẵn lòng; thích",
+            "ipa": "ɡɛʁn",
+            "say": "gern",
+            "formHelp": {
+              "base": "gern",
+              "surface": "gerne",
+              "de": "Gern und gerne sind gleichbedeutende Varianten; -e ist keine Adjektivdeklination.",
+              "en": "Gern and gerne are equivalent variants; -e is not adjective declension.",
+              "vi": "gern và gerne là hai cách dùng tương đương; -e không phải đuôi biến cách tính từ."
             }
           }
         ],
@@ -3984,13 +4409,29 @@ const conversationGroups = [
             "plural": "die Treffen",
             "ipa": "das ˈtʁɛfn̩",
             "say": "das Treffen"
+          },
+          {
+            "de": "nächstes",
+            "type": "adjective",
+            "ipa": "ˈnɛːçstəs",
+            "en": "next (inflected form)",
+            "vi": "tiếp theo, dạng đã chia đuôi",
+            "say": "nächstes",
+            "formHelp": {
+              "base": "nächst- (Stamm)",
+              "surface": "nächstes",
+              "example": "unser nächstes Treffen",
+              "de": "Treffen ist Neutrum und steht hier nach auf im Akkusativ. Unser hat dort keine Kasusendung; nächstes übernimmt die Endung -es.",
+              "en": "Treffen is neuter accusative after auf here. Unser has no case ending there, so nächstes carries the ending -es.",
+              "vi": "Treffen giống trung, ở Akkusativ sau auf trong sich freuen auf. Unser ở đây không mang đuôi chỉ cách; tính từ nächstes nhận -es: unser nächstes Treffen."
+            }
           }
         ],
         "analysis": {
           "pattern": "Reflexivpronomen",
-          "de": "Das Reflexivpronomen richtet sich nach dem Subjekt und der Verbverbindung, zum Beispiel ich → mich.",
-          "en": "The reflexive pronoun depends on the subject and verb expression, for example ich → mich.",
-          "vi": "Đại từ phản thân phụ thuộc chủ ngữ và cấu trúc động từ, ví dụ ich → mich."
+          "de": "Das Reflexivpronomen richtet sich nach dem Subjekt und der Verbverbindung, zum Beispiel ich → mich. Nach auf steht hier Akkusativ: unser nächstes Treffen. Treffen ist Neutrum, deshalb endet nächstes auf -es.",
+          "en": "The reflexive pronoun depends on the subject and verb expression, for example ich → mich. Auf takes accusative here: unser nächstes Treffen. Treffen is neuter, hence the -es ending on nächstes.",
+          "vi": "Đại từ phản thân phụ thuộc chủ ngữ và cấu trúc động từ, ví dụ ich → mich. auf ở đây dùng Akkusativ: unser nächstes Treffen. Treffen giống trung nên nächstes có đuôi -es."
         },
         "source": "legacy-adapted",
         "simple": "Bis dann!",
@@ -4039,6 +4480,15 @@ const conversationGroups = [
               "en": "Gut is nominalized here. After alles, the fixed form is capitalized Gute with -e; after etwas, it is etwas Gutes instead.",
               "vi": "gut được danh từ hóa ở đây. Sau alles dùng Gute, viết hoa và có -e; nhưng sau etwas lại là etwas Gutes với -es. Không gắn một đuôi giống nhau cho mọi trường hợp."
             }
+          },
+          {
+            "de": "die Freude",
+            "type": "noun",
+            "en": "joy",
+            "vi": "niềm vui",
+            "plural": "die Freuden",
+            "ipa": "diː ˈfʁɔʏ̯də",
+            "say": "die Freude"
           }
         ],
         "analysis": {
@@ -4140,6 +4590,22 @@ const conversationGroups = [
             "plural": "kein gebräuchlicher Plural in dieser Bedeutung",
             "ipa": "deːɐ̯ apeˈtiːt",
             "say": "der Appetit"
+          },
+          {
+            "de": "gut",
+            "type": "adjective",
+            "ipa": "ɡuːt",
+            "en": "good; well",
+            "vi": "tốt; khỏe",
+            "say": "gut",
+            "formHelp": {
+              "base": "gut",
+              "surface": "guten",
+              "example": "einen guten Appetit",
+              "de": "Appetit ist maskulin und steht als Wunschobjekt im Akkusativ. Nach einen erhält gut die Endung -en.",
+              "en": "Appetit is masculine accusative as the object of the wish. After einen, gut takes -en.",
+              "vi": "Appetit giống đực, ở Akkusativ (cách 4) làm tân ngữ của lời chúc. Sau einen, gut nhận -en: einen guten Appetit."
+            }
           }
         ],
         "analysis": {
@@ -4297,6 +4763,15 @@ const conversationGroups = [
               "en": "Nacht is feminine accusative after wünschen. After eine, erholsam becomes erholsame.",
               "vi": "Nacht giống cái và ở Akkusativ (cách 4) sau wünschen. Sau eine, erholsam đổi thành erholsame, thêm -e."
             }
+          },
+          {
+            "de": "die Nacht",
+            "type": "noun",
+            "ipa": "diː naxt",
+            "en": "night",
+            "vi": "đêm",
+            "say": "die Nacht",
+            "plural": "die Nächte"
           }
         ],
         "analysis": {
@@ -4400,6 +4875,19 @@ const conversationGroups = [
             "vi": "đến; xảy ra",
             "ipa": "ˈkɔmən",
             "say": "kommen"
+          },
+          {
+            "de": "gut",
+            "type": "adjective",
+            "ipa": "ɡuːt",
+            "en": "good; well",
+            "vi": "tốt; khỏe",
+            "say": "gut",
+            "usageHelp": {
+              "de": "Gut wird hier ohne Deklinationsendung beim Verb verwendet. Es steht nicht als attributives Adjektiv vor einem Nomen.",
+              "en": "Gut is used with the verb without a declension ending here, rather than attributively before a noun.",
+              "vi": "gut trong câu này đi với động từ và không nhận đuôi biến cách; nó không đứng trước danh từ để làm tính từ định ngữ."
+            }
           }
         ],
         "analysis": {
@@ -4616,6 +5104,19 @@ const conversationGroups = [
             "vi": "là; ở; thì",
             "ipa": "zaɪ̯n",
             "say": "sein"
+          },
+          {
+            "de": "so",
+            "type": "adverb",
+            "ipa": "zoː",
+            "en": "like this; that way",
+            "vi": "như vậy; theo cách đó",
+            "say": "so",
+            "usageHelp": {
+              "de": "So bedeutet hier auf diese Weise oder in dieser Form; es wird nicht nach einem Nomen dekliniert.",
+              "en": "So means in this way or in this form here; it does not change to agree with a noun.",
+              "vi": "so ở đây là như vậy/theo cách đó; không chia đuôi theo danh từ."
+            }
           }
         ],
         "analysis": {
@@ -4747,25 +5248,33 @@ const conversationGroups = [
             "say": "überzeugt"
           },
           {
-            "de": "noch",
-            "type": "adverb",
-            "en": "still; yet",
-            "vi": "vẫn; còn",
-            "ipa": "nɔx",
-            "say": "noch",
-            "usageHelp": {
-              "de": "Noch kann eine Fortdauer oder eine zusätzliche Menge ausdrücken; die Bedeutung hängt von der Verbindung ab.",
-              "en": "Noch can indicate continuation or an additional amount, depending on the expression.",
-              "vi": "noch có thể là vẫn/còn hoặc thêm một ít; cần đọc theo cả cụm, như noch nicht = chưa."
-            }
-          },
-          {
             "de": "noch nicht",
             "type": "phrase",
             "ipa": "nɔx nɪçt",
             "en": "not yet",
             "vi": "chưa",
             "say": "noch nicht"
+          },
+          {
+            "de": "ganz",
+            "type": "adverb",
+            "en": "completely; entirely",
+            "vi": "hoàn toàn",
+            "ipa": "ɡants",
+            "say": "ganz"
+          },
+          {
+            "de": "da",
+            "type": "adverb",
+            "ipa": "daː",
+            "en": "in that regard; there",
+            "vi": "về việc đó; ở đó",
+            "say": "da",
+            "usageHelp": {
+              "de": "Da verweist hier auf den besprochenen Punkt, etwa in dieser Hinsicht, nicht auf einen räumlichen Ort.",
+              "en": "Da refers to the point being discussed here, meaning in that regard, rather than a physical place.",
+              "vi": "da ở câu này trỏ tới việc đang bàn: về việc đó/ở điểm đó, không phải chỉ địa điểm ở kia."
+            }
           }
         ],
         "analysis": {
@@ -4845,6 +5354,19 @@ const conversationGroups = [
               "en": "Wirklich strengthens the statement here, meaning really or genuinely.",
               "vi": "wirklich nhấn mạnh sự việc là thực sự; không có đuôi theo giống hay cách của danh từ."
             }
+          },
+          {
+            "de": "gut",
+            "type": "adjective",
+            "ipa": "ɡuːt",
+            "en": "good; well",
+            "vi": "tốt; khỏe",
+            "say": "gut",
+            "usageHelp": {
+              "de": "Gut wird hier ohne Deklinationsendung beim Verb verwendet. Es steht nicht als attributives Adjektiv vor einem Nomen.",
+              "en": "Gut is used with the verb without a declension ending here, rather than attributively before a noun.",
+              "vi": "gut trong câu này đi với động từ và không nhận đuôi biến cách; nó không đứng trước danh từ để làm tính từ định ngữ."
+            }
           }
         ],
         "analysis": {
@@ -4879,6 +5401,19 @@ const conversationGroups = [
             "vi": "cảm ơn",
             "ipa": "ˈdaŋkn̩",
             "say": "danken"
+          },
+          {
+            "de": "so",
+            "type": "adverb",
+            "ipa": "zoː",
+            "en": "like this; that way",
+            "vi": "như vậy; theo cách đó",
+            "say": "so",
+            "usageHelp": {
+              "de": "So bedeutet hier auf diese Weise oder in dieser Form; es wird nicht nach einem Nomen dekliniert.",
+              "en": "So means in this way or in this form here; it does not change to agree with a noun.",
+              "vi": "so ở đây là như vậy/theo cách đó; không chia đuôi theo danh từ."
+            }
           }
         ],
         "analysis": {
@@ -4923,6 +5458,19 @@ const conversationGroups = [
             "vi": "muốn; mong muốn một cách nhẹ nhàng",
             "ipa": "ˈmœçtn̩",
             "say": "möchten"
+          },
+          {
+            "de": "so",
+            "type": "adverb",
+            "ipa": "zoː",
+            "en": "like this; that way",
+            "vi": "như vậy; theo cách đó",
+            "say": "so",
+            "usageHelp": {
+              "de": "So bedeutet hier auf diese Weise oder in dieser Form; es wird nicht nach einem Nomen dekliniert.",
+              "en": "So means in this way or in this form here; it does not change to agree with a noun.",
+              "vi": "so ở đây là như vậy/theo cách đó; không chia đuôi theo danh từ."
+            }
           }
         ],
         "analysis": {
@@ -4956,6 +5504,14 @@ const conversationGroups = [
             "vi": "là; ở; thì",
             "ipa": "zaɪ̯n",
             "say": "sein"
+          },
+          {
+            "de": "sehr",
+            "type": "adverb",
+            "en": "very; very much",
+            "vi": "rất",
+            "ipa": "zeːɐ̯",
+            "say": "sehr"
           }
         ],
         "analysis": {
@@ -4989,6 +5545,14 @@ const conversationGroups = [
             "vi": "hiện tại",
             "ipa": "ɪm moˈmɛnt",
             "say": "im Moment"
+          },
+          {
+            "de": "sehr",
+            "type": "adverb",
+            "en": "very; very much",
+            "vi": "rất",
+            "ipa": "zeːɐ̯",
+            "say": "sehr"
           }
         ],
         "analysis": {
@@ -5023,6 +5587,22 @@ const conversationGroups = [
             "vi": "hạn hẹp; eo hẹp",
             "ipa": "knap",
             "say": "knapp"
+          },
+          {
+            "de": "sehr",
+            "type": "adverb",
+            "en": "very; very much",
+            "vi": "rất",
+            "ipa": "zeːɐ̯",
+            "say": "sehr"
+          },
+          {
+            "de": "im Moment",
+            "type": "phrase",
+            "en": "at the moment",
+            "vi": "hiện tại",
+            "ipa": "ɪm moˈmɛnt",
+            "say": "im Moment"
           }
         ],
         "analysis": {
@@ -5145,6 +5725,15 @@ const conversationGroups = [
             "vi": "nhận; được cấp",
             "ipa": "bəˈkɔmən",
             "say": "bekommen"
+          },
+          {
+            "de": "das Wasser",
+            "type": "noun",
+            "en": "water",
+            "vi": "nước",
+            "plural": "kein gebräuchlicher Plural in dieser Bedeutung",
+            "ipa": "das ˈvasɐ",
+            "say": "das Wasser"
           }
         ],
         "analysis": {
@@ -5186,9 +5775,9 @@ const conversationGroups = [
             "formHelp": {
               "base": "gern",
               "surface": "gerne",
-              "de": "Gern und gerne sind gleichbedeutende Varianten. Das -e ist hier keine Deklinationsendung.",
-              "en": "Gern and gerne are equivalent variants. The -e is not a declension ending here.",
-              "vi": "gern và gerne là hai cách dùng tương đương. Chữ -e này không phải đuôi biến cách."
+              "de": "Gern und gerne sind gleichbedeutende Varianten; -e ist keine Adjektivdeklination.",
+              "en": "Gern and gerne are equivalent variants; -e is not adjective declension.",
+              "vi": "gern và gerne là hai cách dùng tương đương; -e không phải đuôi biến cách tính từ."
             }
           },
           {
@@ -5281,6 +5870,21 @@ const conversationGroups = [
             "vi": "muốn có; muốn gọi món",
             "ipa": "ˈhɛtə ɡɛʁn",
             "say": "hätte gern"
+          },
+          {
+            "de": "gern",
+            "type": "adverb",
+            "en": "gladly; with pleasure",
+            "vi": "sẵn lòng; thích",
+            "ipa": "ɡɛʁn",
+            "say": "gern",
+            "formHelp": {
+              "base": "gern",
+              "surface": "gerne",
+              "de": "Gern und gerne sind gleichbedeutende Varianten; -e ist keine Adjektivdeklination.",
+              "en": "Gern and gerne are equivalent variants; -e is not adjective declension.",
+              "vi": "gern và gerne là hai cách dùng tương đương; -e không phải đuôi biến cách tính từ."
+            }
           }
         ],
         "analysis": {
@@ -5350,6 +5954,22 @@ const conversationGroups = [
             "vi": "dùng; uống thuốc",
             "ipa": "ˈaɪ̯nˌneːmən",
             "say": "einnehmen"
+          },
+          {
+            "de": "erklären",
+            "type": "verb",
+            "en": "to explain",
+            "vi": "giải thích",
+            "ipa": "ɛɐ̯ˈklɛːʁən",
+            "say": "erklären"
+          },
+          {
+            "de": "wann und wie",
+            "type": "phrase",
+            "ipa": "van ʊnt viː",
+            "en": "when and how",
+            "vi": "khi nào và như thế nào",
+            "say": "wann und wie"
           }
         ],
         "analysis": {
@@ -5396,6 +6016,21 @@ const conversationGroups = [
               "de": "Darüber ist da + über und verweist auf das Thema oder den Anlass.",
               "en": "Darüber is da plus über and refers to a topic or cause.",
               "vi": "darüber = da + über, chỉ chủ đề hoặc sự việc đã nhắc đến, ví dụ sprechen über hoặc sich freuen über."
+            }
+          },
+          {
+            "de": "gern",
+            "type": "adverb",
+            "en": "gladly; with pleasure",
+            "vi": "sẵn lòng; thích",
+            "ipa": "ɡɛʁn",
+            "say": "gern",
+            "formHelp": {
+              "base": "gern",
+              "surface": "gerne",
+              "de": "Gern und gerne sind gleichbedeutende Varianten; -e ist keine Adjektivdeklination.",
+              "en": "Gern and gerne are equivalent variants; -e is not adjective declension.",
+              "vi": "gern và gerne là hai cách dùng tương đương; -e không phải đuôi biến cách tính từ."
             }
           }
         ],
@@ -5549,6 +6184,14 @@ const conversationGroups = [
             "vi": "được phép",
             "ipa": "ˈdʏʁfn̩",
             "say": "dürfen"
+          },
+          {
+            "de": "heißen",
+            "type": "verb",
+            "ipa": "ˈhaɪ̯sn̩",
+            "en": "to be called",
+            "vi": "có tên là",
+            "say": "heißen"
           }
         ],
         "analysis": {
@@ -5638,6 +6281,21 @@ const conversationGroups = [
               "de": "Neues ist ein substantiviertes Adjektiv nach etwas. Es wird großgeschrieben und hat die starke Endung -es im Neutrum.",
               "en": "Neues is a nominalized adjective after etwas. It is capitalized and takes the strong neuter ending -es.",
               "vi": "Neues là tính từ được danh từ hóa sau etwas: một điều gì đó mới. Vì vậy viết hoa N và nhận đuôi mạnh -es ở giống trung."
+            }
+          },
+          {
+            "de": "gern",
+            "type": "adverb",
+            "en": "gladly; with pleasure",
+            "vi": "sẵn lòng; thích",
+            "ipa": "ɡɛʁn",
+            "say": "gern",
+            "formHelp": {
+              "base": "gern",
+              "surface": "gerne",
+              "de": "Gern und gerne sind gleichbedeutende Varianten; -e ist keine Adjektivdeklination.",
+              "en": "Gern and gerne are equivalent variants; -e is not adjective declension.",
+              "vi": "gern và gerne là hai cách dùng tương đương; -e không phải đuôi biến cách tính từ."
             }
           }
         ],
@@ -5830,6 +6488,19 @@ const conversationGroups = [
             "vi": "đi; diễn ra",
             "ipa": "ˈɡeːən",
             "say": "gehen"
+          },
+          {
+            "de": "kurz",
+            "type": "adjective",
+            "en": "brief; short",
+            "vi": "ngắn; trong chốc lát",
+            "ipa": "kʊʁts",
+            "say": "kurz",
+            "usageHelp": {
+              "de": "Kurz wird hier adverbial zum Verb verwendet und bedeutet für einen kurzen Moment; es steht nicht vor einem Nomen.",
+              "en": "Kurz is used adverbially with the verb here, meaning for a short moment; it is not before a noun.",
+              "vi": "kurz là tính từ được dùng làm trạng ngữ cho động từ ở đây: trong chốc lát. Vì không đứng trước danh từ nên không thêm -e/-en."
+            }
           }
         ],
         "analysis": {
@@ -5864,6 +6535,15 @@ const conversationGroups = [
             "vi": "khởi hành",
             "ipa": "ˈapˌfaːʁən",
             "say": "abfahren"
+          },
+          {
+            "de": "der Zug",
+            "type": "noun",
+            "ipa": "deːɐ̯ tsuːk",
+            "en": "train",
+            "vi": "tàu hỏa",
+            "say": "der Zug",
+            "plural": "die Züge"
           }
         ],
         "analysis": {
@@ -5902,6 +6582,15 @@ const conversationGroups = [
               "en": "Bereits is a more formal alternative to schon, meaning already.",
               "vi": "bereits có nghĩa là đã/rồi, gần nghĩa schon; không phải dạng có thêm đuôi để hòa hợp với danh từ."
             }
+          },
+          {
+            "de": "der Zug",
+            "type": "noun",
+            "ipa": "deːɐ̯ tsuːk",
+            "en": "train",
+            "vi": "tàu hỏa",
+            "say": "der Zug",
+            "plural": "die Züge"
           }
         ],
         "analysis": {
@@ -5955,6 +6644,19 @@ const conversationGroups = [
             "en": "something; some",
             "vi": "điều gì đó; một ít",
             "say": "etwas"
+          },
+          {
+            "de": "so",
+            "type": "adverb",
+            "ipa": "zoː",
+            "en": "like this; that way",
+            "vi": "như vậy; theo cách đó",
+            "say": "so",
+            "usageHelp": {
+              "de": "So bedeutet hier auf diese Weise oder in dieser Form; es wird nicht nach einem Nomen dekliniert.",
+              "en": "So means in this way or in this form here; it does not change to agree with a noun.",
+              "vi": "so ở đây là như vậy/theo cách đó; không chia đuôi theo danh từ."
+            }
           }
         ],
         "analysis": {
@@ -6092,6 +6794,21 @@ const conversationGroups = [
             "vi": "có thể",
             "ipa": "ˈkœnən",
             "say": "können"
+          },
+          {
+            "de": "gern",
+            "type": "adverb",
+            "en": "gladly; with pleasure",
+            "vi": "sẵn lòng; thích",
+            "ipa": "ɡɛʁn",
+            "say": "gern",
+            "formHelp": {
+              "base": "gern",
+              "surface": "gerne",
+              "de": "Gern und gerne sind gleichbedeutende Varianten; -e ist keine Adjektivdeklination.",
+              "en": "Gern and gerne are equivalent variants; -e is not adjective declension.",
+              "vi": "gern và gerne là hai cách dùng tương đương; -e không phải đuôi biến cách tính từ."
+            }
           }
         ],
         "analysis": {
@@ -6364,6 +7081,19 @@ const conversationGroups = [
             "plural": "die Momente",
             "ipa": "deːɐ̯ moˈmɛnt",
             "say": "der Moment"
+          },
+          {
+            "de": "kurz",
+            "type": "adjective",
+            "en": "brief; short",
+            "vi": "ngắn; trong chốc lát",
+            "ipa": "kʊʁts",
+            "say": "kurz",
+            "usageHelp": {
+              "de": "Kurz wird hier adverbial zum Verb verwendet und bedeutet für einen kurzen Moment; es steht nicht vor einem Nomen.",
+              "en": "Kurz is used adverbially with the verb here, meaning for a short moment; it is not before a noun.",
+              "vi": "kurz là tính từ được dùng làm trạng ngữ cho động từ ở đây: trong chốc lát. Vì không đứng trước danh từ nên không thêm -e/-en."
+            }
           }
         ],
         "analysis": {
@@ -6444,6 +7174,14 @@ const conversationGroups = [
             "vi": "xoay xở làm được; hoàn thành",
             "ipa": "ˈʃafn̩",
             "say": "schaffen"
+          },
+          {
+            "de": "sehr",
+            "type": "adverb",
+            "en": "very; very much",
+            "vi": "rất",
+            "ipa": "zeːɐ̯",
+            "say": "sehr"
           }
         ],
         "analysis": {
@@ -6477,6 +7215,19 @@ const conversationGroups = [
             "vi": "đến; xảy ra",
             "ipa": "ˈkɔmən",
             "say": "kommen"
+          },
+          {
+            "de": "heute",
+            "type": "adverb",
+            "ipa": "ˈhɔʏ̯tə",
+            "en": "today",
+            "vi": "hôm nay",
+            "say": "heute",
+            "usageHelp": {
+              "de": "Heute ist eine Zeitangabe für den gegenwärtigen Tag und wird nicht dekliniert.",
+              "en": "Heute is a time expression for the present day and is not declined.",
+              "vi": "heute chỉ thời gian là hôm nay; trạng từ này không chia đuôi."
+            }
           }
         ],
         "analysis": {
@@ -6611,6 +7362,21 @@ const conversationGroups = [
             "plural": "die Kaffees (Sorten oder Portionen)",
             "ipa": "deːɐ̯ ˈkafe",
             "say": "der Kaffee"
+          },
+          {
+            "de": "gern",
+            "type": "adverb",
+            "en": "gladly; with pleasure",
+            "vi": "sẵn lòng; thích",
+            "ipa": "ɡɛʁn",
+            "say": "gern",
+            "formHelp": {
+              "base": "gern",
+              "surface": "gerne",
+              "de": "Gern und gerne sind gleichbedeutende Varianten; -e ist keine Adjektivdeklination.",
+              "en": "Gern and gerne are equivalent variants; -e is not adjective declension.",
+              "vi": "gern và gerne là hai cách dùng tương đương; -e không phải đuôi biến cách tính từ."
+            }
           }
         ],
         "analysis": {
@@ -6720,6 +7486,19 @@ const conversationGroups = [
             "vi": "xin lỗi",
             "ipa": "zɪç ɛntˈʃʊldɪɡən",
             "say": "sich entschuldigen"
+          },
+          {
+            "de": "da",
+            "type": "adverb",
+            "ipa": "daː",
+            "en": "in that regard; there",
+            "vi": "về việc đó; ở đó",
+            "say": "da",
+            "usageHelp": {
+              "de": "Da verweist hier auf den besprochenen Punkt, etwa in dieser Hinsicht, nicht auf einen räumlichen Ort.",
+              "en": "Da refers to the point being discussed here, meaning in that regard, rather than a physical place.",
+              "vi": "da ở câu này trỏ tới việc đang bàn: về việc đó/ở điểm đó, không phải chỉ địa điểm ở kia."
+            }
           }
         ],
         "analysis": {
@@ -6822,13 +7601,29 @@ const conversationGroups = [
             "vi": "dành cho",
             "ipa": "bəˈʃtɪmt fyːɐ̯",
             "say": "bestimmt für"
+          },
+          {
+            "de": "vorig",
+            "type": "adjective",
+            "ipa": "ˈfoːʁɪç",
+            "en": "previous",
+            "vi": "trước đó",
+            "say": "vorig",
+            "formHelp": {
+              "base": "vorig",
+              "surface": "vorige",
+              "example": "die vorige Nachricht",
+              "de": "Nachricht ist feminin und das Subjekt dieses Teilsatzes. Nach die steht die schwache Adjektivendung -e.",
+              "en": "Nachricht is feminine and is the subject of this clause. After die, the adjective has the weak ending -e.",
+              "vi": "Nachricht giống cái, là chủ ngữ trong mệnh đề này. Sau die, tính từ nhận đuôi yếu -e: die vorige Nachricht. Đây là Nominativ, không phải Akkusativ."
+            }
           }
         ],
         "analysis": {
           "pattern": "Präteritum von sein: war",
-          "de": "War ist die Präteritumform von sein. Für Sie nennt den vorgesehenen Empfänger.",
-          "en": "War is the past-tense form of sein. Für Sie identifies the intended recipient.",
-          "vi": "War là Präteritum của sein. für Sie chỉ người nhận dự kiến."
+          "de": "War ist die Präteritumform von sein. Für Sie nennt den vorgesehenen Empfänger. Die vorige Nachricht ist das Subjekt im Nominativ; nach die endet das Adjektiv auf -e.",
+          "en": "War is the past-tense form of sein. Für Sie identifies the intended recipient. Die vorige Nachricht is the nominative subject; after die, the adjective ends in -e.",
+          "vi": "War là Präteritum của sein. für Sie chỉ người nhận dự kiến. die vorige Nachricht là chủ ngữ Nominativ; sau die, tính từ nhận -e: vorige."
         },
         "source": "editorial"
       },
@@ -6952,9 +7747,9 @@ const conversationGroups = [
             "formHelp": {
               "base": "gern",
               "surface": "gerne",
-              "de": "Gern und gerne sind gleichbedeutende Varianten. Das -e ist hier keine Deklinationsendung.",
-              "en": "Gern and gerne are equivalent variants. The -e is not a declension ending here.",
-              "vi": "gern và gerne là hai cách dùng tương đương. Chữ -e này không phải đuôi biến cách."
+              "de": "Gern und gerne sind gleichbedeutende Varianten; -e ist keine Adjektivdeklination.",
+              "en": "Gern and gerne are equivalent variants; -e is not adjective declension.",
+              "vi": "gern và gerne là hai cách dùng tương đương; -e không phải đuôi biến cách tính từ."
             }
           }
         ],
@@ -6989,6 +7784,23 @@ const conversationGroups = [
             "vi": "chứa",
             "ipa": "ɛntˈhaltn̩",
             "say": "enthalten"
+          },
+          {
+            "de": "die Nuss",
+            "type": "noun",
+            "ipa": "diː nʊs",
+            "en": "nut",
+            "vi": "hạt, quả hạch",
+            "say": "die Nuss",
+            "plural": "die Nüsse",
+            "formHelp": {
+              "base": "die Nuss",
+              "surface": "Nüsse",
+              "example": "ob das Nüsse enthält",
+              "de": "Nüsse ist der Plural von Nuss: u wird zu ü, dazu kommt -e. Hier ist Nüsse Akkusativobjekt von enthält; die Formänderung bildet den Plural, keine Adjektivendung.",
+              "en": "Nüsse is the plural of Nuss: u changes to ü and -e is added. Here Nüsse is the accusative object of enthält; this change forms the noun plural, not an adjective ending.",
+              "vi": "Nüsse là số nhiều của Nuss: đổi u → ü và thêm -e. Nüsse là tân ngữ Akkusativ của enthält; đây là đuôi tạo số nhiều của danh từ, không phải đuôi tính từ."
+            }
           }
         ],
         "analysis": {
@@ -7057,6 +7869,21 @@ const conversationGroups = [
             "plural": "die Artikel",
             "ipa": "deːɐ̯ aʁˈtiːkl̩",
             "say": "der Artikel"
+          },
+          {
+            "de": "gern",
+            "type": "adverb",
+            "en": "gladly; with pleasure",
+            "vi": "sẵn lòng; thích",
+            "ipa": "ɡɛʁn",
+            "say": "gern",
+            "formHelp": {
+              "base": "gern",
+              "surface": "gerne",
+              "de": "Gern und gerne sind gleichbedeutende Varianten; -e ist keine Adjektivdeklination.",
+              "en": "Gern and gerne are equivalent variants; -e is not adjective declension.",
+              "vi": "gern và gerne là hai cách dùng tương đương; -e không phải đuôi biến cách tính từ."
+            }
           }
         ],
         "analysis": {
@@ -7300,6 +8127,14 @@ const conversationGroups = [
             "vi": "giữ; cất giữ",
             "ipa": "ˈaʊ̯fbəˌvaːʁən",
             "say": "aufbewahren"
+          },
+          {
+            "de": "hier",
+            "type": "adverb",
+            "ipa": "hiːɐ̯",
+            "en": "here; at this point",
+            "vi": "ở đây; ở điểm này",
+            "say": "hier"
           }
         ],
         "analysis": {
@@ -7341,9 +8176,9 @@ const conversationGroups = [
             "formHelp": {
               "base": "gern",
               "surface": "gerne",
-              "de": "Gern und gerne sind gleichbedeutende Varianten. Das -e ist hier keine Deklinationsendung.",
-              "en": "Gern and gerne are equivalent variants. The -e is not a declension ending here.",
-              "vi": "gern và gerne là hai cách dùng tương đương. Chữ -e này không phải đuôi biến cách."
+              "de": "Gern und gerne sind gleichbedeutende Varianten; -e ist keine Adjektivdeklination.",
+              "en": "Gern and gerne are equivalent variants; -e is not adjective declension.",
+              "vi": "gern và gerne là hai cách dùng tương đương; -e không phải đuôi biến cách tính từ."
             }
           },
           {
@@ -7426,6 +8261,14 @@ const conversationGroups = [
               "en": "Leider comments on the whole statement as regrettable, rather than describing a noun.",
               "vi": "leider bình luận cả sự việc là đáng tiếc, không nêu đặc điểm của một danh từ nên không chia đuôi tính từ."
             }
+          },
+          {
+            "de": "da sein",
+            "type": "phrase",
+            "en": "to be there; to be present",
+            "vi": "có mặt",
+            "ipa": "daː zaɪ̯n",
+            "say": "da sein"
           }
         ],
         "analysis": {
