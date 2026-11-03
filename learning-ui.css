@@ -41,7 +41,7 @@ body{background:#faf8f2;font-family:'Be Vietnam Pro',Arial,sans-serif;font-size:
 .conversation-library .phrase-vocabulary{margin:16px 0 12px;padding:14px;border:1px solid var(--line);border-radius:8px;background:var(--paper)}
 .conversation-library .phrase-vocabulary h4{font-family:inherit;font-size:calc(.95rem + 1px);font-weight:600;color:var(--blue);margin:0 0 12px;line-height:1.6}
 .conversation-library .phrase-vocabulary h4 small{font-size:calc(.74rem + 1px);font-weight:400;margin-left:5px;color:var(--muted)}
-.conversation-library .phrase-vocabulary dl{display:grid;grid-template-columns:repeat(var(--vocabulary-columns,2),minmax(0,1fr));gap:14px;margin:0}
+.conversation-library .phrase-vocabulary dl{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,190px),1fr));gap:14px;margin:0}
 .conversation-library .phrase-vocab-entry{min-width:0;overflow-wrap:anywhere}
 .conversation-library .phrase-vocab-entry+.phrase-vocab-entry{border-left:1px solid var(--line);padding-left:14px}
 .conversation-library .phrase-vocabulary dt{display:flex;flex-direction:column;gap:2px;font-weight:600;color:var(--blue);font-size:calc(.95rem + 1px)}
@@ -49,7 +49,10 @@ body{background:#faf8f2;font-family:'Be Vietnam Pro',Arial,sans-serif;font-size:
 .conversation-library .phrase-vocabulary dd{margin:6px 0 0}
 .conversation-library .phrase-vocabulary dd p{font-size:calc(.79rem + 1px);line-height:1.65;margin:5px 0}
 .conversation-library .phrase-vocabulary .phrase-ipa{font-family:'Be Vietnam Pro',Arial,sans-serif;font-size:calc(.84rem + 1px);color:var(--ink);font-weight:400}
-.conversation-library .phrase-ipa>span{font-family:inherit;font-size:calc(.64rem + 1px);color:var(--muted)}
+.conversation-library .phrase-vocab-head .phrase-ipa{margin-left:0;font-weight:400}
+.conversation-library .phrase-vocab-head{display:block;line-height:1.7}
+.conversation-library .phrase-vocab-head .phrase-word-type{display:inline}
+.conversation-library .phrase-meaning>span{display:inline}
 .conversation-library .phrase-vocabulary .phrase-plural{font-size:calc(.74rem + 1px);color:var(--muted)}
 .conversation-library .phrase-vocab-speak{margin-top:6px;padding:4px 10px;font-size:calc(.76rem + 1px)}
 .conversation-library .phrase-analysis{border:1px solid var(--line);border-radius:8px;background:transparent;margin:12px 0 0;padding:0}
@@ -67,3 +70,6 @@ body{background:#faf8f2;font-family:'Be Vietnam Pro',Arial,sans-serif;font-size:
 #topicGrid>.topic>.topic-foot{margin-top:auto;padding-top:12px}
 
 #alltagssprache .small{font-size:calc(.83rem + 1px)}
+
+.conversation-library .phrase-vocab-head .phrase-ipa{white-space:nowrap}
+@media(max-width:650px){.conversation-library .phrase-vocab-entry+.phrase-vocab-entry{padding-left:0;padding-top:10px;border-left:0;border-top:1px solid var(--line)}}

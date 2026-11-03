@@ -3,7 +3,12 @@ function conversationEscape(value){return String(value??'').replace(/[&<>"']/g,c
 const conversationWordTypes={verb:'Verb',noun:'Nomen',adjective:'Adjektiv',adverb:'Adverb',phrase:'Wendung',pronoun:'Pronomen',conjunction:'Konjunktion'};
 function renderConversationVocabulary(words){
  const e=conversationEscape;
- return `<section class="phrase-vocabulary" aria-label="Wortschatz"><h4>Wortschatz <small>Vocabulary · Từ vựng</small></h4><dl style="--vocabulary-columns:${Math.min(words.length,3)}">${words.map(word=>`<div class="phrase-vocab-entry"><dt><span lang="de">${e(word.de)}</span><span class="phrase-word-type" lang="de">${e(conversationWordTypes[word.type]||word.type)}</span></dt><dd><p class="phrase-ipa"><span>IPA</span> [${e(word.ipa)}]</p>${word.plural?`<p class="phrase-plural"><b lang="de">Plural:</b> ${e(word.plural)}</p>`:''}<p lang="en"><b>EN:</b> ${e(word.en)}</p><p lang="vi"><b>VI:</b> ${e(word.vi)}</p><button type="button" class="play say phrase-vocab-speak" lang="de" data-say="${e(word.say||word.de)}" aria-label="Hören: ${e(word.say||word.de)}">Hören</button></dd></div>`).join('')}</dl></section>`;
+ return `<section class="phrase-vocabulary" aria-label="Wortschatz"><h4>Wortschatz <small>Vocabulary · Từ vựng</small></h4><dl>${words.map(word=>{
+  const type=e(conversationWordTypes[word.type]||word.type);
+  const separateType=word.type==='phrase'||word.de.length>22;
+  const head=separateType?`<span class="phrase-vocab-head"><span lang="de">${e(word.de)}</span><span class="phrase-ipa"> [${e(word.ipa)}]</span></span><span class="phrase-word-type" lang="de">${type}</span>`:`<span class="phrase-vocab-head"><span lang="de">${e(word.de)}</span><span class="phrase-word-type" lang="de"> · ${type}</span><span class="phrase-ipa"> · [${e(word.ipa)}]</span></span>`;
+  return `<div class="phrase-vocab-entry"><dt>${head}</dt><dd>${word.plural?`<p class="phrase-plural"><b lang="de">Plural:</b> ${e(word.plural)}</p>`:''}<p class="phrase-meaning"><span lang="en"><b>EN:</b> ${e(word.en)}</span><span aria-hidden="true"> · </span><span lang="vi"><b>VI:</b> ${e(word.vi)}</span></p><button type="button" class="play say phrase-vocab-speak" lang="de" data-say="${e(word.say||word.de)}" aria-label="Hören: ${e(word.say||word.de)}">Hören</button></dd></div>`;
+ }).join('')}</dl></section>`;
 }
 function renderConversationPair(row,index=0){
  const e=conversationEscape;
