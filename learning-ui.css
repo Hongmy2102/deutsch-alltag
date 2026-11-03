@@ -75,3 +75,15 @@ body{background:#faf8f2;font-family:'Be Vietnam Pro',Arial,sans-serif;font-size:
 @media(max-width:650px){.conversation-library .phrase-vocab-entry+.phrase-vocab-entry{padding-left:0;padding-top:10px;border-left:0;border-top:1px solid var(--line)}}
 
 .conversation-library .phrase-comparison .say{padding-top:4px;padding-bottom:4px}
+/* Word-class labels reveal a compact explanation only when requested. */
+.conversation-library button.phrase-word-type{display:inline;align-self:flex-start;width:auto;min-height:0;padding:0;border:0;border-radius:0;background:transparent;color:var(--muted);font-size:calc(.72rem + 1px);font-weight:400;line-height:inherit;text-align:left;vertical-align:baseline;text-decoration:underline dotted;text-underline-offset:3px;cursor:help}
+.conversation-library button.phrase-word-type[aria-expanded=true]{color:var(--blue)}
+.conversation-library .phrase-word-help{margin:7px 0 4px;padding:9px 10px;border:1px solid var(--line);border-radius:6px;background:var(--surface)}
+.conversation-library .phrase-word-help p{font-size:calc(.78rem + 1px);line-height:1.55;margin:6px 0}
+.conversation-library .phrase-word-help .phrase-form-change{color:var(--blue)}
+.conversation-library .phrase-form-change>span{font-size:calc(.69rem + 1px);color:var(--muted)}
+.conversation-library .phrase-form-example{border-bottom:1px solid var(--line);padding-bottom:6px}
+
+/* Explanations use the reading width while open; the default word row stays compact. */
+.conversation-library .phrase-vocabulary:has(.phrase-word-help:not([hidden])) dl{grid-template-columns:1fr}
+.conversation-library .phrase-vocabulary:has(.phrase-word-help:not([hidden])) .phrase-vocab-entry+.phrase-vocab-entry{padding-left:0;padding-top:8px;border-left:0;border-top:1px solid var(--line)}

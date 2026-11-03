@@ -1,13 +1,36 @@
 /* Comparison cards are shared by the ten existing Alltagssprache lessons in Leben. */
 function conversationEscape(value){return String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
-const conversationWordTypes={verb:'Verb',noun:'Nomen',adjective:'Adjektiv',adverb:'Adverb',phrase:'Wendung',pronoun:'Pronomen',conjunction:'Konjunktion'};
+const conversationWordTypes={verb:'Verb',noun:'Nomen',adjective:'Adjektiv',adverb:'Adverb',phrase:'Wendung',pronoun:'Pronomen',conjunction:'Konjunktion',preposition:'Präposition'};
+const conversationWordClassHelp={
+ verb:{de:'Ein Verb bezeichnet eine Handlung oder einen Zustand. Es verändert seine Form nach Person und Zeit. -en oder -n kann einfach zum Infinitiv gehören, etwa machen.',en:'A verb expresses an action or state and changes for person and tense. -en or -n can simply be its infinitive ending, as in machen.',vi:'Động từ diễn đạt hành động hoặc trạng thái, đổi dạng theo ngôi và thời. -en hoặc -n có thể chỉ là đuôi nguyên mẫu, như machen, không phải đuôi tính từ.'},
+ noun:{de:'Ein Nomen benennt eine Person, Sache oder einen Begriff und wird großgeschrieben. Artikel zeigen Genus und Kasus; Plural und Dativ Plural können die Wortform verändern.',en:'A noun names a person, thing or concept and is capitalized in German. Articles mark gender and case; plural and dative plural may change the noun form.',vi:'Danh từ gọi tên người, vật hoặc khái niệm và viết hoa trong tiếng Đức. Mạo từ thể hiện giống/cách; số nhiều hoặc Dativ số nhiều có thể làm từ đổi dạng.'},
+ adjective:{de:'Ein Adjektiv beschreibt eine Eigenschaft. Vor einem Nomen richtet sich seine Endung oft nach Artikel, Genus, Kasus und Numerus. Als Prädikativ oder Adverbial bleibt es gewöhnlich undekliniert.',en:'An adjective describes a quality. Before a noun, its ending often depends on the determiner, gender, case and number. Used predicatively or adverbially, it normally has no declension ending.',vi:'Tính từ nêu đặc điểm. Khi đứng trước danh từ, đuôi thường phụ thuộc mạo từ, giống (đực/cái/trung), cách (vai trò trong câu) và số (ít/nhiều). Khi làm vị ngữ hoặc bổ nghĩa cho động từ, nó thường không nhận đuôi biến cách.'},
+ adverb:{de:'Ein Adverb ergänzt zum Beispiel wann, warum oder wie etwas geschieht oder verändert die Aussage. Es bekommt keine Deklinationsendung für Genus, Kasus oder Numerus.',en:'An adverb adds information such as when, why or how something happens, or modifies a statement. It does not take declension endings for gender, case or number.',vi:'Trạng từ bổ sung ý như khi nào, vì sao, như thế nào hoặc bổ nghĩa cho cả câu. Nó không nhận đuôi biến cách theo giống, cách hay số của danh từ.'},
+ phrase:{de:'Eine Wendung ist eine Wortgruppe, die als Einheit gelernt wird, keine einzelne Wortart. Wörter innerhalb der Wendung können trotzdem ihre Form verändern.',en:'An expression is a group of words learned together, not a single part of speech. Words within the expression may still change form.',vi:'Wendung là cụm/cách diễn đạt cần học cùng nhau, không phải một từ loại riêng như động từ hay danh từ. Các từ bên trong cụm vẫn có thể biến đổi.'},
+ pronoun:{de:'Ein Pronomen verweist auf Personen oder Dinge oder ersetzt sie. Seine Form kann sich nach dem Kasus ändern, etwa du → dir.',en:'A pronoun refers to or replaces people or things. Its form may change with case, for example du → dir.',vi:'Đại từ trỏ tới hoặc thay cho người/sự vật. Dạng của nó có thể đổi theo cách, ví dụ du → dir.'},
+ conjunction:{de:'Eine Konjunktion verbindet Wörter oder Sätze. Die Wortstellung hängt von der Konjunktion ab: dass leitet einen Nebensatz ein, und verbindet gleichrangige Teile.',en:'A conjunction joins words or clauses. Word order depends on the conjunction: dass introduces a subordinate clause, whereas und joins equal elements.',vi:'Liên từ nối các từ hoặc mệnh đề. Trật tự từ tùy liên từ: dass mở mệnh đề phụ, còn und nối các phần ngang hàng.'},
+ preposition:{de:'Eine Präposition bildet mit einem Nomen oder Pronomen eine Gruppe. Sie verlangt einen Kasus; bei manchen Präpositionen hängt dieser von Bedeutung oder Konstruktion ab.',en:'A preposition forms a phrase with a noun or pronoun and governs case. For some prepositions, the case depends on meaning or construction.',vi:'Giới từ đi với danh từ/đại từ và yêu cầu một cách. Một số giới từ dùng cách khác nhau tùy nghĩa hoặc cấu trúc, nên cần học cả cụm.'}
+};
+let conversationVocabularyHelpSequence=0;
+function renderConversationWordHelp(word,id){
+ const e=conversationEscape,definition=conversationWordClassHelp[word.type]||conversationWordClassHelp.phrase;
+ const form=word.formHelp,usage=form?null:word.usageHelp;
+ const concise={
+  de:'Ein Adverb ergänzt einen Umstand und wird nicht nach Genus, Kasus oder Numerus dekliniert.',
+  en:'An adverb adds a circumstance and has no gender, case or number endings.',
+  vi:'Trạng từ bổ sung ý cho câu và không chia đuôi theo giống, cách, số của danh từ.'
+ };
+ const description=lang=>(form||usage)?(word.type==='adverb'?concise[lang]:definition[lang].split('. ')[0]+'.'):definition[lang];
+ return `<div class="phrase-word-help" id="${id}" hidden>${form?`<p class="phrase-form-change"><span>Grundform → Satzform · Base → form · Gốc → trong câu</span><br><b lang="de">${e(form.base)} → ${e(form.surface)}</b></p>${form.example?`<p class="phrase-form-example" lang="de">${e(form.example)}</p>`:''}`:''}${['de','en','vi'].map(lang=>`<p lang="${lang}"><b>${lang.toUpperCase()}:</b> ${e(description(lang))}${form?` ${e(form[lang])}`:''}${usage?` ${e(usage[lang])}`:''}</p>`).join('')}</div>`;
+}
 function renderConversationVocabulary(words){
  const e=conversationEscape;
  return `<section class="phrase-vocabulary" aria-label="Wortschatz"><h4>Wortschatz <small>Vocabulary · Từ vựng</small></h4><dl>${words.map(word=>{
-  const type=e(conversationWordTypes[word.type]||word.type);
+  const type=e(conversationWordTypes[word.type]||word.type),id='word-help-'+(++conversationVocabularyHelpSequence);
+  const typeButton=`<button type="button" class="phrase-word-type" lang="de" data-word-help="${id}" aria-controls="${id}" aria-expanded="false" aria-label="${type}: Wortart und Form erklären">${type}</button>`;
   const separateType=word.type==='phrase'||word.de.length>22;
-  const head=separateType?`<span class="phrase-vocab-head"><span lang="de">${e(word.de)}</span><span class="phrase-ipa"> [${e(word.ipa)}]</span></span><span class="phrase-word-type" lang="de">${type}</span>`:`<span class="phrase-vocab-head"><span lang="de">${e(word.de)}</span><span class="phrase-word-type" lang="de"> · ${type}</span><span class="phrase-ipa"> · [${e(word.ipa)}]</span></span>`;
-  return `<div class="phrase-vocab-entry"><dt>${head}</dt><dd>${word.plural?`<p class="phrase-plural"><b lang="de">Plural:</b> ${e(word.plural)}</p>`:''}<p class="phrase-meaning"><span lang="en"><b>EN:</b> ${e(word.en)}</span><span aria-hidden="true"> · </span><span lang="vi"><b>VI:</b> ${e(word.vi)}</span></p><button type="button" class="play say phrase-vocab-speak" lang="de" data-say="${e(word.say||word.de)}" aria-label="Hören: ${e(word.say||word.de)}">Hören</button></dd></div>`;
+  const head=separateType?`<span class="phrase-vocab-head"><span lang="de">${e(word.de)}</span><span class="phrase-ipa"> [${e(word.ipa)}]</span></span>${typeButton}`:`<span class="phrase-vocab-head"><span lang="de">${e(word.de)}</span><span class="phrase-type-wrap"> · ${typeButton}</span><span class="phrase-ipa"> · [${e(word.ipa)}]</span></span>`;
+  return `<div class="phrase-vocab-entry"><dt>${head}</dt><dd>${word.plural?`<p class="phrase-plural"><b lang="de">Plural:</b> ${e(word.plural)}</p>`:''}<p class="phrase-meaning"><span lang="en"><b>EN:</b> ${e(word.en)}</span><span aria-hidden="true"> · </span><span lang="vi"><b>VI:</b> ${e(word.vi)}</span></p>${renderConversationWordHelp(word,id)}<button type="button" class="play say phrase-vocab-speak" lang="de" data-say="${e(word.say||word.de)}" aria-label="Hören: ${e(word.say||word.de)}">Hören</button></dd></div>`;
  }).join('')}</dl></section>`;
 }
 function renderConversationPair(row,index=0){
@@ -16,6 +39,8 @@ function renderConversationPair(row,index=0){
 }
 function conversationNormalize(text){return String(text).normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/đ/g,'d').replace(/Đ/g,'D').toLocaleLowerCase()}
 document.addEventListener('click',event=>{
+ const wordControl=event.target.closest('[data-word-help]');
+ if(wordControl){const panel=document.getElementById(wordControl.dataset.wordHelp);if(panel){const open=wordControl.getAttribute('aria-expanded')!=='true';panel.hidden=!open;wordControl.setAttribute('aria-expanded',String(open))}return}
  const summary=event.target.closest('.phrase-analysis > summary');
  if(!summary||event.target.closest('a,button,input,select,textarea'))return;
  event.preventDefault();summary.parentElement.open=!summary.parentElement.open;

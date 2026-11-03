@@ -30,7 +30,28 @@ const conversationGroups = [
             "en": "soon",
             "vi": "sớm",
             "ipa": "balt",
-            "say": "bald"
+            "say": "bald",
+            "usageHelp": {
+              "de": "Bald nennt einen Zeitpunkt: in naher Zukunft. Es beschreibt hier, wann die Besserung eintreten soll.",
+              "en": "Bald refers to a time in the near future; here it says when the improvement is hoped for.",
+              "vi": "bald chỉ thời gian: sớm, trong tương lai gần; ở đây bổ sung ý khi nào người kia khỏe lại."
+            }
+          },
+          {
+            "de": "gut",
+            "type": "adjective",
+            "ipa": "ɡuːt",
+            "en": "good; well",
+            "vi": "tốt; khỏe",
+            "say": "gut",
+            "formHelp": {
+              "base": "gut",
+              "surface": "besser",
+              "example": "es geht dir besser",
+              "de": "Besser ist der unregelmäßige Komparativ von gut. In es geht dir besser wird es ohne Deklinationsendung verwendet; dir ist Dativ.",
+              "en": "Besser is the irregular comparative of gut. In es geht dir besser, it has no declension ending; dir is dative.",
+              "vi": "besser là so sánh hơn bất quy tắc của gut. Trong es geht dir besser, nó không nhận đuôi biến cách; dir ở Dativ (cách 3)."
+            }
           }
         ],
         "analysis": {
@@ -64,13 +85,39 @@ const conversationGroups = [
             "vi": "cần",
             "ipa": "ˈbʁaʊ̯xn̩",
             "say": "brauchen"
+          },
+          {
+            "de": "deswegen",
+            "type": "adverb",
+            "ipa": "ˈdɛsveːɡn̩",
+            "en": "because of that; for that reason",
+            "vi": "vì điều đó; vì lý do đó",
+            "say": "deswegen",
+            "usageHelp": {
+              "de": "Deswegen verweist auf einen bereits genannten Grund; in diesem Satz bleibt die Form unverändert.",
+              "en": "Deswegen refers to a reason already mentioned and does not change form in this sentence.",
+              "vi": "deswegen chỉ lý do đã nhắc trước đó: vì việc đó. Nó bổ sung lý do cho cả sự việc, không bổ nghĩa cho một danh từ, và không chia đuôi."
+            }
+          },
+          {
+            "de": "dir",
+            "type": "pronoun",
+            "ipa": "diːɐ̯",
+            "en": "to you; yourself (dative, du)",
+            "vi": "cho bạn; đại từ phản thân Dativ của du",
+            "say": "dir",
+            "usageHelp": {
+              "de": "Dir ist die Dativform von du; im Beispiel sich Sorgen machen ist es ein Reflexivpronomen im Dativ.",
+              "en": "Dir is the dative form of du; with sich Sorgen machen here it is a dative reflexive pronoun.",
+              "vi": "dir là Dativ của du; trong sich Sorgen machen ở câu này, dir là đại từ phản thân Dativ, không phải một đuôi thêm vào từ."
+            }
           }
         ],
         "analysis": {
-          "pattern": "nicht/kein + brauchen + zu + Infinitiv",
-          "de": "Zu steht vor dem Infinitiv machen; dir gehört zu sich Sorgen machen.",
-          "en": "Zu precedes the infinitive machen; dir belongs to sich Sorgen machen.",
-          "vi": "zu đứng trước nguyên mẫu machen; dir thuộc cụm phản thân sich Sorgen machen."
+          "pattern": "brauchen + zu-Infinitiv · sich Sorgen machen · deswegen",
+          "de": "Brauchst … keine … zu machen verneint eine Notwendigkeit. Dir ist Dativ in sich Sorgen machen; Sorgen ist Akkusativ Plural. Deswegen verweist auf den bereits genannten Grund: wegen dieser Sache. Steht es zuerst, folgt das Verb: Deswegen brauchst du … .",
+          "en": "Brauchst … keine … zu machen expresses absence of necessity. Dir is dative in sich Sorgen machen; Sorgen is accusative plural. Deswegen points back to the reason already mentioned: because of that. If it comes first, the verb follows: Deswegen brauchst du … .",
+          "vi": "brauchen + keine + zu machen diễn đạt không cần làm gì. dir ở Dativ trong sich Sorgen machen; Sorgen là Akkusativ số nhiều. deswegen thay cho lý do đã nói: vì việc đó. Nếu đưa lên đầu, động từ chia theo ngay sau: Deswegen brauchst du … ."
         },
         "source": "legacy-adapted",
         "simple": "Keine Sorge!",
@@ -98,13 +145,34 @@ const conversationGroups = [
             "plural": "die Zeiten",
             "ipa": "diː tsaɪ̯t",
             "say": "die Zeit"
+          },
+          {
+            "de": "alles Gute",
+            "type": "phrase",
+            "ipa": "ˈaləs ˈɡuːtə",
+            "en": "all the best",
+            "vi": "mọi điều tốt đẹp",
+            "say": "alles Gute",
+            "usageHelp": {
+              "de": "Gute ist nach alles substantiviert und wird großgeschrieben; die feste Form lautet alles Gute.",
+              "en": "Gute is nominalized after alles and capitalized; the fixed form is alles Gute.",
+              "vi": "Gute được danh từ hóa sau alles nên viết hoa. Cụm cố định là alles Gute: mọi điều tốt đẹp; không nhầm với etwas Gutes."
+            },
+            "formHelp": {
+              "base": "gut",
+              "surface": "Gute",
+              "example": "alles Gute",
+              "de": "Gut wird hier substantiviert. Nach alles lautet die feste Form Gute mit Großbuchstaben und -e; nach etwas heißt es dagegen etwas Gutes.",
+              "en": "Gut is nominalized here. After alles, the fixed form is capitalized Gute with -e; after etwas, it is etwas Gutes instead.",
+              "vi": "gut được danh từ hóa ở đây. Sau alles dùng Gute, viết hoa và có -e; nhưng sau etwas lại là etwas Gutes với -es. Không gắn một đuôi giống nhau cho mọi trường hợp."
+            }
           }
         ],
         "analysis": {
           "pattern": "wünschen + Dativ + Akkusativ",
-          "de": "Die Person steht im Dativ; der Wunsch steht im Akkusativ.",
-          "en": "The recipient is dative; the wish is accusative.",
-          "vi": "Người nhận lời chúc ở Dativ; điều được chúc ở Akkusativ."
+          "de": "Die Person steht im Dativ; der Wunsch steht im Akkusativ. Gute wird nach alles als substantiviertes Adjektiv großgeschrieben.",
+          "en": "The recipient is dative; the wish is accusative. Gute is capitalized after alles because it is a nominalized adjective.",
+          "vi": "Người nhận lời chúc ở Dativ; điều được chúc ở Akkusativ. Gute viết hoa sau alles vì là tính từ đã được danh từ hóa."
         },
         "source": "legacy-adapted",
         "simple": "Mach’s gut!",
@@ -130,14 +198,32 @@ const conversationGroups = [
             "en": "unfortunately",
             "vi": "tiếc là",
             "ipa": "ˈlaɪ̯dɐ",
-            "say": "leider"
+            "say": "leider",
+            "usageHelp": {
+              "de": "Leider kommentiert die gesamte Aussage als bedauerlich, nicht die Eigenschaft eines Nomens.",
+              "en": "Leider comments on the whole statement as regrettable, rather than describing a noun.",
+              "vi": "leider bình luận cả sự việc là đáng tiếc, không nêu đặc điểm của một danh từ nên không chia đuôi tính từ."
+            }
+          },
+          {
+            "de": "dafür",
+            "type": "adverb",
+            "ipa": "daˈfyːɐ̯",
+            "en": "for that; for it",
+            "vi": "cho việc đó; về việc đó",
+            "say": "dafür",
+            "usageHelp": {
+              "de": "Dafür verbindet da mit für und ersetzt die genannte Sache nach zuständig für oder sich entschuldigen für.",
+              "en": "Dafür combines da with für and replaces the matter referred to in zuständig für or sich entschuldigen für.",
+              "vi": "dafür = da + für, thay cho việc đã nhắc tới trong zuständig für hoặc sich entschuldigen für. Không phải thêm đuôi vào da."
+            }
           }
         ],
         "analysis": {
-          "pattern": "Adjektiv als Prädikativ",
-          "de": "Das Adjektiv bleibt nach sein, klingen, erscheinen oder finden in dieser Funktion ohne Deklinationsendung.",
-          "en": "Used predicatively after sein, klingen, erscheinen or finden, the adjective has no inflectional ending here.",
-          "vi": "Tính từ làm vị ngữ sau sein, klingen, erscheinen hoặc finden trong cấu trúc này không nhận đuôi biến cách."
+          "pattern": "zuständig für + Akkusativ → dafür",
+          "de": "Zuständig wird mit für + Akkusativ verbunden. Dafür ersetzt hier für + die bereits erwähnte Sache; bin bleibt an zweiter Satzgliedposition.",
+          "en": "Zuständig takes für plus accusative. Dafür replaces für plus the matter already mentioned; bin stays in the second constituent position.",
+          "vi": "zuständig đi với für + Akkusativ. dafür thay cho für + việc đã nhắc đến; bin vẫn ở vị trí thành phần thứ hai."
         },
         "source": "legacy-adapted",
         "simple": "Das ist nicht mein Bier.",
@@ -199,13 +285,21 @@ const conversationGroups = [
             "plural": "die Erfolge",
             "ipa": "deːɐ̯ ɛɐ̯ˈfɔlk",
             "say": "der Erfolg"
+          },
+          {
+            "de": "von Herzen",
+            "type": "phrase",
+            "ipa": "fɔn ˈhɛʁtsn̩",
+            "en": "from the heart; sincerely",
+            "vi": "từ tận đáy lòng; chân thành",
+            "say": "von Herzen"
           }
         ],
         "analysis": {
-          "pattern": "wünschen + Dativ + Akkusativ",
-          "de": "Die Person steht im Dativ; der Wunsch steht im Akkusativ.",
-          "en": "The recipient is dative; the wish is accusative.",
-          "vi": "Người nhận lời chúc ở Dativ; điều được chúc ở Akkusativ."
+          "pattern": "von Herzen · wünschen + Dativ + Akkusativ",
+          "de": "Von Herzen ist eine feste Wendung. Dir ist Dativ, viel Erfolg ist Akkusativ in jemandem etwas wünschen.",
+          "en": "Von Herzen is a fixed expression. Dir is dative; viel Erfolg is accusative in jemandem etwas wünschen.",
+          "vi": "von Herzen là cụm cố định nghĩa là chân thành, từ tận đáy lòng. dir ở Dativ; viel Erfolg ở Akkusativ trong jemandem etwas wünschen."
         },
         "source": "legacy-adapted",
         "simple": "Ich drück’ dir die Daumen.",
@@ -233,6 +327,19 @@ const conversationGroups = [
             "plural": "die Freuden",
             "ipa": "diː ˈfʁɔʏ̯də",
             "say": "die Freude"
+          },
+          {
+            "de": "dabei",
+            "type": "adverb",
+            "ipa": "daˈbaɪ̯",
+            "en": "with that; while doing it",
+            "vi": "trong việc đó; khi làm việc đó",
+            "say": "dabei",
+            "usageHelp": {
+              "de": "Dabei ist da + bei; die genaue Bedeutung hängt hier von helfen bei oder der genannten Tätigkeit ab.",
+              "en": "Dabei is da plus bei; here its meaning depends on helfen bei or the activity mentioned.",
+              "vi": "dabei = da + bei; trong helfen bei là giúp làm việc đó, còn ở câu về may mắn là khi làm việc đó."
+            }
           }
         ],
         "analysis": {
@@ -334,7 +441,12 @@ const conversationGroups = [
             "en": "really",
             "vi": "thực sự",
             "ipa": "ˈvɪʁklɪç",
-            "say": "wirklich"
+            "say": "wirklich",
+            "usageHelp": {
+              "de": "Wirklich verstärkt hier die Aussage im Sinn von tatsächlich oder sehr.",
+              "en": "Wirklich strengthens the statement here, meaning really or genuinely.",
+              "vi": "wirklich nhấn mạnh sự việc là thực sự; không có đuôi theo giống hay cách của danh từ."
+            }
           }
         ],
         "analysis": {
@@ -406,6 +518,19 @@ const conversationGroups = [
             "vi": "thực sự",
             "ipa": "ˈtaːtˌzɛçlɪç",
             "say": "tatsächlich"
+          },
+          {
+            "de": "dabei",
+            "type": "adverb",
+            "ipa": "daˈbaɪ̯",
+            "en": "with that; while doing it",
+            "vi": "trong việc đó; khi làm việc đó",
+            "say": "dabei",
+            "usageHelp": {
+              "de": "Dabei ist da + bei; die genaue Bedeutung hängt hier von helfen bei oder der genannten Tätigkeit ab.",
+              "en": "Dabei is da plus bei; here its meaning depends on helfen bei or the activity mentioned.",
+              "vi": "dabei = da + bei; trong helfen bei là giúp làm việc đó, còn ở câu về may mắn là khi làm việc đó."
+            }
           }
         ],
         "analysis": {
@@ -430,7 +555,15 @@ const conversationGroups = [
             "en": "friendly; kind",
             "vi": "thân thiện; tốt bụng",
             "ipa": "ˈfʁɔʏ̯ntlɪç",
-            "say": "freundlich"
+            "say": "freundlich",
+            "formHelp": {
+              "base": "freundlich",
+              "surface": "freundliche",
+              "example": "das freundliche Kompliment",
+              "de": "Vor Kompliment steht das im Akkusativ Neutrum. Nach dem bestimmten Artikel erhält das Adjektiv hier die schwache Endung -e.",
+              "en": "Kompliment is neuter accusative and follows das. After the definite article, the adjective has the weak ending -e here.",
+              "vi": "Kompliment giống trung, ở Akkusativ (cách 4), trước nó có das. Sau mạo từ xác định này, tính từ nhận đuôi yếu -e: das freundliche Kompliment."
+            }
           },
           {
             "de": "das Kompliment",
@@ -582,13 +715,12 @@ const conversationGroups = [
             "say": "der Punkt"
           },
           {
-            "de": "die Meinung",
-            "type": "noun",
-            "en": "opinion",
-            "vi": "ý kiến; quan điểm",
-            "plural": "die Meinungen",
-            "ipa": "diː ˈmaɪ̯nʊŋ",
-            "say": "die Meinung"
+            "de": "zustimmen",
+            "type": "verb",
+            "ipa": "ˈtsuːˌʃtɪmən",
+            "en": "to agree",
+            "vi": "đồng ý",
+            "say": "zustimmen"
           }
         ],
         "analysis": {
@@ -623,13 +755,21 @@ const conversationGroups = [
             "vi": "có nghĩa",
             "ipa": "bəˈdɔʏ̯tn̩",
             "say": "bedeuten"
+          },
+          {
+            "de": "aus deiner Sicht",
+            "type": "phrase",
+            "ipa": "aʊ̯s ˈdaɪ̯nɐ zɪçt",
+            "en": "from your point of view",
+            "vi": "theo góc nhìn của bạn",
+            "say": "aus deiner Sicht"
           }
         ],
         "analysis": {
-          "pattern": "W-Frage + konjugiertes Verb",
-          "de": "Das Fragewort steht zuerst, danach folgt das konjugierte Verb.",
-          "en": "The question word comes first, followed by the conjugated verb.",
-          "vi": "Từ để hỏi đứng đầu, theo sau là động từ đã chia."
+          "pattern": "aus + Dativ · deiner Sicht",
+          "de": "Aus verlangt Dativ; Sicht ist feminin, deshalb deiner Sicht. In der W-Frage folgt bedeutet direkt auf was.",
+          "en": "Aus takes dative; Sicht is feminine, hence deiner Sicht. In the wh-question, bedeutet follows was directly.",
+          "vi": "aus dùng Dativ; Sicht giống cái nên có deiner Sicht. Trong câu hỏi W, bedeutet theo ngay sau was."
         },
         "source": "legacy-adapted",
         "simple": "Na und?",
@@ -651,12 +791,17 @@ const conversationGroups = [
             "say": "der Eindruck"
           },
           {
-            "de": "ganz",
+            "de": "genau",
             "type": "adverb",
-            "en": "completely; entirely",
-            "vi": "hoàn toàn",
-            "ipa": "ɡants",
-            "say": "ganz"
+            "ipa": "ɡəˈnaʊ̯",
+            "en": "exactly",
+            "vi": "chính xác; đúng như vậy",
+            "say": "genau",
+            "usageHelp": {
+              "de": "Genau hebt hier die Übereinstimmung hervor; es steht nicht als flektiertes Adjektiv vor einem Nomen.",
+              "en": "Genau emphasizes the exact match here; it is not an inflected adjective before a noun.",
+              "vi": "genau ở đây nhấn mạnh sự trùng khớp: chính xác như vậy; không phải tính từ đang chia đuôi trước danh từ."
+            }
           }
         ],
         "analysis": {
@@ -724,13 +869,26 @@ const conversationGroups = [
             "vi": "là; ở; thì",
             "ipa": "zaɪ̯n",
             "say": "sein"
+          },
+          {
+            "de": "damit",
+            "type": "adverb",
+            "ipa": "daˈmɪt",
+            "en": "with that; with it",
+            "vi": "với việc đó; bằng điều đó",
+            "say": "damit",
+            "usageHelp": {
+              "de": "Damit ist hier da + mit und ersetzt eine Sache nach mit; es ist in diesen Beispielen nicht die Konjunktion des Zwecks.",
+              "en": "Damit is da plus mit here, replacing a matter following mit; it is not the purpose conjunction in these examples.",
+              "vi": "damit ở các câu này là da + mit, thay cho mit + việc đó; không phải liên từ để chỉ mục đích là để."
+            }
           }
         ],
         "analysis": {
-          "pattern": "Adjektiv als Prädikativ",
-          "de": "Das Adjektiv bleibt nach sein, klingen, erscheinen oder finden in dieser Funktion ohne Deklinationsendung.",
-          "en": "Used predicatively after sein, klingen, erscheinen or finden, the adjective has no inflectional ending here.",
-          "vi": "Tính từ làm vị ngữ sau sein, klingen, erscheinen hoặc finden trong cấu trúc này không nhận đuôi biến cách."
+          "pattern": "einverstanden mit + Dativ → damit",
+          "de": "Die Verbindung lautet mit etwas einverstanden sein. Damit ersetzt mit + die genannte Sache; nicht verneint einverstanden.",
+          "en": "The expression is mit etwas einverstanden sein. Damit replaces mit plus the matter mentioned; nicht negates einverstanden.",
+          "vi": "Cụm là mit etwas einverstanden sein. damit thay cho mit + việc đã nhắc tới; nicht phủ định einverstanden. damit ở đây không phải liên từ nghĩa là để."
         },
         "source": "legacy-adapted",
         "simple": "Nichts da!",
@@ -789,7 +947,12 @@ const conversationGroups = [
             "en": "unfortunately",
             "vi": "tiếc là",
             "ipa": "ˈlaɪ̯dɐ",
-            "say": "leider"
+            "say": "leider",
+            "usageHelp": {
+              "de": "Leider kommentiert die gesamte Aussage als bedauerlich, nicht die Eigenschaft eines Nomens.",
+              "en": "Leider comments on the whole statement as regrettable, rather than describing a noun.",
+              "vi": "leider bình luận cả sự việc là đáng tiếc, không nêu đặc điểm của một danh từ nên không chia đuôi tính từ."
+            }
           }
         ],
         "analysis": {
@@ -818,19 +981,27 @@ const conversationGroups = [
             "say": "der Hinweis"
           },
           {
-            "de": "wissen",
-            "type": "verb",
-            "en": "to know",
-            "vi": "biết",
-            "ipa": "ˈvɪsn̩",
-            "say": "wissen"
+            "de": "bekannt",
+            "type": "adjective",
+            "ipa": "bəˈkant",
+            "en": "known; familiar",
+            "vi": "được biết đến; quen thuộc",
+            "say": "bekannt"
+          },
+          {
+            "de": "bisher",
+            "type": "adverb",
+            "ipa": "bɪsˈheːɐ̯",
+            "en": "so far; until now",
+            "vi": "cho đến nay; trước đây tính đến lúc này",
+            "say": "bisher"
           }
         ],
         "analysis": {
-          "pattern": "Präteritum",
-          "de": "War und hatte sind Präteritumformen von sein und haben.",
-          "en": "War and hatte are past-tense forms of sein and haben.",
-          "vi": "war và hatte là dạng Präteritum của sein và haben."
+          "pattern": "bisher · jemandem bekannt sein",
+          "de": "War ist Präteritum von sein. Mir ist Dativ in jemandem bekannt sein; bekannt ist ein prädikatives Adjektiv ohne Endung. Bisher grenzt den Zeitraum bis zum genannten Zeitpunkt ab.",
+          "en": "War is the past tense of sein. Mir is dative in jemandem bekannt sein; bekannt is a predicative adjective without an inflectional ending. Bisher refers to the period up to the point mentioned.",
+          "vi": "war là Präteritum của sein. mir ở Dativ trong jemandem bekannt sein; bekannt là tính từ vị ngữ không chia đuôi. bisher chỉ khoảng thời gian tính đến thời điểm đang nhắc tới."
         },
         "source": "legacy-adapted",
         "simple": "Das ist mir neu.",
@@ -856,7 +1027,12 @@ const conversationGroups = [
             "en": "really",
             "vi": "thực sự",
             "ipa": "ˈvɪʁklɪç",
-            "say": "wirklich"
+            "say": "wirklich",
+            "usageHelp": {
+              "de": "Wirklich verstärkt hier die Aussage im Sinn von tatsächlich oder sehr.",
+              "en": "Wirklich strengthens the statement here, meaning really or genuinely.",
+              "vi": "wirklich nhấn mạnh sự việc là thực sự; không có đuôi theo giống hay cách của danh từ."
+            }
           }
         ],
         "analysis": {
@@ -960,13 +1136,21 @@ const conversationGroups = [
             "vi": "đúng",
             "ipa": "ˈʁɪçtɪç",
             "say": "richtig"
+          },
+          {
+            "de": "nach meinem Verständnis",
+            "type": "phrase",
+            "ipa": "naːx ˈmaɪ̯nəm fɛɐ̯ˈʃtɛntnɪs",
+            "en": "as I understand it",
+            "vi": "theo cách tôi hiểu",
+            "say": "nach meinem Verständnis"
           }
         ],
         "analysis": {
-          "pattern": "Adjektiv als Prädikativ",
-          "de": "Das Adjektiv bleibt nach sein, klingen, erscheinen oder finden in dieser Funktion ohne Deklinationsendung.",
-          "en": "Used predicatively after sein, klingen, erscheinen or finden, the adjective has no inflectional ending here.",
-          "vi": "Tính từ làm vị ngữ sau sein, klingen, erscheinen hoặc finden trong cấu trúc này không nhận đuôi biến cách."
+          "pattern": "nach + Dativ · Vorfeld",
+          "de": "Nach verlangt hier Dativ: meinem Verständnis. Die ganze Präpositionalgruppe besetzt das Vorfeld; ist bleibt an zweiter Satzgliedposition.",
+          "en": "Nach takes dative here: meinem Verständnis. The entire prepositional phrase occupies the first constituent position; ist remains second.",
+          "vi": "nach ở đây dùng Dativ: meinem Verständnis. Cả cụm giới từ chiếm vị trí thành phần thứ nhất; ist vẫn ở vị trí thứ hai."
         },
         "source": "document"
       },
@@ -998,10 +1182,10 @@ const conversationGroups = [
           }
         ],
         "analysis": {
-          "pattern": "Präsens · Aussagesatz",
-          "de": "Das konjugierte Verb steht an zweiter Satzgliedposition; das Vorfeld kann aus mehreren Wörtern bestehen.",
-          "en": "The conjugated verb occupies the second constituent position; the first constituent may contain several words.",
-          "vi": "Động từ chia ở vị trí thành phần thứ hai; thành phần đầu có thể gồm nhiều từ."
+          "pattern": "zu einem Schluss kommen · zu + Dativ",
+          "de": "Die feste Verbindung heißt zu einem Schluss kommen. Zu verlangt Dativ; nach einem steht anderen mit -en.",
+          "en": "The fixed expression is zu einem Schluss kommen. Zu takes dative; after einem, anderen has the ending -en.",
+          "vi": "Cụm cố định là zu einem Schluss kommen. zu dùng Dativ; sau einem, anderen nhận đuôi -en."
         },
         "source": "document"
       },
@@ -1029,13 +1213,21 @@ const conversationGroups = [
             "vi": "nói; cho biết",
             "ipa": "ˈzaːɡən",
             "say": "sagen"
+          },
+          {
+            "de": "etwas",
+            "type": "adverb",
+            "ipa": "ˈɛtvas",
+            "en": "a little; somewhat",
+            "vi": "một chút; hơi",
+            "say": "etwas"
           }
         ],
         "analysis": {
           "pattern": "würde/würden + Infinitiv",
-          "de": "Würde wird konjugiert; der Infinitiv des Vollverbs steht am Ende.",
-          "en": "Würde is conjugated; the lexical verb stays in the infinitive at the end.",
-          "vi": "würde chia theo chủ ngữ; động từ chính giữ nguyên mẫu và đứng cuối."
+          "de": "Würde wird konjugiert; der Infinitiv des Vollverbs steht am Ende. Etwas ist hier ein Gradadverb im Sinn von ein wenig.",
+          "en": "Würde is conjugated; the lexical verb stays in the infinitive at the end. Etwas is a degree adverb here, meaning a little.",
+          "vi": "würde chia theo chủ ngữ; động từ chính giữ nguyên mẫu và đứng cuối. etwas ở đây là trạng từ chỉ mức độ: một chút, hơi."
         }
       },
       {
@@ -1062,7 +1254,12 @@ const conversationGroups = [
             "en": "differently",
             "vi": "theo cách khác",
             "ipa": "ˈandɐs",
-            "say": "anders"
+            "say": "anders",
+            "usageHelp": {
+              "de": "Anders heißt hier auf eine andere Weise. Es wird nicht zu andere oder anderen dekliniert.",
+              "en": "Anders means in a different way here and is not declined to andere or anderen.",
+              "vi": "anders ở đây nghĩa là theo cách khác. Không đổi nó thành andere/anderen; đó là cách dùng của từ khác, không phải biến cách trạng từ anders."
+            }
           }
         ],
         "analysis": {
@@ -1130,13 +1327,21 @@ const conversationGroups = [
             "plural": "die Fehler",
             "ipa": "deːɐ̯ ˈfeːlɐ",
             "say": "der Fehler"
+          },
+          {
+            "de": "unterlaufen",
+            "type": "verb",
+            "ipa": "ʊntɐˈlaʊ̯fn̩",
+            "en": "to occur unintentionally (of a mistake)",
+            "vi": "xảy ra do sơ suất, thường nói về lỗi",
+            "say": "unterlaufen"
           }
         ],
         "analysis": {
-          "pattern": "dass + … + Verb am Ende",
-          "de": "Das konjugierte Verb steht am Ende des dass-Satzes.",
-          "en": "The conjugated verb comes at the end of the dass-clause.",
-          "vi": "Động từ chia đứng cuối mệnh đề mở đầu bằng dass."
+          "pattern": "jemandem auffallen · jemandem unterlaufen · Perfekt mit sein",
+          "de": "Mir ist Dativ zu auffallen; dir ist Dativ zu unterlaufen. Ein Fehler ist das Subjekt im dass-Satz. Beide Verben bilden hier das Perfekt mit sein; unterlaufen ist ein Partizip ohne ge-.",
+          "en": "Mir is dative with auffallen; dir is dative with unterlaufen. Ein Fehler is the subject of the dass-clause. Both verbs take sein in the perfect here; unterlaufen has no ge- in the participle.",
+          "vi": "mir ở Dativ với auffallen; dir ở Dativ với unterlaufen. ein Fehler là chủ ngữ của mệnh đề dass. Cả hai động từ dùng sein ở Perfekt trong câu này; Partizip unterlaufen không thêm ge-."
         },
         "source": "document"
       },
@@ -1163,6 +1368,19 @@ const conversationGroups = [
             "vi": "nói",
             "ipa": "ˈʃpʁɛçn̩",
             "say": "sprechen"
+          },
+          {
+            "de": "darüber",
+            "type": "adverb",
+            "en": "about it; about that",
+            "vi": "về việc đó",
+            "ipa": "daˈʁyːbɐ",
+            "say": "darüber",
+            "usageHelp": {
+              "de": "Darüber ist da + über und verweist auf das Thema oder den Anlass.",
+              "en": "Darüber is da plus über and refers to a topic or cause.",
+              "vi": "darüber = da + über, chỉ chủ đề hoặc sự việc đã nhắc đến, ví dụ sprechen über hoặc sich freuen über."
+            }
           }
         ],
         "analysis": {
@@ -1187,7 +1405,12 @@ const conversationGroups = [
             "en": "for now",
             "vi": "trước mắt",
             "ipa": "foːɐ̯ˈʔeːɐ̯st",
-            "say": "vorerst"
+            "say": "vorerst",
+            "usageHelp": {
+              "de": "Vorerst begrenzt die Aussage auf die Zeit bis zu einer späteren Entscheidung.",
+              "en": "Vorerst limits the statement to the period before a later decision.",
+              "vi": "vorerst chỉ thời gian trước mắt, tạm thời, trước khi có quyết định tiếp theo."
+            }
           },
           {
             "de": "weiterverfolgen",
@@ -1240,7 +1463,12 @@ const conversationGroups = [
             "en": "really",
             "vi": "thực sự",
             "ipa": "ˈvɪʁklɪç",
-            "say": "wirklich"
+            "say": "wirklich",
+            "usageHelp": {
+              "de": "Wirklich verstärkt hier die Aussage im Sinn von tatsächlich oder sehr.",
+              "en": "Wirklich strengthens the statement here, meaning really or genuinely.",
+              "vi": "wirklich nhấn mạnh sự việc là thực sự; không có đuôi theo giống hay cách của danh từ."
+            }
           }
         ],
         "analysis": {
@@ -1273,7 +1501,12 @@ const conversationGroups = [
             "en": "about it; about that",
             "vi": "về việc đó",
             "ipa": "daˈʁyːbɐ",
-            "say": "darüber"
+            "say": "darüber",
+            "usageHelp": {
+              "de": "Darüber ist da + über und verweist auf das Thema oder den Anlass.",
+              "en": "Darüber is da plus über and refers to a topic or cause.",
+              "vi": "darüber = da + über, chỉ chủ đề hoặc sự việc đã nhắc đến, ví dụ sprechen über hoặc sich freuen über."
+            }
           }
         ],
         "analysis": {
@@ -1306,7 +1539,12 @@ const conversationGroups = [
             "en": "really",
             "vi": "thực sự",
             "ipa": "ˈvɪʁklɪç",
-            "say": "wirklich"
+            "say": "wirklich",
+            "usageHelp": {
+              "de": "Wirklich verstärkt hier die Aussage im Sinn von tatsächlich oder sehr.",
+              "en": "Wirklich strengthens the statement here, meaning really or genuinely.",
+              "vi": "wirklich nhấn mạnh sự việc là thực sự; không có đuôi theo giống hay cách của danh từ."
+            }
           }
         ],
         "analysis": {
@@ -1406,7 +1644,12 @@ const conversationGroups = [
             "en": "about it; about that",
             "vi": "về việc đó",
             "ipa": "daˈʁyːbɐ",
-            "say": "darüber"
+            "say": "darüber",
+            "usageHelp": {
+              "de": "Darüber ist da + über und verweist auf das Thema oder den Anlass.",
+              "en": "Darüber is da plus über and refers to a topic or cause.",
+              "vi": "darüber = da + über, chỉ chủ đề hoặc sự việc đã nhắc đến, ví dụ sprechen über hoặc sich freuen über."
+            }
           }
         ],
         "analysis": {
@@ -1540,6 +1783,14 @@ const conversationGroups = [
             "vi": "thực sự",
             "ipa": "ˈtaːtˌzɛçlɪç",
             "say": "tatsächlich"
+          },
+          {
+            "de": "ernst",
+            "type": "adjective",
+            "ipa": "ɛʁnst",
+            "en": "serious; seriously",
+            "vi": "nghiêm túc",
+            "say": "ernst"
           }
         ],
         "analysis": {
@@ -1587,7 +1838,12 @@ const conversationGroups = [
             "en": "in it; in that",
             "vi": "vào việc đó",
             "ipa": "daˈʁan",
-            "say": "daran"
+            "say": "daran",
+            "usageHelp": {
+              "de": "Daran ist da + an in teilnehmen an.",
+              "en": "Daran is da plus an in teilnehmen an.",
+              "vi": "daran = da + an trong teilnehmen an: tham gia vào việc đó."
+            }
           }
         ],
         "analysis": {
@@ -1621,14 +1877,38 @@ const conversationGroups = [
             "vi": "hoàn cảnh; điều kiện",
             "plural": "die Umstände",
             "ipa": "deːɐ̯ ˈʊmʃtant",
-            "say": "der Umstand"
+            "say": "der Umstand",
+            "formHelp": {
+              "base": "der Umstand",
+              "surface": "Umständen",
+              "example": "von den jeweiligen Umständen",
+              "de": "Der Plural ist Umstände. Nach von steht Dativ Plural: Umständen mit zusätzlichem -n.",
+              "en": "The plural is Umstände. After von, dative plural adds -n: Umständen.",
+              "vi": "Số nhiều là Umstände. Sau von phải dùng Dativ (cách 3) số nhiều nên thêm -n: Umständen. Đây là thay đổi của danh từ."
+            }
+          },
+          {
+            "de": "jeweilig",
+            "type": "adjective",
+            "ipa": "ˈjeːvaɪ̯lɪç",
+            "en": "respective; particular",
+            "vi": "tương ứng; cụ thể trong từng trường hợp",
+            "say": "jeweilig",
+            "formHelp": {
+              "base": "jeweilig",
+              "surface": "jeweiligen",
+              "example": "von den jeweiligen Umständen",
+              "de": "Von verlangt Dativ. Nach den im Dativ Plural erhält das Adjektiv -en; Umstände bekommt zusätzlich das Dativ-Plural-n.",
+              "en": "Von takes dative. After den in dative plural, the adjective takes -en; Umstände also adds the dative-plural -n.",
+              "vi": "von dùng Dativ (cách 3). Sau den ở Dativ số nhiều, tính từ nhận -en; danh từ Umstände thêm -n thành Umständen. Hai đuôi này thuộc hai từ khác nhau."
+            }
           }
         ],
         "analysis": {
-          "pattern": "Trennbares Verb",
-          "de": "Im Hauptsatz wird das Präfix abgetrennt und steht am Ende, sofern kein Modalverb den Infinitiv verlangt.",
-          "en": "In a main clause, the separable prefix comes at the end unless a modal requires the infinitive.",
-          "vi": "Ở câu chính, tiền tố tách ra và đứng cuối khi không có động từ tình thái yêu cầu dạng nguyên mẫu."
+          "pattern": "abhängen von + Dativ · jeweilig → jeweiligen",
+          "de": "Abhängen ist trennbar: hängt … ab. Von verlangt Dativ: den jeweiligen Umständen. Das Adjektiv hat -en, und Umstände erhält im Dativ Plural ein zusätzliches -n.",
+          "en": "Abhängen is separable: hängt … ab. Von takes dative: den jeweiligen Umständen. The adjective ends in -en, and Umstände adds -n in dative plural.",
+          "vi": "abhängen là động từ tách: hängt … ab. von dùng Dativ: den jeweiligen Umständen. Tính từ nhận đuôi -en; Umstände thêm -n ở Dativ số nhiều."
         },
         "source": "legacy-adapted",
         "simple": "Es kommt darauf an.",
@@ -1721,14 +2001,32 @@ const conversationGroups = [
             "en": "immediately",
             "vi": "ngay lập tức",
             "ipa": "zoˈfɔʁt",
-            "say": "sofort"
+            "say": "sofort",
+            "usageHelp": {
+              "de": "Sofort beantwortet hier die Frage wann: ohne Verzögerung.",
+              "en": "Sofort answers when: without delay.",
+              "vi": "sofort trả lời câu hỏi khi nào: ngay lập tức, không trì hoãn."
+            }
+          },
+          {
+            "de": "damit",
+            "type": "adverb",
+            "ipa": "daˈmɪt",
+            "en": "with that; with it",
+            "vi": "với việc đó; bằng điều đó",
+            "say": "damit",
+            "usageHelp": {
+              "de": "Damit ist hier da + mit und ersetzt eine Sache nach mit; es ist in diesen Beispielen nicht die Konjunktion des Zwecks.",
+              "en": "Damit is da plus mit here, replacing a matter following mit; it is not the purpose conjunction in these examples.",
+              "vi": "damit ở các câu này là da + mit, thay cho mit + việc đó; không phải liên từ để chỉ mục đích là để."
+            }
           }
         ],
         "analysis": {
-          "pattern": "Modalverb + Infinitiv",
-          "de": "Das Modalverb wird konjugiert; das andere Verb steht im Infinitiv am Satzende.",
-          "en": "The modal is conjugated; the other verb stays in the infinitive at the end.",
-          "vi": "Động từ tình thái được chia; động từ còn lại giữ nguyên mẫu và đứng cuối."
+          "pattern": "sich befassen mit + Dativ → damit",
+          "de": "Uns gehört zu sich befassen. Damit ersetzt mit + das Thema. Nach müssen steht befassen als Infinitiv am Ende; es folgt kein zu.",
+          "en": "Uns belongs to sich befassen. Damit replaces mit plus the topic. After müssen, befassen stays infinitive at the end without zu.",
+          "vi": "uns thuộc cụm sich befassen. damit thay cho mit + vấn đề đang nói. Sau müssen, befassen ở nguyên mẫu cuối câu, không thêm zu."
         },
         "source": "legacy-adapted",
         "simple": "Das hat Zeit.",
@@ -1749,7 +2047,19 @@ const conversationGroups = [
             "en": "gladly; with pleasure",
             "vi": "sẵn lòng; thích",
             "ipa": "ɡɛʁn",
-            "say": "gern"
+            "say": "gern",
+            "usageHelp": {
+              "de": "Gern und gerne sind gleichbedeutende Varianten; -e in gerne ist hier keine Adjektivendung.",
+              "en": "Gern and gerne are equivalent variants; the -e in gerne is not an adjective ending here.",
+              "vi": "gern và gerne là hai cách dùng cùng nghĩa. Chữ -e trong gerne không phải đuôi biến cách của tính từ."
+            },
+            "formHelp": {
+              "base": "gern",
+              "surface": "gerne",
+              "de": "Gern und gerne sind gleichbedeutende Varianten. Das -e ist hier keine Deklinationsendung.",
+              "en": "Gern and gerne are equivalent variants. The -e is not a declension ending here.",
+              "vi": "gern và gerne là hai cách dùng tương đương. Chữ -e này không phải đuôi biến cách."
+            }
           },
           {
             "de": "sehr",
@@ -1821,7 +2131,12 @@ const conversationGroups = [
             "en": "now",
             "vi": "bây giờ",
             "ipa": "jɛtst",
-            "say": "jetzt"
+            "say": "jetzt",
+            "usageHelp": {
+              "de": "Jetzt beantwortet die Frage wann: im gegenwärtigen Moment.",
+              "en": "Jetzt answers when: at the present moment.",
+              "vi": "jetzt trả lời khi nào: bây giờ, ở thời điểm hiện tại."
+            }
           }
         ],
         "analysis": {
@@ -1890,13 +2205,21 @@ const conversationGroups = [
             "vi": "nhìn; nhận thấy",
             "ipa": "ˈzeːən",
             "say": "sehen"
+          },
+          {
+            "de": "noch nicht",
+            "type": "phrase",
+            "ipa": "nɔx nɪçt",
+            "en": "not yet",
+            "vi": "chưa",
+            "say": "noch nicht"
           }
         ],
         "analysis": {
-          "pattern": "Indirekte Frage + Verb am Ende",
-          "de": "Das Fragewort oder ob leitet den Nebensatz ein; dessen konjugiertes Verb steht am Ende.",
-          "en": "The question word or ob introduces the subordinate clause, whose conjugated verb comes last.",
-          "vi": "Từ để hỏi hoặc ob mở đầu mệnh đề phụ; động từ chia của mệnh đề đó đứng cuối."
+          "pattern": "noch nicht · jemanden einer Sache näherbringen",
+          "de": "Noch nicht verneint bis zum gegenwärtigen Zeitpunkt. Uns ist Akkusativ, unserem Ziel ist Dativ; das ist das Subjekt. Näherbringt steht am Ende der indirekten Frage mit wie.",
+          "en": "Noch nicht means not up to the present time. Uns is accusative, unserem Ziel is dative, and das is the subject. Näherbringt ends the indirect question introduced by wie.",
+          "vi": "noch nicht nghĩa là chưa tính đến hiện tại. uns ở Akkusativ; unserem Ziel ở Dativ; das là chủ ngữ. näherbringt đứng cuối câu hỏi gián tiếp mở đầu bằng wie."
         },
         "source": "legacy-adapted",
         "simple": "Das hat keinen Sinn.",
@@ -1959,13 +2282,26 @@ const conversationGroups = [
             "vi": "làm ơn; nhé",
             "ipa": "ˈbɪtə",
             "say": "bitte"
+          },
+          {
+            "de": "damit",
+            "type": "adverb",
+            "ipa": "daˈmɪt",
+            "en": "with that; with it",
+            "vi": "với việc đó; bằng điều đó",
+            "say": "damit",
+            "usageHelp": {
+              "de": "Damit ist hier da + mit und ersetzt eine Sache nach mit; es ist in diesen Beispielen nicht die Konjunktion des Zwecks.",
+              "en": "Damit is da plus mit here, replacing a matter following mit; it is not the purpose conjunction in these examples.",
+              "vi": "damit ở các câu này là da + mit, thay cho mit + việc đó; không phải liên từ để chỉ mục đích là để."
+            }
           }
         ],
         "analysis": {
-          "pattern": "aufhören → hör … auf",
-          "de": "Hör ist der Imperativ für du; das trennbare Präfix auf steht am Ende. Damit verweist auf die Handlung.",
-          "en": "Hör is the du-imperative; the separable prefix auf comes at the end. Damit refers to the action.",
-          "vi": "Hör là mệnh lệnh cho du; tiền tố tách auf đứng cuối. Damit chỉ hành động đang được nhắc tới."
+          "pattern": "aufhören mit + Dativ → damit",
+          "de": "Hör ist der Imperativ von aufhören; auf steht am Ende. Damit ersetzt mit + die Handlung, die aufhören soll.",
+          "en": "Hör is the imperative of aufhören; auf comes at the end. Damit replaces mit plus the action that should stop.",
+          "vi": "Hör là mệnh lệnh của aufhören; auf đứng cuối. damit thay cho mit + hành động cần dừng; không mang nghĩa để trong câu này."
         },
         "source": "document"
       },
@@ -1991,7 +2327,12 @@ const conversationGroups = [
             "en": "unfortunately",
             "vi": "tiếc là",
             "ipa": "ˈlaɪ̯dɐ",
-            "say": "leider"
+            "say": "leider",
+            "usageHelp": {
+              "de": "Leider kommentiert die gesamte Aussage als bedauerlich, nicht die Eigenschaft eines Nomens.",
+              "en": "Leider comments on the whole statement as regrettable, rather than describing a noun.",
+              "vi": "leider bình luận cả sự việc là đáng tiếc, không nêu đặc điểm của một danh từ nên không chia đuôi tính từ."
+            }
           }
         ],
         "analysis": {
@@ -2058,14 +2399,21 @@ const conversationGroups = [
             "en": "more often",
             "vi": "thường xuyên hơn",
             "ipa": "ˈœftɐ",
-            "say": "öfter"
+            "say": "öfter",
+            "formHelp": {
+              "base": "oft",
+              "surface": "öfter",
+              "de": "Öfter ist Komparativ von oft mit Umlaut und -er, keine Adjektivdeklination.",
+              "en": "Öfter is the comparative of oft, with an umlaut and -er, not adjective declension.",
+              "vi": "öfter là so sánh hơn của oft, có đổi o → ö và thêm -er; đây không phải biến cách tính từ."
+            }
           }
         ],
         "analysis": {
-          "pattern": "würde + sich freuen + zu-Infinitiv",
-          "de": "Würde wird konjugiert; freuen bleibt Infinitiv. Von dir gehört zu hören; zu hören ergänzt freuen.",
-          "en": "Würde is conjugated; freuen remains infinitive. Von dir belongs to hören; zu hören complements freuen.",
-          "vi": "Würde được chia; freuen giữ nguyên mẫu. von dir đi với hören; zu hören bổ sung cho freuen."
+          "pattern": "sich freuen, von jemandem zu hören · würde + Infinitiv",
+          "de": "Würde wird konjugiert; freuen bleibt Infinitiv. Von dir gehört zu hören und nennt den Kontaktgeber. Öfter ist ein Komparativ; zu hören ergänzt freuen.",
+          "en": "Würde is conjugated; freuen stays infinitive. Von dir belongs to hören and identifies whose news is heard. Öfter is a comparative; zu hören complements freuen.",
+          "vi": "Würde được chia; freuen giữ nguyên mẫu. von dir đi với hören và chỉ người mình nhận tin. öfter là dạng so sánh hơn; zu hören bổ sung cho freuen."
         },
         "source": "document"
       },
@@ -2092,6 +2440,19 @@ const conversationGroups = [
             "vi": "đề cập; trao đổi về",
             "ipa": "ˈanˌʃpʁɛçn̩",
             "say": "ansprechen"
+          },
+          {
+            "de": "darüber",
+            "type": "adverb",
+            "en": "about it; about that",
+            "vi": "về việc đó",
+            "ipa": "daˈʁyːbɐ",
+            "say": "darüber",
+            "usageHelp": {
+              "de": "Darüber ist da + über und verweist auf das Thema oder den Anlass.",
+              "en": "Darüber is da plus über and refers to a topic or cause.",
+              "vi": "darüber = da + über, chỉ chủ đề hoặc sự việc đã nhắc đến, ví dụ sprechen über hoặc sich freuen über."
+            }
           }
         ],
         "analysis": {
@@ -2124,7 +2485,12 @@ const conversationGroups = [
             "en": "tomorrow",
             "vi": "ngày mai",
             "ipa": "ˈmɔʁɡən",
-            "say": "morgen"
+            "say": "morgen",
+            "usageHelp": {
+              "de": "Morgen bedeutet hier am nächsten Tag. Das Nomen der Morgen bedeutet dagegen die Tageszeit und wird großgeschrieben.",
+              "en": "Morgen here means tomorrow. The noun der Morgen means the morning and is capitalized instead.",
+              "vi": "morgen trong câu này là ngày mai, viết thường. Khác với danh từ der Morgen nghĩa là buổi sáng, viết hoa."
+            }
           }
         ],
         "analysis": {
@@ -2149,7 +2515,14 @@ const conversationGroups = [
             "en": "later",
             "vi": "muộn hơn; sau đó",
             "ipa": "ˈʃpɛːtɐ",
-            "say": "später"
+            "say": "später",
+            "formHelp": {
+              "base": "spät",
+              "surface": "später",
+              "de": "Später ist Komparativ von spät; die Form wird hier adverbial gebraucht.",
+              "en": "Später is the comparative of spät, used adverbially here.",
+              "vi": "später là so sánh hơn của spät, trong câu dùng làm trạng ngữ: muộn hơn. -er không phải đuôi giống/cách."
+            }
           },
           {
             "de": "da sein",
@@ -2158,13 +2531,21 @@ const conversationGroups = [
             "vi": "có mặt",
             "ipa": "daː zaɪ̯n",
             "say": "da sein"
+          },
+          {
+            "de": "etwas",
+            "type": "adverb",
+            "ipa": "ˈɛtvas",
+            "en": "a little; somewhat",
+            "vi": "một chút; hơi",
+            "say": "etwas"
           }
         ],
         "analysis": {
           "pattern": "werden + Infinitiv",
-          "de": "Werden bildet mit sein das Futur I: werde … da sein.",
-          "en": "Werden plus sein forms the future: werde … da sein.",
-          "vi": "werden kết hợp với nguyên mẫu sein tạo Futur I: werde … da sein."
+          "de": "Werden bildet mit sein das Futur I: werde … da sein. Etwas ist hier ein Gradadverb im Sinn von ein wenig.",
+          "en": "Werden plus sein forms the future: werde … da sein. Etwas is a degree adverb here, meaning a little.",
+          "vi": "werden kết hợp với nguyên mẫu sein tạo Futur I: werde … da sein. etwas ở đây là trạng từ chỉ mức độ: một chút, hơi."
         },
         "source": "editorial"
       },
@@ -2190,7 +2571,12 @@ const conversationGroups = [
             "en": "unfortunately",
             "vi": "tiếc là",
             "ipa": "ˈlaɪ̯dɐ",
-            "say": "leider"
+            "say": "leider",
+            "usageHelp": {
+              "de": "Leider kommentiert die gesamte Aussage als bedauerlich, nicht die Eigenschaft eines Nomens.",
+              "en": "Leider comments on the whole statement as regrettable, rather than describing a noun.",
+              "vi": "leider bình luận cả sự việc là đáng tiếc, không nêu đặc điểm của một danh từ nên không chia đuôi tính từ."
+            }
           }
         ],
         "analysis": {
@@ -2224,6 +2610,14 @@ const conversationGroups = [
             "vi": "ngay khi",
             "ipa": "zoˈbalt",
             "say": "sobald"
+          },
+          {
+            "de": "etwas",
+            "type": "pronoun",
+            "ipa": "ˈɛtvas",
+            "en": "something; some",
+            "vi": "điều gì đó; một ít",
+            "say": "etwas"
           }
         ],
         "analysis": {
@@ -2315,7 +2709,12 @@ const conversationGroups = [
             "en": "about it; about that",
             "vi": "về việc đó",
             "ipa": "daˈʁyːbɐ",
-            "say": "darüber"
+            "say": "darüber",
+            "usageHelp": {
+              "de": "Darüber ist da + über und verweist auf das Thema oder den Anlass.",
+              "en": "Darüber is da plus über and refers to a topic or cause.",
+              "vi": "darüber = da + über, chỉ chủ đề hoặc sự việc đã nhắc đến, ví dụ sprechen über hoặc sich freuen über."
+            }
           },
           {
             "de": "sprechen",
@@ -2324,13 +2723,33 @@ const conversationGroups = [
             "vi": "nói",
             "ipa": "ˈʃpʁɛçn̩",
             "say": "sprechen"
+          },
+          {
+            "de": "lieber",
+            "type": "adverb",
+            "ipa": "ˈliːbɐ",
+            "en": "rather; preferably",
+            "vi": "thích hơn; muốn hơn",
+            "say": "lieber",
+            "usageHelp": {
+              "de": "Lieber ist hier der Komparativ des Adverbs gern.",
+              "en": "Lieber is the comparative of the adverb gern here.",
+              "vi": "lieber ở đây là so sánh hơn của trạng từ gern: muốn/thích hơn; không phải nhận đuôi theo danh từ."
+            },
+            "formHelp": {
+              "base": "gern",
+              "surface": "lieber",
+              "de": "Lieber ist der Komparativ des Adverbs gern. Die Form hängt hier nicht von einem Nomen ab.",
+              "en": "Lieber is the comparative of the adverb gern. Its form does not depend on a noun here.",
+              "vi": "lieber là so sánh hơn của trạng từ gern: muốn/thích hơn. Dạng này không do giống hay cách của một danh từ quyết định."
+            }
           }
         ],
         "analysis": {
-          "pattern": "möchte + Infinitiv",
-          "de": "Möchte ist eine Konjunktiv-II-Form von mögen; der weitere Infinitiv steht am Ende.",
-          "en": "Möchte is a subjunctive II form of mögen; the other infinitive comes at the end.",
-          "vi": "möchte là dạng Konjunktiv II của mögen; động từ nguyên mẫu còn lại đứng cuối."
+          "pattern": "lieber nicht · gern → lieber",
+          "de": "Möchte wird konjugiert; sprechen steht als Infinitiv am Ende. Lieber ist hier der Komparativ des Adverbs gern. Darüber ersetzt über + das Thema.",
+          "en": "Möchte is conjugated; sprechen is the final infinitive. Lieber is the comparative of the adverb gern here. Darüber replaces über plus the topic.",
+          "vi": "möchte được chia; sprechen ở nguyên mẫu cuối. lieber ở đây là so sánh hơn của trạng từ gern. darüber thay cho über + chủ đề đang nói."
         },
         "source": "editorial"
       },
@@ -2348,7 +2767,15 @@ const conversationGroups = [
             "en": "early",
             "vi": "sớm",
             "ipa": "fʁyː",
-            "say": "früh"
+            "say": "früh",
+            "formHelp": {
+              "base": "früh",
+              "surface": "früher",
+              "example": "etwas früher schreiben",
+              "de": "Früher ist Komparativ von früh. Die Form ergänzt schreiben; -er ist eine Vergleichsform, keine Deklinationsendung.",
+              "en": "Früher is the comparative of früh. It modifies schreiben; -er is comparative, not a declension ending.",
+              "vi": "früher là so sánh hơn của früh: sớm hơn. Nó bổ nghĩa cho schreiben; -er là dấu so sánh, không phải đuôi biến cách."
+            }
           },
           {
             "de": "schreiben",
@@ -2357,13 +2784,21 @@ const conversationGroups = [
             "vi": "viết; nhắn tin",
             "ipa": "ˈʃʁaɪ̯bn̩",
             "say": "schreiben"
+          },
+          {
+            "de": "etwas",
+            "type": "adverb",
+            "ipa": "ˈɛtvas",
+            "en": "a little; somewhat",
+            "vi": "một chút; hơi",
+            "say": "etwas"
           }
         ],
         "analysis": {
           "pattern": "könnte/könntest/könnten + Infinitiv",
-          "de": "Konjunktiv II von können; der weitere Infinitiv steht am Ende.",
-          "en": "Subjunctive II of können; the other infinitive comes at the end.",
-          "vi": "Konjunktiv II của können; động từ nguyên mẫu còn lại đứng cuối câu."
+          "de": "Konjunktiv II von können; der weitere Infinitiv steht am Ende. Etwas ist hier ein Gradadverb im Sinn von ein wenig.",
+          "en": "Subjunctive II of können; the other infinitive comes at the end. Etwas is a degree adverb here, meaning a little.",
+          "vi": "Konjunktiv II của können; động từ nguyên mẫu còn lại đứng cuối câu. etwas ở đây là trạng từ chỉ mức độ: một chút, hơi."
         },
         "source": "editorial"
       }
@@ -2536,6 +2971,22 @@ const conversationGroups = [
             "vi": "cho; đưa",
             "ipa": "ˈɡeːbn̩",
             "say": "geben"
+          },
+          {
+            "de": "kurz",
+            "type": "adjective",
+            "ipa": "kʊʁts",
+            "en": "short; brief",
+            "vi": "ngắn; ngắn gọn",
+            "say": "kurz",
+            "formHelp": {
+              "base": "kurz",
+              "surface": "kurzen",
+              "example": "einen kurzen Moment",
+              "de": "Moment ist maskulin und steht als Objekt im Akkusativ: einen Moment. Das Adjektiv nach einem ein-Wort hat hier die Endung -en.",
+              "en": "Moment is masculine accusative: einen Moment. Following an ein-type determiner, the adjective has the ending -en here.",
+              "vi": "Moment giống đực, là tân ngữ Akkusativ (cách 4): einen Moment. Tính từ sau từ loại ein nhận đuôi -en ở trường hợp này: einen kurzen Moment."
+            }
           }
         ],
         "analysis": {
@@ -2569,13 +3020,26 @@ const conversationGroups = [
             "vi": "dừng lại",
             "ipa": "ˈaʊ̯fˌhøːʁən",
             "say": "aufhören"
+          },
+          {
+            "de": "damit",
+            "type": "adverb",
+            "ipa": "daˈmɪt",
+            "en": "with that; with it",
+            "vi": "với việc đó; bằng điều đó",
+            "say": "damit",
+            "usageHelp": {
+              "de": "Damit ist hier da + mit und ersetzt eine Sache nach mit; es ist in diesen Beispielen nicht die Konjunktion des Zwecks.",
+              "en": "Damit is da plus mit here, replacing a matter following mit; it is not the purpose conjunction in these examples.",
+              "vi": "damit ở các câu này là da + mit, thay cho mit + việc đó; không phải liên từ để chỉ mục đích là để."
+            }
           }
         ],
         "analysis": {
-          "pattern": "zu + Infinitiv",
-          "de": "Aufzuhören ist der zu-Infinitiv von aufhören; zu steht zwischen Präfix und Stamm.",
-          "en": "Aufzuhören is the zu-infinitive of aufhören; zu goes between the prefix and stem.",
-          "vi": "aufzuhören là nguyên mẫu có zu của aufhören; zu nằm giữa tiền tố và thân động từ."
+          "pattern": "bitten + zu-Infinitiv · aufhören mit → damit",
+          "de": "Aufzuhören ist der zu-Infinitiv von aufhören: zu steht zwischen auf und hören. Damit ersetzt mit + die gemeinte Handlung.",
+          "en": "Aufzuhören is the zu-infinitive of aufhören: zu comes between auf and hören. Damit replaces mit plus the action referred to.",
+          "vi": "aufzuhören là nguyên mẫu có zu của aufhören: zu nằm giữa auf và hören. damit thay cho mit + hành động đang nhắc đến."
         },
         "source": "legacy-adapted",
         "simple": "Lassen Sie das bitte.",
@@ -2607,10 +3071,10 @@ const conversationGroups = [
           }
         ],
         "analysis": {
-          "pattern": "hätte/hätten + Akkusativ",
-          "de": "Hätte/hätten ist Konjunktiv II von haben; das Objekt steht im Akkusativ.",
-          "en": "Hätte/hätten is subjunctive II of haben; its object is accusative.",
-          "vi": "hätte/hätten là Konjunktiv II của haben; tân ngữ trực tiếp ở Akkusativ."
+          "pattern": "hätten + Akkusativ · einen Moment Zeit",
+          "de": "Hätten ist Konjunktiv II von haben. Die feste Verbindung einen Moment Zeit haben bezeichnet eine kurze Zeitspanne; einen Moment steht im Akkusativ.",
+          "en": "Hätten is subjunctive II of haben. The expression einen Moment Zeit haben means to have a short amount of time; einen Moment is accusative.",
+          "vi": "Hätten là Konjunktiv II của haben. Cụm einen Moment Zeit haben nghĩa là có một chút thời gian; einen Moment ở Akkusativ (cách 4)."
         },
         "source": "legacy-adapted",
         "simple": "Darf ich kurz stören?",
@@ -2636,7 +3100,12 @@ const conversationGroups = [
             "en": "differently",
             "vi": "theo cách khác",
             "ipa": "ˈandɐs",
-            "say": "anders"
+            "say": "anders",
+            "usageHelp": {
+              "de": "Anders heißt hier auf eine andere Weise. Es wird nicht zu andere oder anderen dekliniert.",
+              "en": "Anders means in a different way here and is not declined to andere or anderen.",
+              "vi": "anders ở đây nghĩa là theo cách khác. Không đổi nó thành andere/anderen; đó là cách dùng của từ khác, không phải biến cách trạng từ anders."
+            }
           }
         ],
         "analysis": {
@@ -2702,7 +3171,12 @@ const conversationGroups = [
             "en": "now",
             "vi": "bây giờ",
             "ipa": "jɛtst",
-            "say": "jetzt"
+            "say": "jetzt",
+            "usageHelp": {
+              "de": "Jetzt beantwortet die Frage wann: im gegenwärtigen Moment.",
+              "en": "Jetzt answers when: at the present moment.",
+              "vi": "jetzt trả lời khi nào: bây giờ, ở thời điểm hiện tại."
+            }
           }
         ],
         "analysis": {
@@ -2739,13 +3213,26 @@ const conversationGroups = [
             "vi": "ngắn; trong chốc lát",
             "ipa": "kʊʁts",
             "say": "kurz"
+          },
+          {
+            "de": "dabei",
+            "type": "adverb",
+            "ipa": "daˈbaɪ̯",
+            "en": "with that; while doing it",
+            "vi": "trong việc đó; khi làm việc đó",
+            "say": "dabei",
+            "usageHelp": {
+              "de": "Dabei ist da + bei; die genaue Bedeutung hängt hier von helfen bei oder der genannten Tätigkeit ab.",
+              "en": "Dabei is da plus bei; here its meaning depends on helfen bei or the activity mentioned.",
+              "vi": "dabei = da + bei; trong helfen bei là giúp làm việc đó, còn ở câu về may mắn là khi làm việc đó."
+            }
           }
         ],
         "analysis": {
-          "pattern": "könnte/könntest/könnten + Infinitiv",
-          "de": "Konjunktiv II von können; der weitere Infinitiv steht am Ende.",
-          "en": "Subjunctive II of können; the other infinitive comes at the end.",
-          "vi": "Konjunktiv II của können; động từ nguyên mẫu còn lại đứng cuối câu."
+          "pattern": "helfen bei + Dativ → dabei · jemandem helfen",
+          "de": "Mir ist Dativ, weil helfen eine Person im Dativ verlangt. Dabei ersetzt bei + die Aufgabe. Könntest ist Konjunktiv II; helfen steht als Infinitiv am Ende.",
+          "en": "Mir is dative because helfen takes a dative person. Dabei replaces bei plus the task. Könntest is subjunctive II; helfen is the final infinitive.",
+          "vi": "mir ở Dativ vì helfen yêu cầu người được giúp ở Dativ. dabei thay cho bei + công việc. Könntest là Konjunktiv II; helfen ở nguyên mẫu cuối câu."
         },
         "source": "document"
       },
@@ -2771,7 +3258,12 @@ const conversationGroups = [
             "en": "unfortunately",
             "vi": "tiếc là",
             "ipa": "ˈlaɪ̯dɐ",
-            "say": "leider"
+            "say": "leider",
+            "usageHelp": {
+              "de": "Leider kommentiert die gesamte Aussage als bedauerlich, nicht die Eigenschaft eines Nomens.",
+              "en": "Leider comments on the whole statement as regrettable, rather than describing a noun.",
+              "vi": "leider bình luận cả sự việc là đáng tiếc, không nêu đặc điểm của một danh từ nên không chia đuôi tính từ."
+            }
           }
         ],
         "analysis": {
@@ -2804,7 +3296,12 @@ const conversationGroups = [
             "en": "unfortunately",
             "vi": "tiếc là",
             "ipa": "ˈlaɪ̯dɐ",
-            "say": "leider"
+            "say": "leider",
+            "usageHelp": {
+              "de": "Leider kommentiert die gesamte Aussage als bedauerlich, nicht die Eigenschaft eines Nomens.",
+              "en": "Leider comments on the whole statement as regrettable, rather than describing a noun.",
+              "vi": "leider bình luận cả sự việc là đáng tiếc, không nêu đặc điểm của một danh từ nên không chia đuôi tính từ."
+            }
           }
         ],
         "analysis": {
@@ -2873,6 +3370,19 @@ const conversationGroups = [
             "plural": "die Ausführungen",
             "ipa": "diː ˈaʊ̯sˌfyːʁʊŋ",
             "say": "die Ausführung"
+          },
+          {
+            "de": "damit",
+            "type": "adverb",
+            "ipa": "daˈmɪt",
+            "en": "with that; with it",
+            "vi": "với việc đó; bằng điều đó",
+            "say": "damit",
+            "usageHelp": {
+              "de": "Damit ist hier da + mit und ersetzt eine Sache nach mit; es ist in diesen Beispielen nicht die Konjunktion des Zwecks.",
+              "en": "Damit is da plus mit here, replacing a matter following mit; it is not the purpose conjunction in these examples.",
+              "vi": "damit ở các câu này là da + mit, thay cho mit + việc đó; không phải liên từ để chỉ mục đích là để."
+            }
           }
         ],
         "analysis": {
@@ -2930,7 +3440,15 @@ const conversationGroups = [
             "en": "slow",
             "vi": "chậm",
             "ipa": "ˈlaŋzaːm",
-            "say": "langsam"
+            "say": "langsam",
+            "formHelp": {
+              "base": "langsam",
+              "surface": "langsamer",
+              "example": "etwas langsamer sprechen",
+              "de": "Langsamer ist Komparativ von langsam. -er bezeichnet hier den Vergleich, nicht Genus oder Kasus; das Adjektiv wird adverbial zu sprechen gebraucht.",
+              "en": "Langsamer is the comparative of langsam. Here -er marks comparison, not gender or case; the adjective is used adverbially with sprechen.",
+              "vi": "langsamer là so sánh hơn của langsam: chậm hơn. -er ở đây chỉ so sánh, không phải đuôi giống/cách. Trong câu này nó làm trạng ngữ bổ nghĩa cho sprechen."
+            }
           },
           {
             "de": "sprechen",
@@ -2939,13 +3457,21 @@ const conversationGroups = [
             "vi": "nói",
             "ipa": "ˈʃpʁɛçn̩",
             "say": "sprechen"
+          },
+          {
+            "de": "etwas",
+            "type": "adverb",
+            "ipa": "ˈɛtvas",
+            "en": "a little; somewhat",
+            "vi": "một chút; hơi",
+            "say": "etwas"
           }
         ],
         "analysis": {
           "pattern": "könnte/könntest/könnten + Infinitiv",
-          "de": "Konjunktiv II von können; der weitere Infinitiv steht am Ende.",
-          "en": "Subjunctive II of können; the other infinitive comes at the end.",
-          "vi": "Konjunktiv II của können; động từ nguyên mẫu còn lại đứng cuối câu."
+          "de": "Konjunktiv II von können; der weitere Infinitiv steht am Ende. Etwas ist hier ein Gradadverb im Sinn von ein wenig.",
+          "en": "Subjunctive II of können; the other infinitive comes at the end. Etwas is a degree adverb here, meaning a little.",
+          "vi": "Konjunktiv II của können; động từ nguyên mẫu còn lại đứng cuối câu. etwas ở đây là trạng từ chỉ mức độ: một chút, hơi."
         },
         "source": "editorial"
       },
@@ -3039,13 +3565,34 @@ const conversationGroups = [
             "vi": "bổ sung",
             "ipa": "ɛɐ̯ˈɡɛntsn̩",
             "say": "ergänzen"
+          },
+          {
+            "de": "dazu",
+            "type": "adverb",
+            "ipa": "daˈtsuː",
+            "en": "to that; on that point",
+            "vi": "vào việc đó; về điểm đó",
+            "say": "dazu",
+            "usageHelp": {
+              "de": "Dazu ist da + zu und verweist auf den besprochenen Punkt.",
+              "en": "Dazu is da plus zu and refers to the point under discussion.",
+              "vi": "dazu = da + zu, trỏ đến điểm đang được bàn, không phải đuôi -zu của một từ."
+            }
+          },
+          {
+            "de": "etwas",
+            "type": "pronoun",
+            "ipa": "ˈɛtvas",
+            "en": "something; some",
+            "vi": "điều gì đó; một ít",
+            "say": "etwas"
           }
         ],
         "analysis": {
-          "pattern": "darf ich + Infinitiv",
-          "de": "Darf ist Präsens von dürfen, nicht Konjunktiv II.",
-          "en": "Darf is present indicative of dürfen, not subjunctive II.",
-          "vi": "Darf là hiện tại của dürfen, không phải Konjunktiv II."
+          "pattern": "dazu · etwas · darf ich",
+          "de": "Dazu verweist auf den besprochenen Punkt. Etwas ist hier ein Indefinitpronomen. Darf ist Präsens von dürfen; ergänzen steht als Infinitiv am Ende.",
+          "en": "Dazu refers to the point under discussion. Etwas is an indefinite pronoun here. Darf is present indicative of dürfen; ergänzen is the final infinitive.",
+          "vi": "dazu chỉ điểm đang bàn. etwas ở đây là đại từ bất định. Darf là hiện tại của dürfen; ergänzen ở nguyên mẫu cuối."
         },
         "source": "editorial"
       },
@@ -3106,6 +3653,19 @@ const conversationGroups = [
             "plural": "die Gedanken",
             "ipa": "deːɐ̯ ɡəˈdaŋkə",
             "say": "der Gedanke"
+          },
+          {
+            "de": "noch",
+            "type": "adverb",
+            "ipa": "nɔx",
+            "en": "still; yet; some more",
+            "vi": "vẫn; còn; thêm",
+            "say": "noch",
+            "usageHelp": {
+              "de": "Noch kann eine Fortdauer oder eine zusätzliche Menge ausdrücken; die Bedeutung hängt von der Verbindung ab.",
+              "en": "Noch can indicate continuation or an additional amount, depending on the expression.",
+              "vi": "noch có thể là vẫn/còn hoặc thêm một ít; cần đọc theo cả cụm, như noch nicht = chưa."
+            }
           }
         ],
         "analysis": {
@@ -3140,13 +3700,29 @@ const conversationGroups = [
             "plural": "die Fragen",
             "ipa": "diː ˈfʁaːɡə",
             "say": "die Frage"
+          },
+          {
+            "de": "ursprünglich",
+            "type": "adjective",
+            "ipa": "ˈuːɐ̯ˌʃpʁʏŋlɪç",
+            "en": "original; initial",
+            "vi": "ban đầu",
+            "say": "ursprünglich",
+            "formHelp": {
+              "base": "ursprünglich",
+              "surface": "ursprüngliche",
+              "example": "auf die ursprüngliche Frage",
+              "de": "Frage ist feminin; auf verlangt bei zurückkommen auf hier Akkusativ. Nach die erhält das Adjektiv die Endung -e.",
+              "en": "Frage is feminine; zurückkommen auf takes accusative here. After die, the adjective has the ending -e.",
+              "vi": "Frage giống cái; zurückkommen auf trong cấu trúc này dùng Akkusativ (cách 4). Sau die, tính từ nhận đuôi -e: die ursprüngliche Frage."
+            }
           }
         ],
         "analysis": {
-          "pattern": "Modalverb + Infinitiv",
-          "de": "Das Modalverb wird konjugiert; das andere Verb steht im Infinitiv am Satzende.",
-          "en": "The modal is conjugated; the other verb stays in the infinitive at the end.",
-          "vi": "Động từ tình thái được chia; động từ còn lại giữ nguyên mẫu và đứng cuối."
+          "pattern": "zurückkommen auf + Akkusativ · ursprünglich → ursprüngliche",
+          "de": "Nach können bleibt zurückkommen als Infinitiv am Ende. Auf verlangt hier Akkusativ: auf die ursprüngliche Frage. Ursprüngliche ist die flektierte Form von ursprünglich.",
+          "en": "After können, zurückkommen stays infinitive at the end. Auf takes accusative here: auf die ursprüngliche Frage. Ursprüngliche is the inflected form of ursprünglich.",
+          "vi": "Sau können, zurückkommen giữ nguyên mẫu ở cuối. auf ở đây dùng Akkusativ: auf die ursprüngliche Frage. ursprüngliche là dạng đã chia đuôi của ursprünglich."
         },
         "source": "editorial"
       },
@@ -3175,6 +3751,27 @@ const conversationGroups = [
             "vi": "thêm vào; bổ sung",
             "ipa": "hɪnˈtsuːˌfyːɡən",
             "say": "hinzufügen"
+          },
+          {
+            "de": "etwas",
+            "type": "pronoun",
+            "ipa": "ˈɛtvas",
+            "en": "something; some",
+            "vi": "điều gì đó; một ít",
+            "say": "etwas"
+          },
+          {
+            "de": "noch",
+            "type": "adverb",
+            "ipa": "nɔx",
+            "en": "still; yet; some more",
+            "vi": "vẫn; còn; thêm",
+            "say": "noch",
+            "usageHelp": {
+              "de": "Noch kann eine Fortdauer oder eine zusätzliche Menge ausdrücken; die Bedeutung hängt von der Verbindung ab.",
+              "en": "Noch can indicate continuation or an additional amount, depending on the expression.",
+              "vi": "noch có thể là vẫn/còn hoặc thêm một ít; cần đọc theo cả cụm, như noch nicht = chưa."
+            }
           }
         ],
         "analysis": {
@@ -3421,13 +4018,34 @@ const conversationGroups = [
             "plural": "die Geburtstage",
             "ipa": "deːɐ̯ ɡəˈbuːɐ̯tstaːk",
             "say": "der Geburtstag"
+          },
+          {
+            "de": "alles Gute",
+            "type": "phrase",
+            "ipa": "ˈaləs ˈɡuːtə",
+            "en": "all the best",
+            "vi": "mọi điều tốt đẹp",
+            "say": "alles Gute",
+            "usageHelp": {
+              "de": "Gute ist nach alles substantiviert und wird großgeschrieben; die feste Form lautet alles Gute.",
+              "en": "Gute is nominalized after alles and capitalized; the fixed form is alles Gute.",
+              "vi": "Gute được danh từ hóa sau alles nên viết hoa. Cụm cố định là alles Gute: mọi điều tốt đẹp; không nhầm với etwas Gutes."
+            },
+            "formHelp": {
+              "base": "gut",
+              "surface": "Gute",
+              "example": "alles Gute",
+              "de": "Gut wird hier substantiviert. Nach alles lautet die feste Form Gute mit Großbuchstaben und -e; nach etwas heißt es dagegen etwas Gutes.",
+              "en": "Gut is nominalized here. After alles, the fixed form is capitalized Gute with -e; after etwas, it is etwas Gutes instead.",
+              "vi": "gut được danh từ hóa ở đây. Sau alles dùng Gute, viết hoa và có -e; nhưng sau etwas lại là etwas Gutes với -es. Không gắn một đuôi giống nhau cho mọi trường hợp."
+            }
           }
         ],
         "analysis": {
           "pattern": "wünschen + Dativ + Akkusativ",
-          "de": "Die Person steht im Dativ; der Wunsch steht im Akkusativ.",
-          "en": "The recipient is dative; the wish is accusative.",
-          "vi": "Người nhận lời chúc ở Dativ; điều được chúc ở Akkusativ."
+          "de": "Die Person steht im Dativ; der Wunsch steht im Akkusativ. Gute wird nach alles als substantiviertes Adjektiv großgeschrieben.",
+          "en": "The recipient is dative; the wish is accusative. Gute is capitalized after alles because it is a nominalized adjective.",
+          "vi": "Người nhận lời chúc ở Dativ; điều được chúc ở Akkusativ. Gute viết hoa sau alles vì là tính từ đã được danh từ hóa."
         },
         "source": "legacy-adapted",
         "simple": "Alles Gute zum Geburtstag!",
@@ -3556,6 +4174,22 @@ const conversationGroups = [
             "plural": "die Zeiten",
             "ipa": "diː tsaɪ̯t",
             "say": "die Zeit"
+          },
+          {
+            "de": "gemeinsam",
+            "type": "adjective",
+            "ipa": "ɡəˈmaɪ̯nzaːm",
+            "en": "shared; together",
+            "vi": "chung; cùng nhau",
+            "say": "gemeinsam",
+            "formHelp": {
+              "base": "gemeinsam",
+              "surface": "gemeinsame",
+              "example": "auf unsere gemeinsame Zeit",
+              "de": "Zeit ist feminin; anstoßen auf verlangt Akkusativ. Nach unsere erhält gemeinsam hier die Endung -e.",
+              "en": "Zeit is feminine; anstoßen auf takes accusative. After unsere, gemeinsam has the ending -e here.",
+              "vi": "Zeit giống cái; anstoßen auf dùng Akkusativ (cách 4). Sau unsere, gemeinsam nhận đuôi -e trong câu này."
+            }
           }
         ],
         "analysis": {
@@ -3588,7 +4222,40 @@ const conversationGroups = [
             "en": "certain; sure",
             "vi": "chắc chắn",
             "ipa": "ˈzɪçɐ",
-            "say": "sicher"
+            "say": "sicher",
+            "formHelp": {
+              "base": "sicher",
+              "surface": "sichere",
+              "example": "eine sichere und angenehme Fahrt",
+              "de": "Fahrt ist feminin und steht als Wunschobjekt im Akkusativ. Nach eine haben sichere und angenehme die Endung -e.",
+              "en": "Fahrt is feminine accusative as the object of the wish. After eine, sichere and angenehme have the ending -e.",
+              "vi": "Fahrt giống cái, là tân ngữ Akkusativ (cách 4) của lời chúc. Sau eine, cả sichere và angenehme đều nhận -e."
+            }
+          },
+          {
+            "de": "angenehm",
+            "type": "adjective",
+            "ipa": "ˈanɡəneːm",
+            "en": "pleasant",
+            "vi": "dễ chịu",
+            "say": "angenehm",
+            "formHelp": {
+              "base": "angenehm",
+              "surface": "angenehme",
+              "example": "eine sichere und angenehme Fahrt",
+              "de": "Angenehm beschreibt Fahrt. Nach eine im Akkusativ Feminin lautet die Form angenehme mit -e.",
+              "en": "Angenehm describes Fahrt. After eine in feminine accusative, it becomes angenehme with -e.",
+              "vi": "angenehm bổ nghĩa cho Fahrt. Sau eine ở Akkusativ (cách 4) giống cái, dạng dùng là angenehme với đuôi -e."
+            }
+          },
+          {
+            "de": "die Fahrt",
+            "type": "noun",
+            "ipa": "diː faːɐ̯t",
+            "en": "journey; ride",
+            "vi": "chuyến đi",
+            "say": "die Fahrt",
+            "plural": "die Fahrten"
           }
         ],
         "analysis": {
@@ -3621,7 +4288,15 @@ const conversationGroups = [
             "en": "restful",
             "vi": "giúp nghỉ ngơi; thư thái",
             "ipa": "ɛɐ̯ˈhoːlzaːm",
-            "say": "erholsam"
+            "say": "erholsam",
+            "formHelp": {
+              "base": "erholsam",
+              "surface": "erholsame",
+              "example": "eine erholsame Nacht",
+              "de": "Nacht ist feminin und steht nach wünschen im Akkusativ. Nach eine wird erholsam zu erholsame.",
+              "en": "Nacht is feminine accusative after wünschen. After eine, erholsam becomes erholsame.",
+              "vi": "Nacht giống cái và ở Akkusativ (cách 4) sau wünschen. Sau eine, erholsam đổi thành erholsame, thêm -e."
+            }
           }
         ],
         "analysis": {
@@ -3728,10 +4403,10 @@ const conversationGroups = [
           }
         ],
         "analysis": {
-          "pattern": "lass uns + Infinitiv",
-          "de": "Lass ist Imperativ von lassen; das Vollverb bleibt im Infinitiv.",
-          "en": "Lass is the imperative of lassen; the main verb remains infinitive.",
-          "vi": "Lass là mệnh lệnh của lassen; động từ chính giữ nguyên mẫu sau uns."
+          "pattern": "Imperativ: machen → mach · kommen → komm",
+          "de": "Mach und komm sind Imperativformen für du. Mach’s ist die Kurzform von mach es; nach Hause bezeichnet die Richtung.",
+          "en": "Mach and komm are du-imperatives. Mach’s is short for mach es; nach Hause indicates direction.",
+          "vi": "Mach và komm là mệnh lệnh cho du. Mach’s rút gọn từ mach es; nach Hause chỉ hướng về nhà."
         },
         "source": "document"
       },
@@ -3869,7 +4544,12 @@ const conversationGroups = [
             "en": "really",
             "vi": "thực sự",
             "ipa": "ˈvɪʁklɪç",
-            "say": "wirklich"
+            "say": "wirklich",
+            "usageHelp": {
+              "de": "Wirklich verstärkt hier die Aussage im Sinn von tatsächlich oder sehr.",
+              "en": "Wirklich strengthens the statement here, meaning really or genuinely.",
+              "vi": "wirklich nhấn mạnh sự việc là thực sự; không có đuôi theo giống hay cách của danh từ."
+            }
           }
         ],
         "analysis": {
@@ -3968,7 +4648,12 @@ const conversationGroups = [
             "en": "really",
             "vi": "thực sự",
             "ipa": "ˈvɪʁklɪç",
-            "say": "wirklich"
+            "say": "wirklich",
+            "usageHelp": {
+              "de": "Wirklich verstärkt hier die Aussage im Sinn von tatsächlich oder sehr.",
+              "en": "Wirklich strengthens the statement here, meaning really or genuinely.",
+              "vi": "wirklich nhấn mạnh sự việc là thực sự; không có đuôi theo giống hay cách của danh từ."
+            }
           }
         ],
         "analysis": {
@@ -4067,7 +4752,20 @@ const conversationGroups = [
             "en": "still; yet",
             "vi": "vẫn; còn",
             "ipa": "nɔx",
-            "say": "noch"
+            "say": "noch",
+            "usageHelp": {
+              "de": "Noch kann eine Fortdauer oder eine zusätzliche Menge ausdrücken; die Bedeutung hängt von der Verbindung ab.",
+              "en": "Noch can indicate continuation or an additional amount, depending on the expression.",
+              "vi": "noch có thể là vẫn/còn hoặc thêm một ít; cần đọc theo cả cụm, như noch nicht = chưa."
+            }
+          },
+          {
+            "de": "noch nicht",
+            "type": "phrase",
+            "ipa": "nɔx nɪçt",
+            "en": "not yet",
+            "vi": "chưa",
+            "say": "noch nicht"
           }
         ],
         "analysis": {
@@ -4103,7 +4801,12 @@ const conversationGroups = [
             "en": "really",
             "vi": "thực sự",
             "ipa": "ˈvɪʁklɪç",
-            "say": "wirklich"
+            "say": "wirklich",
+            "usageHelp": {
+              "de": "Wirklich verstärkt hier die Aussage im Sinn von tatsächlich oder sehr.",
+              "en": "Wirklich strengthens the statement here, meaning really or genuinely.",
+              "vi": "wirklich nhấn mạnh sự việc là thực sự; không có đuôi theo giống hay cách của danh từ."
+            }
           }
         ],
         "analysis": {
@@ -4136,7 +4839,12 @@ const conversationGroups = [
             "en": "really",
             "vi": "thực sự",
             "ipa": "ˈvɪʁklɪç",
-            "say": "wirklich"
+            "say": "wirklich",
+            "usageHelp": {
+              "de": "Wirklich verstärkt hier die Aussage im Sinn von tatsächlich oder sehr.",
+              "en": "Wirklich strengthens the statement here, meaning really or genuinely.",
+              "vi": "wirklich nhấn mạnh sự việc là thực sự; không có đuôi theo giống hay cách của danh từ."
+            }
           }
         ],
         "analysis": {
@@ -4349,6 +5057,14 @@ const conversationGroups = [
             "vi": "vui mừng",
             "ipa": "zɪç ˈfʁɔʏ̯ən",
             "say": "sich freuen"
+          },
+          {
+            "de": "etwas",
+            "type": "pronoun",
+            "ipa": "ˈɛtvas",
+            "en": "something; some",
+            "vi": "điều gì đó; một ít",
+            "say": "etwas"
           }
         ],
         "analysis": {
@@ -4382,6 +5098,19 @@ const conversationGroups = [
             "vi": "chân thành",
             "ipa": "ˈaʊ̯fˌʁɪçtɪç",
             "say": "aufrichtig"
+          },
+          {
+            "de": "dafür",
+            "type": "adverb",
+            "ipa": "daˈfyːɐ̯",
+            "en": "for that; for it",
+            "vi": "cho việc đó; về việc đó",
+            "say": "dafür",
+            "usageHelp": {
+              "de": "Dafür verbindet da mit für und ersetzt die genannte Sache nach zuständig für oder sich entschuldigen für.",
+              "en": "Dafür combines da with für and replaces the matter referred to in zuständig für or sich entschuldigen für.",
+              "vi": "dafür = da + für, thay cho việc đã nhắc tới trong zuständig für hoặc sich entschuldigen für. Không phải thêm đuôi vào da."
+            }
           }
         ],
         "analysis": {
@@ -4448,7 +5177,27 @@ const conversationGroups = [
             "en": "gladly; with pleasure",
             "vi": "sẵn lòng; thích",
             "ipa": "ɡɛʁn",
-            "say": "gern"
+            "say": "gern",
+            "usageHelp": {
+              "de": "Gern und gerne sind gleichbedeutende Varianten; -e in gerne ist hier keine Adjektivendung.",
+              "en": "Gern and gerne are equivalent variants; the -e in gerne is not an adjective ending here.",
+              "vi": "gern và gerne là hai cách dùng cùng nghĩa. Chữ -e trong gerne không phải đuôi biến cách của tính từ."
+            },
+            "formHelp": {
+              "base": "gern",
+              "surface": "gerne",
+              "de": "Gern und gerne sind gleichbedeutende Varianten. Das -e ist hier keine Deklinationsendung.",
+              "en": "Gern and gerne are equivalent variants. The -e is not a declension ending here.",
+              "vi": "gern và gerne là hai cách dùng tương đương. Chữ -e này không phải đuôi biến cách."
+            }
+          },
+          {
+            "de": "etwas",
+            "type": "pronoun",
+            "ipa": "ˈɛtvas",
+            "en": "something; some",
+            "vi": "điều gì đó; một ít",
+            "say": "etwas"
           }
         ],
         "analysis": {
@@ -4485,6 +5234,19 @@ const conversationGroups = [
             "vi": "nói",
             "ipa": "ˈʃpʁɛçn̩",
             "say": "sprechen"
+          },
+          {
+            "de": "darüber",
+            "type": "adverb",
+            "en": "about it; about that",
+            "vi": "về việc đó",
+            "ipa": "daˈʁyːbɐ",
+            "say": "darüber",
+            "usageHelp": {
+              "de": "Darüber ist da + über und verweist auf das Thema oder den Anlass.",
+              "en": "Darüber is da plus über and refers to a topic or cause.",
+              "vi": "darüber = da + über, chỉ chủ đề hoặc sự việc đã nhắc đến, ví dụ sprechen über hoặc sich freuen über."
+            }
           }
         ],
         "analysis": {
@@ -4592,9 +5354,9 @@ const conversationGroups = [
         ],
         "analysis": {
           "pattern": "Indirekte Frage + Verb am Ende",
-          "de": "Das Fragewort oder ob leitet den Nebensatz ein; dessen konjugiertes Verb steht am Ende.",
-          "en": "The question word or ob introduces the subordinate clause, whose conjugated verb comes last.",
-          "vi": "Từ để hỏi hoặc ob mở đầu mệnh đề phụ; động từ chia của mệnh đề đó đứng cuối."
+          "de": "Das Fragewort oder ob leitet den Nebensatz ein; dessen konjugiertes Verb steht am Ende. Dieses ist ein Demonstrativartikel im Akkusativ Neutrum zu Medikament; -es gehört hier zum Artikelwort.",
+          "en": "The question word or ob introduces the subordinate clause, whose conjugated verb comes last. Dieses is a neuter accusative demonstrative determiner agreeing with Medikament; -es belongs to the determiner here.",
+          "vi": "Từ để hỏi hoặc ob mở đầu mệnh đề phụ; động từ chia của mệnh đề đó đứng cuối. dieses là từ chỉ định ở Akkusativ giống trung, hòa hợp với Medikament; đuôi -es ở đây nằm ở từ chỉ định, không phải danh từ."
         },
         "source": "editorial"
       },
@@ -4622,6 +5384,19 @@ const conversationGroups = [
             "vi": "nói",
             "ipa": "ˈʃpʁɛçn̩",
             "say": "sprechen"
+          },
+          {
+            "de": "darüber",
+            "type": "adverb",
+            "en": "about it; about that",
+            "vi": "về việc đó",
+            "ipa": "daˈʁyːbɐ",
+            "say": "darüber",
+            "usageHelp": {
+              "de": "Darüber ist da + über und verweist auf das Thema oder den Anlass.",
+              "en": "Darüber is da plus über and refers to a topic or cause.",
+              "vi": "darüber = da + über, chỉ chủ đề hoặc sự việc đã nhắc đến, ví dụ sprechen über hoặc sich freuen über."
+            }
           }
         ],
         "analysis": {
@@ -4667,6 +5442,14 @@ const conversationGroups = [
             "vi": "muốn; mong muốn một cách nhẹ nhàng",
             "ipa": "ˈmœçtn̩",
             "say": "möchten"
+          },
+          {
+            "de": "etwas",
+            "type": "pronoun",
+            "ipa": "ˈɛtvas",
+            "en": "something; some",
+            "vi": "điều gì đó; một ít",
+            "say": "etwas"
           }
         ],
         "analysis": {
@@ -4832,13 +5615,37 @@ const conversationGroups = [
             "vi": "muốn; mong muốn một cách nhẹ nhàng",
             "ipa": "ˈmœçtn̩",
             "say": "möchten"
+          },
+          {
+            "de": "etwas",
+            "type": "pronoun",
+            "ipa": "ˈɛtvas",
+            "en": "something; some",
+            "vi": "điều gì đó; một ít",
+            "say": "etwas"
+          },
+          {
+            "de": "neu",
+            "type": "adjective",
+            "ipa": "nɔʏ̯",
+            "en": "new",
+            "vi": "mới",
+            "say": "neu",
+            "formHelp": {
+              "base": "neu",
+              "surface": "Neues",
+              "example": "etwas Neues",
+              "de": "Neues ist ein substantiviertes Adjektiv nach etwas. Es wird großgeschrieben und hat die starke Endung -es im Neutrum.",
+              "en": "Neues is a nominalized adjective after etwas. It is capitalized and takes the strong neuter ending -es.",
+              "vi": "Neues là tính từ được danh từ hóa sau etwas: một điều gì đó mới. Vì vậy viết hoa N và nhận đuôi mạnh -es ở giống trung."
+            }
           }
         ],
         "analysis": {
-          "pattern": "Relativsatz",
-          "de": "Das Relativpronomen bezieht sich auf ein Nomen; das konjugierte Verb steht am Ende.",
-          "en": "The relative pronoun refers to a noun; the conjugated verb comes last.",
-          "vi": "Đại từ quan hệ liên hệ tới một danh từ; động từ chia đứng cuối mệnh đề quan hệ."
+          "pattern": "etwas Neues · substantiviertes Adjektiv · Relativsatz",
+          "de": "Nach etwas steht Neues als substantiviertes Adjektiv mit Großbuchstaben und -es. Das ist das Relativpronomen dazu; möchtest steht am Ende des Relativsatzes.",
+          "en": "After etwas, Neues is a capitalized nominalized adjective ending in -es. Das is its relative pronoun; möchtest ends the relative clause.",
+          "vi": "Sau etwas, Neues là tính từ được danh từ hóa, viết hoa và nhận đuôi -es. das là đại từ quan hệ liên hệ với phần này; möchtest đứng cuối mệnh đề quan hệ."
         },
         "source": "legacy-adapted",
         "simple": "Was gibt’s Neues?",
@@ -4898,6 +5705,14 @@ const conversationGroups = [
             "vi": "xảy ra",
             "ipa": "paˈsiːʁən",
             "say": "passieren"
+          },
+          {
+            "de": "etwas",
+            "type": "pronoun",
+            "ipa": "ˈɛtvas",
+            "en": "something; some",
+            "vi": "điều gì đó; một ít",
+            "say": "etwas"
           }
         ],
         "analysis": {
@@ -4969,6 +5784,19 @@ const conversationGroups = [
             "vi": "trống; còn chỗ",
             "ipa": "fʁaɪ̯",
             "say": "frei"
+          },
+          {
+            "de": "noch",
+            "type": "adverb",
+            "ipa": "nɔx",
+            "en": "still; yet; some more",
+            "vi": "vẫn; còn; thêm",
+            "say": "noch",
+            "usageHelp": {
+              "de": "Noch kann eine Fortdauer oder eine zusätzliche Menge ausdrücken; die Bedeutung hängt von der Verbindung ab.",
+              "en": "Noch can indicate continuation or an additional amount, depending on the expression.",
+              "vi": "noch có thể là vẫn/còn hoặc thêm một ít; cần đọc theo cả cụm, như noch nicht = chưa."
+            }
           }
         ],
         "analysis": {
@@ -5068,7 +5896,12 @@ const conversationGroups = [
             "en": "already",
             "vi": "đã; rồi",
             "ipa": "bəˈʁaɪ̯ts",
-            "say": "bereits"
+            "say": "bereits",
+            "usageHelp": {
+              "de": "Bereits ist eine formellere Variante von schon im Sinn von schon geschehen.",
+              "en": "Bereits is a more formal alternative to schon, meaning already.",
+              "vi": "bereits có nghĩa là đã/rồi, gần nghĩa schon; không phải dạng có thêm đuôi để hòa hợp với danh từ."
+            }
           }
         ],
         "analysis": {
@@ -5114,6 +5947,14 @@ const conversationGroups = [
             "vi": "với bất kỳ ai; Dativ của jeder",
             "ipa": "ˈjeːdəm",
             "say": "jedem"
+          },
+          {
+            "de": "etwas",
+            "type": "pronoun",
+            "ipa": "ˈɛtvas",
+            "en": "something; some",
+            "vi": "điều gì đó; một ít",
+            "say": "etwas"
           }
         ],
         "analysis": {
@@ -5146,7 +5987,12 @@ const conversationGroups = [
             "en": "hardly",
             "vi": "gần như không",
             "ipa": "kaʊ̯m",
-            "say": "kaum"
+            "say": "kaum",
+            "usageHelp": {
+              "de": "Kaum begrenzt die Aussage hier: fast nicht.",
+              "en": "Kaum limits the statement here: almost not.",
+              "vi": "kaum ở đây nghĩa là gần như không, không phải một đuôi biến đổi của tính từ."
+            }
           }
         ],
         "analysis": {
@@ -5278,7 +6124,12 @@ const conversationGroups = [
             "en": "also; likewise",
             "vi": "cũng",
             "ipa": "ˈeːbn̩ˌfals",
-            "say": "ebenfalls"
+            "say": "ebenfalls",
+            "usageHelp": {
+              "de": "Ebenfalls bedeutet auch oder ebenso; -s ist Teil des Wortes und keine Pluralendung.",
+              "en": "Ebenfalls means also or likewise; -s belongs to the word and is not a plural ending.",
+              "vi": "ebenfalls nghĩa là cũng/tương tự. -s là một phần của từ, không phải đuôi số nhiều."
+            }
           }
         ],
         "analysis": {
@@ -5344,14 +6195,32 @@ const conversationGroups = [
             "en": "already",
             "vi": "đã; rồi",
             "ipa": "bəˈʁaɪ̯ts",
-            "say": "bereits"
+            "say": "bereits",
+            "usageHelp": {
+              "de": "Bereits ist eine formellere Variante von schon im Sinn von schon geschehen.",
+              "en": "Bereits is a more formal alternative to schon, meaning already.",
+              "vi": "bereits có nghĩa là đã/rồi, gần nghĩa schon; không phải dạng có thêm đuôi để hòa hợp với danh từ."
+            }
+          },
+          {
+            "de": "damit",
+            "type": "adverb",
+            "ipa": "daˈmɪt",
+            "en": "with that; with it",
+            "vi": "với việc đó; bằng điều đó",
+            "say": "damit",
+            "usageHelp": {
+              "de": "Damit ist hier da + mit und ersetzt eine Sache nach mit; es ist in diesen Beispielen nicht die Konjunktion des Zwecks.",
+              "en": "Damit is da plus mit here, replacing a matter following mit; it is not the purpose conjunction in these examples.",
+              "vi": "damit ở các câu này là da + mit, thay cho mit + việc đó; không phải liên từ để chỉ mục đích là để."
+            }
           }
         ],
         "analysis": {
-          "pattern": "hatte + Partizip II",
-          "de": "Hatte + gerechnet bildet das Plusquamperfekt.",
-          "en": "Hatte plus gerechnet forms the past perfect.",
-          "vi": "hatte + gerechnet tạo Plusquamperfekt."
+          "pattern": "rechnen mit + Dativ → damit · hatte + Partizip II",
+          "de": "Damit ersetzt mit + das erwartete Ereignis. Hatte … gerechnet ist Plusquamperfekt; rechnen bleibt in dieser Bedeutung mit mit verbunden.",
+          "en": "Damit replaces mit plus the expected event. Hatte … gerechnet is past perfect; rechnen takes mit in this meaning.",
+          "vi": "damit thay cho mit + điều đã dự tính. hatte … gerechnet là Plusquamperfekt; rechnen trong nghĩa dự tính đi với mit."
         },
         "source": "legacy-adapted",
         "simple": "Das wundert mich nicht.",
@@ -5448,13 +6317,26 @@ const conversationGroups = [
             "vi": "kiểm tra",
             "ipa": "ˈpʁyːfn̩",
             "say": "prüfen"
+          },
+          {
+            "de": "erst",
+            "type": "adverb",
+            "ipa": "eːɐ̯st",
+            "en": "first; before doing something else",
+            "vi": "trước tiên; trước khi làm việc khác",
+            "say": "erst",
+            "usageHelp": {
+              "de": "Erst bezeichnet hier einen Schritt, der vor einem anderen erfolgen muss.",
+              "en": "Erst marks a step that has to happen before another here.",
+              "vi": "erst ở đây chỉ bước cần làm trước bước khác, không phải đuôi từ."
+            }
           }
         ],
         "analysis": {
-          "pattern": "müsste + Infinitiv",
-          "de": "Müsste ist Konjunktiv II von müssen, nicht eine würde-Konstruktion.",
-          "en": "Müsste is subjunctive II of müssen, not a würde construction.",
-          "vi": "müsste là Konjunktiv II của müssen, không phải cấu trúc würde."
+          "pattern": "müsste + Infinitiv · erst",
+          "de": "Müsste ist Konjunktiv II von müssen; prüfen steht als Infinitiv am Ende. Erst nennt hier den notwendigen ersten Schritt, bevor eine Antwort möglich ist.",
+          "en": "Müsste is subjunctive II of müssen; prüfen is the final infinitive. Erst identifies the step that comes before an answer can be given.",
+          "vi": "müsste là Konjunktiv II của müssen; prüfen đứng cuối ở nguyên mẫu. erst chỉ bước cần làm trước khi có thể trả lời, không mang nghĩa đầu tiên về thứ hạng."
         },
         "source": "document"
       },
@@ -5515,13 +6397,26 @@ const conversationGroups = [
             "vi": "báo cho ai biết",
             "ipa": "bəˈʃaɪ̯t ˈɡeːbn̩",
             "say": "Bescheid geben"
+          },
+          {
+            "de": "darum",
+            "type": "adverb",
+            "ipa": "daˈʁʊm",
+            "en": "about that; of that",
+            "vi": "về việc đó; lo việc đó",
+            "say": "darum",
+            "usageHelp": {
+              "de": "Darum ist hier da + um in sich kümmern um.",
+              "en": "Darum is da plus um here in sich kümmern um.",
+              "vi": "darum ở đây = da + um trong sich kümmern um: lo việc đó; không nên dịch thành vì vậy trong câu này."
+            }
           }
         ],
         "analysis": {
-          "pattern": "Reflexivpronomen",
-          "de": "Das Reflexivpronomen richtet sich nach dem Subjekt und der Verbverbindung, zum Beispiel ich → mich.",
-          "en": "The reflexive pronoun depends on the subject and verb expression, for example ich → mich.",
-          "vi": "Đại từ phản thân phụ thuộc chủ ngữ và cấu trúc động từ, ví dụ ich → mich."
+          "pattern": "sich kümmern um + Akkusativ → darum · jemandem Bescheid geben",
+          "de": "Mich gehört zu sich kümmern. Darum ersetzt um + die genannte Aufgabe, nicht einen Folgesatz im Sinn von deshalb. Ihnen ist Dativ in jemandem Bescheid geben.",
+          "en": "Mich belongs to sich kümmern. Darum replaces um plus the task mentioned, rather than meaning therefore here. Ihnen is dative in jemandem Bescheid geben.",
+          "vi": "mich thuộc cụm sich kümmern. darum thay cho um + việc cần xử lý, không mang nghĩa vì vậy ở đây. Ihnen ở Dativ trong jemandem Bescheid geben."
         },
         "source": "document"
       },
@@ -5750,13 +6645,21 @@ const conversationGroups = [
             "plural": "die Budgets",
             "ipa": "das byˈdʒeː",
             "say": "das Budget"
+          },
+          {
+            "de": "über + Dativ",
+            "type": "preposition",
+            "ipa": "ˈyːbɐ",
+            "en": "above; over a stated limit",
+            "vi": "cao hơn; vượt một mức nào đó",
+            "say": "über"
           }
         ],
         "analysis": {
-          "pattern": "Präsens · Aussagesatz",
-          "de": "Das konjugierte Verb steht an zweiter Satzgliedposition; das Vorfeld kann aus mehreren Wörtern bestehen.",
-          "en": "The conjugated verb occupies the second constituent position; the first constituent may contain several words.",
-          "vi": "Động từ chia ở vị trí thành phần thứ hai; thành phần đầu có thể gồm nhiều từ."
+          "pattern": "über + Dativ · liegen über einem Betrag",
+          "de": "Über meinem Budget nennt eine überschrittene finanzielle Grenze. In dieser festen Angabe mit liegen steht über mit Dativ; meinem ist Dativ Neutrum.",
+          "en": "Über meinem Budget refers to an exceeded financial limit. In this expression with liegen, über takes dative; meinem is dative neuter.",
+          "vi": "über meinem Budget chỉ mức vượt ngân sách. Trong cách diễn đạt với liegen này, über dùng Dativ; meinem là Dativ giống trung."
         },
         "source": "document"
       },
@@ -5953,6 +6856,27 @@ const conversationGroups = [
             "plural": "kein gebräuchlicher Plural in dieser Bedeutung",
             "ipa": "das ˈvasɐ",
             "say": "das Wasser"
+          },
+          {
+            "de": "etwas",
+            "type": "pronoun",
+            "ipa": "ˈɛtvas",
+            "en": "something; some",
+            "vi": "điều gì đó; một ít",
+            "say": "etwas"
+          },
+          {
+            "de": "noch",
+            "type": "adverb",
+            "ipa": "nɔx",
+            "en": "still; yet; some more",
+            "vi": "vẫn; còn; thêm",
+            "say": "noch",
+            "usageHelp": {
+              "de": "Noch kann eine Fortdauer oder eine zusätzliche Menge ausdrücken; die Bedeutung hängt von der Verbindung ab.",
+              "en": "Noch can indicate continuation or an additional amount, depending on the expression.",
+              "vi": "noch có thể là vẫn/còn hoặc thêm một ít; cần đọc theo cả cụm, như noch nicht = chưa."
+            }
           }
         ],
         "analysis": {
@@ -6019,7 +6943,19 @@ const conversationGroups = [
             "en": "gladly; with pleasure",
             "vi": "sẵn lòng; thích",
             "ipa": "ɡɛʁn",
-            "say": "gern"
+            "say": "gern",
+            "usageHelp": {
+              "de": "Gern und gerne sind gleichbedeutende Varianten; -e in gerne ist hier keine Adjektivendung.",
+              "en": "Gern and gerne are equivalent variants; the -e in gerne is not an adjective ending here.",
+              "vi": "gern và gerne là hai cách dùng cùng nghĩa. Chữ -e trong gerne không phải đuôi biến cách của tính từ."
+            },
+            "formHelp": {
+              "base": "gern",
+              "surface": "gerne",
+              "de": "Gern und gerne sind gleichbedeutende Varianten. Das -e ist hier keine Deklinationsendung.",
+              "en": "Gern and gerne are equivalent variants. The -e is not a declension ending here.",
+              "vi": "gern và gerne là hai cách dùng tương đương. Chữ -e này không phải đuôi biến cách."
+            }
           }
         ],
         "analysis": {
@@ -6155,13 +7091,21 @@ const conversationGroups = [
             "vi": "hoạt động",
             "ipa": "fʊŋktsi̯oˈniːʁən",
             "say": "funktionieren"
+          },
+          {
+            "de": "nicht mehr",
+            "type": "phrase",
+            "ipa": "nɪçt meːɐ̯",
+            "en": "no longer; not anymore",
+            "vi": "không còn nữa",
+            "say": "nicht mehr"
           }
         ],
         "analysis": {
-          "pattern": "Präsens · Aussagesatz",
-          "de": "Das konjugierte Verb steht an zweiter Satzgliedposition; das Vorfeld kann aus mehreren Wörtern bestehen.",
-          "en": "The conjugated verb occupies the second constituent position; the first constituent may contain several words.",
-          "vi": "Động từ chia ở vị trí thành phần thứ hai; thành phần đầu có thể gồm nhiều từ."
+          "pattern": "nicht mehr · Adverbial der Zeit",
+          "de": "Nicht mehr bedeutet, dass der frühere Zustand aufgehört hat. Es ist nicht gleichbedeutend mit noch nicht.",
+          "en": "Nicht mehr means an earlier state has ended. It does not mean the same as noch nicht.",
+          "vi": "nicht mehr nghĩa là trạng thái trước đây đã chấm dứt: không còn nữa. Khác với noch nicht: chưa."
         },
         "source": "editorial"
       },
@@ -6187,7 +7131,20 @@ const conversationGroups = [
             "en": "unfortunately",
             "vi": "tiếc là",
             "ipa": "ˈlaɪ̯dɐ",
-            "say": "leider"
+            "say": "leider",
+            "usageHelp": {
+              "de": "Leider kommentiert die gesamte Aussage als bedauerlich, nicht die Eigenschaft eines Nomens.",
+              "en": "Leider comments on the whole statement as regrettable, rather than describing a noun.",
+              "vi": "leider bình luận cả sự việc là đáng tiếc, không nêu đặc điểm của một danh từ nên không chia đuôi tính từ."
+            }
+          },
+          {
+            "de": "etwas",
+            "type": "adverb",
+            "ipa": "ˈɛtvas",
+            "en": "a little; somewhat",
+            "vi": "một chút; hơi",
+            "say": "etwas"
           }
         ],
         "analysis": {
@@ -6221,6 +7178,19 @@ const conversationGroups = [
             "vi": "bao lâu",
             "ipa": "viː ˈlaŋə",
             "say": "wie lange"
+          },
+          {
+            "de": "noch",
+            "type": "adverb",
+            "ipa": "nɔx",
+            "en": "still; yet; some more",
+            "vi": "vẫn; còn; thêm",
+            "say": "noch",
+            "usageHelp": {
+              "de": "Noch kann eine Fortdauer oder eine zusätzliche Menge ausdrücken; die Bedeutung hängt von der Verbindung ab.",
+              "en": "Noch can indicate continuation or an additional amount, depending on the expression.",
+              "vi": "noch có thể là vẫn/còn hoặc thêm một ít; cần đọc theo cả cụm, như noch nicht = chưa."
+            }
           }
         ],
         "analysis": {
@@ -6255,6 +7225,14 @@ const conversationGroups = [
             "vi": "giảm",
             "ipa": "ʁeduˈtsiːʁən",
             "say": "reduzieren"
+          },
+          {
+            "de": "etwas",
+            "type": "pronoun",
+            "ipa": "ˈɛtvas",
+            "en": "something; some",
+            "vi": "điều gì đó; một ít",
+            "say": "etwas"
           }
         ],
         "analysis": {
@@ -6354,7 +7332,27 @@ const conversationGroups = [
             "en": "gladly; with pleasure",
             "vi": "sẵn lòng; thích",
             "ipa": "ɡɛʁn",
-            "say": "gern"
+            "say": "gern",
+            "usageHelp": {
+              "de": "Gern und gerne sind gleichbedeutende Varianten; -e in gerne ist hier keine Adjektivendung.",
+              "en": "Gern and gerne are equivalent variants; the -e in gerne is not an adjective ending here.",
+              "vi": "gern và gerne là hai cách dùng cùng nghĩa. Chữ -e trong gerne không phải đuôi biến cách của tính từ."
+            },
+            "formHelp": {
+              "base": "gern",
+              "surface": "gerne",
+              "de": "Gern und gerne sind gleichbedeutende Varianten. Das -e ist hier keine Deklinationsendung.",
+              "en": "Gern and gerne are equivalent variants. The -e is not a declension ending here.",
+              "vi": "gern và gerne là hai cách dùng tương đương. Chữ -e này không phải đuôi biến cách."
+            }
+          },
+          {
+            "de": "etwas",
+            "type": "pronoun",
+            "ipa": "ˈɛtvas",
+            "en": "something; some",
+            "vi": "điều gì đó; một ít",
+            "say": "etwas"
           }
         ],
         "analysis": {
@@ -6422,7 +7420,12 @@ const conversationGroups = [
             "en": "unfortunately",
             "vi": "tiếc là",
             "ipa": "ˈlaɪ̯dɐ",
-            "say": "leider"
+            "say": "leider",
+            "usageHelp": {
+              "de": "Leider kommentiert die gesamte Aussage als bedauerlich, nicht die Eigenschaft eines Nomens.",
+              "en": "Leider comments on the whole statement as regrettable, rather than describing a noun.",
+              "vi": "leider bình luận cả sự việc là đáng tiếc, không nêu đặc điểm của một danh từ nên không chia đuôi tính từ."
+            }
           }
         ],
         "analysis": {
