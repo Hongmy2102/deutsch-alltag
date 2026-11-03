@@ -1,46 +1,29 @@
-/* Shared, soft controls and typography for every learning page. */
-:root{--learning-font:"Segoe UI",Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,sans-serif;--control-ink:#416b75;--control-line:#b8cfd2;--control-wash:#f1f7f7}
-body{font-family:var(--learning-font);line-height:1.65}
-button,input,select,textarea{font-family:inherit;font-size:inherit}
-h1,h2,h3,h4{font-family:inherit}
-button,.button,.play,.next,.home,.home-link{border-radius:999px;font-weight:600;letter-spacing:0;line-height:1.5}
-button:not(.folderbtn):not(.folder-card),.button,.button.primary,.play,.next{background:#fbfdfd;color:var(--control-ink);border:1px solid var(--control-line);box-shadow:none;padding:9px 16px}
-button:not(.folderbtn):hover,.button:hover,.play:hover,.next:hover{background:var(--control-wash);border-color:#83aeb5;color:#315b66}
-button[aria-selected="true"],button.active,.button.primary{background:#eaf3f3;border-color:#93b8bd;color:#315b66}
-button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #95bdc5;outline-offset:3px}
-.card .open{display:inline-flex;align-items:center;align-self:flex-start;gap:6px;max-width:100%;padding:6px 12px;border:1px solid #2c548f;border-radius:999px;background:transparent;color:#2c548f;font-size:.9rem;font-weight:500;line-height:1.5}
-.card[class*="card--"] .open{color:#2c548f}
-a.card:hover .open,a.card:focus-visible .open{background:transparent;border-color:#214372;color:#214372}
-.home,.home-link{background:#ffffff0d;border-color:#c6dbd366;color:#f3faf7}
-@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
-/* Let the topic accent live in the border and small labels. */
-a.card[class*="card--"]{background:#fff;color:#344953;border:1px solid #c8dcda;border-top:3px solid var(--card-accent,#a2c7c5);box-shadow:0 5px 18px #486d6810}
-a.card[class*="card--"] h2{color:#344f59}
-a.card[class*="card--"] p{color:#647780}
-a.card[class*="card--"] .tag{background:#eff6f5;color:#537778;border:1px solid #d5e5e2}
-.phrase-group summary{display:flex;align-items:center;justify-content:space-between;gap:12px;list-style:none}
-.phrase-group summary::before{content:'＋';flex:none;font-size:1.1rem}
-.phrase-group[open]>summary::before{content:'−'}
-.phrase-group summary small{display:block;font-size:.84rem;font-weight:400;color:var(--muted);line-height:1.5;margin-top:4px}
-.phrase-count{flex:none;border:1px solid #d4e3e1;border-radius:999px;background:#f3f8f7;padding:3px 9px;font-size:.8rem;font-weight:500;white-space:nowrap}
-.phrase-context,.phrase-practice{padding:12px 14px;margin:0 0 14px;background:#f4f8f7;border-radius:12px;color:#536c73;font-size:.92rem}
-.phrase-context p{margin:4px 0}.phrase-provenance{font-size:.8rem;color:#687d81}
-.phrase-pair .phrase-translation{font-size:.9rem;color:#677b82}.phrase-pair .phrase-usage{border-top:1px solid #e4eceb;padding-top:12px;margin-top:14px;font-size:.9rem;color:#536c73}
-.phrase-audio{display:flex;flex-wrap:wrap;gap:8px}.phrase-audio .play{font-size:.84rem}
-.phrase-topic-links{display:flex;flex-wrap:wrap;gap:12px;font-size:.9rem}
-.phrase-tools{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:14px;background:#fff;border:1px solid #d4e3e1;border-radius:18px;padding:20px;margin:24px 0}
-.phrase-tools label{display:block;font-size:.9rem;color:#536c73;margin-bottom:6px}
-.phrase-tools input,.phrase-tools select{width:100%;max-width:100%;min-width:0;border:1px solid #b8cfd2;border-radius:12px;background:#fbfdfd;padding:11px 12px;color:#344f59}
-.phrase-tool-actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
-#conversationCount{margin:0;align-self:center;color:#536c73;font-size:.9rem}#phraseVoiceStatus{font-size:.88rem;color:#677b82;overflow-wrap:anywhere}
-.phrase-empty{padding:24px;background:#f3f8f7;border-radius:12px}
-@media(max-width:650px){.phrase-tools{grid-template-columns:1fr;padding:16px}.phrase-group{padding:0 12px}.phrase-group summary{gap:8px}.phrase-group summary small{font-size:.8rem}.phrase-count{font-size:.75rem;padding:3px 7px}}
-.phrase-vocabulary{margin:18px 0 14px;padding:14px;border:1px solid #d8e5e2;border-radius:12px;background:#f6faf9}
-.phrase-vocabulary h4{font-size:.86rem;color:#4d7377;margin:0 0 12px;line-height:1.5;font-weight:650}
-.phrase-vocabulary dl,.phrase-vocabulary dd{margin:0}.phrase-vocab-entry+.phrase-vocab-entry{border-top:1px solid #dce8e5;margin-top:12px;padding-top:12px}
-.phrase-vocabulary dt{display:flex;flex-direction:column;gap:4px;font-weight:650;color:#345b62;overflow-wrap:anywhere}
-.phrase-word-type{font-size:.73rem;color:#6a8183;font-weight:400}.phrase-vocabulary dd p{font-size:.88rem;line-height:1.55;margin:5px 0}.phrase-vocabulary .phrase-plural{font-size:.82rem;color:#627c7d}
-.phrase-analysis{border:1px solid #d8e5e2;border-radius:10px;background:#fcfefe;margin:12px 0}
-.phrase-analysis>summary{display:list-item;list-style:disclosure-closed inside;padding:11px 12px;font-size:.86rem;line-height:1.5;color:#4a6e76;cursor:pointer}
-.phrase-analysis[open]>summary{list-style-type:disclosure-open}.phrase-analysis>summary::before{content:none}.phrase-analysis>div{padding:0 12px 10px;font-size:.9rem}.phrase-analysis p{margin:6px 0}
-.phrase-pair>.phrase-provenance{margin-top:12px;font-size:.74rem;line-height:1.5}
+/* Only the unified Alltagssprache lesson is styled here; original page themes remain intact. */
+#alltagssprache [hidden]{display:none!important}
+#phraseGroups button.primary{background:transparent;color:var(--green);border:1px solid var(--green);border-radius:999px;padding:7px 12px;font:inherit;font-weight:600;cursor:pointer}
+.conversation-library{font:inherit;color:var(--ink)}
+.conversation-library .phrase-comparisons{display:grid;gap:18px;margin:16px 0}
+.conversation-library .phrase-pair{min-width:0;padding:18px;border:1px solid var(--line);border-radius:14px;background:#fff;overflow-wrap:anywhere}
+.conversation-library .phrase-pair p{margin:6px 0 10px}
+.conversation-library .phrase-direct h4,.conversation-library .phrase-tactful h4{font-size:.85rem;font-weight:650;color:var(--muted);margin:0 0 10px;line-height:1.5}
+.conversation-library .phrase-direct{padding-bottom:16px;margin-bottom:16px;border-bottom:1px solid var(--line)}
+.conversation-library .phrase-tactful .word{color:var(--green);font-weight:700}
+.conversation-library .phrase-tone{color:#a04439;font-size:.85rem;font-weight:650}
+.conversation-library .phrase-group-intro{margin:12px 0 18px;color:var(--muted)}
+.conversation-library .phrase-group-intro p{margin:5px 0}
+.conversation-library button{font:inherit;cursor:pointer;border:1px solid var(--green);border-radius:999px;background:transparent;color:var(--green);padding:7px 12px}
+.conversation-library button:disabled{opacity:.4;cursor:default}
+.conversation-library .phrase-vocabulary{margin:18px 0 14px;padding:14px;border:1px solid var(--line);border-radius:12px;background:#f8fafb}
+.conversation-library .phrase-vocabulary h4{font-size:.86rem;color:var(--green);margin:0 0 12px;line-height:1.5}
+.conversation-library .phrase-vocabulary dl,.conversation-library .phrase-vocabulary dd{margin:0}
+.conversation-library .phrase-vocab-entry+.phrase-vocab-entry{border-top:1px solid var(--line);margin-top:12px;padding-top:12px}
+.conversation-library .phrase-vocabulary dt{display:flex;flex-direction:column;gap:4px;font-weight:650;color:var(--ink)}
+.conversation-library .phrase-word-type{font-size:.76rem;color:var(--muted);font-weight:400}
+.conversation-library .phrase-vocabulary dd p{font-size:.9rem;line-height:1.55;margin:5px 0}
+.conversation-library .phrase-vocabulary .phrase-plural{font-size:.85rem;color:var(--muted)}
+.conversation-library .phrase-analysis{border:1px solid var(--line);border-radius:10px;background:#fff;margin-top:12px}
+.conversation-library .phrase-analysis>summary{padding:11px 12px;font-size:.9rem;line-height:1.5;color:var(--green);cursor:pointer}
+.conversation-library .phrase-analysis>div{padding:0 12px 10px;font-size:.92rem}
+.conversation-library .phrase-analysis p{margin:6px 0}
+.conversation-library button:focus-visible,.conversation-library summary:focus-visible,#phraseGroups button:focus-visible{outline:3px solid var(--green);outline-offset:3px}
+@media(max-width:650px){.conversation-library>.card{padding:14px}.conversation-library .phrase-pair{padding:14px}}

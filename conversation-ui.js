@@ -1,27 +1,17 @@
-/* Shared rendering keeps the lesson and topic embeds in sync. */
+/* Comparison cards are shared by the ten existing Alltagssprache lessons in Leben. */
 function conversationEscape(value){return String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
-const conversationTopicNames={kontakte:'Vorstellen & Kontakte',stadt:'Stadt & unterwegs',essen:'Essen & Einkaufen',alltag:'Alltag, Familie & Termine',freizeit:'Freizeit & Freunde',arbeit:'Arbeit & Beruf',gesundheit:'Gesundheit',wohnung:'Wohnung & Zuhause',kleidung:'Kleidung',reisen:'Reisen',arbeitsauftraege:'Arbeitsaufträge'};
 const conversationWordTypes={verb:'Verb · Verb · Động từ',noun:'Nomen · Noun · Danh từ',adjective:'Adjektiv · Adjective · Tính từ',adverb:'Adverb · Adverb · Trạng từ',phrase:'Wendung · Expression · Cụm từ',pronoun:'Pronomen · Pronoun · Đại từ',conjunction:'Konjunktion · Conjunction · Liên từ'};
-const conversationSources={document:'Tài liệu Word · bổ sung dịch và phân tích',pdf:'PDF bạn gửi · biên tập, bổ sung dịch và phân tích',editorial:'Mẫu câu tự biên soạn để luyện tập'};
 function renderConversationVocabulary(words){
  const e=conversationEscape;
- return `<section class="phrase-vocabulary" aria-label="Từ vựng trong câu"><h4>Wortschatz · Vocabulary · Từ vựng trong câu</h4><dl>${words.map(word=>`<div class="phrase-vocab-entry"><dt><span lang="de">${e(word.de)}</span><span class="phrase-word-type">${e(conversationWordTypes[word.type]||word.type)}</span></dt><dd>${word.plural?`<p class="phrase-plural"><b>Plural · Số nhiều:</b> <span lang="de">${e(word.plural)}</span></p>`:''}<p lang="en"><b>EN:</b> ${e(word.en)}</p><p lang="vi"><b>VI:</b> ${e(word.vi)}</p></dd></div>`).join('')}</dl></section>`;
+ return `<section class="phrase-vocabulary" aria-label="Từ vựng trong câu khéo léo"><h4>Wortschatz · Vocabulary · Từ vựng</h4><dl>${words.map(word=>`<div class="phrase-vocab-entry"><dt><span lang="de">${e(word.de)}</span><span class="phrase-word-type">${e(conversationWordTypes[word.type]||word.type)}</span></dt><dd>${word.plural?`<p class="phrase-plural"><b>Plural · Số nhiều:</b> <span lang="de">${e(word.plural)}</span></p>`:''}<p lang="en"><b>EN:</b> ${e(word.en)}</p><p lang="vi"><b>VI:</b> ${e(word.vi)}</p></dd></div>`).join('')}</dl></section>`;
 }
-function renderConversationPair(row,group){
+function renderConversationPair(row){
  const e=conversationEscape;
- return `<article class="phrase-pair item"><p class="meta">Kurz & direkt · Simple · Giản dị</p><p lang="de"><b>DE:</b> ${e(row.simple)}</p><p class="phrase-translation" lang="en"><b>EN:</b> ${e(row.simpleEn)}</p><p class="phrase-translation" lang="vi"><b>VI:</b> ${e(row.simpleVi)}</p><p class="meta">Alternative mit Feingefühl · Nuanced alternative · Cách nói khéo léo theo ngữ cảnh</p><p class="word" lang="de"><b>DE:</b> ${e(row.tactful)}</p><p lang="en"><b>EN:</b> ${e(row.en)}</p><p lang="vi"><b>VI:</b> ${e(row.vi)}</p>${renderConversationVocabulary(row.vocabulary)}<details class="phrase-analysis"><summary>Satzanalyse · Sentence analysis · Phân tích câu</summary><div><p lang="de"><b>DE:</b> ${e(row.analysis.de)}</p><p lang="en"><b>EN:</b> ${e(row.analysis.en)}</p><p lang="vi"><b>VI:</b> ${e(row.analysis.vi)}</p></div></details><div class="phrase-usage"><p><b>Dùng khi:</b> ${e(row.when||group.usage)}</p>${row.note?`<p><b>Sắc thái:</b> ${e(row.note)}</p>`:''}</div><div class="phrase-audio"><button type="button" class="play say" data-say="${e(row.simple)}" aria-label="Nghe câu giản dị: ${e(row.simple)}">🔊 Câu giản dị</button><button type="button" class="play say" data-say="${e(row.tactful)}" aria-label="Nghe câu khéo léo: ${e(row.tactful)}">🔊 Câu khéo léo</button></div><p class="phrase-provenance">${e(conversationSources[row.source||group.source])}</p></article>`;
-}
-function renderConversationGroup(group,rows=group.rows){
- const e=conversationEscape;
- return `<details class="phrase-group" id="feingefuehl-${group.id}" data-conversation-group="${group.id}"><summary><span>${e(group.de)}<small>${e(group.en)} · ${e(group.vi)}</small></span><span class="phrase-count">${rows.length} cặp</span></summary><div class="phrase-context"><p><b>Dùng với ai:</b> ${e(group.audience)} · ${e(group.register)}</p><p>${e(group.usage)}</p><p class="phrase-provenance">Một số thẻ dùng cách xưng hô khác trong cùng chủ đề; xem lưu ý trên từng thẻ trước khi dùng.</p></div><div class="grid phrase-grid">${rows.map(row=>renderConversationPair(row,group)).join('')}</div><div class="phrase-practice"><b>Üben · Tự luyện:</b> Chọn vai A và B, nói cả hai cách rồi chọn cách phù hợp với quan hệ và tình huống. Thay thông tin để tự đặt câu.</div><p class="phrase-topic-links">${group.topics.map(t=>`<a href="./deutsch-alltag.html?topic=${e(t)}">${e(conversationTopicNames[t]||t)} →</a>`).join(' ')}</p></details>`;
+ return `<article class="phrase-pair item"><div class="phrase-direct"><h4>Direkt / umgangssprachlich · Casual / direct · Đời thường / trực tiếp</h4>${row.tone?`<p class="phrase-tone">${e(row.tone)}</p>`:''}<p lang="de"><b>DE:</b> ${e(row.simple)}</p><p lang="en"><b>EN:</b> ${e(row.simpleEn)}</p><p lang="vi"><b>VI:</b> ${e(row.simpleVi)}</p><button type="button" class="play say" data-say="${e(row.simple)}" aria-label="Nghe câu đời thường: ${e(row.simple)}">🔊 Hören · Nghe</button></div><div class="phrase-tactful"><h4>Mit Feingefühl · Tactful alternative · Cách nói khéo léo</h4><p class="word" lang="de"><b>DE:</b> ${e(row.tactful)}</p><p lang="en"><b>EN:</b> ${e(row.en)}</p><p lang="vi"><b>VI:</b> ${e(row.vi)}</p><button type="button" class="play say" data-say="${e(row.tactful)}" aria-label="Nghe câu khéo léo: ${e(row.tactful)}">🔊 Hören · Nghe</button></div>${renderConversationVocabulary(row.vocabulary)}<details class="phrase-analysis"><summary>Grammatik · Grammar · Phân tích câu khéo léo</summary><div><p lang="de"><b>DE:</b> ${e(row.analysis.de)}</p><p lang="en"><b>EN:</b> ${e(row.analysis.en)}</p><p lang="vi"><b>VI:</b> ${e(row.analysis.vi)}</p></div></details></article>`;
 }
 function conversationNormalize(text){return String(text).normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/đ/g,'d').replace(/Đ/g,'D').toLocaleLowerCase()}
-
-// Handle the tap directly; prevent the native action from toggling a second time.
 document.addEventListener('click',event=>{
- const summary=event.target.closest('.phrase-group > summary, .phrase-analysis > summary');
+ const summary=event.target.closest('.phrase-analysis > summary');
  if(!summary||event.target.closest('a,button,input,select,textarea'))return;
- const details=summary.parentElement;
- event.preventDefault();
- details.open=!details.open;
+ event.preventDefault();summary.parentElement.open=!summary.parentElement.open;
 });
