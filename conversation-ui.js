@@ -16,3 +16,12 @@ function renderConversationGroup(group,rows=group.rows){
  return `<details class="phrase-group" id="feingefuehl-${group.id}" data-conversation-group="${group.id}"><summary><span>${e(group.de)}<small>${e(group.en)} · ${e(group.vi)}</small></span><span class="phrase-count">${rows.length} cặp</span></summary><div class="phrase-context"><p><b>Dùng với ai:</b> ${e(group.audience)} · ${e(group.register)}</p><p>${e(group.usage)}</p><p class="phrase-provenance">Một số thẻ dùng cách xưng hô khác trong cùng chủ đề; xem lưu ý trên từng thẻ trước khi dùng.</p></div><div class="grid phrase-grid">${rows.map(row=>renderConversationPair(row,group)).join('')}</div><div class="phrase-practice"><b>Üben · Tự luyện:</b> Chọn vai A và B, nói cả hai cách rồi chọn cách phù hợp với quan hệ và tình huống. Thay thông tin để tự đặt câu.</div><p class="phrase-topic-links">${group.topics.map(t=>`<a href="./deutsch-alltag.html?topic=${e(t)}">${e(conversationTopicNames[t]||t)} →</a>`).join(' ')}</p></details>`;
 }
 function conversationNormalize(text){return String(text).normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/đ/g,'d').replace(/Đ/g,'D').toLocaleLowerCase()}
+
+// Handle the tap directly; prevent the native action from toggling a second time.
+document.addEventListener('click',event=>{
+ const summary=event.target.closest('.phrase-group > summary, .phrase-analysis > summary');
+ if(!summary||event.target.closest('a,button,input,select,textarea'))return;
+ const details=summary.parentElement;
+ event.preventDefault();
+ details.open=!details.open;
+});

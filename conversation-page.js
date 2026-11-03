@@ -1,7 +1,8 @@
 (function(){
  const search=document.getElementById('conversationSearch'),topic=document.getElementById('conversationTopic'),mount=document.getElementById('conversationGroups'),nav=document.getElementById('conversationNav'),count=document.getElementById('conversationCount');
  for(const [id,name] of Object.entries(conversationTopicNames)){const option=document.createElement('option');option.value=id;option.textContent=name;topic.append(option)}
- function openHash(){const id=location.hash.slice(1);const el=document.getElementById(id);if(el?.matches('.phrase-group')){el.open=true;requestAnimationFrame(()=>el.scrollIntoView({block:'start'}))}}
+ function openConversation(id){const el=document.getElementById(id);if(!el?.matches('.phrase-group'))return;el.open=true;requestAnimationFrame(()=>el.scrollIntoView({block:'start'}))}
+ function openHash(){openConversation(location.hash.slice(1))}
  function render(){
   const previouslyOpen=new Set([...mount.querySelectorAll('.phrase-group[open]')].map(el=>el.id));
   const q=conversationNormalize(search.value.trim());
@@ -18,7 +19,7 @@
  document.getElementById('expandConversations').addEventListener('click',()=>mount.querySelectorAll('.phrase-group').forEach(el=>el.open=true));
  document.getElementById('collapseConversations').addEventListener('click',()=>mount.querySelectorAll('.phrase-group').forEach(el=>el.open=false));
  addEventListener('hashchange',openHash);
- nav.addEventListener('click',event=>{const link=event.target.closest('a');if(link?.hash===location.hash)openHash()});
+ nav.addEventListener('click',event=>{const link=event.target.closest('a[href^="#feingefuehl-"]');if(!link)return;event.preventDefault();openConversation(link.hash.slice(1));try{history.replaceState(null,'',link.hash)}catch(_){/* Opening the group does not require permission to change browser history. */}});
  let speechRun=0;
  document.addEventListener('click',event=>{
   const button=event.target.closest('.say');if(!button)return;

@@ -8,9 +8,9 @@ button:not(.folderbtn):not(.folder-card),.button,.button.primary,.play,.next{bac
 button:not(.folderbtn):hover,.button:hover,.play:hover,.next:hover{background:var(--control-wash);border-color:#83aeb5;color:#315b66}
 button[aria-selected="true"],button.active,.button.primary{background:#eaf3f3;border-color:#93b8bd;color:#315b66}
 button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #95bdc5;outline-offset:3px}
-.card .open{display:inline-flex;align-items:center;align-self:flex-start;gap:8px;max-width:100%;padding:9px 16px;border:1px solid var(--control-line);border-radius:999px;background:#fbfdfd;color:var(--control-ink);font-size:.95rem;font-weight:600;line-height:1.5}
-.card[class*="card--"] .open{color:var(--control-ink)}
-a.card:hover .open,a.card:focus-visible .open{background:var(--control-wash);border-color:#83aeb5}
+.card .open{display:inline-flex;align-items:center;align-self:flex-start;gap:6px;max-width:100%;padding:6px 12px;border:1px solid #2c548f;border-radius:999px;background:transparent;color:#2c548f;font-size:.9rem;font-weight:500;line-height:1.5}
+.card[class*="card--"] .open{color:#2c548f}
+a.card:hover .open,a.card:focus-visible .open{background:transparent;border-color:#214372;color:#214372}
 .home,.home-link{background:#ffffff0d;border-color:#c6dbd366;color:#f3faf7}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
 /* Let the topic accent live in the border and small labels. */
