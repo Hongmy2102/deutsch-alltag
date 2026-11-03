@@ -35,3 +35,12 @@ a.card[class*="card--"] .tag{background:#eff6f5;color:#537778;border:1px solid #
 #conversationCount{margin:0;align-self:center;color:#536c73;font-size:.9rem}#phraseVoiceStatus{font-size:.88rem;color:#677b82;overflow-wrap:anywhere}
 .phrase-empty{padding:24px;background:#f3f8f7;border-radius:12px}
 @media(max-width:650px){.phrase-tools{grid-template-columns:1fr;padding:16px}.phrase-group{padding:0 12px}.phrase-group summary{gap:8px}.phrase-group summary small{font-size:.8rem}.phrase-count{font-size:.75rem;padding:3px 7px}}
+.phrase-vocabulary{margin:18px 0 14px;padding:14px;border:1px solid #d8e5e2;border-radius:12px;background:#f6faf9}
+.phrase-vocabulary h4{font-size:.86rem;color:#4d7377;margin:0 0 12px;line-height:1.5;font-weight:650}
+.phrase-vocabulary dl,.phrase-vocabulary dd{margin:0}.phrase-vocab-entry+.phrase-vocab-entry{border-top:1px solid #dce8e5;margin-top:12px;padding-top:12px}
+.phrase-vocabulary dt{display:flex;flex-direction:column;gap:4px;font-weight:650;color:#345b62;overflow-wrap:anywhere}
+.phrase-word-type{font-size:.73rem;color:#6a8183;font-weight:400}.phrase-vocabulary dd p{font-size:.88rem;line-height:1.55;margin:5px 0}.phrase-vocabulary .phrase-plural{font-size:.82rem;color:#627c7d}
+.phrase-analysis{border:1px solid #d8e5e2;border-radius:10px;background:#fcfefe;margin:12px 0}
+.phrase-analysis>summary{display:list-item;list-style:disclosure-closed inside;padding:11px 12px;font-size:.86rem;line-height:1.5;color:#4a6e76;cursor:pointer}
+.phrase-analysis[open]>summary{list-style-type:disclosure-open}.phrase-analysis>summary::before{content:none}.phrase-analysis>div{padding:0 12px 10px;font-size:.9rem}.phrase-analysis p{margin:6px 0}
+.phrase-pair>.phrase-provenance{margin-top:12px;font-size:.74rem;line-height:1.5}
