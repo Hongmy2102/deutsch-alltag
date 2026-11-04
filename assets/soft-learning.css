@@ -1,0 +1,37 @@
+@import url("./fonts/handbook-fonts.css");
+
+:root {
+  --paper: #faf8f2;
+  --white: #fffdf8;
+}
+
+html,
+body {
+  background: var(--paper);
+}
+
+body {
+  font-family: "Be Vietnam Pro", Arial, sans-serif;
+}
+
+.section,
+.item,
+.practice,
+.nav a,
+.card,
+.track-section,
+.track,
+.lesson,
+.word-card,
+.sentence {
+  background-color: var(--white);
+}
+
+.word-ipa {
+  margin: 3px 0 9px;
+  color: var(--muted);
+  font-family: "Be Vietnam Pro", Arial, sans-serif;
+  font-size: 0.88rem;
+  font-weight: 500;
+}
+
