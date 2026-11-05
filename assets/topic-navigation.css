@@ -1,0 +1,88 @@
+@import url("./fonts/handbook-fonts.css");
+
+/* Shared return controls: the existing text/accent colors remain in charge. */
+.topic-return,
+button[data-back],
+button[data-close-alltag],
+button[data-close-topic]{
+  appearance:none;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:.35em;
+  max-width:100%;
+  min-height:42px;
+  padding:9px 16px;
+  border:1px solid var(--line,#e4e5e1);
+  border-radius:999px;
+  background:var(--white,#fffefa);
+  font-family:"Be Vietnam Pro",Arial,sans-serif;
+  font-size:.94rem;
+  font-weight:650;
+  line-height:1.4;
+  text-decoration:none;
+  box-shadow:0 3px 10px rgba(25,53,44,.06);
+  cursor:pointer;
+  white-space:normal;
+  text-align:left;
+  transition:background-color .16s,border-color .16s,box-shadow .16s,transform .16s;
+}
+.topic-return:hover,
+.topic-return:focus-visible,
+button[data-back]:hover,
+button[data-back]:focus-visible,
+button[data-close-alltag]:hover,
+button[data-close-alltag]:focus-visible,
+button[data-close-topic]:hover,
+button[data-close-topic]:focus-visible{
+  border-color:currentColor;
+  box-shadow:0 5px 14px rgba(25,53,44,.11);
+  transform:translateY(-1px);
+}
+.topic-return:focus-visible,
+button[data-back]:focus-visible,
+button[data-close-alltag]:focus-visible,
+button[data-close-topic]:focus-visible{outline:2px solid currentColor;outline-offset:2px}
+
+/* A1 topic landing: clear hierarchy and the same calm type pairing as the Leben library. */
+#folderContent .topic-heading h2{
+  margin:5px 0 4px;
+  font-family:"Playfair Display",Georgia,"Times New Roman",serif;
+  font-size:clamp(1.8rem,4.4vw,2.45rem);
+  font-weight:700;
+  line-height:1.2;
+  letter-spacing:-.025em;
+}
+#folderContent .topic-intro{
+  width:min(100%,880px);
+  margin:16px 0 24px;
+  padding:16px 20px;
+  border:1px solid var(--line,#e4e5e1);
+  border-radius:18px;
+  background:var(--white,#fffefa);
+  box-shadow:0 7px 20px rgba(25,53,44,.055);
+  font:400 1rem/1.72 "Be Vietnam Pro",Arial,sans-serif;
+}
+#folderContent .topic-intro p{margin:4px 0}
+#folderContent .topic-intro b{font-weight:700;color:var(--ink,#202b35)}
+#folderContent .topic-door{
+  font-family:"Be Vietnam Pro",Arial,sans-serif;
+  padding:22px 24px;
+  border-radius:20px;
+}
+#folderContent .topic-door strong{
+  font-family:"Playfair Display",Georgia,"Times New Roman",serif;
+  font-size:1.24rem;
+  line-height:1.35;
+  letter-spacing:-.012em;
+}
+#folderContent .topic-door-sub{line-height:1.55}
+#folderContent .topic-door p{line-height:1.65}
+#folderContent .topic-door-open{font-family:"Be Vietnam Pro",Arial,sans-serif}
+#folderContent .topic-return-row{margin:0 0 17px}
+#topicContent .topic-page-head>.topic-return-row{margin-bottom:14px}
+@media(max-width:600px){
+  .topic-return,button[data-back],button[data-close-alltag],button[data-close-topic]{min-height:40px;padding:8px 13px;font-size:.9rem}
+  #folderContent .topic-intro{padding:13px 15px}
+  #folderContent .topic-door{padding:18px}
+}
