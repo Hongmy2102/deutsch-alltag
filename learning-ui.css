@@ -87,3 +87,25 @@ body{background:#faf8f2;font-family:'Be Vietnam Pro',Arial,sans-serif;font-size:
 /* Explanations use the reading width while open; the default word row stays compact. */
 .conversation-library .phrase-vocabulary:has(.phrase-word-help:not([hidden])) dl{grid-template-columns:1fr}
 .conversation-library .phrase-vocabulary:has(.phrase-word-help:not([hidden])) .phrase-vocab-entry+.phrase-vocab-entry{padding-left:0;padding-top:8px;border-left:0;border-top:1px solid var(--line)}
+
+/* Calm, readable treatment for complete phrases and their vocabulary. */
+body{background:#f8f7f3}
+#alltagssprache{--paper:#f8f7f3;--surface:#fffefa;--line:#e4e2dc;--tint:#f1f5f7}
+#alltagssprache h2,#alltagssprache h3{font-family:'Be Vietnam Pro',Arial,sans-serif;font-weight:700;letter-spacing:-.015em}
+.conversation-library .phrase-comparisons{gap:16px}
+.conversation-library .phrase-pair{padding:12px 15px;border-radius:12px;background:#fffefa;box-shadow:0 5px 16px #17324f08}
+.conversation-library .phrase-comparison{border-radius:9px;background:#fffefa}
+.conversation-library .phrase-comparison th{padding:8px 11px;background:#f1f5f8;font-weight:700}
+.conversation-library .phrase-comparison td{padding:8px 11px;line-height:1.55}
+.conversation-library .phrase-comparison tbody tr:first-child td{font-weight:650;background:#f7f9fa}
+.conversation-library .phrase-comparison .phrase-tactful{color:var(--blue)}
+.conversation-library .phrase-vocabulary{padding:12px 15px;border-radius:10px;background:#f8f7f3}
+.conversation-library .phrase-vocabulary h4{font-family:Georgia,'Times New Roman',serif;font-weight:700}
+.conversation-library .phrase-vocabulary dt{font-family:Georgia,'Times New Roman',serif;font-weight:700}
+.conversation-library .phrase-vocabulary .phrase-ipa{font-family:'Be Vietnam Pro',Arial,sans-serif}
+.conversation-library .phrase-vocabulary dd p{line-height:1.6}
+@media(max-width:650px){
+ .conversation-library .phrase-pair{padding:9px}
+ .conversation-library .phrase-comparison th,.conversation-library .phrase-comparison td{padding:7px 6px}
+ .conversation-library .phrase-comparison td{font-size:.83rem;line-height:1.5}
+}
