@@ -126,7 +126,7 @@
   function openWorkspaceTopic(t){
     if(!t)return;
     const params=new URLSearchParams(location.search);
-    if(['adverbien','praepositionen'].includes(t.id)||params.get('view')==='hoeren'){legacyOpenTopic(t);return;}
+    if(['adverbien','praepositionen','arbeitsauftraege'].includes(t.id)||params.get('view')==='hoeren'){legacyOpenTopic(t);return;}
     parkLessonModules();const view=document.querySelector('#folderView');const box=document.querySelector('#folderContent');view.classList.add('libhidden');box.classList.remove('libhidden');
     const module=params.get('module');
     if(module==='listening'){renderListeningDetail(t);return;}
